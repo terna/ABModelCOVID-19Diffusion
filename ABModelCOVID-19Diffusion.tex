@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for your "contribution" to a contributed volume
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox]{svmult}
+
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+%
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+
+\usepackage{newtxtext}       % 
+\usepackage{newtxmath}       % selects Times Roman as basic font
+
+\usepackage{url} % Use the package "url.sty" to avoid problems with special characters used in your e-mail or web address
+
+
+
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title*{An Agent-Based Model of COVID-19 Diffusion to Plan and Evaluate Intervention Policies}
+\titlerunning{An Agent-Based Model of COVID-19 Diffusion}
+% Use \titlerunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\author{Gianpiero Pescarmona, Pietro Terna, Alberto Acquadro, Paolo Pescarmona, Giuseppe Russo, Emilio Sulis, and Stefano Terna}
+% Use \authorrunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\institute{G. Pescarmona \at University of Torino, Italy, \email{gianpiero.pescarmona@unito.it}
+\and P. Terna \at University of Torino, Italy; Fondazione Collegio Carlo Alberto, Italy \email{pietro.terna@unito.it}
+\and A. Acquadro \at University of Torino, Italy \email{alberto.acquadro@unito.it}
+\and P. Pescarmona \at University of Groningen, The Netherlands \email{p.p.pescarmona@rug.nl}
+\and G. Russo \at Centro Einaudi, Torino, Italy \email{russo@centroeinaudi.it}
+\and E. Sulis \at University of Torino, Italy; \email{emilio.sulis@unito.it}
+\and S. Terna \at \url{tomorrowdata.io} \email{stefano.terna@tomorrowdata.io}
+}
+%
+% Use the package "url.sty" to avoid
+% problems with special characters
+% used in your e-mail or web address
+%
+\maketitle
+
+\abstract*{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the infected person's characteristics and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
+The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the successive contagion waves in the reference region. 
+There is also an inverse generative side of the model, coming from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people, using genetic algorithms.}
+
+\abstract{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the infected person's characteristics and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
+The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the successive contagion waves in the reference region. 
+There is also an inverse generative side of the model, coming from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people, using genetic algorithms.}
+
+
+
+\section{Section Heading}
+\label{sec:1}
+Use the template 
+
+
+\bibliography{./bibliografiaGenerale}
+\bibliographystyle{spphys}
+
+\end{document}
