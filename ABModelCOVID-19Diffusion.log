@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  15 JUN 2021 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  15 JUN 2021 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -529,6 +529,23 @@ LaTeX Info: Redefining \not on input line 2598.
 ) (./url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip65
+\enit@outerparindent=\dimen189
+\enit@toks=\toks49
+\enit@inbox=\box96
+\enit@count@id=\count304
+\enitdp@description=\count305
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/nth/nth.sty
+Package: nth 2002/02/27
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks50
+\verbatim@line=\toks51
+\verbatim@in@stream=\read3
 )
 \@indexfile=\write4
 \openout4 = `ABModelCOVID-19Diffusion.idx'.
@@ -537,68 +554,68 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Writing index file ABModelCOVID-19Diffusion.idx
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count304
-\l__pdf_internal_box=\box96
+\l__kernel_color_stack_int=\count306
+\l__pdf_internal_box=\box97
 )
 (./ABModelCOVID-19Diffusion.aux)
 \openout1 = `ABModelCOVID-19Diffusion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 42.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 47.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 42.
+ 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-42.
+47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 42.
+ 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 42.
+e 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    ... okay on input line 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen189
-\scratchbox=\box97
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen190
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count307
+\scratchdimen=\dimen190
+\scratchbox=\box98
+\nofMPsegments=\count308
+\nofMParguments=\count309
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen191
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
+\everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -608,98 +625,225 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@mv@tabular=\count311
-\c@mv@boldtabular=\count312
+\c@mv@tabular=\count313
+\c@mv@boldtabular=\count314
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.0pt on input line 64.
+(Font)              scaled to size 14.0pt on input line 70.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.0pt on input line 64.
+(Font)              scaled to size 14.0pt on input line 70.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.0pt on input line 64.
+(Font)              scaled to size 16.0pt on input line 70.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 64.
+e 70.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 64.
+(Font)              scaled to size 10.0pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 64.
+(Font)              scaled to size 7.3pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 64.
+(Font)              scaled to size 5.5pt on input line 70.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-64.
+70.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-64.
+70.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-64.
+70.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.5pt on input line 64.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 64.
+(Font)              scaled to size 8.5pt on input line 70.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 70.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.5pt on input line 64.
+(Font)              scaled to size 8.5pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.20496pt on input line 64.
+(Font)              scaled to size 6.20496pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 4.67502pt on input line 64.
+(Font)              scaled to size 4.67502pt on input line 70.
 LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-64.
+70.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 8.5pt on input line 64.
-
-Names of authors too long for running head. Please supply
-a shorter form with \authorrunning prior to \maketitle
+(Font)              scaled to size 8.5pt on input line 70.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 8.5pt on input line 70.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-[1
+(Font)              scaled to size 10.0pt on input line 78.
+ [1
 
 
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 76.
+(Font)              scaled to size 12.0pt on input line 82.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 76.
+(Font)              scaled to size 12.0pt on input line 82.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 11.0pt on input line 92.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 11.0pt on input line 92.
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 129.
 
-No file ABModelCOVID-19Diffusion.bbl.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 129.
+LaTeX Font Info:    Trying to load font information for T1+ntxsups on input lin
+e 129.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxsups.fd
+File: t1ntxsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 129.
+LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
+(Font)              scaled to size 8.5pt on input line 129.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 136.
+ [3]
+
+LaTeX Warning: Reference `appCalendar' on page 4 undefined on input line 149.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.5pt on input line 151.
+
+LaTeX Warning: Reference `appContagion' on page 4 undefined on input line 151.
+
+[4]
+<SIsaR_outline.png, id=21, 2569.6pt x 1515.6625pt>
+File: SIsaR_outline.png Graphic file (type png)
+<use SIsaR_outline.png>
+Package pdftex.def Info: SIsaR_outline.png  used on input line 189.
+(pdftex.def)             Requested size: 332.89723pt x 196.34923pt.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 208.
+ [5] [6 <./SIsaR_outline.png>]
+Overfull \hbox (13.34186pt too wide) in paragraph at lines 257--262
+[][][]\T1/ntxtt/m/n/10 %PeopleNotFragileNotSymptomaticLeavingHome []\T1/ntxtlf/
+m/n/10 ([][]\T1/ntxtt/m/n/10 %PeopleNot[]\T1/ntxtlf/m/n/10 ) de-ter-mines,
+ []
+
+[7]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 318.
+ [8]
+
+LaTeX Warning: Reference `appHowItWorks' on page 9 undefined on input line 369.
+
+
+
+LaTeX Warning: Reference `howToAnalyze' on page 9 undefined on input line 369.
+
+[9]
+
+LaTeX Warning: Reference `appContagion' on page 10 undefined on input line 378.
+
+
+
+LaTeX Warning: Reference `c8' on page 10 undefined on input line 378.
+
+
+LaTeX Warning: Reference `appCalendar' on page 10 undefined on input line 380.
+
+
+LaTeX Warning: Reference `app1000run' on page 10 undefined on input line 380.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 10 undefined on input line 380.
+
+<withShort1.png, id=44, 986.68625pt x 552.0625pt>
+File: withShort1.png Graphic file (type png)
+<use withShort1.png>
+Package pdftex.def Info: withShort1.png  used on input line 384.
+(pdftex.def)             Requested size: 157.87302pt x 88.3318pt.
+<withShort1A.png, id=45, 972.63374pt x 552.0625pt>
+File: withShort1A.png Graphic file (type png)
+<use withShort1A.png>
+Package pdftex.def Info: withShort1A.png  used on input line 384.
+(pdftex.def)             Requested size: 155.62457pt x 88.3318pt.
+<withShort1A200.png, id=46, 972.63374pt x 552.0625pt>
+File: withShort1A200.png Graphic file (type png)
+<use withShort1A200.png>
+Package pdftex.def Info: withShort1A200.png  used on input line 387.
+(pdftex.def)             Requested size: 155.62457pt x 88.3318pt.
+<withShort1B.png, id=47, 977.6525pt x 552.0625pt>
+File: withShort1B.png Graphic file (type png)
+<use withShort1B.png>
+Package pdftex.def Info: withShort1B.png  used on input line 387.
+(pdftex.def)             Requested size: 156.4276pt x 88.3318pt.
+
+LaTeX Warning: Reference `CBanalysis' on page 10 undefined on input line 414.
+
+
+LaTeX Warning: Reference `c8' on page 10 undefined on input line 414.
+
+[10]
+
+LaTeX Warning: Reference `6b' on page 11 undefined on input line 423.
+
+
+LaTeX Warning: Reference `appContagion' on page 11 undefined on input line 423.
+
+
+
+LaTeX Warning: Reference `app1000run' on page 11 undefined on input line 424.
+
+
+LaTeX Warning: Reference `keyResultsS' on page 11 undefined on input line 424.
+
+(./ABModelCOVID-19Diffusion.bbl [11 <./withShort1.png> <./withShort1A.png> <./w
+ithShort1A200.png> <./withShort1B.png>])
 \tf@thm=\write5
 \openout5 = `ABModelCOVID-19Diffusion.thm'.
 
-[2] (./ABModelCOVID-19Diffusion.aux) ) 
+ [12] (./ABModelCOVID-19Diffusion.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6956 strings out of 480608
- 88836 string characters out of 5903631
- 348441 words of memory out of 5000000
- 22745 multiletter control sequences out of 15000+600000
- 577189 words of font info for 81 fonts, out of 8000000 for 9000
+ 7515 strings out of 480608
+ 98026 string characters out of 5903631
+ 360117 words of memory out of 5000000
+ 23268 multiletter control sequences out of 15000+600000
+ 600347 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,43p,879b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts
-/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/txfonts/t1xtt.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/z
-tmr.pfb>
-Output written on ABModelCOVID-19Diffusion.pdf (2 pages, 107260 bytes).
+ 38i,8n,43p,1228b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
+sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntxsups_t1.enc}{/usr/loc
+al/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texli
+ve/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/newtx/ntxsups-Regular.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
+lic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx
+/ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pf
+b>
+Output written on ABModelCOVID-19Diffusion.pdf (12 pages, 694759 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
