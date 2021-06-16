@@ -528,6 +528,100 @@ A comment to Table \ref{keyResultsT}, following the different blocks, row by row
 
 To summarize, the actions carried out were of extraordinary effect and usefulness. Still, it would have been possible to add other forms of action that could have had lower overall costs. Therefore, measures to preserve the situation at risk for all fragile people and at the same time to not stop the economy and society indiscriminately.
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Genetic Algorithms: the tools and the goal}
+\label{tools}
+
+The tools in use are \href{https://ccl.northwestern.edu/netlogo/}{NetLogo}, to build the model, and  \href{https://www.behaviorsearch.org}{BehaviorSearch}, to run Genetic Algorithms. 
+
+Model information is online at \url{https://terna.to.it/simul/SIsaR.html} and in a short paper \cite{pescarmonacan}.
+
+We are considering epidemic trends in an area with the Piedmont region's characteristics; the calendar of the non-pharmaceutical measures of containment is updated until day 350, Jan. \nth{18}, 2021. {\color{red}TO BE UPDATED}.
+
+The goal of the simulation of the vaccination campaigns is to find vaccination sequences by people groups to reduce the number of symptomatic infected people. Deceased persons come from that condition.
+
+Click hereafter for an introduction both to \href{https://en.wikipedia.org/wiki/Genetic_algorithm}{Genetic Algorithms} and the related  \href{https://en.wikipedia.org/wiki/Holland%27s_schema_theorem}{Holland's schema theorem}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The sequence of the contagions in a simulated epidemic}\label{sequence}
+
+The critical point that makes helpful the production of an agent-based model of the SARS-CoV-2 epidemic is the possibility of creating a tool that allows analyzing the contagions' sequences in the simulated epidemics and identifying the places where they occur. 
+
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{startingCase.png}
+
+\caption{The initial contagion events in a simulation} 
+\label{startingCase}
+\end{figure}
+
+
+
+We represent each infecting agent as a horizontal segment with a vertical connection to another agent receiving the infection. We represent the second agent via a further segment at an upper level. With colors, line thickness, and styles, we display multiple data. 
+
+As an example, look at Fig.\ref{startingCase}: we start with two agents coming from the outside, with black color code (external place); the first one is regular, as reported by the thickness of the segment, starting at day 0 and finishing at day 22; it is asymptomatic (dashed line) and infects five agents; the second one, robust, as reported by the thickness of the segment, starting at day 0 and finishing at day 15, is asymptomatic (dashed line) and infects no one; the first of the five infected agents received the infection at home (cyan color) and turns to be asymptomatic after a few days of incubation (dotted line), and so on. 
+
+Solid lines identify symptomatic infected agents; dashed lines refer to asymptomatic infected agents. Colors: brown relates to workplaces, orange to nursing homes, yellow to schools; pink to hospitals; cyan to houses, gray to open spaces. Thick or extra-thick lines refer to fragile or extra-fragile agents, respectively. Lines with regular thickness identify regular people and thin ones identify robust (young) persons.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Applying Genetic Algorithms (GA)}
+\label{GA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Population groups}
+\label{groups}
+
+We take into consideration seven groups in order of decreasing fragility if we also take into account the exposure to contagion:
+
+\begin{enumerate}[itemsep=-2pt]
+\item [\emph{g1}]
+	extra fragile people with three components;
+	\begin{enumerate}[itemsep=-2pt]
+		\item due to intrinsic characteristics: people in nursing homes;
+		\item due to risk exposure:
+		\begin{enumerate}[itemsep=-2pt]
+			\item nursing homes operators;
+			\item healthcare operators;
+ 		\end{enumerate} 
+ 	\end{enumerate}  
+\item [\emph{g2}]
+	teachers;
+\item [\emph{g3}]
+	workers with medical fragility;
+\item [\emph{g4}]
+	regular workers;
+\item [\emph{g5}]
+	fragile people without special characteristics;
+\item [\emph{g6}]
+	regular people, not young, not worker, and not teacher;
+\item [\emph{g7}]
+	young people excluding special activity cases (a limited number in \emph{g1}).
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Vaccination quantities}\label{quantities}
+
+For each group, we have to fix five daily vaccination quotas over different periods. We have two base proposals: (a) the ``plain'' one is in Table \ref{plainQuotasTable} and the ``wise'' one in Table \ref{wiseQuotasTable} . 
+
+The quotas apply to each group's number of components to determine the number of vaccination for that group on that day. \textbf{We start from the first group, which absorbs its quantity; if in that day there are residual vaccine doses, we move to the second group and so on. A wholly vaccinated group is no more considered}.
+
+The numbers of people in each group are those of the model at \url{https://terna.to.it/simul/SIsaR.html}  and are related to Piedmont. The daily vaccinations quantities are similar to those of Piedmont, reduced by 50\% to take into account the second dose.
+ 
+How we reason?
+@@@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Cost-benefit analysis of the of interventions}
 \label{CBanalysis}
 
