@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  15 JUN 2021 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  16 JUN 2021 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -302,21 +302,7 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count266
 \l__pdf_internal_box=\box48
 )
-(./_baseABModelCOVID-19Diffusion.aux
-
-./_baseABModelCOVID-19Diffusion.aux:199: Package natbib Error: Bibliography not
- compatible with author-year citations.
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.199 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-? 
-)
+No file _baseABModelCOVID-19Diffusion.aux.
 \openout1 = `_baseABModelCOVID-19Diffusion.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -335,7 +321,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -401,7 +386,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 31.
 LaTeX Info: Redefining \pageref on input line 31.
 LaTeX Info: Redefining \nameref on input line 31.
- (./_baseABModelCOVID-19Diffusion.out) (./_baseABModelCOVID-19Diffusion.out)
 \@outlinefile=\write4
 \openout4 = `_baseABModelCOVID-19Diffusion.out'.
 
@@ -421,369 +405,605 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [1
+)
+
+Package natbib Warning: Citation `Scala:2020aa' on page 1 undefined on input li
+ne 65.
+
+
+Package natbib Warning: Citation `doi:10.1142/S0218202520500323' on page 1 unde
+fined on input line 65.
+
+[1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `rahmandad2008heterogeneity' on page 2 undefin
+ed on input line 67.
+
+
+Package natbib Warning: Citation `squazzoni2020' on page 2 undefined on input l
+ine 69.
+
+
+Package natbib Warning: Citation `epstein2008model' on page 2 undefined on inpu
+t line 74.
+
+
+Package natbib Warning: Citation `axtell2000agents' on page 2 undefined on inpu
+t line 84.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4] [5]
-<withShort1.png, id=245, 986.68625pt x 552.0625pt>
+[2]
+
+Package natbib Warning: Citation `Silvagno_2020' on page 3 undefined on input l
+ine 113.
+
+
+Package natbib Warning: Citation `horton2020offline' on page 3 undefined on inp
+ut line 113.
+
+[3]
+
+Package natbib Warning: Citation `SIsaR' on page 4 undefined on input line 127.
+
+
+
+Package natbib Warning: Citation `NetLogo' on page 4 undefined on input line 12
+7.
+
+
+LaTeX Warning: Reference `appCalendar' on page 4 undefined on input line 127.
+
+
+LaTeX Warning: Reference `appContagion' on page 4 undefined on input line 129.
+
+
+Package natbib Warning: Citation `ghorbani2020assocc' on page 4 undefined on in
+put line 129.
+
+[4]
+
+LaTeX Warning: Reference `appHowItWorks' on page 5 undefined on input line 161.
+
+
+
+LaTeX Warning: Reference `howToAnalyze' on page 5 undefined on input line 161.
+
+[5]
+
+LaTeX Warning: Reference `appContagion' on page 6 undefined on input line 169.
+
+
+LaTeX Warning: Reference `c8' on page 6 undefined on input line 169.
+
+
+LaTeX Warning: Reference `fourSequences' on page 6 undefined on input line 171.
+
+
+
+LaTeX Warning: Reference `appCalendar' on page 6 undefined on input line 171.
+
+
+LaTeX Warning: Reference `fourSequences' on page 6 undefined on input line 171.
+
+
+
+LaTeX Warning: Reference `app1000run' on page 6 undefined on input line 171.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 6 undefined on input line 171.
+
+<withShort1.png, id=63, 986.68625pt x 552.0625pt>
 File: withShort1.png Graphic file (type png)
 <use withShort1.png>
 Package pdftex.def Info: withShort1.png  used on input line 175.
 (pdftex.def)             Requested size: 197.33376pt x 110.41054pt.
-<withShort1A.png, id=247, 972.63374pt x 552.0625pt>
+<withShort1A.png, id=65, 972.63374pt x 552.0625pt>
 File: withShort1A.png Graphic file (type png)
 <use withShort1A.png>
 Package pdftex.def Info: withShort1A.png  used on input line 175.
 (pdftex.def)             Requested size: 194.5233pt x 110.41054pt.
-<withShort1A200.png, id=248, 972.63374pt x 552.0625pt>
+<withShort1A200.png, id=66, 972.63374pt x 552.0625pt>
 File: withShort1A200.png Graphic file (type png)
 <use withShort1A200.png>
 Package pdftex.def Info: withShort1A200.png  used on input line 178.
 (pdftex.def)             Requested size: 194.5233pt x 110.41054pt.
-<withShort1B.png, id=249, 977.6525pt x 552.0625pt>
+<withShort1B.png, id=67, 977.6525pt x 552.0625pt>
 File: withShort1B.png Graphic file (type png)
 <use withShort1B.png>
 Package pdftex.def Info: withShort1B.png  used on input line 178.
 (pdftex.def)             Requested size: 195.52704pt x 110.41054pt.
- [6] [7pdfTeX warning (ext4): destination with the same identifier (name{figure
-.1}) has been already used, duplicate ignored
+[6]
+
+LaTeX Warning: Reference `CBanalysis' on page 7 undefined on input line 205.
+
+
+LaTeX Warning: Reference `c8' on page 7 undefined on input line 205.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.206 
        <./withShort1.png> <./withShort1A.png> <./withShort1A200.png> <./withSho
-rt1B.png>] [8] [9pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.1}) has been already used, duplicate ignored
+rt1B.png>]
+
+LaTeX Warning: Reference `micromicro' on page 8 undefined on input line 207.
+
+
+LaTeX Warning: Reference `6b' on page 8 undefined on input line 214.
+
+
+LaTeX Warning: Reference `appContagion' on page 8 undefined on input line 214.
+
+
+LaTeX Warning: Reference `app1000run' on page 8 undefined on input line 215.
+
+
+LaTeX Warning: Reference `keyResultsS' on page 8 undefined on input line 215.
+
+
+LaTeX Warning: Reference `fourSequences' on page 8 undefined on input line 222.
+
+
+
+LaTeX Warning: Reference `app1000run' on page 8 undefined on input line 224.
+
+
+Package natbib Warning: Citation `steinmann2020don' on page 8 undefined on inpu
+t line 226.
+
+
+LaTeX Warning: Reference `app1000run' on page 8 undefined on input line 232.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 8 undefined on input line 232.
+
+
+LaTeX Warning: Reference `EpidemicsWithoutControlS' on page 8 undefined on inpu
+t line 246.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndNoSchoolS' on page 8 undefined on inp
+ut line 249.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndSchoolS' on page 8 undefined on input
+ line 252.
+
+
+LaTeX Warning: Reference `EpidemicsFWsS' on page 8 undefined on input line 255.
+
+
+
+LaTeX Warning: Reference `EpidemicsNHsS' on page 8 undefined on input line 259.
+
+
+
+LaTeX Warning: Reference `EpidemicsFragileS' on page 8 undefined on input line 
+263.
+
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileS' on page 8 undefined on input 
+line 267.
+
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileFacsOnS' on page 8 undefined on 
+input line 271.
+
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileFacsOnSchOnS' on page 8 undefine
+d on input line 275.
+
+[8]
+
+LaTeX Warning: Reference `micromicro' on page 9 undefined on input line 285.
+
+
+LaTeX Warning: Reference `seqSuggPol' on page 9 undefined on input line 285.
+
+
+LaTeX Warning: Reference `modOnLine' on page 9 undefined on input line 287.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 9 undefined on input line 289.
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.295 
-      ] [10] [11]
+      ]
+
+LaTeX Warning: Reference `appCalendar' on page 10 undefined on input line 296.
+
+
+LaTeX Warning: Reference `EpidemicsWithoutControlS' on page 10 undefined on inp
+ut line 296.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndNoSchoolS' on page 10 undefined on in
+put line 296.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndNoSchoolHM' on page 10 undefined on i
+nput line 296.
+
+
+LaTeX Warning: Reference `seqSuggPol' on page 10 undefined on input line 300.
+
+
+LaTeX Warning: Reference `cf2' on page 10 undefined on input line 307.
+
+
+LaTeX Warning: Reference `cf3' on page 10 undefined on input line 307.
+
+
+LaTeX Warning: Reference `cf4' on page 10 undefined on input line 307.
+
+[10]
+
+LaTeX Warning: Reference `f1' on page 11 undefined on input line 309.
+
+
+LaTeX Warning: Reference `f2' on page 11 undefined on input line 311.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 11 undefined on input line 322.
+
+
+LaTeX Warning: Reference `seqSuggPol' on page 11 undefined on input line 326.
+
+
+LaTeX Warning: Reference `keyResultsS' on page 11 undefined on input line 327.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 11 undefined on input line 327.
+
+
+LaTeX Warning: Reference `c7' on page 11 undefined on input line 327.
+
+
+LaTeX Warning: Reference `EpidemicsFWsS' on page 11 undefined on input line 328
+.
+
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileS' on page 11 undefined on input
+ line 329.
+
+
+Package natbib Warning: Citation `doi:10.1111/ijcp.13674' on page 11 undefined 
+on input line 331.
+
+[11]
+
+LaTeX Warning: Reference `appHowItWorks' on page 12 undefined on input line 360
+.
+
+
+LaTeX Warning: Reference `seqSuggPol' on page 12 undefined on input line 360.
+
+
+LaTeX Warning: Reference `0' on page 12 undefined on input line 363.
+
+
+LaTeX Warning: Reference `4a' on page 12 undefined on input line 363.
+
+
+LaTeX Warning: Reference `4b' on page 12 undefined on input line 363.
+
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 373.
 
+
+LaTeX Warning: Reference `2' on page 12 undefined on input line 376.
+
+
+LaTeX Warning: Reference `appHowItWorks' on page 12 undefined on input line 378
+.
+
 [12]
 
-LaTeX Warning: File `no3a.png' not found on input line 437.
+LaTeX Warning: Reference `c1' on page 13 undefined on input line 384.
 
 
-./_baseABModelCOVID-19Diffusion.tex:437: Package pdftex.def Error: File `no3a.p
-ng' not found: using draft setting.
+LaTeX Warning: Reference `c2' on page 13 undefined on input line 384.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.437 ...degraphics[width=0.7\textwidth]{no3a.png}
-                                                   % no control case 1093221...
 
-? 
+LaTeX Warning: Reference `c3' on page 13 undefined on input line 384.
+
+
+Overfull \hbox (9.36792pt too wide) in paragraph at lines 384--385
+\T1/cmr/m/n/10.95 The cases of Sec-tions [], [], and [] re-port sim-u-la-tion w
+ith-out any kind of non-pharmaceutical
+ []
+
+
+LaTeX Warning: Reference `3a' on page 13 undefined on input line 390.
+
+
+LaTeX Warning: Reference `3b' on page 13 undefined on input line 390.
+
+<no3a.png, id=132, 982.67125pt x 552.0625pt>
+File: no3a.png Graphic file (type png)
+<use no3a.png>
+Package pdftex.def Info: no3a.png  used on input line 437.
+(pdftex.def)             Requested size: 301.00192pt x 169.09904pt.
 [13]
+<no3b.png, id=140, 972.63374pt x 552.0625pt>
+File: no3b.png Graphic file (type png)
+<use no3b.png>
+Package pdftex.def Info: no3b.png  used on input line 445.
+(pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
 
-LaTeX Warning: File `no3b.png' not found on input line 445.
+
+LaTeX Warning: Reference `4a' on page 14 undefined on input line 454.
 
 
-./_baseABModelCOVID-19Diffusion.tex:445: Package pdftex.def Error: File `no3b.p
-ng' not found: using draft setting.
+LaTeX Warning: Reference `4b' on page 14 undefined on input line 454.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 ...degraphics[width=0.7\textwidth]{no3b.png}
-                                                   % no control case 1093221...
-
-? 
 [14pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.450 
-      ]
+l.455 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
 
-LaTeX Warning: File `no4a.png' not found on input line 458.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.455 
+       <./no3a.png> <./no3b.png>]
+<no4a.png, id=150, 982.67125pt x 552.0625pt>
+File: no4a.png Graphic file (type png)
+<use no4a.png>
+Package pdftex.def Info: no4a.png  used on input line 458.
+(pdftex.def)             Requested size: 301.00192pt x 169.09904pt.
+<no4b.png, id=151, 972.63374pt x 552.0625pt>
+File: no4b.png Graphic file (type png)
+<use no4b.png>
+Package pdftex.def Info: no4b.png  used on input line 467.
+(pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
 
 
-./_baseABModelCOVID-19Diffusion.tex:458: Package pdftex.def Error: File `no4a.p
-ng' not found: using draft setting.
+LaTeX Warning: Reference `5a' on page 15 undefined on input line 477.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.458 ...degraphics[width=0.7\textwidth]{no4a.png}
-                                                  % no control case 12518034...
 
-? 
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+LaTeX Warning: Reference `5b' on page 15 undefined on input line 477.
+
+
+LaTeX Warning: Reference `lineStyle' on page 15 undefined on input line 477.
+
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.464 
-      ]
+l.478 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5}) has been already used, duplicate ignored
 
-LaTeX Warning: File `no4b.png' not found on input line 467.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.478 
+       <./no4a.png> <./no4b.png>]
+<no5a.png, id=163, 982.67125pt x 552.0625pt>
+File: no5a.png Graphic file (type png)
+<use no5a.png>
+Package pdftex.def Info: no5a.png  used on input line 483.
+(pdftex.def)             Requested size: 301.00192pt x 169.09904pt.
+<no5b.png, id=164, 972.63374pt x 552.0625pt>
+File: no5b.png Graphic file (type png)
+<use no5b.png>
+Package pdftex.def Info: no5b.png  used on input line 491.
+(pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
 
 
-./_baseABModelCOVID-19Diffusion.tex:467: Package pdftex.def Error: File `no4b.p
-ng' not found: using draft setting.
+LaTeX Warning: Reference `c4' on page 16 undefined on input line 499.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.467 ...degraphics[width=0.7\textwidth]{no4b.png}
-                                                  % no control case 12518034...
 
-? 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+LaTeX Warning: Reference `c5' on page 16 undefined on input line 499.
+
+
+LaTeX Warning: Reference `c6' on page 16 undefined on input line 499.
+
+
+LaTeX Warning: Reference `AppCalendar' on page 16 undefined on input line 499.
+
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.473 
-      ]
-
-LaTeX Warning: File `no5a.png' not found on input line 483.
-
-
-./_baseABModelCOVID-19Diffusion.tex:483: Package pdftex.def Error: File `no5a.p
-ng' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.483 ...degraphics[width=0.7\textwidth]{no5a.png}
-                                                  % no control case 11379074...
-
-? 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
- has been already used, duplicate ignored
+l.501 \subsubsection
+                    {Case 4, again the importance of workplaces (brown) and ...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.488 
-      ]
+l.501 \subsubsection
+                    {Case 4, again the importance of workplaces (brown) and ...
+ <./no5a.png> <./no5b.png>]
 
-LaTeX Warning: File `no5b.png' not found on input line 491.
-
-
-./_baseABModelCOVID-19Diffusion.tex:491: Package pdftex.def Error: File `no5b.p
-ng' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.491 ...degraphics[width=0.7\textwidth]{no5b.png}
-                                                  % no control case 11379074...
-
-? 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.496 
-      ]
-
-LaTeX Warning: Reference `AppCalendar' on page 19 undefined on input line 499.
+LaTeX Warning: Reference `appCalendar' on page 17 undefined on input line 504.
 
 
-LaTeX Warning: File `with6a.png' not found on input line 510.
+LaTeX Warning: Reference `6a' on page 17 undefined on input line 505.
 
 
-./_baseABModelCOVID-19Diffusion.tex:510: Package pdftex.def Error: File `with6a
-.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.510 ...graphics[width=0.7\textwidth]{with6a.png}
-                                                  % with control case 268411...
-
-? 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.515 
-      ]
-
-LaTeX Warning: File `with6b.png' not found on input line 518.
+LaTeX Warning: Reference `6b' on page 17 undefined on input line 505.
 
 
-./_baseABModelCOVID-19Diffusion.tex:518: Package pdftex.def Error: File `with6b
-.png' not found: using draft setting.
+LaTeX Warning: Reference `6b' on page 17 undefined on input line 505.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.518 ...graphics[width=0.7\textwidth]{with6b.png}
-                                                  % with control case 268411...
-
-? 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+<with6a.png, id=174, 971.63pt x 552.0625pt>
+File: with6a.png Graphic file (type png)
+<use with6a.png>
+Package pdftex.def Info: with6a.png  used on input line 510.
+(pdftex.def)             Requested size: 301.00192pt x 171.01967pt.
+<with6b.png, id=175, 972.63374pt x 552.0625pt>
+File: with6b.png Graphic file (type png)
+<use with6b.png>
+Package pdftex.def Info: with6b.png  used on input line 518.
+(pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.523 
-      ]
-
-LaTeX Warning: File `with7a.png' not found on input line 531.
-
-
-./_baseABModelCOVID-19Diffusion.tex:531: Package pdftex.def Error: File `with7a
-.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.531 ...graphics[width=0.7\textwidth]{with7a.png}
-                                                  % with control case 272211...
-
-? 
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.536 
-      ]
-
-LaTeX Warning: File `with7b.png' not found on input line 539.
-
-
-./_baseABModelCOVID-19Diffusion.tex:539: Package pdftex.def Error: File `with7b
-.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.539 ...graphics[width=0.7\textwidth]{with7b.png}
-                                                  % with control case 272211...
-
-? 
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+       <./with6a.png>]
+<with7a.png, id=184, 982.67125pt x 552.0625pt>
+File: with7a.png Graphic file (type png)
+<use with7a.png>
+Package pdftex.def Info: with7a.png  used on input line 531.
+(pdftex.def)             Requested size: 301.00192pt x 169.09904pt.
+<with7b.png, id=185, 972.63374pt x 552.0625pt>
+File: with7b.png Graphic file (type png)
+<use with7b.png>
+Package pdftex.def Info: with7b.png  used on input line 539.
+(pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.544 
-      ]
-
-LaTeX Warning: File `with8a.png' not found on input line 553.
-
-
-./_baseABModelCOVID-19Diffusion.tex:553: Package pdftex.def Error: File `with8a
-.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.553 ...graphics[width=0.7\textwidth]{with8a.png}
-                                                  % with control case 473323...
-
-? 
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.558 
-      ]
+l.544 
+       <./with6b.png> <./with7a.png>]
 
-LaTeX Warning: File `with8b.png' not found on input line 561.
+LaTeX Warning: Reference `8b' on page 19 undefined on input line 549.
 
-
-./_baseABModelCOVID-19Diffusion.tex:561: Package pdftex.def Error: File `with8b
-.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.561 ...graphics[width=0.7\textwidth]{with8b.png}
-                                                  % with control case 473323...
-
-? 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
+<with8a.png, id=195, 984.67876pt x 552.0625pt>
+File: with8a.png Graphic file (type png)
+<use with8a.png>
+Package pdftex.def Info: with8a.png  used on input line 553.
+(pdftex.def)             Requested size: 301.00192pt x 168.75366pt.
+<with8b.png, id=196, 972.63374pt x 552.0625pt>
+File: with8b.png Graphic file (type png)
+<use with8b.png>
+Package pdftex.def Info: with8b.png  used on input line 561.
+(pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.566 
-      ]
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+12}) has been already used, duplicate ignored
 
-LaTeX Warning: File `withShort0.png' not found on input line 580.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.566 
+       <./with7b.png> <./with8a.png>]
+
+LaTeX Warning: Reference `c7' on page 20 undefined on input line 569.
 
 
-./_baseABModelCOVID-19Diffusion.tex:580: Package pdftex.def Error: File `withSh
-ort0.png' not found: using draft setting.
+LaTeX Warning: Reference `c8' on page 20 undefined on input line 569.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.580 ...hics[width=0.7\textwidth]{withShort0.png}
-                                                  %using SIsaR 9.4.2 as is (...
 
-? 
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
+LaTeX Warning: Reference `c9' on page 20 undefined on input line 569.
+
+
+LaTeX Warning: Reference `appCalendar' on page 20 undefined on input line 569.
+
+
+LaTeX Warning: Reference `0' on page 20 undefined on input line 576.
+
+<withShort0.png, id=207, 961.5925pt x 552.0625pt>
+File: withShort0.png Graphic file (type png)
+<use withShort0.png>
+Package pdftex.def Info: withShort0.png  used on input line 580.
+(pdftex.def)             Requested size: 301.00192pt x 172.81393pt.
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.585 
-      ] [26pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.14}) has been already used, duplicate ignored
+       <./with8b.png>] [21pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.598 \begin{quote}
-                   ]
+l.607 
+       <./withShort0.png>]
 File: withShort1.png Graphic file (type png)
 <use withShort1.png>
 Package pdftex.def Info: withShort1.png  used on input line 612.
 (pdftex.def)             Requested size: 301.00192pt x 168.41672pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.15
-}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.620 
-      ]
+
+LaTeX Warning: Reference `1' on page 22 undefined on input line 619.
+
+
+LaTeX Warning: Reference `seqSuggPol' on page 22 undefined on input line 619.
+
+
+LaTeX Warning: Reference `appCalendar' on page 22 undefined on input line 619.
+
+
+LaTeX Warning: Reference `1A' on page 22 undefined on input line 619.
+
+
+LaTeX Warning: Reference `1B' on page 22 undefined on input line 619.
+
+
+LaTeX Warning: Reference `EpidemicsFWsS' on page 22 undefined on input line 619
+.
+
 File: withShort1A.png Graphic file (type png)
 <use withShort1A.png>
 Package pdftex.def Info: withShort1A.png  used on input line 623.
 (pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.628 
+      ]
 File: withShort1A200.png Graphic file (type png)
 <use withShort1A200.png>
 Package pdftex.def Info: withShort1A200.png  used on input line 631.
 (pdftex.def)             Requested size: 301.00192pt x 170.84277pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.16
-}) has been already used, duplicate ignored
+
+
+LaTeX Warning: Reference `1B' on page 23 undefined on input line 637.
+
+
+LaTeX Warning: Reference `app1000run' on page 23 undefined on input line 637.
+
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.636 
+l.638 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+17}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.638 
       ]
 File: withShort1B.png Graphic file (type png)
 <use withShort1B.png>
@@ -791,130 +1011,149 @@ Package pdftex.def Info: withShort1B.png  used on input line 641.
 (pdftex.def)             Requested size: 301.00192pt x 169.96669pt.
 
 
-LaTeX Warning: File `withShort2.png' not found on input line 656.
+LaTeX Warning: Reference `2' on page 24 undefined on input line 652.
 
-
-./_baseABModelCOVID-19Diffusion.tex:656: Package pdftex.def Error: File `withSh
-ort2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.656 ...hics[width=0.7\textwidth]{withShort2.png}
-                                                  %using SIsaR 9.4.2 as is (...
-
-? 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
+<withShort2.png, id=241, 961.5925pt x 555.07375pt>
+File: withShort2.png Graphic file (type png)
+<use withShort2.png>
+Package pdftex.def Info: withShort2.png  used on input line 656.
+(pdftex.def)             Requested size: 301.00192pt x 173.75655pt.
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.660 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.18}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.660 \end{figure}
-                  ] [30pdfTeX warning (ext4): destination with the same identif
-ier (name{figure.19}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.671 
+l.661 
       ]
 
-LaTeX Warning: File `HM30_readRunResults1k_noControl_plusHMlog.png' not found o
-n input line 707.
+LaTeX Warning: Reference `EpidemicsWithoutControlT' on page 25 undefined on inp
+ut line 677.
 
 
-./_baseABModelCOVID-19Diffusion.tex:707: Package pdftex.def Error: File `HM30_r
-eadRunResults1k_noControl_plusHMlog.png' not found: using draft setting.
+LaTeX Warning: Reference `EpidemicsWithoutControlHM' on page 25 undefined on in
+put line 677.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.707 ...readRunResults1k_noControl_plusHMlog.png}
-                                                  
-? 
-[31pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.19}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.678 
+       <./withShort2.png>]
+
+LaTeX Warning: Reference `keyResultsS' on page 26 undefined on input line 679.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 26 undefined on input line 679.
+
+<HM30_readRunResults1k_noControl_plusHMlog.png, id=261, 506.89375pt x 302.12875
+pt>
+File: HM30_readRunResults1k_noControl_plusHMlog.png Graphic file (type png)
+<use HM30_readRunResults1k_noControl_plusHMlog.png>
+Package pdftex.def Info: HM30_readRunResults1k_noControl_plusHMlog.png  used on
+ input line 707.
+(pdftex.def)             Requested size: 301.00192pt x 179.41154pt.
+
+LaTeX Warning: Reference `appCalendar' on page 26 undefined on input line 716.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndNoSchoolT' on page 26 undefined on in
+put line 716.
+
+
+LaTeX Warning: Reference `EpidemicsWithoutControlT' on page 26 undefined on inp
+ut line 716.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndNoSchoolT' on page 26 undefined on in
+put line 716.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndNoSchoolT' on page 26 undefined on in
+put line 716.
+
+[26pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.712 
-      ] [32pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.20}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.744 
-      ]
-
-LaTeX Warning: File `HM30_readRunResults1k_withControl_plusHMlog.png' not found
- on input line 748.
-
-
-./_baseABModelCOVID-19Diffusion.tex:748: Package pdftex.def Error: File `HM30_r
-eadRunResults1k_withControl_plusHMlog.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.748 ...adRunResults1k_withControl_plusHMlog.png}
-                                                  
-? 
-[33pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.762 
+l.717 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-21}) has been already used, duplicate ignored
+20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.762 
+l.717 
+       <./HM30_readRunResults1k_noControl_plusHMlog.png>]
+
+LaTeX Warning: Reference `keyResultsS' on page 27 undefined on input line 718.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndNoSchoolHM' on page 27 undefined on i
+nput line 718.
+
+<HM30_readRunResults1k_withControl_plusHMlog.png, id=270, 506.89375pt x 314.173
+75pt>
+File: HM30_readRunResults1k_withControl_plusHMlog.png Graphic file (type png)
+<use HM30_readRunResults1k_withControl_plusHMlog.png>
+Package pdftex.def Info: HM30_readRunResults1k_withControl_plusHMlog.png  used 
+on input line 748.
+(pdftex.def)             Requested size: 301.00192pt x 186.56416pt.
+[27pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.753 
       ]
 
-LaTeX Warning: File `HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlo
-g.png' not found on input line 790.
+LaTeX Warning: Reference `EpidemicsWithAndSchoolT' on page 28 undefined on inpu
+t line 761.
 
 
-./_baseABModelCOVID-19Diffusion.tex:790: Package pdftex.def Error: File `HM30_r
-eadRunResults1k_basicControl_schoolOpenSept_plusHMlog.png' not found: using dra
-ft setting.
+LaTeX Warning: Reference `EpidemicsNoAllFragileFacsOnSchOnS' on page 28 undefin
+ed on input line 761.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.790 ...asicControl_schoolOpenSept_plusHMlog.png}
-                                                  
-? 
-[34pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
-has been already used, duplicate ignored
+<HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png, id=277, 506.8
+9375pt x 314.17375pt>
+File: HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png Graphic f
+ile (type png)
+<use HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png>
+Package pdftex.def Info: HM30_readRunResults1k_basicControl_schoolOpenSept_plus
+HMlog.png  used on input line 790.
+(pdftex.def)             Requested size: 301.00192pt x 186.56416pt.
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.795 
-      ]
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.795 
+       <./HM30_readRunResults1k_withControl_plusHMlog.png>]
 Overfull \hbox (10.3224pt too wide) in paragraph at lines 798--798
 []\T1/cmr/bx/n/12 Epidemics with im-me-di-ate stop of frag-ile work-ers, non-ph
 armaceutical
  []
 
-[35pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
-) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.827 
-      ]
+LaTeX Warning: Reference `EpidemicsFWsT' on page 29 undefined on input line 802
+.
+
+
+LaTeX Warning: Reference `EpidemicsFWsHM' on page 29 undefined on input line 80
+2.
+
+
+LaTeX Warning: Reference `seqSuggPol' on page 29 undefined on input line 802.
+
+
+LaTeX Warning: Reference `c7' on page 29 undefined on input line 802.
+
 
 LaTeX Warning: File `HM30_readRunResults1k_with_sFW_at20_plusHMlog.png' not fou
 nd on input line 831.
@@ -930,19 +1169,31 @@ Type  H <return>  for immediate help.
 l.831 ...RunResults1k_with_sFW_at20_plusHMlog.png}
                                                   
 ? 
-[36pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
-has been already used, duplicate ignored
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.836 
-      ]
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.836 
+       <./HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png>]
 Overfull \hbox (20.49776pt too wide) in paragraph at lines 837--837
 []\T1/cmr/bx/n/12 Epidemics with ab-so-lute iso-la-tion of nurs-ing homes, non-
 pharmaceutical
  []
 
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.23}
+
+LaTeX Warning: Reference `keyResultsS' on page 30 undefined on input line 840.
+
+
+LaTeX Warning: Reference `keyResultsT' on page 30 undefined on input line 840.
+
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.23}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -965,13 +1216,13 @@ Type  H <return>  for immediate help.
 l.871 ...sults1k_with_NH_OP_BZ_at20_plusHMlog.png}
                                                   
 ? 
-[38pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
+[31pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.876 
-      ] [39pdfTeX warning (ext4): destination with the same identifier (name{fi
+      ] [32pdfTeX warning (ext4): destination with the same identifier (name{fi
 gure.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -993,14 +1244,35 @@ Type  H <return>  for immediate help.
 l.911 ...unResults1k_with_Frag_at20_plusHMlog.png}
                                                   
 ? 
-[40pdfTeX warning (ext4): destination with the same identifier (name{table.7}) 
+[33pdfTeX warning (ext4): destination with the same identifier (name{table.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.916 
-      ] [41pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.25}) has been already used, duplicate ignored
+      ]
+
+LaTeX Warning: Reference `EpidemicsFWsS' on page 34 undefined on input line 921
+.
+
+
+LaTeX Warning: Reference `EpidemicsNHsS' on page 34 undefined on input line 921
+.
+
+
+LaTeX Warning: Reference `EpidemicsFragileS' on page 34 undefined on input line
+ 921.
+
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileT' on page 34 undefined on input
+ line 921.
+
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileHM' on page 34 undefined on inpu
+t line 921.
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.25}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1022,14 +1294,19 @@ Type  H <return>  for immediate help.
 l.951 ...ults1k_with_NoAllFrag_at20_plusHMlog.png}
                                                   
 ? 
-[42pdfTeX warning (ext4): destination with the same identifier (name{table.8}) 
+[35pdfTeX warning (ext4): destination with the same identifier (name{table.8}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.956 
-      ] [43pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.26}) has been already used, duplicate ignored
+      ]
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileS' on page 36 undefined on input
+ line 962.
+
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.26}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1051,14 +1328,23 @@ Type  H <return>  for immediate help.
 l.991 ...th_NoAllFrag_openFacs_at20_plusHMlog.png}
                                                   
 ? 
-[44pdfTeX warning (ext4): destination with the same identifier (name{table.9}) 
+[37pdfTeX warning (ext4): destination with the same identifier (name{table.9}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.996 
-      ] [45pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.27}) has been already used, duplicate ignored
+      ]
+
+LaTeX Warning: Reference `EpidemicsNoAllFragileFacsOnS' on page 38 undefined on
+ input line 1003.
+
+
+LaTeX Warning: Reference `EpidemicsWithAndSchoolS' on page 38 undefined on inpu
+t line 1003.
+
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.27}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1080,32 +1366,59 @@ Type  H <return>  for immediate help.
 l.1032 ...enFacs_at20_openSchoolSep_plusHMlog.png}
                                                   
 ? 
-[46pdfTeX warning (ext4): destination with the same identifier (name{table.10})
+[39pdfTeX warning (ext4): destination with the same identifier (name{table.10})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1037 
-       ] [47pdfTeX warning (ext4): destination with the same identifier (name{f
+       ] [40pdfTeX warning (ext4): destination with the same identifier (name{f
 igure.28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1055 \item t
-              he ID of the agent receiving the contagion;] [48]
-(./_baseABModelCOVID-19Diffusion.bbl [49])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1121.
- [50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1121.
+              he ID of the agent receiving the contagion;] [41]
+(./_baseABModelCOVID-19Diffusion.bbl [42])
 
-(./_baseABModelCOVID-19Diffusion.aux)
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1121.
+[43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1121.
+ (./_baseABModelCOVID-19Diffusion.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+./_baseABModelCOVID-19Diffusion.aux:199: Package natbib Error: Bibliography not
+ compatible with author-year citations.
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+? 
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1121.
 
-Package rerunfilecheck Info: File `_baseABModelCOVID-19Diffusion.out' has not c
-hanged.
-(rerunfilecheck)             Checksum: 69632AE5F50B1D0E2F58C2CADC386084;4063.
 
+
+Package rerunfilecheck Warning: File `_baseABModelCOVID-19Diffusion.out' has ch
+anged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `_baseABModelCOVID-19Diffusion.out':
+
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  69632AE5F50B1D0E2F58C2CADC386084;4063.
 
 LaTeX Warning: There were undefined references.
 
@@ -1115,38 +1428,39 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1121.
  ) 
 Here is how much of TeX's memory you used:
- 8079 strings out of 480608
- 126517 string characters out of 5903631
- 395812 words of memory out of 5000000
- 23591 multiletter control sequences out of 15000+600000
- 556859 words of font info for 85 fonts, out of 8000000 for 9000
+ 7859 strings out of 480608
+ 122093 string characters out of 5903631
+ 384900 words of memory out of 5000000
+ 23383 multiletter control sequences out of 15000+600000
+ 557635 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,10n,45p,1231b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,1230b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2020/texmf-dist/f
-onts/type1/public/cm-super/sftt1095.pfb>
-Output written on _baseABModelCOVID-19Diffusion.pdf (50 pages, 554355 bytes).
+/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/cm-super/sftt1095.pfb>
+Output written on _baseABModelCOVID-19Diffusion.pdf (43 pages, 958730 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 683 compressed objects within 7 object streams
- 174 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 526 PDF objects out of 1000 (max. 8388607)
+ 414 compressed objects within 5 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
