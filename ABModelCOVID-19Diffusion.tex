@@ -617,7 +617,108 @@ The quotas apply to each group's number of components to determine the number of
 The numbers of people in each group are those of the model at \url{https://terna.to.it/simul/SIsaR.html}  and are related to Piedmont. The daily vaccinations quantities are similar to those of Piedmont, reduced by 50\% to take into account the second dose.
  
 How we reason?
-@@@
+
+\begin{itemize}
+
+\item
+Considering the \emph{plain} option adopted in Table \ref{quotaTable1} and remembering that the time-sequence in daily actions is the winner, we will primarily vaccinate the left column groups to move gradually to other columns: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
+
+
+ 
+% table prepared using https://www.tablesgenerator.com
+
+% files vaccinations1_05.csv vaccinations1_0.csv vaccinations1_05.csv in /Users/pt/Desktop/SIsaR/0.9.6/
+\begin{table}[t]
+\centering
+\begin{tabular}{ccccccccc}
+\hline\noalign{\smallskip}
+From day & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373      & 5           & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+433      & 10         & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+493      & 10         & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+553      & 10         & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+613      & 20         & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+738      & end     \\ 
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{From the day of the first column, considering the quantity of the second column (000), the vaccination of each group follows the quota of the related columns}
+\label{plainQuotasTable}
+\end{table}
+
+\item
+Considering the \emph{wise} option adopted in Table \ref{quotaTable2} and remembering that the time-sequence in daily actions is the winner, we will primarily vaccinate the left column groups to move gradually to other columns, but postponing group \emph{g4} (regular workers), \emph{g6} (regular people), and \emph{g7} (young people).
+
+
+% files vaccinations2_05.csv vaccinations2_0.csv vaccinations2_05.csv in /Users/pt/Desktop/SIsaR/0.9.6/
+\begin{table}[t]
+\centering
+\begin{tabular}{ccccccccc}
+\hline\noalign{\smallskip}
+From day & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373      & 5           & 0.1        & 0.1        & 0.1        & 0.0        & 0.1        & 0.0        & 0.0        \\
+433      & 10         & 0.1        & 0.1        & 0.1        & 0.0        & 0.1        & 0.0        & 0.0        \\
+493      & 10         & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+553      & 10         & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+613      & 20         & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        & 0.1        \\
+738      & end     \\ 
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{From the day of the first column, considering the quantity of the second column (1000), the vaccination of each group follows the quota of the related columns}
+\label{wiseQuotasTable}
+\end{table}
+
+\end{itemize}
+
+In the internal calendar of the model, day 373 is Feb. \nth{12}, 2021, which is effectively the starting point of the vaccinations in the region; the endpoint, day 738, is Feb. \nth{10}, 2022, two years after the conventional starting point of the epidemic in this model.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vaccination experiments}
+\label{experiments}
+
+
+
+We run the simulations of the epidemic in Piedmont in batches of ten thousand executions. The batches are different as initial hypotheses.\footnote{At \url{https://terna.to.it/simul/TernaCCA20210329.pdf} some examples.} Considering the adoption of the government non-pharmaceutical measures, we search in those batches for realizations of sequences similar to the actual events occurred in Piedmont.
+
+In Fig. \ref{piedIni}, we have the time series of the first part of Piedmont's actual epidemic, with some crucial points. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted, but after the 2020 Summer, with the adoption of more generalized tests, also asymptomatic patients are included. The model instead has two categories of positive agents. (In Fig. \ref{piedNow} the time series cover whole the period.)
+
+Following the dynamic of the data in Fig. \ref{piedIni}, we search within the simulation batch for  cases with both:
+\begin{itemize}
+\item [(i)] numbers of infected persons quite similar at\footnote{With \emph{cp}, we indicate the internal check points of the simulation program. In Fig. \ref{piedIni} we also report the number of days from the beginning of the epidemic for each check point.}  \verb|cp2| and at \verb|cp3|; besides, numbers not too different from those of the figure;
+
+\item [(ii)] the number of infected persons at \verb|cp4| has to be significantly greater than those at the previous check point.
+
+\end{itemize}
+
+In a lot of cases, epidemics satisfying condition (i) fail to match condition (ii); both the situations happen only in less than the 1.5\% of the instances in the batch of ten thousand epidemic.\footnote{Again, see  \url{https://terna.to.it/simul/TernaCCA20210329.pdf}.} We can conclude that the second wave registered in Piedmont after the Summer stability is due to new infected agents coming from outside and restarting the contagion process, as in the batch represented in the slides at the given address.
+
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{andamento900annotato.jpg}
+
+\caption{Time series of the actual epidemic in Piedmont with some crucial points} 
+\label{piedIni}
+\end{figure}
+
+
+Other critical points in our analysis are the day on which the vaccination campaign starts, 373 of the simulation (Feb. \nth{12}, 2021), and the day of the effectiveness of the initial vaccinations, 40 days later, day 413 (Mar. \nth{22}, 2021). At those dates, within the simulations, we can find either the presence of many infected agents or of few ones, as effectively was the situation in Piedmont.\footnote{We simulate the vaccination campaigns with the GAs BehaviorSearch program, with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.}
+
+
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{andamento900.jpg}
+
+\caption{Time series of the actual epidemic updated to the beginning of May} 
+\label{piedNow}
+\end{figure}
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -635,6 +736,8 @@ Internal contents in Sections \ref{seqSuggPol}.
 \ref{EpidemicsNoAllFragileS}.
 
 An interesting reference is \cite{doi:10.1111/ijcp.13674}, where \ldots WORKS IN PROGRESS.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -18,27 +18,28 @@
 \BOOKMARK [1][-]{section.0.7}{Applying Genetic Algorithms \(GA\)}{section*.1}% 18
 \BOOKMARK [2][-]{subsection.0.7.1}{Population groups}{section.0.7}% 19
 \BOOKMARK [2][-]{subsection.0.7.2}{Vaccination quantities}{section.0.7}% 20
-\BOOKMARK [1][-]{section.0.8}{Cost-benefit analysis of the of interventions}{section*.1}% 21
-\BOOKMARK [1][-]{section.0.9}{Summarizing}{section*.1}% 22
-\BOOKMARK [1][-]{section*.2}{Acknowledgements}{section*.1}% 23
-\BOOKMARK [1][-]{section.0.10}{Appendix: Analyzing examples of contagion sequences}{section*.1}% 24
-\BOOKMARK [2][-]{subsection.0.10.1}{How to analyze the figures of this section}{section.0.10}% 25
-\BOOKMARK [2][-]{subsection.0.10.2}{Epidemics without containment measures}{section.0.10}% 26
-\BOOKMARK [2][-]{subsection.0.10.3}{Cases with containment measures}{section.0.10}% 27
-\BOOKMARK [2][-]{subsection.0.10.4}{Short running epidemic, with containment measures}{section.0.10}% 28
-\BOOKMARK [1][-]{section.0.11}{Appendix: batches of 1,000 simulated experiments generating data for policy proposals}{section*.1}% 29
-\BOOKMARK [2][-]{subsection.0.11.1}{Epidemics without containment measures}{section.0.11}% 30
-\BOOKMARK [2][-]{subsection.0.11.2}{Epidemics with basic non-pharmaceutical containment measures, no school in September 2020}{section.0.11}% 31
-\BOOKMARK [2][-]{subsection.0.11.3}{Epidemics with immediate stop of fragile workers, non-pharmaceutical containment measures, no school in September 2020}{section.0.11}% 32
-\BOOKMARK [2][-]{subsection.0.11.4}{Epidemics with absolute isolation of nursing homes, non-pharmaceutical containment measures, no school in September 2020}{section.0.11}% 33
-\BOOKMARK [2][-]{subsection.0.11.5}{Epidemics stopping fragile people, non-pharmaceutical containment measures, no school in September 2020}{section.0.11}% 34
-\BOOKMARK [2][-]{subsection.0.11.6}{Epidemics excluding fragility of any type, non-pharmaceutical containment measures, no school in September 2020}{section.0.11}% 35
-\BOOKMARK [2][-]{subsection.0.11.7}{Epidemics excluding fragility of any type, non-pharmaceutical containment measures, factories open, no school in September 2020}{section.0.11}% 36
-\BOOKMARK [2][-]{subsection.0.11.8}{Epidemics excluding fragility of any type, non-pharmaceutical containment measures, factories open, schools open in September 2020}{section.0.11}% 37
-\BOOKMARK [1][-]{section.0.12}{Appendix: How the visualization of contagion sequences works}{section*.1}% 38
-\BOOKMARK [2][-]{subsection.0.12.1}{The data}{section.0.12}% 39
-\BOOKMARK [2][-]{subsection.0.12.2}{The plot}{section.0.12}% 40
-\BOOKMARK [2][-]{subsection.0.12.3}{The colors}{section.0.12}% 41
-\BOOKMARK [1][-]{section.0.13}{Appendix: The calendar}{section*.1}% 42
-\BOOKMARK [1][-]{section*.3}{References}{section*.1}% 43
+\BOOKMARK [1][-]{section.0.8}{Vaccination experiments}{section*.1}% 21
+\BOOKMARK [1][-]{section.0.9}{Cost-benefit analysis of the of interventions}{section*.1}% 22
+\BOOKMARK [1][-]{section.0.10}{Summarizing}{section*.1}% 23
+\BOOKMARK [1][-]{section*.2}{Acknowledgements}{section*.1}% 24
+\BOOKMARK [1][-]{section.0.11}{Appendix: Analyzing examples of contagion sequences}{section*.1}% 25
+\BOOKMARK [2][-]{subsection.0.11.1}{How to analyze the figures of this section}{section.0.11}% 26
+\BOOKMARK [2][-]{subsection.0.11.2}{Epidemics without containment measures}{section.0.11}% 27
+\BOOKMARK [2][-]{subsection.0.11.3}{Cases with containment measures}{section.0.11}% 28
+\BOOKMARK [2][-]{subsection.0.11.4}{Short running epidemic, with containment measures}{section.0.11}% 29
+\BOOKMARK [1][-]{section.0.12}{Appendix: batches of 1,000 simulated experiments generating data for policy proposals}{section*.1}% 30
+\BOOKMARK [2][-]{subsection.0.12.1}{Epidemics without containment measures}{section.0.12}% 31
+\BOOKMARK [2][-]{subsection.0.12.2}{Epidemics with basic non-pharmaceutical containment measures, no school in September 2020}{section.0.12}% 32
+\BOOKMARK [2][-]{subsection.0.12.3}{Epidemics with immediate stop of fragile workers, non-pharmaceutical containment measures, no school in September 2020}{section.0.12}% 33
+\BOOKMARK [2][-]{subsection.0.12.4}{Epidemics with absolute isolation of nursing homes, non-pharmaceutical containment measures, no school in September 2020}{section.0.12}% 34
+\BOOKMARK [2][-]{subsection.0.12.5}{Epidemics stopping fragile people, non-pharmaceutical containment measures, no school in September 2020}{section.0.12}% 35
+\BOOKMARK [2][-]{subsection.0.12.6}{Epidemics excluding fragility of any type, non-pharmaceutical containment measures, no school in September 2020}{section.0.12}% 36
+\BOOKMARK [2][-]{subsection.0.12.7}{Epidemics excluding fragility of any type, non-pharmaceutical containment measures, factories open, no school in September 2020}{section.0.12}% 37
+\BOOKMARK [2][-]{subsection.0.12.8}{Epidemics excluding fragility of any type, non-pharmaceutical containment measures, factories open, schools open in September 2020}{section.0.12}% 38
+\BOOKMARK [1][-]{section.0.13}{Appendix: How the visualization of contagion sequences works}{section*.1}% 39
+\BOOKMARK [2][-]{subsection.0.13.1}{The data}{section.0.13}% 40
+\BOOKMARK [2][-]{subsection.0.13.2}{The plot}{section.0.13}% 41
+\BOOKMARK [2][-]{subsection.0.13.3}{The colors}{section.0.13}% 42
+\BOOKMARK [1][-]{section.0.14}{Appendix: The calendar}{section*.1}% 43
 \BOOKMARK [1][-]{section*.3}{References}{section*.1}% 44
+\BOOKMARK [1][-]{section*.3}{References}{section*.1}% 45

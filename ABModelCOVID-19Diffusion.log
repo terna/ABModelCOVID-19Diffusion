@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  16 JUN 2021 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  17 JUN 2021 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -864,7 +864,7 @@ LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 137.
  [3] [4]
-<SIsaR_outline.png, id=245, 2569.6pt x 1515.6625pt>
+<SIsaR_outline.png, id=249, 2569.6pt x 1515.6625pt>
 File: SIsaR_outline.png Graphic file (type png)
 <use SIsaR_outline.png>
 Package pdftex.def Info: SIsaR_outline.png  used on input line 190.
@@ -884,266 +884,279 @@ m/n/10 ([][]\T1/ntxtt/m/n/10 %PeopleNot[]\T1/ntxtlf/m/n/10 ) de-ter-mines,
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 319.
  [8] [9]
-<withShort1.png, id=333, 986.68625pt x 552.0625pt>
+<withShort1.png, id=337, 986.68625pt x 552.0625pt>
 File: withShort1.png Graphic file (type png)
 <use withShort1.png>
 Package pdftex.def Info: withShort1.png  used on input line 387.
 (pdftex.def)             Requested size: 157.87302pt x 88.3318pt.
-<withShort1A.png, id=334, 972.63374pt x 552.0625pt>
+<withShort1A.png, id=338, 972.63374pt x 552.0625pt>
 File: withShort1A.png Graphic file (type png)
 <use withShort1A.png>
 Package pdftex.def Info: withShort1A.png  used on input line 387.
 (pdftex.def)             Requested size: 155.62457pt x 88.3318pt.
-<withShort1A200.png, id=335, 972.63374pt x 552.0625pt>
+<withShort1A200.png, id=339, 972.63374pt x 552.0625pt>
 File: withShort1A200.png Graphic file (type png)
 <use withShort1A200.png>
 Package pdftex.def Info: withShort1A200.png  used on input line 390.
 (pdftex.def)             Requested size: 155.62457pt x 88.3318pt.
-<withShort1B.png, id=336, 977.6525pt x 552.0625pt>
+<withShort1B.png, id=340, 977.6525pt x 552.0625pt>
 File: withShort1B.png Graphic file (type png)
 <use withShort1B.png>
 Package pdftex.def Info: withShort1B.png  used on input line 390.
 (pdftex.def)             Requested size: 156.4276pt x 88.3318pt.
  [10] [11 <./withShort1.png> <./withShort1A.png> <./withShort1A200.png> <./with
 Short1B.png>] [12] [13] [14]
-<startingCase.png, id=423, 977.6525pt x 552.0625pt>
+<startingCase.png, id=427, 977.6525pt x 552.0625pt>
 File: startingCase.png Graphic file (type png)
 <use startingCase.png>
 Package pdftex.def Info: startingCase.png  used on input line 558.
 (pdftex.def)             Requested size: 293.298pt x 165.62003pt.
  [15 <./startingCase.png>]
 
-LaTeX Warning: Reference `plainQuotasTable' on page 16 undefined on input line 
-613.
+LaTeX Warning: Reference `quotaTable1' on page 16 undefined on input line 624.
 
 
-LaTeX Warning: Reference `wiseQuotasTable' on page 16 undefined on input line 6
-13.
+LaTeX Warning: Reference `quotaTable2' on page 16 undefined on input line 650.
 
-[16]
-Overfull \hbox (200.40125pt too wide) in paragraph at lines 652--653
+[16] [17]
+<andamento900annotato.jpg, id=466, 1043.9pt x 642.4pt>
+File: andamento900annotato.jpg Graphic file (type jpg)
+<use andamento900annotato.jpg>
+Package pdftex.def Info: andamento900annotato.jpg  used on input line 701.
+(pdftex.def)             Requested size: 313.17241pt x 192.72148pt.
+<andamento900.jpg, id=468, 939.51pt x 578.16pt>
+File: andamento900.jpg Graphic file (type jpg)
+<use andamento900.jpg>
+Package pdftex.def Info: andamento900.jpg  used on input line 714.
+(pdftex.def)             Requested size: 281.85518pt x 173.44933pt.
+ [18 <./andamento900annotato.jpg>]
+Overfull \hbox (200.40125pt too wide) in paragraph at lines 755--756
 []\T1/ntxtlf/m/n/10 refer to []$\T1/ntxtt/m/n/10 https : / / www . quantamagazi
 ne . org / how-[]to-[]assess-[]risks-[]during-[]the-[]coronavirus-[]pandemic-[]
 20200925 /
  []
 
-[17] [18]
-<no3a.png, id=487, 982.67125pt x 552.0625pt>
+[19 <./andamento900.jpg>] [20]
+<no3a.png, id=520, 982.67125pt x 552.0625pt>
 File: no3a.png Graphic file (type png)
 <use no3a.png>
-Package pdftex.def Info: no3a.png  used on input line 755.
+Package pdftex.def Info: no3a.png  used on input line 858.
 (pdftex.def)             Requested size: 233.02704pt x 130.91403pt.
-<no3b.png, id=488, 972.63374pt x 552.0625pt>
+<no3b.png, id=521, 972.63374pt x 552.0625pt>
 File: no3b.png Graphic file (type png)
 <use no3b.png>
-Package pdftex.def Info: no3b.png  used on input line 763.
+Package pdftex.def Info: no3b.png  used on input line 866.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
- [19 <./no3a.png> <./no3b.png>]
-<no4a.png, id=500, 982.67125pt x 552.0625pt>
+<no4a.png, id=524, 982.67125pt x 552.0625pt>
 File: no4a.png Graphic file (type png)
 <use no4a.png>
-Package pdftex.def Info: no4a.png  used on input line 778.
+Package pdftex.def Info: no4a.png  used on input line 881.
 (pdftex.def)             Requested size: 233.02704pt x 130.91403pt.
-<no4b.png, id=501, 972.63374pt x 552.0625pt>
+<no4b.png, id=525, 972.63374pt x 552.0625pt>
 File: no4b.png Graphic file (type png)
 <use no4b.png>
-Package pdftex.def Info: no4b.png  used on input line 787.
+Package pdftex.def Info: no4b.png  used on input line 890.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
-<no5a.png, id=506, 982.67125pt x 552.0625pt>
+ [21]
+<no5a.png, id=539, 982.67125pt x 552.0625pt>
 File: no5a.png Graphic file (type png)
 <use no5a.png>
-Package pdftex.def Info: no5a.png  used on input line 805.
+Package pdftex.def Info: no5a.png  used on input line 908.
 (pdftex.def)             Requested size: 233.02704pt x 130.91403pt.
-<no5b.png, id=507, 972.63374pt x 552.0625pt>
+<no5b.png, id=540, 972.63374pt x 552.0625pt>
 File: no5b.png Graphic file (type png)
 <use no5b.png>
-Package pdftex.def Info: no5b.png  used on input line 813.
+Package pdftex.def Info: no5b.png  used on input line 916.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
 
 
-LaTeX Warning: Reference `AppCalendar' on page 20 undefined on input line 823.
+LaTeX Warning: Reference `AppCalendar' on page 22 undefined on input line 926.
 
-[20 <./no4a.png> <./no4b.png>]
-<with6a.png, id=524, 971.63pt x 552.0625pt>
+[22 <./no3a.png> <./no3b.png>]
+<with6a.png, id=557, 971.63pt x 552.0625pt>
 File: with6a.png Graphic file (type png)
 <use with6a.png>
-Package pdftex.def Info: with6a.png  used on input line 834.
+Package pdftex.def Info: with6a.png  used on input line 937.
 (pdftex.def)             Requested size: 233.02704pt x 132.3966pt.
-<with6b.png, id=525, 972.63374pt x 552.0625pt>
+<with6b.png, id=558, 972.63374pt x 552.0625pt>
 File: with6b.png Graphic file (type png)
 <use with6b.png>
-Package pdftex.def Info: with6b.png  used on input line 842.
+Package pdftex.def Info: with6b.png  used on input line 945.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
-<with7a.png, id=526, 982.67125pt x 552.0625pt>
+<with7a.png, id=559, 982.67125pt x 552.0625pt>
 File: with7a.png Graphic file (type png)
 <use with7a.png>
-Package pdftex.def Info: with7a.png  used on input line 857.
+Package pdftex.def Info: with7a.png  used on input line 960.
 (pdftex.def)             Requested size: 233.02704pt x 130.91403pt.
- [21 <./no5a.png> <./no5b.png>]
-<with7b.png, id=537, 972.63374pt x 552.0625pt>
+ [23 <./no4a.png> <./no4b.png>]
+<with7b.png, id=571, 972.63374pt x 552.0625pt>
 File: with7b.png Graphic file (type png)
 <use with7b.png>
-Package pdftex.def Info: with7b.png  used on input line 865.
+Package pdftex.def Info: with7b.png  used on input line 968.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
-<with8a.png, id=539, 984.67876pt x 552.0625pt>
+<with8a.png, id=573, 984.67876pt x 552.0625pt>
 File: with8a.png Graphic file (type png)
 <use with8a.png>
-Package pdftex.def Info: with8a.png  used on input line 881.
+Package pdftex.def Info: with8a.png  used on input line 984.
 (pdftex.def)             Requested size: 233.02704pt x 130.64447pt.
-<with8b.png, id=540, 972.63374pt x 552.0625pt>
+<with8b.png, id=574, 972.63374pt x 552.0625pt>
 File: with8b.png Graphic file (type png)
 <use with8b.png>
-Package pdftex.def Info: with8b.png  used on input line 889.
+Package pdftex.def Info: with8b.png  used on input line 992.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
- [22 <./with6a.png> <./with6b.png>]
-<withShort0.png, id=553, 961.5925pt x 552.0625pt>
+ [24 <./no5a.png> <./no5b.png>]
+<withShort0.png, id=587, 961.5925pt x 552.0625pt>
 File: withShort0.png Graphic file (type png)
 <use withShort0.png>
-Package pdftex.def Info: withShort0.png  used on input line 911.
+Package pdftex.def Info: withShort0.png  used on input line 1014.
 (pdftex.def)             Requested size: 233.02704pt x 133.7781pt.
- [23 <./with7a.png> <./with7b.png>]
-Overfull \hbox (100.20605pt too wide) in paragraph at lines 926--926
+ [25 <./with6a.png> <./with6b.png>]
+Overfull \hbox (100.44406pt too wide) in paragraph at lines 1029--1029
 [] [][][]$\T1/ntxtt/m/n/8.5 https : / / rs-[]delve . github . io / reports / 20
 20 / 08 / 14 / economic-[]aspects-[]of-[]the-[]covid19-[]crisis-[]in-[]the-[]uk
  .
  []
 
-[24 <./with8a.png> <./with8b.png>]
+[26 <./with7a.png> <./with7b.png>] [27 <./with8a.png> <./with8b.png>]
 File: withShort1.png Graphic file (type png)
 <use withShort1.png>
-Package pdftex.def Info: withShort1.png  used on input line 944.
+Package pdftex.def Info: withShort1.png  used on input line 1047.
 (pdftex.def)             Requested size: 233.02704pt x 130.37491pt.
- [25 <./withShort0.png>]
+ [28 <./withShort0.png>]
 File: withShort1A.png Graphic file (type png)
 <use withShort1A.png>
-Package pdftex.def Info: withShort1A.png  used on input line 955.
+Package pdftex.def Info: withShort1A.png  used on input line 1058.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
 File: withShort1A200.png Graphic file (type png)
 <use withShort1A200.png>
-Package pdftex.def Info: withShort1A200.png  used on input line 963.
+Package pdftex.def Info: withShort1A200.png  used on input line 1066.
 (pdftex.def)             Requested size: 233.02704pt x 132.26183pt.
 File: withShort1B.png Graphic file (type png)
 <use withShort1B.png>
-Package pdftex.def Info: withShort1B.png  used on input line 973.
+Package pdftex.def Info: withShort1B.png  used on input line 1076.
 (pdftex.def)             Requested size: 233.02704pt x 131.57951pt.
-<withShort2.png, id=597, 961.5925pt x 555.07375pt>
+<withShort2.png, id=636, 961.5925pt x 555.07375pt>
 File: withShort2.png Graphic file (type png)
 <use withShort2.png>
-Package pdftex.def Info: withShort2.png  used on input line 988.
+Package pdftex.def Info: withShort2.png  used on input line 1091.
 (pdftex.def)             Requested size: 233.02704pt x 134.50781pt.
- [26] [27]
-<HM30_readRunResults1k_noControl_plusHMlog.png, id=614, 506.89375pt x 302.12875
+ [29] [30 <./withShort2.png>]
+<HM30_readRunResults1k_noControl_plusHMlog.png, id=654, 506.89375pt x 302.12875
 pt>
 File: HM30_readRunResults1k_noControl_plusHMlog.png Graphic file (type png)
 <use HM30_readRunResults1k_noControl_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_noControl_plusHMlog.png  used on
- input line 1042.
+ input line 1145.
 (pdftex.def)             Requested size: 233.02704pt x 138.89331pt.
- [28 <./withShort2.png>]
-<HM30_readRunResults1k_withControl_plusHMlog.png, id=629, 506.89375pt x 314.173
+ [31]
+<HM30_readRunResults1k_withControl_plusHMlog.png, id=670, 506.89375pt x 314.173
 75pt>
 File: HM30_readRunResults1k_withControl_plusHMlog.png Graphic file (type png)
 <use HM30_readRunResults1k_withControl_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_withControl_plusHMlog.png  used 
-on input line 1085.
+on input line 1188.
 (pdftex.def)             Requested size: 233.02704pt x 144.43059pt.
-<HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png, id=632, 506.8
+ [32 <./HM30_readRunResults1k_noControl_plusHMlog.png>]
+<HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png, id=680, 506.8
 9375pt x 314.17375pt>
 File: HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png Graphic f
 ile (type png)
 <use HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_basicControl_schoolOpenSept_plus
-HMlog.png  used on input line 1126.
+HMlog.png  used on input line 1229.
 (pdftex.def)             Requested size: 233.02704pt x 144.43059pt.
- [29 <./HM30_readRunResults1k_noControl_plusHMlog.png>]
-<HM30_readRunResults1k_with_sFW_at20_plusHMlog.png, id=643, 506.89375pt x 325.2
+ [33 <./HM30_readRunResults1k_withControl_plusHMlog.png>]
+<HM30_readRunResults1k_with_sFW_at20_plusHMlog.png, id=692, 506.89375pt x 325.2
 15pt>
 File: HM30_readRunResults1k_with_sFW_at20_plusHMlog.png Graphic file (type png)
 
 <use HM30_readRunResults1k_with_sFW_at20_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_with_sFW_at20_plusHMlog.png  use
-d on input line 1167.
+d on input line 1270.
 (pdftex.def)             Requested size: 266.31879pt x 170.86945pt.
- [30 <./HM30_readRunResults1k_withControl_plusHMlog.png>]
-<HM30_readRunResults1k_with_NH_OP_BZ_at20_plusHMlog.png, id=653, 506.89375pt x 
+<HM30_readRunResults1k_with_NH_OP_BZ_at20_plusHMlog.png, id=695, 506.89375pt x 
 325.215pt>
 File: HM30_readRunResults1k_with_NH_OP_BZ_at20_plusHMlog.png Graphic file (type
  png)
 <use HM30_readRunResults1k_with_NH_OP_BZ_at20_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_with_NH_OP_BZ_at20_plusHMlog.png
-  used on input line 1209.
+  used on input line 1312.
 (pdftex.def)             Requested size: 266.31879pt x 170.86945pt.
- [31 <./HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png>]
-<HM30_readRunResults1k_with_Frag_at20_plusHMlog.png, id=662, 506.89375pt x 325.
+ [34 <./HM30_readRunResults1k_basicControl_schoolOpenSept_plusHMlog.png>]
+<HM30_readRunResults1k_with_Frag_at20_plusHMlog.png, id=703, 506.89375pt x 325.
 215pt>
 File: HM30_readRunResults1k_with_Frag_at20_plusHMlog.png Graphic file (type png
 )
 <use HM30_readRunResults1k_with_Frag_at20_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_with_Frag_at20_plusHMlog.png  us
-ed on input line 1250.
+ed on input line 1353.
 (pdftex.def)             Requested size: 266.31879pt x 170.86945pt.
- [32 <./HM30_readRunResults1k_with_sFW_at20_plusHMlog.png>]
-<HM30_readRunResults1k_with_NoAllFrag_at20_plusHMlog.png, id=674, 506.89375pt x
+
+[35 <./HM30_readRunResults1k_with_sFW_at20_plusHMlog.png>]
+<HM30_readRunResults1k_with_NoAllFrag_at20_plusHMlog.png, id=715, 506.89375pt x
  325.215pt>
 File: HM30_readRunResults1k_with_NoAllFrag_at20_plusHMlog.png Graphic file (typ
 e png)
 <use HM30_readRunResults1k_with_NoAllFrag_at20_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_with_NoAllFrag_at20_plusHMlog.pn
-g  used on input line 1292.
+g  used on input line 1395.
 (pdftex.def)             Requested size: 266.31879pt x 170.86945pt.
- [33 <./HM30_readRunResults1k_with_NH_OP_BZ_at20_plusHMlog.png>]
-<HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_plusHMlog.png, id=685, 506.
+ [36 <./HM30_readRunResults1k_with_NH_OP_BZ_at20_plusHMlog.png>]
+<HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_plusHMlog.png, id=725, 506.
 89375pt x 325.215pt>
 File: HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_plusHMlog.png Graphic 
 file (type png)
 <use HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_plusHMlog.png>
 Package pdftex.def Info: HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_plu
-sHMlog.png  used on input line 1332.
+sHMlog.png  used on input line 1435.
 (pdftex.def)             Requested size: 266.31879pt x 170.86945pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <./HM30_readRunResults1k_with_Frag_at20_plusHMlog.png>]
+[37 <./HM30_readRunResults1k_with_Frag_at20_plusHMlog.png>]
 <HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_openSchoolSep_plusHMlog.png
-, id=695, 506.89375pt x 325.215pt>
+, id=736, 506.89375pt x 325.215pt>
 File: HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_openSchoolSep_plusHMlo
 g.png Graphic file (type png)
 <use HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_openSchoolSep_plusHMlog
 .png>
 Package pdftex.def Info: HM30_readRunResults1k_with_NoAllFrag_openFacs_at20_ope
-nSchoolSep_plusHMlog.png  used on input line 1372.
+nSchoolSep_plusHMlog.png  used on input line 1475.
 (pdftex.def)             Requested size: 266.31879pt x 170.86945pt.
- [35 <./HM30_readRunResults1k_with_NoAllFrag_at20_plusHMlog.png>] [36 <./HM30_r
-eadRunResults1k_with_NoAllFrag_openFacs_at20_plusHMlog.png>] [37 <./HM30_readRu
-nResults1k_with_NoAllFrag_openFacs_at20_openSchoolSep_plusHMlog.png>] [38]
-(./ABModelCOVID-19Diffusion.bbl)
+ [38 <./HM30_readRunResults1k_with_NoAllFrag_at20_plusHMlog.png>] [39 <./HM30_r
+eadRunResults1k_with_NoAllFrag_openFacs_at20_plusHMlog.png>] [40 <./HM30_readRu
+nResults1k_with_NoAllFrag_openFacs_at20_openSchoolSep_plusHMlog.png>]
+(./ABModelCOVID-19Diffusion.bbl [41])
 \tf@thm=\write6
 \openout6 = `ABModelCOVID-19Diffusion.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1468.
- [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1468.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1571.
+ [42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1571.
  (./ABModelCOVID-19Diffusion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1468.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1468.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1571.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1571.
 
 Package rerunfilecheck Info: File `ABModelCOVID-19Diffusion.out' has not change
 d.
-(rerunfilecheck)             Checksum: 55B2DB6DC73057A7078919A196F76471;4371.
+(rerunfilecheck)             Checksum: 8E1FDA3A25F7D2C4AE6F0769DC8723EF;4443.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 11767 strings out of 480608
- 167353 string characters out of 5903631
- 467041 words of memory out of 5000000
- 27197 multiletter control sequences out of 15000+600000
+ 11798 strings out of 480608
+ 167827 string characters out of 5903631
+ 464644 words of memory out of 5000000
+ 27213 multiletter control sequences out of 15000+600000
  601458 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,43p,1228b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,43p,1228b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
 sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntxsups_t1.enc}{/usr/loc
 al/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texli
@@ -1157,10 +1170,10 @@ pe1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
 lic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx
 /ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pf
 b>
-Output written on ABModelCOVID-19Diffusion.pdf (39 pages, 1362714 bytes).
+Output written on ABModelCOVID-19Diffusion.pdf (42 pages, 1599771 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 717 compressed objects within 8 object streams
- 200 named destinations out of 1000 (max. 500000)
- 498 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 877 PDF objects out of 1000 (max. 8388607)
+ 752 compressed objects within 8 object streams
+ 212 named destinations out of 1000 (max. 500000)
+ 516 words of extra memory for PDF output out of 10000 (max. 10000000)
 
