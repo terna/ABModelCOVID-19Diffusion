@@ -323,7 +323,8 @@ Day 1 is fixed at Feb \nth{4}, 2020. The calendar scan is that of the Table \ref
 \begin{tabular}{rr}
 \hline\noalign{\smallskip}
  Day & Date  \\
- \noalign{\smallskip}\svhline\noalign{\smallskip}25 & 28- 2-2020 \\
+ \noalign{\smallskip}\svhline\noalign{\smallskip}
+ 25 & 28- 2-2020 \\
  50 & 24- 3-2020 \\
  75 & 18- 4-2020 \\
 100 & 13- 5-2020 \\
@@ -716,6 +717,353 @@ Other critical points in our analysis are the day on which the vaccination campa
 \caption{Time series of the actual epidemic updated to the beginning of May} 
 \label{piedNow}
 \end{figure}
+
+
+
+%1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experiment I, with few infected agents at the vaccination starting point}
+\label{I}
+% calculation made using SIsaR_0.9.6.nlogo with 66507108 94261776 44424105
+
+
+This experiment's main plot is in Fig. \ref{ExperimentForGA_I_base}, where we read on $x$ axis the time and on the  the $y$ axis the number of infected people of any kind. Considering the thickness of the snake (or tape) developing in the figure, we also read the number of agents infected at a given date, with the thickness determining the slope of the cumulative dynamic of infected persons.
+
+The hole in the series identifies the period in which the epidemic was extinct, to restart with the arrival of infected persons from outside.
+
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_base.csv
+\begin{figure}[t]
+\center 
+\includegraphics[scale=0.3]{ExperimentForGA_I_base.png}  
+\caption{The sequence of contagions in Experiment I, without vaccinations; crucial dates: blue line for the starting point of the vaccination campaign and red line for the start of the effectiveness of the initial vaccinations} 
+\label{ExperimentForGA_I_base}
+\end{figure}
+
+The following sequences start from day 413, Mar. \nth{22}, when the effectiveness of the initial vaccinations---if any---begins, after 40 days from initial vaccinations.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Planned vaccination campaigns in Experiment I}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Vaccinated persons by group using ``plain'' or ``wise'' quotas}
+
+Applying the ``plain'' quotas of Table \ref{plainQuotasTable} to the group composition of Experiment I, as in Table \ref{susceptibleExperimentForGA_I}, the effects on the numbers of vaccinated people in each group are in Fig. \ref{Experiment_I_plainVaccinationSequence}.
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.45]{Experiment_I_plainVaccinationSequence.png} % experiment_I_vaccination_plots.ipynb
+
+\caption{Experiment I, ``plain'' vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
+\label{Experiment_I_plainVaccinationSequence}
+\end{figure}
+
+
+Applying the ``wise'' quotas of Table \ref{wiseQuotasTable} to the group composition of Experiment I, as in Table \ref{susceptibleExperimentForGA_I}, the effects on the numbers of vaccinated people in each group are in Fig. \ref{Experiment_I_wiseVaccinationSequence}.
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.45]{Experiment_I_wiseVaccinationSequence.png} % experiment_I_vaccination_plots.ipynb
+
+\caption{Experiment I, ``wise'' vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
+\label{Experiment_I_wiseVaccinationSequence}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{No vaccination}
+
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_base.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_base>413.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: no vaccination campaign} 
+\label{ExperimentForGA_I_base>413}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Vaccinated people still spreading the infection}
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_plain_1.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_1>413.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: ``plain'' vaccination campaign, with \emph{vaccinated people still spreading the infection}} 
+\label{ExperimentForGA_I_1>413}
+\end{figure}
+
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_wise_1.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_2_1>413.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: ``wise'' vaccination campaign, with \emph{vaccinated people still spreading the infection}} 
+\label{ExperimentForGA_I_2_1>413}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Vaccinated people not spreading the infection}
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_plain_0.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_0>413.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: ``plain'' vaccination campaign, with \emph{vaccinated people not spreading the infection}} 
+\label{ExperimentForGA_I_0>413}
+\end{figure}
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_wise_0.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_2_0>413.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: ``wise'' vaccination campaign, with \emph{vaccinated people not spreading the infection}} 
+\label{ExperimentForGA_I_2_0>413}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Vaccinated people 50\% spreading the infection}
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_plain_.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_05>413.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: ``plain'' vaccination campaign, with \emph{vaccinated people spreading the infection in the 50\% of cases}} 
+\label{ExperimentForGA_I_05>413}
+\end{figure}
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_wise_05.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_2_05>413.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: ``wise'' vaccination campaign, with \emph{vaccinated people spreading the infection in the 50\% of cases}} 
+\label{ExperimentForGA_I_2_05>413}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Experiment I, following GAs suggestions}\label{GA_I}
+
+% calculation made using SIsaR_0.9.6.nlogo with 66507108 94261776 44424105 
+% at t = 0 and t=373 (Feb. \nth{12}, 2021) 
+% with a specific button generating LaTeX output
+\begin{table}[t]
+\centering
+\begin{tabular}{lccccccc}
+\hline\noalign{\smallskip}
+& \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+Susc. at t = 0                   & 133 & 84 & 240 & 1560 & 1179 & 254 & 900 \\
+Susc. when\\vacc. starts & 124 & 81 & 162 & 1234 & 1032 & 245 & 891 \\
+\hline\noalign{\smallskip} 
+\end{tabular}
+\caption{Experiment I: susceptible persons at the beginning of the simulation and when the vaccination campaign starts,  day 373, Feb. \nth{12}, 2021}
+\label{susceptibleExperimentForGA_I}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Vaccinated people still spreading the infection}
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_1bestGA.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_1>413bestGA.png} 
+
+\caption{The sequence of contagions in Experiment I, after day 413: GAs vaccination campaign, with \emph{vaccinated people still spreading the infection: best GAs strategy}}
+\label{ExperimentForGA_I_1>413bestGA}
+\end{figure}
+
+% vaccinationsGA_I_1.csv or vaccinationsGA_I_0.csv or vaccinationsGA_I_05.csv (see above at $$$)
+\begin{table}[t]
+\centering
+\begin{tabular}{cclllllll}
+\hline\noalign{\smallskip}
+From day & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373 & 5 & 0.01 & 0 & 0 & 0.79 & 0.18 & 0.38 & 0.19 \\
+433 & 10 & 0.94 & 0.06 & 0.32 & 0.54 & 0.19 & 0.83 & 0.5 \\
+493 & 10 & 0.97 & 0.97 & 0.74 & 0.79 & 0.2 & 0.14 & 0.52 \\
+553 & 10 & 0.98 & 0.83 & 0.02 & 0.39 & 0.99 & 0.04 & 0.48 \\
+613 & 20 & 0.52 & 0.01 & 0.83 & 0.6 & 1 & 0.27 & 0.9 \\
+738      & end   \\ 
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{GAs best strategy in experiment I, with \emph{vaccinated people still spreading the infection}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quota of the related columns}
+\label{quotaTableExperimentForGA_I_1>413bestGA}
+\end{table}
+
+Applying the quotas of Table \ref{quotaTableExperimentForGA_I_1>413bestGA} to the group composition of Experiment I, as in Table \ref{susceptibleExperimentForGA_I}, the effects on the numbers of vaccinated people in each group are in Fig. \ref{Experiment_I_GA1VaccinationSequence}.
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.45]{Experiment_I_GA_1_VaccinationSequence.png} % experiment_I_vaccination_plots.ipynb
+
+\caption{Experiment I, GA 1 vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
+\label{Experiment_I_GA1VaccinationSequence}
+\end{figure}
+
+Some of the coefficients in Table \ref{quotaTableExperimentForGA_I_1>413bestGA} are not used, e.g., if the daily quantity of doses is finished before considering a specific group or if the whole group has already received the vaccine. The GAs procedure does not optimize those coefficients.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Vaccinated people not spreading the infection}
+
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_0bestGA.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_0>413bestGA.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: GAs vaccination campaign, with \emph{vaccinated people not spreading the infection: best GAs strategy}}
+\label{ExperimentForGA_I_0>413bestGA}
+\end{figure}
+
+
+% vaccinationsGA_I_1.csv or vaccinationsGA_I_0.csv or vaccinationsGA_I_05.csv (see above at $$$)
+\begin{table}[t]
+\centering
+\begin{tabular}{cclllllll}
+\hline\noalign{\smallskip}
+From day & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373 & 5 & 0.01 & 0 & 0 & 0.89 & 0.31 & 0.98 & 0.25 \\
+433 & 10 & 0.17 & 0.64 & 0.08 & 0.14 & 0.22 & 0.79 & 0.48 \\
+493 & 10 & 0.11 & 0.87 & 0.4 & 0.46 & 0.45 & 0.34 & 0.14 \\
+553 & 10 & 0.23 & 0.82 & 0.14 & 0.16 & 0.35 & 0.59 & 0.45 \\
+613 & 20 & 0.35 & 0.43 & 0.65 & 0.54 & 0.79 & 0.66 & 0.59 \\
+738      & end   \\ 
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{GAs best strategy in experiment I, with \emph{vaccinated people not spreading the infection}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quota of the related columns}
+\label{quotaTableExperimentForGA_I_0>413bestGA}
+\end{table}
+
+Applying the quotas of Table \ref{quotaTableExperimentForGA_I_0>413bestGA} to the group composition of Experiment I, as in Table \ref{susceptibleExperimentForGA_I}, the effects on the numbers of vaccinated people in each group are in Fig. \ref{Experiment_I_GA0VaccinationSequence}.
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.45]{Experiment_I_GA_0_VaccinationSequence.png} % experiment_I_vaccination_plots.ipynb
+
+\caption{Experiment I, GA 0 vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
+\label{Experiment_I_GA0VaccinationSequence}
+\end{figure}
+
+Some of the coefficients in Table \ref{quotaTableExperimentForGA_I_0>413bestGA} are not used, e.g., if the daily quantity of doses is finished before considering a specific group or if the whole group has already received the vaccine. The GAs procedure does not optimize those coefficients.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Vaccinated people 50\% spreading the infection}
+
+% /Users/pt/GitHub/contagionSequence/sequentialRecords.ipynb on Experiment_I_05bestGA.csv
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.3]{ExperimentForGA_I_05>413bestGA.png}
+
+\caption{The sequence of contagions in Experiment I, after day 413: GAs vaccination campaign, with \emph{vaccinated people 50\% spreading the infection: best GAs strategy}}
+\label{ExperimentForGA_I_05>413bestGA}
+\end{figure}
+
+
+% vaccinationsGA_I_1.csv or vaccinationsGA_I_0.csv or vaccinationsGA_I_05.csv (see above at $$$)
+\begin{table}[t]
+\centering
+\begin{tabular}{cclllllll}
+\hline\noalign{\smallskip}
+From day & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373 & 5 & 0.11 & 0.79 & 0.54 & 0.63 & 0.33 & 0.62 & 0.85 \\
+433 & 10 & 0.16 & 0.25 & 0.22 & 0.28 & 0.21 & 0.85 & 0.04 \\
+493 & 10 & 0.65 & 0.67 & 0.48 & 0.64 & 0.75 & 0.14 & 0.97 \\
+553 & 10 & 0.36 & 0.45 & 0.59 & 0 & 0.44 & 0.74 & 0.6 \\
+613 & 20 & 0.22 & 0.41 & 0.63 & 0 & 0.41 & 0.44 & 0.48 \\
+738      & end   \\ 
+\hline\noalign{\smallskip} 
+\end{tabular}
+\caption{GAs best strategy in experiment I, with \emph{vaccinated people 50\% spreading the infection}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quota of the related columns}
+\label{quotaTableExperimentForGA_I_05>413bestGA}
+\end{table}
+
+Applying the quotas of Table \ref{quotaTableExperimentForGA_I_05>413bestGA} to the group composition of Experiment II, as in Table \ref{susceptibleExperimentForGA_I}, the effects on the numbers of vaccinated people in each group are in Fig. \ref{Experiment_I_GA05VaccinationSequence}.
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.45]{Experiment_I_GA_05_VaccinationSequence.png} % experiment_I_vaccination_plots.ipynb
+
+\caption{Experiment I, GA 0,5 vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
+\label{Experiment_I_GA05VaccinationSequence}
+\end{figure}
+
+Some of the coefficients in Table \ref{quotaTableExperimentForGA_I_05>413bestGA} are not used, e.g., if the daily quantity of doses is finished before considering a specific group or if the whole group has already received the vaccine. The GAs procedure does not optimize those coefficients.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{A very short comment on Experiment I}
+
+The advantage of the GAs strategy is relevant in the case of the vaccinated people still spreading the infection, comparing both with ``plain'' or ``wise'' strategies. Note: we have, in this case, a pretty limited number of infected people at the date of both the initial vaccination and the validity of the initial vaccinations. The limited number of agents at the vaccination starting point can explain the presence of worse results in ``wise'' strategy adoption, due to the prevalence of particular sequences.
+
+The main attention of the GAs is initially is related to \emph{g4}, and \emph{g6} groups (regular workers and regular persons). Maybe, they are composed of highly circulating persons. In the third sub-case (Table \ref{quotaTableExperimentForGA_I_05>413bestGA}), also \emph{g2} (teachers) and \emph{g7} (young persons, but as residual intervention and discontinuously) groups are relevant.
+
+
+EXPERIMENTS II - IV NOT REPORTED HERE, SEE \href{https://terna.to.it/simul/GAresultPresentation.pdf}{https://terna.to.it/simul/GAresultPresentation.pdf}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experiment synopsis}
+
+
+% synopsys
+\begin{table}[t]
+\centering
+\begin{scriptsize} % or footnotesize, scriptsize, tiny, etc.
+\begin{tabular}{llllllllllll}
+\hline\noalign{\smallskip}
+Exper.    & At   & Final      & Final        & Final       & Final      & Final       & Final    & Final        & Final    & Final        & Final     \\
+             & day & no         & ``plain''       & ``wise''        & GAs         & ``plain''       & ``wise''        & GAs         & ``plain''       & ``wise''        & GAs    \\
+             & 413 & vaccin. & vaccin.    & vaccin.  & vaccin.  & vaccin.  & vaccin.  & vaccin.  & vaccin.  & vaccin.  & vaccin.  \\
+ (1000) &        &              &  infect.  &  infect. &  infect. &  infect. &  infect. &  infect. &  infect. &  infect. &  infect.\\
+             &       &              &  100\%   &  100\% &  100\% &  0\% &  0\% &  0\% & 50\% &  50\% &  50\% \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+I            & 197 & 325 & 236 & 263 & \textbf{200} & 203 & 211   & 199 & 204 & 229 & 203 \\
+             & -      & 128 & 39    & 66  & \textbf{3}    &  6     & 14  & 2     & 7     & 32 & 6 \\
+\\
+II           & 233 & 375 & 355 &  344 & \textbf{305}  & 340 & 334 & \textbf{297}  & 356 & 344 &  \textbf{288} \\
+             & -      &  142 & 122 & 111 & \textbf{72}    & 107 & 101 & \textbf{64}   & 123   & 111 &  \textbf{55} \\
+\\
+III           & 201 & 468 & 291 &  216 & 215  & 211 & 214 & 207  & 216 & 209 &  208 \\
+             & -      &  267 & 90  & 15    & 14    & 10  & 13   &  6     & 15    & 8      &  7 \\
+\\
+IV           & 300 & 464 & 418 &  404 & 395  & 408 & 405 & \textbf{377}  & 410 & 406 &  395 \\
+             & -      &  164 & 118  & 104    & 95  & 108 & 105 &  \textbf{77}  & 110    & 107  &  95 \\
+\\
+\hline\noalign{\smallskip}
+\end{tabular}
+\end{scriptsize}
+\caption{Results of the vaccination campaigns in the four experiments, considering symptomatic people (the second row in each experiment report the results minus the number of symptomatic people at day 413)}
+\label{caseSynopsys}
+\end{table}
+
+We will add other experiments.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{To do}
+
+Using GAs, add the capability to replicate a specific search with the same parameters, but changing the vaccinated people randomly (so-called \emph{best-checking replicates}). 
+
+We can do that using \verb|newSeed| before the vaccination action. How to save, and where, that value, to exactly replicate the calculations? In a file?
 
 
 
@@ -1561,6 +1909,12 @@ Using  datum 4, we define the thickness of the horizontal lines : robust (lw = 1
 \end{itemize}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Appendix: Memo}
+\label{memo}
+
+Remember \href{https://github.com/epispot/epispot}{https://github.com/epispot/epispot} and its list of tools.
 
 
 
