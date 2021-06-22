@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  21 JUN 2021 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  22 JUN 2021 19:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -838,84 +838,86 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 83.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 83.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.0pt on input line 93.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.0pt on input line 93.
-
-[2]
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 130.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+e 93.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 130.
+(Font)              scaled to size 10.0pt on input line 93.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 11.0pt on input line 110.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 11.0pt on input line 110.
+ [2]
 LaTeX Font Info:    Trying to load font information for T1+ntxsups on input lin
-e 130.
+e 152.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 130.
+(Font)              scaled to size 10.0pt on input line 152.
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 8.5pt on input line 130.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 137.
+(Font)              scaled to size 8.5pt on input line 152.
  [3]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 159.
 
-LaTeX Warning: Reference `appCalendar' on page 4 undefined on input line 150.
+
+LaTeX Warning: Reference `appCalendar' on page 4 undefined on input line 172.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.5pt on input line 152.
+(Font)              scaled to size 8.5pt on input line 174.
 
-LaTeX Warning: Reference `appContagion' on page 4 undefined on input line 152.
+LaTeX Warning: Reference `appContagion' on page 4 undefined on input line 174.
 
 [4]
-<SIsaR_outline.png, id=118, 2569.6pt x 1515.6625pt>
+<SIsaR_outline.png, id=123, 2569.6pt x 1515.6625pt>
 File: SIsaR_outline.png Graphic file (type png)
 <use SIsaR_outline.png>
-Package pdftex.def Info: SIsaR_outline.png  used on input line 190.
+Package pdftex.def Info: SIsaR_outline.png  used on input line 212.
 (pdftex.def)             Requested size: 332.89723pt x 196.34923pt.
+ [5]
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 209.
- [5] [6 <./SIsaR_outline.png>]
-Overfull \hbox (13.34186pt too wide) in paragraph at lines 258--263
+(Font)              scaled to size 10.0pt on input line 231.
+ [6 <./SIsaR_outline.png>]
+Overfull \hbox (13.34186pt too wide) in paragraph at lines 280--285
 [][][]\T1/ntxtt/m/n/10 %PeopleNotFragileNotSymptomaticLeavingHome []\T1/ntxtlf/
 m/n/10 ([][]\T1/ntxtt/m/n/10 %PeopleNot[]\T1/ntxtlf/m/n/10 ) de-ter-mines,
  []
 
-[7]
+[7] [8]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 319.
- [8] (./ABModelCOVID-19Diffusion.bbl [9])
+(Font)              scaled to size 7.3pt on input line 341.
+ (./ABModelCOVID-19Diffusion.bbl [9])
 \tf@thm=\write6
 \openout6 = `ABModelCOVID-19Diffusion.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
  [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
 
 (./ABModelCOVID-19Diffusion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `ABModelCOVID-19Diffusion.out' has not change
 d.
-(rerunfilecheck)             Checksum: 45E3B39835096B7FFBB1D269976A6EAD;1053.
+(rerunfilecheck)             Checksum: 774F38BDECB42F7316DE1F54951D51ED;1169.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11334 strings out of 480608
- 159240 string characters out of 5903631
- 450576 words of memory out of 5000000
- 26937 multiletter control sequences out of 15000+600000
+ 11339 strings out of 480608
+ 159297 string characters out of 5903631
+ 448672 words of memory out of 5000000
+ 26939 multiletter control sequences out of 15000+600000
  600347 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,43p,1228b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,43p,1228b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
 sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntxsups_t1.enc}{/usr/loc
 al/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texli
@@ -929,10 +931,10 @@ pe1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
 lic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx
 /ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pf
 b>
-Output written on ABModelCOVID-19Diffusion.pdf (10 pages, 608864 bytes).
+Output written on ABModelCOVID-19Diffusion.pdf (10 pages, 609266 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
