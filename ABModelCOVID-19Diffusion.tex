@@ -70,11 +70,11 @@
 %
 \maketitle
 
-\abstract*{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the infected person's characteristics and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
+\abstract*{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the characteristics of both the infected person and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
 The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the successive contagion waves in the reference region. 
 There is also an inverse generative side of the model, coming from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people, using genetic algorithms.}
 
-\abstract{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the infected person's characteristics and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
+\abstract{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the characteristics of both the infected person and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
 The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the successive contagion waves in the reference region. 
 There is also an inverse generative side of the model, coming from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people, using genetic algorithms.}
 
@@ -83,11 +83,28 @@ There is also an inverse generative side of the model, coming from constructing 
 \section{A quick introduction to epidemic modeling}
 \label{intro}
 
-The starting point from which we built our model is that of S.I.R compartmental models with Susceptible, Infected, and Recovered people. This approach allows looking at the epidemic dynamics, but on a macro scale. While the Covid-19 epidemic was spreading, there have been several attempts to introduce more realistic compartmental subdivisions. A relevant example in this direction is that of \cite{Scala:2020aa}. The research also been followed other work lines, as in \cite{doi:10.1142/S0218202520500323}, where a multiscale framework accounts for the interaction of different spatial levels, from the small scale of the virus itself and cells, to the large scale of individuals and further up to the collective behavior of populations.
+The starting point is a compartmental model with Susceptible, Infected, and Recovered people (S.I.R.), but adding both a more detailed breakdown of the subjects involved in the contagion process \cite{Scala:2020aa} and a multi-scale framework to account for the interaction at different dimensional, and spatial levels \cite{doi:10.1142/S0218202520500323}. From the virus micro-level, we move to individuals and up to the collective behavior of the population.
 
-Following \cite{rahmandad2008heterogeneity}, we know that the analysis based on the assumption of  heterogeneity strongly differs from S.I.R. compartmental structures modeled by differential equations. Their work ponders when it is better to use agent-based models and when it would be better to use differential equation models. Differential equation models assume homogeneity and perfect mixing within compartments, while agent-based models can capture heterogeneity in agent attributes and the structure of their interactions. We follow the second approach.
+Following \cite{rahmandad2008heterogeneity}, we know that the analysis based on the assumption of heterogeneity strongly differs from S.I.R. compartmental structures modeled by differential equations. Their work ponders when it is better to use agent-based models and when it would be better to use differential equation models. Differential equation models assume homogeneity and perfect mixing of characteristics within compartments, while agent-based models can capture heterogeneity in agent attributes and the structure of their interactions. We follow the second approach.
 
-Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we move in that directionin our work reported here. 
+\begin{itemize}
+
+\item
+
+The model works with: 
+
+\begin{enumerate}[i]
+\item infected agents categorized as symptomatic or asymptomatic and 
+\item the places of contagion specified in a detailed way, thanks to agent-based modeling capabilities. 
+\end{enumerate}
+
+ \item
+The infection transmission is related to three factors: the infected person's characteristics and those of the susceptible one, plus those of the space in which a contact occurs.
+
+\end{itemize}
+
+
+Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>>. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Why model? Why agents? Why another model?}
@@ -117,6 +134,11 @@ And now, "why another?" As a commitment to our creativity, using our knowledge t
 As in every play, the author defines the roles of the actors and the environment. The characters are not real, they are pre-built by the author, and they act according to their peculiar constraints. If the play is successful, they will play for a long time, even centuries. If not, we will rapidly forget them. Shakespeare Hamlet is still playing after centuries, even if he is entirely imaginary.
 
 The same holds for our simulations: we are the authors, we arbitrarily define the characters, we force them to act again and again in different scenarios. In both plays and simulations, we compress the time: whole life to 2 or 3 hours on the stage. In a few seconds, we run the Covid-19 pandemic spread in a given regional area.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Here a Gianpiero's section on the biochemical of the contagion}
+\label{biochem}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Our model}
