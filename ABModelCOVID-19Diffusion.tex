@@ -169,9 +169,36 @@ granularity: at any level, the interactions are partially random and therefore t
 
 \end{itemize}
 
-@@@Summing up, S.I.s.a.R. \cite{SIsaR} is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R.. The scheme comes from S.I.R. models, herewith (i) infected agents categorized as symptomatic and asymptomatic and (ii) the places of contagions specified in a detailed way, thanks to agent-based modeling capabilities. The model includes Piedmont's structural data, an Italian region, but we can quite easily calibrate it for other areas. It can reproduce the events following a realistic calendar (e.g., national or local government decisions, as in Appendix \ref{appCalendar}), via its script interpreter.\footnote{\label{modOnLine}The model is online at \url{https://terna.to.it/simul/SIsaR.html}, from where it is also possible to run the code without installation. Corresponding author: Pietro Terna: \url{mailto:pietro.terna@unito.it}. Looking at the \emph{info} sheet of the model, you have more than 20 pages of Supporting Information about both the structure and the calibration of the model.}
+Summing up, S.I.s.a.R. \cite{SIsaR} is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R. The model works on the structural data of Piedmont, an Italian region, but we can quite easily calibrate it for other areas. It can reproduce the events following a realistic calendar (national or local government decisions, as in Section \ref{par}), via its script interpreter.  The model is online at \href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}, from where it is also possible to run the code without installation. Into the \emph{Info} sheet of the model, we have more than 20 pages of Supporting Information about both the structure and the calibration of the model.
 
-We place two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont.\footnote{They appear as black segments in the sequences of Appendix \ref{appContagion}.} The size of the initial infected group is out of scale: it is the smallest number, ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For implausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close space---such as classrooms, factories, homes, hospitals, nursing homes---is made with realistic numbers, not to be read in scale: e.g., a classroom contains 25 students, a home two persons, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
+
+The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic. Examples of counterfactual situations are those considering:
+
+\begin{enumerate}[label=\roman*]
+\item different timing in the adoption of the non-pharmaceutical containment measures;
+\item  alternative strategies focusing exclusively on the defense of fragile people.
+\end{enumerate}
+
+The model generates complex epidemic dynamics, emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the  contagion waves that occurred in the reference region. 
+
+We take charge of the variability of the epidemic paths within the simulation, running batches of executions with 10,000 occurrences for each experiment.
+
+Following \cite{inverseGen}, the AI and inverse generative side of the model comes from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people (deceased persons come from there).
+
+We can characterize the action of the planner both:
+\begin{enumerate}[label=\roman*]
+\item introducing ex-ante rules following ``plain'' or ``wise'' strategies that we imagine as observers or
+\item evolving those strategies via the application of a genetic algorithm. 
+\end{enumerate}
+
+The genome is a matrix of vaccination quotas by people groups, with their time range of adoption. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{How S.I.s.a.R. works}
+\label{howWorks}
+
+We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont.\footnote{They appear as black segments in the sequences of Appendix \ref{appContagion}.} The size of the initial infected group is out of scale: it is the smallest number, ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For implausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is made with realistic numbers, not to be read in scale: e.g., a classroom contains 25 students, a home two persons, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
 
 We can set: 
 \begin{itemize}
@@ -180,7 +207,7 @@ We can set:
 
 \item the length of the incubation interval;
 
-\item the critical distance, as the radius of a circle affecting people which are in it, with a given probability;
+\item the critical distance, i.e., the radius of a circle affecting people which are in it, with a given probability;
 
 \item the correction of that probability, due to the personal characteristics of both active and the passive agents; passive agents, as receivers, can be robust, regular, fragile, and extra fragile.
 
@@ -197,10 +224,6 @@ All agents have their home, inside a city, or a town. The agents also have a reg
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{How S.I.s.a.R. works}
-\label{howWorks}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{A day of the simulation}\label{aDay}
