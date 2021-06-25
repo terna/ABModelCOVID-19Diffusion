@@ -198,16 +198,15 @@ The genome is a matrix of vaccination quotas by people groups, with their time r
 \section{How S.I.s.a.R. works}
 \label{howWorks}
 
-We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont.\footnote{They appear as black segments in the sequences of Appendix \ref{appContagion}.} The size of the initial infected group is out of scale: it is the smallest number, ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For implausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is made with realistic numbers, not to be read in scale: e.g., a classroom contains 25 students, a home two persons, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
+We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont. The size of the initial infected group is out of scale: it is the smallest number, ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For implausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is made with realistic numbers, not to be read in scale: e.g., a classroom contains 25 students, a home two persons, large factories up to 150 employees, small ones up to 15, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
 
 We can set: 
 \begin{itemize}
-\setlength\itemsep{0.3em}
 \item min and max duration of the individual infection;
 
 \item the length of the incubation interval;
 
-\item the critical distance, i.e., the radius of a circle affecting people which are in it, with a given probability;
+\item the critical distance, i.e., the radius of the possibility of infection in open air, with a given probability;
 
 \item the correction of that probability, due to the personal characteristics of both active and the passive agents; passive agents, as receivers, can be robust, regular, fragile, and extra fragile.
 
@@ -215,11 +214,11 @@ We can set:
 
 We have two main types of contagion: (a) within a radius, for people moving around, also if only temporary present in a house/factory/nursing home/hospital (in schools we only have students and teachers); (b) in a given space (room or apartment) for people resident in their home or in a hospital or in a nursing home or being in school or in a working environment.
 
-People in hospitals and nursing homes can be infected in two ways: (a) and (b). Instead, while people are at school, they can only receive the disease from people in the same classroom, where only teachers and students are present, so this is a third infection mechanism (c).
+People in hospitals and nursing homes can be infected in two ways: (a) and (b). Instead, while people are at school, they can only receive the disease from people in the same classroom, where only teachers and students are present, so this is a third infection mechanism (c). In all cases, the personal characteristics of the recipients are decisive.
 
-One should remark that workplaces are open to all persons, as clients, vendors, suppliers, external workers can go there. In contrast, schools are mainly reserved for students and school operators and are less affected by contact with other types of agents.
+We remark that workplaces are open to all persons, as clients, vendors, suppliers, external workers can go there. In contrast, schools are mainly reserved for students and school operators and are less affected by contact with other types of agents.
 
-All agents have their home, inside a city, or a town. The agents also have a regular place (RP) where they act and interact, moving around. These positions can be interpreted as free time elective places. When we activate the school, students and teachers have both RPs and the schools; healthcare operators have both RPs and hospitals or nursing homes; finally, workers have both RPs and working places. In each day (or tick of the model), we simulated realistic sequences of actions.
+All agents have their home, inside a city, or a town. The agents also have a regular place (RP) where they act and interact, moving around. These positions can be interpreted as free time elective places. When we activate the schools, students and teachers have both RPs and schools; healthcare operators have both RPs and hospitals or nursing homes; finally, workers have both RPs and working places. In each day (or tick of the model), we simulated realistic sequences of actions.
 
 
 
@@ -227,6 +226,8 @@ All agents have their home, inside a city, or a town. The agents also have a reg
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{A day of the simulation}\label{aDay}
+
+RP in outline
 
 Figure \ref{outline} describes what happens during every day in our simulated world.
 
