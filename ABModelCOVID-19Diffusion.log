@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  24 JUN 2021 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  27 JUN 2021 13:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -674,50 +674,50 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./ABModelCOVID-19Diffusion.aux)
 \openout1 = `ABModelCOVID-19Diffusion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 48.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 47.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 48.
+ 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-48.
+47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 48.
+ 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 48.
+e 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -744,7 +744,7 @@ e
 \c@mv@tabular=\count323
 \c@mv@boldtabular=\count324
 \AtBeginShipoutBox=\box99
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -758,66 +758,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
  (./ABModelCOVID-19Diffusion.out) (./ABModelCOVID-19Diffusion.out)
 \@outlinefile=\write5
 \openout5 = `ABModelCOVID-19Diffusion.out'.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.0pt on input line 72.
+(Font)              scaled to size 14.0pt on input line 71.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.0pt on input line 72.
+(Font)              scaled to size 14.0pt on input line 71.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.0pt on input line 72.
+(Font)              scaled to size 16.0pt on input line 71.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 72.
+e 71.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
+(Font)              scaled to size 10.0pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
+(Font)              scaled to size 7.3pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 72.
+(Font)              scaled to size 5.5pt on input line 71.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-72.
+71.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-72.
+71.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-72.
+71.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.5pt on input line 72.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 72.
+(Font)              scaled to size 8.5pt on input line 71.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 71.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.5pt on input line 72.
+(Font)              scaled to size 8.5pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.20496pt on input line 72.
+(Font)              scaled to size 6.20496pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 4.67502pt on input line 72.
+(Font)              scaled to size 4.67502pt on input line 71.
 LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-72.
+71.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 8.5pt on input line 72.
+(Font)              scaled to size 8.5pt on input line 71.
 
 
 Package hyperref Warning: bookmark level for unknown title defaults to 0.
@@ -826,114 +826,99 @@ Package hyperref Warning: bookmark level for unknown title defaults to 0.
 Package hyperref Warning: bookmark level for unknown author defaults to 0.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.5pt on input line 72.
+(Font)              scaled to size 8.5pt on input line 71.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 79.
+(Font)              scaled to size 10.0pt on input line 78.
 [1
 
 
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 83.
+(Font)              scaled to size 12.0pt on input line 82.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 83.
+(Font)              scaled to size 12.0pt on input line 82.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 93.
+e 92.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 93.
+(Font)              scaled to size 10.0pt on input line 92.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.0pt on input line 110.
+(Font)              scaled to size 11.0pt on input line 109.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 11.0pt on input line 110.
+(Font)              scaled to size 11.0pt on input line 109.
  [2] [3]
-LaTeX Font Info:    Trying to load font information for T1+ntxsups on input lin
-e 153.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxsups.fd
-File: t1ntxsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 153.
-LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 8.5pt on input line 153.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 160.
-
-
-LaTeX Warning: Reference `appCalendar' on page 4 undefined on input line 173.
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.5pt on input line 175.
-
-LaTeX Warning: Reference `appContagion' on page 4 undefined on input line 175.
+(Font)              scaled to size 10.0pt on input line 158.
 
 [4]
-<SIsaR_outline.png, id=123, 2569.6pt x 1515.6625pt>
-File: SIsaR_outline.png Graphic file (type png)
-<use SIsaR_outline.png>
-Package pdftex.def Info: SIsaR_outline.png  used on input line 213.
-(pdftex.def)             Requested size: 332.89723pt x 196.34923pt.
- [5]
+
+LaTeX Warning: Citation `inverseGen' on page 5 undefined on input line 185.
+
+[5]
+<SIsaR_outline2.png, id=123, 2569.6pt x 1515.6625pt>
+File: SIsaR_outline2.png Graphic file (type png)
+<use SIsaR_outline2.png>
+Package pdftex.def Info: SIsaR_outline2.png  used on input line 229.
+(pdftex.def)             Requested size: 432.76741pt x 255.254pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.5pt on input line 230.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 232.
- [6 <./SIsaR_outline.png>]
-Overfull \hbox (13.34186pt too wide) in paragraph at lines 281--286
+(Font)              scaled to size 10.0pt on input line 248.
+ [6] [7 <./SIsaR_outline2.png>]
+Overfull \hbox (13.34186pt too wide) in paragraph at lines 297--302
 [][][]\T1/ntxtt/m/n/10 %PeopleNotFragileNotSymptomaticLeavingHome []\T1/ntxtlf/
 m/n/10 ([][]\T1/ntxtt/m/n/10 %PeopleNot[]\T1/ntxtlf/m/n/10 ) de-ter-mines,
  []
 
-[7] [8]
+[8] [9]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 342.
- (./ABModelCOVID-19Diffusion.bbl [9])
+(Font)              scaled to size 7.3pt on input line 358.
+ (./ABModelCOVID-19Diffusion.bbl [10])
 \tf@thm=\write6
 \openout6 = `ABModelCOVID-19Diffusion.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
 
 (./ABModelCOVID-19Diffusion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
 Package rerunfilecheck Info: File `ABModelCOVID-19Diffusion.out' has not change
 d.
-(rerunfilecheck)             Checksum: 774F38BDECB42F7316DE1F54951D51ED;1169.
+(rerunfilecheck)             Checksum: 4C15C91BBCCEF93FB4D6A817B6E58067;1092.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11341 strings out of 480608
- 159348 string characters out of 5903631
- 449717 words of memory out of 5000000
- 26940 multiletter control sequences out of 15000+600000
- 600347 words of font info for 100 fonts, out of 8000000 for 9000
+ 11302 strings out of 480608
+ 158584 string characters out of 5903631
+ 448640 words of memory out of 5000000
+ 26904 multiletter control sequences out of 15000+600000
+ 598393 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,43p,1228b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,43p,1192b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
-sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntxsups_t1.enc}{/usr/loc
-al/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texli
-ve/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/newtx/ntxsups-Regular.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx
-/ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pf
-b>
-Output written on ABModelCOVID-19Diffusion.pdf (10 pages, 611375 bytes).
+sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local
+/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/n
+ewtx/ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmr
+i.pfb>
+Output written on ABModelCOVID-19Diffusion.pdf (11 pages, 613573 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
