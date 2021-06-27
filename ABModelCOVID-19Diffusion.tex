@@ -222,12 +222,12 @@ All agents have their home, inside a city, or a town. The agents also have usual
 
 
 
-Figure \ref{outline} describes what happens during every day in our simulated world, with each day as a sequence of sever actions.
+Figure \ref{outline} describes what happens during every \emph{day} in our simulated world, with each day as a sequence of several actions.
 
 \begin{figure}[t]
 \center
 \fbox{\includegraphics[width=1.3\textwidth,,angle=90]{SIsaR_outline2.png}}
-\caption{A day in the simulation, with $N$ repetition where $N$ is the duration of a specific outbreak; look at Section \ref{cond} for the conditional actions,  Section \ref{par} for the parameters, and Section \ref{inter} for details on the interactions}
+\caption{A day in the simulation, with $N$ repetitions where $N$ is the duration of a specific outbreak; look at: Section \ref{cond} for the rules of the conditional actions; Section \ref{par} for the parameter definitions; and Section \ref{inter} for details on the agent interactions}
 \label{outline}
 \end{figure}
 
@@ -236,33 +236,34 @@ Figure \ref{outline} describes what happens during every day in our simulated wo
 \subsection{Conditional actions}
 \label{cond}
 
-\begin{description}
+Agents' movements in space, to go to work, school, and other UPs are subject to two interrelated general conditions.
 
-\item [condition I] Symptomatic persons are at home or in a hospital or a nursing home and do not move. 
+\begin{enumerate}[label=\Roman*]
 
-\item [condition II] People not constrained by \emph{condition I} can move if (basic rule) no limitations/lockdown \emph{OR} one of the following situations:
+\item Symptomatic persons are at home or in a hospital or a nursing home and do not move. 
+
+\item People not constrained by \emph{condition I} can move if (primary rule) there are no general limitations (e.g., lockdown) \emph{OR} or one of the following specific sub-conditions applies:
 
 \begin{enumerate}
-\item hospital healthcare operators, nursing home healthcare operators;
+\item agents who are hospital healthcare operators or nursing home healthcare operators;
 
-\item all people as \verb|%PeopleAnyTypeNotSymptomaticLeavingHome| 
-(\ref{par}, \ref{p3});
+\item all people, according to the probability of moving of the whole non-symptomatic agents (\ref{par}, \ref{p3});
 
-\item regular people as \verb|%PeopleNotFragileNotSymptomaticLeavingHome|
-(\ref{par}, \ref{p4};
+\item regular people, according to the probability of moving of the regular non-symptomatic agents
+(\ref{par}, \ref{p4});
 
-\item workers following \verb|%openFactoriesWhenLimitationsOn|
+\item workers, if all the factories are open or it is open their workplace
 (\ref{par}, \ref{p5});
 
-\item teachers if \verb|activateSchool| is $true$
+\item teachers, if the schools are open
 (\ref{par}, \ref{p6});
 
-\item students if \verb|activateSchool| is $true$ with \%students $>0$
+\item students, if the schools are open, but with a possible quota limitation
 (\ref{par}, \ref{p7}).
 
 \end{enumerate}
 
-\end{description}
+\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -307,7 +308,7 @@ NB, the parameters \ref{p3} and \ref{p4} produce independent effects, as in the 
 in future versions of the model, we will define the quotas more straightforwardly:
 \begin{itemize}
 \item \verb|%FragilePeopleNotSymptomaticLeavingHome|;
-\item \verb|%NitFragilePeopleNotSymptomaticLeavingHome|;
+\item \verb|%NotFragilePeopleNotSymptomaticLeavingHome|;
 \end{itemize}
 
 \item \label{p5} \verb|%openFactoriesWhenLimitationsOn| (\verb|%Fac|) 
