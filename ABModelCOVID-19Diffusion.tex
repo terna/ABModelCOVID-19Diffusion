@@ -51,7 +51,7 @@
 % Use \titlerunning{Short Title} for an abbreviated version of
 % your contribution title if the original one is too long
 \author{Gianpiero Pescarmona, Pietro Terna, Alberto Acquadro, Paolo Pescarmona, Giuseppe Russo, Emilio Sulis, and Stefano Terna}
- \authorrunning{G. Pescarmona, P. Terna \textit{et al.}}
+\authorrunning{G. Pescarmona, P. Terna\textit{et al.}}
 % Use \authorrunning{Short Title} for an abbreviated version of
 % your contribution title if the original one is too long
 \institute{G. Pescarmona \at University of Torino, Italy, \email{gianpiero.pescarmona@unito.it}
@@ -267,13 +267,14 @@ Agents' movements in space, to go to work, school, and other UPs are subject to 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Parameters}\label{par}
+\subsection{Parameter definition}
+\label{par}
 
-In round brackets we report the short names if used in program scripts. About the days, please interpolate the dates of Table \ref{dates}.
+We define here the parameters of Figure \ref{outline}, also with the short names used in program scripts, in round brackets. The values of the parameters are reported in detail in Appendix~1~-~Parameter~values (Section \ref{app1}).
 
 \begin{enumerate}[label=\roman*]
 
-\item \label{p1} \verb|probabilityOfGettingInfection| (\verb|prob|): 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules);  
+\item \label{p1} \emph{probabilityOfGettingInfection} (\verb|prob|) is the base probability of getting infected, to be multiplied by the intrinsic susceptibility factor (\ref{p2}); it is activated if the subject is within a circle of radius  (\ref{p8}) with an infected person; values at (\ref{app1}, \ref{pp1});
 
 \item \label{p2} \verb|intrinsicSusceptibility| based on \verb!intrinsicSusceptibilityFactor! set to 5 in Eq. \ref{intrinsic}
 \begin{equation}
@@ -353,8 +354,73 @@ Contagions arise from agents' interactions, in four situations, as specified in 
 At \url{https://terna.to.it/simul/contagionSequences.pdf}, in Section ``2 The visualization of the sequences of contagions in simulated epidemics'' and in ``A Appendix: Analyzing examples of contagion sequences'' we have the visualizations of the effects of those sequences of interactions-contagions.
 
 
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Model calendar}\label{calend}
+\section{Appendix 1 - parameter values}
+\label{app1}
+
+We report here the values of parameters of Figure \ref{outline}, also with the short names used in program scripts, in round brackets. Look at Section \ref{par} for the definition. Day numbering is related to actual dates via the Table \ref{dates}.
+
+\begin{enumerate}[label=\roman*]
+
+\item \label{pp1} \verb|probabilityOfGettingInfection| (\verb|prob|): 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules);  
+
+\item \label{pp2} \verb|intrinsicSusceptibility| based on \verb!intrinsicSusceptibilityFactor! set to 5 in Eq. \ref{intrinsic}
+%\begin{equation}
+%intrinsicSusceptibility = intrinsicSusceptibilityFactor^{groupFragility}
+%\label{intrinsic}
+%\end{equation}
+%with $groupFragility$ exponent set to:
+
+%\begin{description}
+%\item [1] for extra-fragile persons,
+%\item [0] for fragile persons,
+%\item [-1] for regular persons,
+%\item [-2] young people from 0 to 24 years old;
+%\end{description}
+
+\item \label{pp3} \verb|%PeopleAnyTypeNotSymptomaticLeavingHome| (\verb|%PeopleAny|)
+determines, in a probabilistic way, the number of all people going around in case of limitations/lockdown; 
+the limitation operates only if the lockdown is on (see above); in use
+at (day) 20, 90; at 28, 80; at 31, 0; at 106, 80; at 110, 95; at112, 85; at 117, 95; at 121, 90; at 259, 90; at 266, 80; at 277, 50;
+at 302, 70; at 320, 90; at 325, 50; at 329, 80; at 332, 50; at 336, 80; at 337, 50; at 339, 80; 
+
+\item \label{pp4} \verb|%PeopleNotFragileNotSymptomaticLeavingHome| (\verb|%PeopleNot|)
+determines, in a probabilistic way, the number of regular people going around in case of limitations/lockdown;
+the limitation operates only if the lockdown is on (into our simulated world, from day 20); \verb|%PeopleNot| values: 
+at (day) 31, 80; at 35, 70; at 36, 65; at 38, 15; at 42, 25; at 84, 30; at 106, 0; at 302, 90; at 325, 50; at 332, 50; 
+at 337, 50; at 339, 100; at 349, 90;
+
+the parameters \ref{p3} and \ref{p4} in some phase change very frequently, reproducing into the model the uncertainty of the decisions that was happening  in the real world in the same periods; 
+
+NB, the parameters \ref{p3} and \ref{p4} produce independent effects, as in the following examples: (a) the activation of \emph{\%PeopleAny at 31, 0} and, simultaneously, of \emph{\%PeopleNot at 31, 80}, means that people had to stay home on that day, but people specifically not fragile could go out in 80\% of the cases; (b) \emph{\%PeopleAny at 339, 80} and, simultaneously, \emph{\%PeopleNot at 339, 100} means that fragile and not fragile persons cannot always go around, but only in the 80\% of the cases, instead considering uniquely non-fragile persons they are free to go out; the construction is an attempt to reproduce a fuzzy situation;
+
+in future versions of the model, we will define the quotas more straightforwardly:
+\begin{itemize}
+\item \verb|%FragilePeopleNotSymptomaticLeavingHome|;
+\item \verb|%NotFragilePeopleNotSymptomaticLeavingHome|;
+\end{itemize}
+
+\item \label{pp5} \verb|%openFactoriesWhenLimitationsOn| (\verb|%Fac|) 
+determines, in a probabilistic way, what factories (small and large industries, commercial surfaces, private and government offices)
+are open when limitations are on; if the factory of a worker is open, the subject can go to work, avoiding restrictions (but uniquely in the first step of activity of each day); \verb|%Fac| 
+is in use at (day) 38, value4 0; at 49, 20; at 84, 70; at 106, 100; at 266, 90; at 277, 70; at 302, 80; at 320, 90; at 325, 30;
+at 329, 90; at 332, 30; 336, 90; at 337, 30; at 339, 100;
+
+\item \label{pp6} \verb|stopFragileWorkers|  (\verb|sFW|); if set to 1, fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but can go to work in no case; the regular case is that the workers (fragile or regular) can go to their factory (if open) also when limitations are on; in one of the experiments we used \verb|sFW| with set to 1 (on) at day 245  and to 0 (off) at day 275;
+
+alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if on (set to 1) the total of the workers is unchanged, but the workers are all regular; we can activate this counterfactual operation uniquely at the beginning of the simulation;
+
+\item \label{pp7} when \verb|activateSchools| (\verb|aSch|) is on (set to 1) teachers and students go to school avoiding restrictions (but uniquely in the first step of activity of each day);  \verb|\%Students| limits to its value the quota of the students moving to school; the residual part is following the lessons from home; we used \verb|aSch| at (day) 1, on; at 17, off; at 225, on; at 325, off; at 339, on; we used \verb|1%st| 
+at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not relevant for the model, but for the memory of the programmer-author);
+
+\item \label{pp8} \verb|radiusOfInfection| (\verb|radius|) with value 0.2; the effect of the contagion---outside enclosed spaces, or there, but for temporary presences---is possible within that distance; in the model, space is missing of a scale, but forcing the area to be in the scale of a region as Piedmont, 0.2 is equivalent to 20 meters; we have to better calibrate this measure, with movements and probabilities; this is a key step in future developments of the model.
+
+\end{enumerate}
+
 
 Day 1 is fixed at Feb \nth{4}, 2020. The calendar scan is that of the Table \ref{dates}.
 
@@ -384,7 +450,6 @@ Day 1 is fixed at Feb \nth{4}, 2020. The calendar scan is that of the Table \ref
 \caption{The days of the simulation and their position in the calendar}
 \label{dates}
 \end{table}
-
 
 
 
