@@ -274,9 +274,9 @@ We define here the parameters of Figure \ref{outline}, also with the short names
 
 \begin{enumerate}[label=\roman*]
 
-\item \label{p1} \emph{probabilityOfGettingInfection} (\verb|prob|) is the base probability of getting infected, to be multiplied by the intrinsic susceptibility factor (\ref{p2}); it is activated if the subject is within a circle of radius  (\ref{p8}) with an infected person; values at (\ref{app1}, \ref{pp1});
+\item \label{p1} \emph{probabilityOfGettingInfection} (\verb|prob|) is the base probability of getting infected, to be multiplied by the \emph{intrinsicSusceptibility} factor (\ref{p2}); it is activated if the subject is within a circle of radius  (\ref{p8}) with an infected person; values at (\ref{app1}, \ref{pp1});
 
-\item \label{p2} \verb|intrinsicSusceptibility| based on \verb!intrinsicSusceptibilityFactor! set to 5 in Eq. \ref{intrinsic}
+\item \label{p2} the \emph{intrinsicSusceptibility} is based on \emph{intrinsicSusceptibilityFactor} set to 5 in Eq. \ref{intrinsic}
 \begin{equation}
 intrinsicSusceptibility = intrinsicSusceptibilityFactor^{groupFragility}
 \label{intrinsic}
@@ -290,11 +290,8 @@ with $groupFragility$ exponent set to:
 \item [-2] young people from 0 to 24 years old;
 \end{description}
 
-\item \label{p3} \verb|%PeopleAnyTypeNotSymptomaticLeavingHome| (\verb|%PeopleAny|)
-determines, in a probabilistic way, the number of all people going around in case of limitations/lockdown; 
-the limitation operates only if the lockdown is on (see above); in use
-at (day) 20, 90; at 28, 80; at 31, 0; at 106, 80; at 110, 95; at112, 85; at 117, 95; at 121, 90; at 259, 90; at 266, 80; at 277, 50;
-at 302, 70; at 320, 90; at 325, 50; at 329, 80; at 332, 50; at 336, 80; at 337, 50; at 339, 80; 
+\item \label{p3} \emph{\%PeopleAnyTypeNotSymptomaticLeavingHome} (\verb|%PeopleAny|)
+determines, in a probabilistic way, the number of people of any kind going around in case of limitations/lockdown; values at (\ref{app1}, \ref{pp3}); 
 
 \item \label{p4} \verb|%PeopleNotFragileNotSymptomaticLeavingHome| (\verb|%PeopleNot|)
 determines, in a probabilistic way, the number of regular people going around in case of limitations/lockdown;
@@ -362,13 +359,15 @@ At \url{https://terna.to.it/simul/contagionSequences.pdf}, in Section ``2 The vi
 \section{Appendix 1 - parameter values}
 \label{app1}
 
-We report here the values of parameters of Figure \ref{outline}, also with the short names used in program scripts, in round brackets. Look at Section \ref{par} for the definition. Day numbering is related to actual dates via the Table \ref{dates}.
+We report here the values of parameters of Figure \ref{outline}, also with the short names used in program scripts, in round brackets. Look at Section \ref{par} for the definition. Day numbering is related to actual dates via the Table \ref{dates}. Day 1 is fixed at Feb \nth{4}, 2020.
+
+The values adopted in the experiments reported in this work are the following.
 
 \begin{enumerate}[label=\roman*]
 
-\item \label{pp1} \verb|probabilityOfGettingInfection| (\verb|prob|): 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules);  
+\item \label{pp1} The values of \emph{probabilityOfGettingInfection} (\verb|prob|) are: 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules).  
 
-\item \label{pp2} \verb|intrinsicSusceptibility| based on \verb!intrinsicSusceptibilityFactor! set to 5 in Eq. \ref{intrinsic}
+\item \label{pp2} \emph{intrinsicSusceptibility} is set discussing Eq. \ref{intrinsic} in (\ref{par}, \ref{p2}).
 %\begin{equation}
 %intrinsicSusceptibility = intrinsicSusceptibilityFactor^{groupFragility}
 %\label{intrinsic}
@@ -382,9 +381,7 @@ We report here the values of parameters of Figure \ref{outline}, also with the s
 %\item [-2] young people from 0 to 24 years old;
 %\end{description}
 
-\item \label{pp3} \verb|%PeopleAnyTypeNotSymptomaticLeavingHome| (\verb|%PeopleAny|)
-determines, in a probabilistic way, the number of all people going around in case of limitations/lockdown; 
-the limitation operates only if the lockdown is on (see above); in use
+\item \label{pp3} The values of \emph{\%PeopleAnyTypeNotSymptomaticLeavingHome} (\verb|%PeopleAny|) are:
 at (day) 20, 90; at 28, 80; at 31, 0; at 106, 80; at 110, 95; at112, 85; at 117, 95; at 121, 90; at 259, 90; at 266, 80; at 277, 50;
 at 302, 70; at 320, 90; at 325, 50; at 329, 80; at 332, 50; at 336, 80; at 337, 50; at 339, 80; 
 
@@ -422,35 +419,29 @@ at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not rel
 \end{enumerate}
 
 
-Day 1 is fixed at Feb \nth{4}, 2020. The calendar scan is that of the Table \ref{dates}.
+
 
 \begin{table}[t]
+\begin{center}
 \begin{footnotesize}
-\begin{tabular}{rrrrr}
+\begin{tabular}{rrrrrrrrrrr}
 \hline\noalign{\smallskip}
- Day & Date  &~~~~~~~~& Day & Date \\
+ Day & Date  &~~~~~~~~& Day & Date &~~~~~~~~& Day & Date &~~~~~~~~& Day & Date \\
  \noalign{\smallskip}\svhline\noalign{\smallskip}
- 25 & 28- 2-2020 & & 375 & 12- 2-2021 \\
- 50 & 24- 3-2020 & & 400 &  9- 3-2021 \\
- 75 & 18- 4-2020 & & 425 &  3- 4-2021 \\
-100 & 13- 5-2020 & & 450 & 28- 4-2021 \\
-125 &  7- 6-2020 & & 475 & 23- 5-2021 \\
-150 &  2- 7-2020 & & 500 & 17- 6-2021 \\
-175 & 27- 7-2020 & & 525 & 12- 7-2021 \\
-200 & 21- 8-2020 & & 550 &  6- 8-2021 \\
-225 & 15- 9-2020 & & 575 & 31- 8-2021 \\
-250 & 10-10-2020 & & 600 & 25- 9-2021 \\\
-275 &  4-11-2020 & & 625 & 20-10-2021 \\
-300 & 29-11-2020 & & 650 & 14-11-2021 \\
-325 & 24-12-2020 & & 675 &  9-12-2021 \\
-350 & 18- 1-2021 & & 700 &  3- 1-2022 \\
+ 25 & 28- 2-2020 & & 200 & 21- 8-2020 & & 375 & 12- 2-2021 & & 550 &  6- 8-2021 \\
+ 50 & 24- 3-2020 & & 225 & 15- 9-2020 & & 400 &  9- 3-2021 & & 575 & 31- 8-2021 \\
+ 75 & 18- 4-2020 & & 250 & 10-10-2020 & & 425 &  3- 4-2021 & & 600 & 25- 9-2021 \\
+100 & 13- 5-2020 & & 275 &  4-11-2020 & & 450 & 28- 4-2021 & & 625 & 20-10-2021 \\
+125 &  7- 6-2020 & & 300 & 29-11-2020 & & 475 & 23- 5-2021 & & 650 & 14-11-2021 \\
+150 &  2- 7-2020 & & 325 & 24-12-2020 & & 500 & 17- 6-2021 & & 675 &  9-12-2021 \\
+175 & 27- 7-2020 & & 350 & 18- 1-2021 & & 525 & 12- 7-2021 & & 700 &  3- 1-2022 \\
 \hline\noalign{\smallskip}
 \end{tabular}
 \end{footnotesize}
 \caption{The days of the simulation and their position in the calendar}
 \label{dates}
+\end{center}
 \end{table}
-
 
 
 \bibliography{bibliografiaGenerale}
