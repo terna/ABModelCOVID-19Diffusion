@@ -43,7 +43,6 @@
                        % your makeindex program
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
 \title*{An Agent-Based Model of COVID-19 Diffusion to Plan and Evaluate Intervention Policies}
@@ -349,7 +348,33 @@ qui le sezioni con il memo qui sotto
 
 At \url{https://terna.to.it/simul/contagionSequences.pdf}, in Section ``2 The visualization of the sequences of contagions in simulated epidemics'' and in ``A Appendix: Analyzing examples of contagion sequences'' we have the visualizations of the effects of those sequences of interactions-contagions.
 
+Use the 3D representation of the model world.
 
+\begin{figure}[t]
+\center
+\fbox{\includegraphics[width=0.9\textwidth,,angle=0]{3D.png}}
+\caption{3D representation of the model world}
+\label{3D}
+\end{figure}
+
+A gallery of contagion sequences in Table \ref{table_of_figures}.
+
+    \begin{table}
+        \centering
+        \begin{tabular}{cccc}
+           \hline\noalign{\smallskip}
+            Nr. & a & b & c  \\
+             \noalign{\smallskip}\svhline\noalign{\smallskip}
+1 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
+2 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
+3 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
+4 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
+5 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
+            \hline\noalign{\smallskip}
+        \end{tabular}
+        \caption{Table of figures}
+        \label{table_of_figures}
+    \end{table}
 
 
 
@@ -367,18 +392,6 @@ The values adopted in the experiments reported in this work are the following.
 \item \label{pp1} The values of \emph{probabilityOfGettingInfection} (\verb|prob|) are: 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules).  
 
 \item \label{pp2} \emph{intrinsicSusceptibility} is set discussing Eq. \ref{intrinsic} in (\ref{par}, \ref{p2}).
-%\begin{equation}
-%intrinsicSusceptibility = intrinsicSusceptibilityFactor^{groupFragility}
-%\label{intrinsic}
-%\end{equation}
-%with $groupFragility$ exponent set to:
-
-%\begin{description}
-%\item [1] for extra-fragile persons,
-%\item [0] for fragile persons,
-%\item [-1] for regular persons,
-%\item [-2] young people from 0 to 24 years old;
-%\end{description}
 
 \item \label{pp3} The values of \emph{\%PeopleAnyTypeNotSymptomaticLeavingHome} (\verb|%PeopleAny|) are:
 at (day) 20, 90; at 28, 80; at 31, 0; at 106, 80; at 110, 95; at112, 85; at 117, 95; at 121, 90; at 259, 90; at 266, 80; at 277, 50;
