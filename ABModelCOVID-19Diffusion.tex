@@ -291,17 +291,15 @@ with $groupFragility$ exponent set to:
 \end{description}
 
 \item \label{p3} \emph{\%PeopleAnyTypeNotSymptomaticLeavingHome} (\verb|%PeopleAny|)
-determines, in a probabilistic way, the number of people of any kind going around in case of limitations/lockdown; values at (\ref{app1}, \ref{pp3}); 
+determines, in a probabilistic way, the number of people of any kind going around in case of limitations/lockdown; the limitations operate only if the lockdown is on (into our simulated world, from day 20); values at (\ref{app1}, \ref{pp3}); 
 
-\item \label{p4} \verb|%PeopleNotFragileNotSymptomaticLeavingHome| (\verb|%PeopleNot|)
+\item \label{p4} \emph{\%PeopleNotFragileNotSymptomaticLeavingHome} (\verb|%PeopleNot|)
 determines, in a probabilistic way, the number of regular people going around in case of limitations/lockdown;
-the limitation operates only if the lockdown is on (into our simulated world, from day 20); \verb|%PeopleNot| values: 
-at (day) 31, 80; at 35, 70; at 36, 65; at 38, 15; at 42, 25; at 84, 30; at 106, 0; at 302, 90; at 325, 50; at 332, 50; 
-at 337, 50; at 339, 100; at 349, 90;
+as above, the limitations operate only if the lockdown is on (into our simulated world, from day 20); values at (\ref{app1}, \ref{pp4});
 
-the parameters \ref{p3} and \ref{p4} in some phase change very frequently, reproducing into the model the uncertainty of the decisions that was happening  in the real world in the same periods; 
+the parameters \ref{p3} and \ref{p4} in some time interval change very frequently, reproducing into the model the uncertainty of the decisions that were happening  in the real world in the same periods; 
 
-NB, the parameters \ref{p3} and \ref{p4} produce independent effects, as in the following examples: (a) the activation of \emph{\%PeopleAny at 31, 0} and, simultaneously, of \emph{\%PeopleNot at 31, 80}, means that people had to stay home on that day, but people specifically not fragile could go out in 80\% of the cases; (b) \emph{\%PeopleAny at 339, 80} and, simultaneously, \emph{\%PeopleNot at 339, 100} means that fragile and not fragile persons cannot always go around, but only in the 80\% of the cases, instead considering uniquely non-fragile persons they are free to go out; the construction is an attempt to reproduce a fuzzy situation;
+NB, the parameters \ref{p3} and \ref{p4} produce independent effects, as in the following examples: (a) the activation of \emph{\%PeopleAny at 31, 0} and, simultaneously, of \emph{\%PeopleNot at 31, 80}, means that people had to stay home on that day, but people specifically not fragile could go out in 80\% of the cases; (b) \emph{\%PeopleAny at 339, 80} and, simultaneously, \emph{\%PeopleNot at 339, 100} means that fragile and not fragile persons cannot always go around, but only in the 80\% of the cases; instead, considering uniquely non-fragile persons they are free to go out; the construction is an attempt to reproduce a fuzzy situation;
 
 in future versions of the model, we will define the quotas more straightforwardly:
 \begin{itemize}
@@ -309,20 +307,17 @@ in future versions of the model, we will define the quotas more straightforwardl
 \item \verb|%NotFragilePeopleNotSymptomaticLeavingHome|;
 \end{itemize}
 
-\item \label{p5} \verb|%openFactoriesWhenLimitationsOn| (\verb|%Fac|) 
+\item \label{p5} \emph{\%openFactoriesWhenLimitationsOn} (\verb|%Fac|) 
 determines, in a probabilistic way, what factories (small and large industries, commercial surfaces, private and government offices)
-are open when limitations are on; if the factory of a worker is open, the subject can go to work, avoiding restrictions (but uniquely in the first step of activity of each day); \verb|%Fac| 
-is in use at (day) 38, value4 0; at 49, 20; at 84, 70; at 106, 100; at 266, 90; at 277, 70; at 302, 80; at 320, 90; at 325, 30;
-at 329, 90; at 332, 30; 336, 90; at 337, 30; at 339, 100;
+are open when limitations are on; if the factory of a worker is open, the subject can go to work, avoiding restrictions (but uniquely in the first step of activity of each day); values at (\ref{app1}, \ref{pp5}); 
 
-\item \label{p6} \verb|stopFragileWorkers|  (\verb|sFW|); if set to 1, fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but can go to work in no case; the regular case is that the workers (fragile or regular) can go to their factory (if open) also when limitations are on; in one of the experiments we used \verb|sFW| with set to 1 (on) at day 245  and to 0 (off) at day 275;
+\item \label{p6} \emph{stopFragileWorkers}  (\verb|sFW|) is \emph{off} (set to 0) by default; if \emph{on} (set to 1), fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but cannot go to work; the regular case is that the workers (fragile or regular) can go to their factory (if open) also when limitations are on; values at (\ref{app1}, \ref{pp6});
 
-alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if on (set to 1) the total of the workers is unchanged, but the workers are all regular; we can activate this counterfactual operation uniquely at the beginning of the simulation;
+alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if \emph{on} (set to 1) the total of the workers is unchanged, but the workers are all regular; we can activate this counterfactual operation uniquely at the beginning of the simulation;
 
-\item \label{p7} when \verb|activateSchools| (\verb|aSch|) is on (set to 1) teachers and students go to school avoiding restrictions (but uniquely in the first step of activity of each day);  \verb|\%Students| limits to its value the quota of the students moving to school; the residual part is following the lessons from home; we used \verb|aSch| at (day) 1, on; at 17, off; at 225, on; at 325, off; at 339, on; we used \verb|1%st| 
-at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not relevant for the model, but for the memory of the programmer-author);
+\item \label{p7} when \emph{activateSchools} (\verb|aSch|) is \emph{on} (set to 1), teachers and students go to school avoiding restrictions (but uniquely in the first step of activity of each day); \emph{\%Students} (\verb|%St|) limits to its value the quota of the students moving to school; the residual part is following the lessons from home; values at (\ref{app1}, \ref{pp7});
 
-\item \label{p8} \verb|radiusOfInfection| (\verb|radius|) with value 0.2; the effect of the contagion---outside enclosed spaces, or there, but for temporary presences---is possible within that distance; in the model, space is missing of a scale, but forcing the area to be in the scale of a region as Piedmont, 0.2 is equivalent to 20 meters; we have to better calibrate this measure, with movements and probabilities; this is a key step in future developments of the model.
+\item \label{p8} following \emph{radiusOfInfection} (\verb|radius|), the effect of the contagion---outside enclosed spaces, or there, but for temporary presences---is possible within that distance; values at (\ref{app1}, \ref{pp8}).
 
 \end{enumerate}
 
@@ -385,36 +380,23 @@ The values adopted in the experiments reported in this work are the following.
 at (day) 20, 90; at 28, 80; at 31, 0; at 106, 80; at 110, 95; at112, 85; at 117, 95; at 121, 90; at 259, 90; at 266, 80; at 277, 50;
 at 302, 70; at 320, 90; at 325, 50; at 329, 80; at 332, 50; at 336, 80; at 337, 50; at 339, 80; 
 
-\item \label{pp4} \verb|%PeopleNotFragileNotSymptomaticLeavingHome| (\verb|%PeopleNot|)
-determines, in a probabilistic way, the number of regular people going around in case of limitations/lockdown;
-the limitation operates only if the lockdown is on (into our simulated world, from day 20); \verb|%PeopleNot| values: 
+\item \label{pp4} The values of \emph{\%PeopleNotFragileNotSymptomaticLeavingHome} (\verb|%PeopleNot|) are:
 at (day) 31, 80; at 35, 70; at 36, 65; at 38, 15; at 42, 25; at 84, 30; at 106, 0; at 302, 90; at 325, 50; at 332, 50; 
 at 337, 50; at 339, 100; at 349, 90;
 
-the parameters \ref{p3} and \ref{p4} in some phase change very frequently, reproducing into the model the uncertainty of the decisions that was happening  in the real world in the same periods; 
-
-NB, the parameters \ref{p3} and \ref{p4} produce independent effects, as in the following examples: (a) the activation of \emph{\%PeopleAny at 31, 0} and, simultaneously, of \emph{\%PeopleNot at 31, 80}, means that people had to stay home on that day, but people specifically not fragile could go out in 80\% of the cases; (b) \emph{\%PeopleAny at 339, 80} and, simultaneously, \emph{\%PeopleNot at 339, 100} means that fragile and not fragile persons cannot always go around, but only in the 80\% of the cases, instead considering uniquely non-fragile persons they are free to go out; the construction is an attempt to reproduce a fuzzy situation;
-
-in future versions of the model, we will define the quotas more straightforwardly:
-\begin{itemize}
-\item \verb|%FragilePeopleNotSymptomaticLeavingHome|;
-\item \verb|%NotFragilePeopleNotSymptomaticLeavingHome|;
-\end{itemize}
-
-\item \label{pp5} \verb|%openFactoriesWhenLimitationsOn| (\verb|%Fac|) 
-determines, in a probabilistic way, what factories (small and large industries, commercial surfaces, private and government offices)
-are open when limitations are on; if the factory of a worker is open, the subject can go to work, avoiding restrictions (but uniquely in the first step of activity of each day); \verb|%Fac| 
-is in use at (day) 38, value4 0; at 49, 20; at 84, 70; at 106, 100; at 266, 90; at 277, 70; at 302, 80; at 320, 90; at 325, 30;
+\item \label{pp5} The values of \emph{\%openFactoriesWhenLimitationsOn} (\verb|%Fac|) are:
+at (day) 38, value4 0; at 49, 20; at 84, 70; at 106, 100; at 266, 90; at 277, 70; at 302, 80; at 320, 90; at 325, 30;
 at 329, 90; at 332, 30; 336, 90; at 337, 30; at 339, 100;
 
-\item \label{pp6} \verb|stopFragileWorkers|  (\verb|sFW|); if set to 1, fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but can go to work in no case; the regular case is that the workers (fragile or regular) can go to their factory (if open) also when limitations are on; in one of the experiments we used \verb|sFW| with set to 1 (on) at day 245  and to 0 (off) at day 275;
+\item \label{pp6} \emph{stopFragileWorkers}  (\verb|sFW|): by default, 0; in one of the experiments we used \verb|sFW| with set to 1 (on) at day 245  and to 0 (off) at day 275;
 
-alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if on (set to 1) the total of the workers is unchanged, but the workers are all regular; we can activate this counterfactual operation uniquely at the beginning of the simulation;
+\item \label{pp7} The values of \emph{activateSchools} (\verb|aSch|) are:
+at (day) 1, on; at 17, off; at 225, on; at 325, off; at 339, on; 
 
-\item \label{pp7} when \verb|activateSchools| (\verb|aSch|) is on (set to 1) teachers and students go to school avoiding restrictions (but uniquely in the first step of activity of each day);  \verb|\%Students| limits to its value the quota of the students moving to school; the residual part is following the lessons from home; we used \verb|aSch| at (day) 1, on; at 17, off; at 225, on; at 325, off; at 339, on; we used \verb|1%st| 
-at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not relevant for the model, but for the memory of the programmer-author);
+the values of  \emph{\%Students} (\verb|%St|) are: 
+at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not relevant for the model, but for the use of the programmer-author);
 
-\item \label{pp8} \verb|radiusOfInfection| (\verb|radius|) with value 0.2; the effect of the contagion---outside enclosed spaces, or there, but for temporary presences---is possible within that distance; in the model, space is missing of a scale, but forcing the area to be in the scale of a region as Piedmont, 0.2 is equivalent to 20 meters; we have to better calibrate this measure, with movements and probabilities; this is a key step in future developments of the model.
+\item \label{pp8} The value of \emph{radiusOfInfection} (\verb|radius|) is 0.2; in the model, space is missing of a scale, but forcing the area to be in the scale of a region as Piedmont, 0.2 is equivalent to 20 meters; we have to better calibrate this measure with movements and probabilities; this is a critical step in future developments of the model.
 
 \end{enumerate}
 
@@ -438,7 +420,7 @@ at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not rel
 \hline\noalign{\smallskip}
 \end{tabular}
 \end{footnotesize}
-\caption{The days of the simulation and their position in the calendar}
+\caption{The days of the simulation and their equivalent dates in the calendar}
 \label{dates}
 \end{center}
 \end{table}
