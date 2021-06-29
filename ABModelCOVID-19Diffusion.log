@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  27 JUN 2021 13:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  29 JUN 2021 13:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,71 +854,58 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 158.
 
-[4]
-
-LaTeX Warning: Citation `inverseGen' on page 5 undefined on input line 185.
-
-[5]
-<SIsaR_outline2.png, id=123, 2569.6pt x 1515.6625pt>
+[4] [5]
+<SIsaR_outline2.png, id=129, 2569.6pt x 1515.6625pt>
 File: SIsaR_outline2.png Graphic file (type png)
 <use SIsaR_outline2.png>
 Package pdftex.def Info: SIsaR_outline2.png  used on input line 229.
 (pdftex.def)             Requested size: 432.76741pt x 255.254pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.5pt on input line 230.
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 248.
  [6] [7 <./SIsaR_outline2.png>]
-Overfull \hbox (13.34186pt too wide) in paragraph at lines 297--302
-[][][]\T1/ntxtt/m/n/10 %PeopleNotFragileNotSymptomaticLeavingHome []\T1/ntxtlf/
-m/n/10 ([][]\T1/ntxtt/m/n/10 %PeopleNot[]\T1/ntxtlf/m/n/10 ) de-ter-mines,
- []
-
-[8] [9]
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 277.
+ [8] [9]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 358.
- (./ABModelCOVID-19Diffusion.bbl [10])
+(Font)              scaled to size 7.3pt on input line 361.
+ (./ABModelCOVID-19Diffusion.bbl
+[10])
 \tf@thm=\write6
 \openout6 = `ABModelCOVID-19Diffusion.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
-
-(./ABModelCOVID-19Diffusion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+ (./ABModelCOVID-19Diffusion.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
 Package rerunfilecheck Info: File `ABModelCOVID-19Diffusion.out' has not change
 d.
-(rerunfilecheck)             Checksum: 4C15C91BBCCEF93FB4D6A817B6E58067;1092.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 307E97383380072A69AC89F621D40736;1189.
  ) 
 Here is how much of TeX's memory you used:
- 11302 strings out of 480608
- 158584 string characters out of 5903631
- 448640 words of memory out of 5000000
- 26904 multiletter control sequences out of 15000+600000
- 598393 words of font info for 98 fonts, out of 8000000 for 9000
+ 11325 strings out of 480608
+ 158726 string characters out of 5903631
+ 453271 words of memory out of 5000000
+ 26914 multiletter control sequences out of 15000+600000
+ 598235 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,43p,1192b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
-sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local
-/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/n
-ewtx/ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmr
-i.pfb>
-Output written on ABModelCOVID-19Diffusion.pdf (11 pages, 613573 bytes).
+ 38i,9n,43p,1192b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/
+local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/newtx/txsys.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newt
+x/ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.p
+fb>
+Output written on ABModelCOVID-19Diffusion.pdf (11 pages, 621569 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

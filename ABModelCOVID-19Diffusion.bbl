@@ -48,6 +48,14 @@ R.~Axtell, {Why agents? On the varied motivations for agent computing in the
 \newblock Tech. rep., Center on Social and Economic Dynamics Brookings
   Institution (2000)
 
+\bibitem{ghorbani2020assocc}
+A.~Ghorbani, F.~Lorig, B.~de~Bruin, P.~Davidsson, F.~Dignum, V.~Dignum,
+  M.~van~der Hurk, M.~Jensen, C.~Kammler, K.~Kreulen, L.G. Ludescher,
+  A.~Melchior, R.~Mellema, C.~P{\u a}str{\u a}v, L.~Vanh{\'e}e, H.~Verhagen,
+  Review of Artificial Societies and Social Simulation  (2020).
+\newblock
+  \urlprefix\url{https://rofasss.org/2020/04/25/the-assocc-simulation-model/}
+
 \bibitem{Silvagno_2020}
 F.~Silvagno, A.~Vernone, G.P. Pescarmona, Antioxidants \textbf{9}(7), 624
   (2020).
@@ -71,11 +79,11 @@ U.~Wilensky.
 \newblock Netlogo (1999).
 \newblock \urlprefix\url{http://ccl.northwestern.edu/netlogo/}
 
-\bibitem{ghorbani2020assocc}
-A.~Ghorbani, F.~Lorig, B.~de~Bruin, P.~Davidsson, F.~Dignum, V.~Dignum,
-  M.~van~der Hurk, M.~Jensen, C.~Kammler, K.~Kreulen, et~al., Review of
-  Artificial Societies and Social Simulation  (2020).
-\newblock
-  \urlprefix\url{https://rofasss.org/2020/04/25/the-assocc-simulation-model/}
+\bibitem{inverseGen}
+T.M. Vu, C.~Probst, J.M. Epstein, A.~Brennan, M.~Strong, R.C. Purshouse,
+  Genetic and Evolutionary Computation Conference : {$[$}proceedings{$]$}.
+  Genetic and Evolutionary Computation Conference \textbf{2019}, 1356 (2019).
+\newblock \doi{10.1145/3321707.3321840}.
+\newblock \urlprefix\url{https://pubmed.ncbi.nlm.nih.gov/33083795}
 
 \end{thebibliography}
