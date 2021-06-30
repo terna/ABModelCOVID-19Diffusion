@@ -198,6 +198,18 @@ The genome is a matrix of vaccination quotas by people groups, with their time r
 
 We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont. The size of the initial infected group is out of scale: it is the smallest number, ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For implausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is made with realistic numbers, not to be read in scale: e.g., a classroom contains 25 students, a home two persons, large factories up to 150 employees, small ones up to 15, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
 
+In Figure \ref{3D} we have a 3D representation of the model world---as one of the possible random maps that the simulation generates--- with persons in gray, houses in cyan, nursing homes in orange, hospitals in orange, schools in yellow, factories (with shops and offices) in brown. Persons have a cylinder as shape, if regular; a capital X if fragile; temporary their colors can be: red, if symptomatic; violet, if asymptomatic; turquoise, if symptomatic recovered; green, if asymptomatic recovered.
+
+We use random maps to have a neutral representation of the structure of the space when doing the batches of 10,000 repetitions of the simulation. 
+
+\begin{figure}[t]
+\center
+\fbox{\includegraphics[width=0.9\textwidth,,angle=0]{3D.png}}
+\caption{A 3D representation of the model world}
+\label{3D}
+\end{figure}
+
+
 We can set: 
 \begin{itemize}
 \item min and max duration of the individual infection;
@@ -326,7 +338,7 @@ alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if \emph{
 
 We underline that our simulation tool is not based on micro-simulation sequences, calculating the contagion agent by agent, on the base of their characteristics and ex-ante probabilities. It implements a true agent-based simulation, with the agents acting and, most of all, interacting, thus generating continuously contagion situations.
 
-Each run creates a population with expected characteristics, but also with random specifications, to assure the heterogeneity in agents. The daily choices of the agents are partially randommized, to reproduce real-life variability.
+Each run creates a population with expected characteristics, but also with random specifications, to assure the heterogeneity in agents. The daily choices of the agents are partially randomized, to reproduce real-life variability.
 
 Contagions arise from agents' interactions, in four situations, as specified in Fig. \ref{outline}:
 
@@ -347,15 +359,6 @@ Contagions arise from agents' interactions, in four situations, as specified in 
 qui le sezioni con il memo qui sotto
 
 At \url{https://terna.to.it/simul/contagionSequences.pdf}, in Section ``2 The visualization of the sequences of contagions in simulated epidemics'' and in ``A Appendix: Analyzing examples of contagion sequences'' we have the visualizations of the effects of those sequences of interactions-contagions.
-
-Use the 3D representation of the model world.
-
-\begin{figure}[t]
-\center
-\fbox{\includegraphics[width=0.9\textwidth,,angle=0]{3D.png}}
-\caption{3D representation of the model world}
-\label{3D}
-\end{figure}
 
 A gallery of contagion sequences in Table \ref{table_of_figures}.
 
