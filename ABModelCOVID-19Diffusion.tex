@@ -354,15 +354,51 @@ Contagions arise from agents' interactions, in four situations, as specified in 
 
 \end{enumerate}
 
-\section{Provvisorio, memo per sviluppo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contagion representation}
 
-qui le sezioni con il memo qui sotto
+P R O V V I S O R I O
 
-At \url{https://terna.to.it/simul/contagionSequences.pdf}, in Section ``2 The visualization of the sequences of contagions in simulated epidemics'' and in ``A Appendix: Analyzing examples of contagion sequences'' we have the visualizations of the effects of those sequences of interactions-contagions.
+collegare a Appendix~2~-~A gallery of contagion sequences (Section \ref{app2})
+
+  \begin{itemize}
+  \item
+The model allows analyzing the sequences of contagions in simulated epidemics, reporting the places where the contagion occur. 
+  \item
+We represent each infected agent as a horizontal segment (from the starting date to the final date of the infection) with vertical connections to other agents if they receive the disease.
+
+We represent the new infected agents via further segments at an upper level. 
+
+  \item
+With colors, line thickness, and styles, we display multiple information. 
+
+  \item
+This enables understanding at a glance how an epidemic episode is developing. In this way, it is easier to reason about countermeasures and, thus, to develop intervention policies.
+
+  \end{itemize}
+
+Examples.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=0.9\textwidth]{with8b40.png}% with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
+\caption{A case with containment measures, first 40 infections: workplaces (brown) and nursing homes (orange) strictly interweaving}
+\label{workplacesNursingHomes}
+\end{figure}
+
+
+\begin{figure}[t]
+\center
+\includegraphics[width=0.9\textwidth]{with8a.png}% with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
+\caption{A Case with containment measures, the whole epidemics: workplaces (brown) and nursing homes (orange) and then houses (cyan), with a bridge connecting two waves}
+\label{workplacesNursingHomes}
+\end{figure}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Appendix 1 - parameter values}
+\section{Appendix 1 - Parameter values}
 \label{app1}
 
 We report here the values of parameters of Figure \ref{outline}, also with the short names used in program scripts, in round brackets. Look at Section \ref{par} for the definition. Day numbering is related to actual dates via the Table \ref{dates}. Day 1 is fixed at Feb \nth{4}, 2020.
