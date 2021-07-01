@@ -360,27 +360,6 @@ qui le sezioni con il memo qui sotto
 
 At \url{https://terna.to.it/simul/contagionSequences.pdf}, in Section ``2 The visualization of the sequences of contagions in simulated epidemics'' and in ``A Appendix: Analyzing examples of contagion sequences'' we have the visualizations of the effects of those sequences of interactions-contagions.
 
-A gallery of contagion sequences in Table \ref{table_of_figures}.
-
-    \begin{table}
-        \centering
-        \begin{tabular}{cccc}
-           \hline\noalign{\smallskip}
-            Nr. & a & b & c  \\
-             \noalign{\smallskip}\svhline\noalign{\smallskip}
-1 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
-2 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
-3 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
-4 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
-5 & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} & \includegraphics[width=12em]{prova/no3a.png} \\
-            \hline\noalign{\smallskip}
-        \end{tabular}
-        \caption{Table of figures}
-        \label{table_of_figures}
-    \end{table}
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Appendix 1 - parameter values}
@@ -444,6 +423,72 @@ at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not rel
 \label{dates}
 \end{center}
 \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Appendix 2 - a gallery of contagion sequences}
+\label{app2}
+
+A gallery of contagion sequences in Table \ref{gallery}.
+
+    \begin{table}
+        \centering
+        \begin{tabular}{cccc}
+           \hline\noalign{\smallskip}
+            Nr. & a & b & c  \\
+             \noalign{\smallskip}\svhline\noalign{\smallskip}
+1 & \includegraphics[width=12em]{sequences/no3a.png} & % no control case 10932215 10933923 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_10932215_10933923.csv
+      \includegraphics[width=12em]{sequences/no3b.png} & % no control case 10932215_10933923 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_10932215_10933923.csv
+      \includegraphics[width=12em]{sequences/no4a.png}    % no control case 12518034 12520144 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_12518034_12520144.csv
+\\
+2 & \includegraphics[width=12em]{sequences/no4b.png} & % no control case 12518034 12520144 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, filee noControl_12518034_12520144.csv
+      \includegraphics[width=12em]{sequences/no5a.png} & % no control case 113790741 13792228 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_13790741 13792228.csv
+      \includegraphics[width=12em]{sequences/no5b.png}    % no control case 113790741 13792228 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_13790741 13792228.csv
+\\
+3 & \includegraphics[width=12em]{sequences/with6a.png} & % with control case 268411 270578 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_268411_270578.csv
+      \includegraphics[width=12em]{sequences/with6b.png} & % with control case 268411 270578 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_268411_270578.csv
+      \includegraphics[width=12em]{sequences/with7a.png}    % with control case 2722110 2723664 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_2722110_2723664.csv
+\\
+4 & \includegraphics[width=12em]{sequences/with7b.png} & % with control case 2722110 2723664 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_2722110_2723664.csv
+      \includegraphics[width=12em]{sequences/with8a.png} & % with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
+      \includegraphics[width=12em]{sequences/with8b.png}    % with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
+\\
+5 & \includegraphics[width=12em]{sequences/withShort0.png} & %using SIsaR 9.4.2 as is (basic control) with 123456_22313, file ex123456_22313.csv
+      \includegraphics[width=12em]{sequences/withShort1.png} & %using SIsaR 9.4.2 as is (basic control) with 123456_22314
+      \includegraphics[width=12em]{sequences/withShort1A.png}   %using SIsaR 9.4.2 as is (basic control + 20 sFW 1,i.e., stop Fragile Workers) with 123456_22314
+\\
+6 & \includegraphics[width=12em]{sequences/withShort1A200.png} & %using SIsaR 9.4.2 as is (basic control + 20 sFW 1,i.e., stop Fragile Workers) with 123456_22314
+      \includegraphics[width=12em]{sequences/withShort1B.png}       & %using SIsaR 9.4.2 as is (basic control + $$$) with 123456_22314
+      \includegraphics[width=12em]{sequences/withShort2.png}             %using SIsaR 9.4.2 as is (basic control) with 123456_22315, file ex123456_22315.csv123456_22314
+\\
+           \hline\noalign{\smallskip}
+        \end{tabular}
+        \caption{Gallery of sequences}
+        \label{gallery}
+    \end{table}
+
+\begin{itemize}
+\item [1a] Case 1, without containment measures: contagions in nursing homes (orange), workplaces (brown), homes (cyan), hospitals (pink)
+\item [1b] Case 1, without containment measures, first 200 infections with the main contribution of nursing homes (orange) and workplaces (brown)
+\item [1c] Case 2, without containment measures: nursing homes (orange) as starter
+\item [2a] Case 2, without containment measures, first 200 infections: nursing homes (orange) as starter and around day 70 a unique contagion at home continuing the epidemic
+\item [2b] Case 3, without containment measures: an initial deep effect of contagions in workplaces (brown) and homes (cyan)
+\item [2c] Case 3, without containment measures, first 200 infections: the initial deep effect of contagions in workplaces (brown) and homes is due in the initial steps to fragile persons, also asymptomatic
+\item [3a] Case 4, with containment measures: another case of strong contribution of workplaces (brown) and homes (cyan) to epidemic diffusion
+\item [3b] Case 4, with containment measures, first 200 infections: after day 100 we observe many significant cases of fragile workers diffusing the infection
+\item [3c] Case 5, with containment measures: workplaces (brown), hospitals (pink), nursing homes (orange) and homes (cyan), then workplaces
+\item [4a] Case 5, with containment measures, first 200 infections: in the beginning workplaces (brown), hospitals (pink), nursing homes (orange) and homes (cyan) interweaving
+\item [4b] Case 6, with containment measures: workplaces (brown), nursing homes (orange), homes (cyan)
+\item [4c] Case 6, with containment measures, first 200 infections: workplaces (brown) and nursing homes (orange) strictly interweaving
+\item [5a] Case 7, with containment measures: the effect of nursing homes (orange)
+\item [5b] Case 8, with containment measures: a highly significant effect of workplaces (brown)
+\item [5c] Case 8, with containment measures, stopping fragile workers at day 20, with a positive result, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown)
+\item [6a] Case 8, with containment measures, stopping fragile workers at day 20, with a positive effect, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown), first 200 infections with evidence of the event around day 110 with the new phase due to a unique asymptomatic worker
+\item [6b] Case 8, with containment measures, stopping fragile workers and any case of fragility at day 15, also isolating nursing homes
+\item [6c] Case 9, with containment measures: a spontaneously stopping epidemic in  short period
+\end{itemize}
+
+
 
 
 \bibliography{bibliografiaGenerale}

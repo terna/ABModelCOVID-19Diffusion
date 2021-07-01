@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  29 JUN 2021 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  1 JUL 2021 18:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,109 +854,145 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 157.
 
-[4] [5]
-<SIsaR_outline2.png, id=129, 2569.6pt x 1515.6625pt>
-File: SIsaR_outline2.png Graphic file (type png)
-<use SIsaR_outline2.png>
-Package pdftex.def Info: SIsaR_outline2.png  used on input line 228.
-(pdftex.def)             Requested size: 432.76741pt x 255.254pt.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.5pt on input line 229.
- [6] [7 <./SIsaR_outline2.png>]
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 276.
- [8] [9]
-<3D.png, id=225, 746.79pt x 483.8075pt>
+[4]
+<3D.png, id=124, 685.56125pt x 448.67625pt>
 File: 3D.png Graphic file (type png)
 <use 3D.png>
-Package pdftex.def Info: 3D.png  used on input line 355.
-(pdftex.def)             Requested size: 299.60547pt x 194.09538pt.
-<prova/no3a.png, id=227, 982.67125pt x 552.0625pt>
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 368.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 368.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 368.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 369.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 369.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 369.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 370.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 370.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 370.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 371.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 371.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 371.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 372.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 372.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-File: prova/no3a.png Graphic file (type png)
-<use prova/no3a.png>
-Package pdftex.def Info: prova/no3a.png  used on input line 372.
-(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
+Package pdftex.def Info: 3D.png  used on input line 207.
+(pdftex.def)             Requested size: 299.60547pt x 196.08315pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.5pt on input line 208.
+ [5] [6 <./3D.png>]
+<SIsaR_outline2.png, id=142, 2569.6pt x 1515.6625pt>
+File: SIsaR_outline2.png Graphic file (type png)
+<use SIsaR_outline2.png>
+Package pdftex.def Info: SIsaR_outline2.png  used on input line 240.
+(pdftex.def)             Requested size: 432.76741pt x 255.254pt.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 288.
+ [7] [8 <./SIsaR_outline2.png>] [9]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 386.
- [10 <./3D.png>] [11 <./prova/no3a.png>] (./ABModelCOVID-19Diffusion.bbl [12])
+(Font)              scaled to size 7.3pt on input line 368.
+ [10]
+<sequences/no3a.png, id=245, 982.67125pt x 552.0625pt>
+File: sequences/no3a.png Graphic file (type png)
+<use sequences/no3a.png>
+Package pdftex.def Info: sequences/no3a.png  used on input line 440.
+(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
+<sequences/no3b.png, id=246, 972.63374pt x 552.0625pt>
+File: sequences/no3b.png Graphic file (type png)
+<use sequences/no3b.png>
+Package pdftex.def Info: sequences/no3b.png  used on input line 441.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/no4a.png, id=247, 982.67125pt x 552.0625pt>
+File: sequences/no4a.png Graphic file (type png)
+<use sequences/no4a.png>
+Package pdftex.def Info: sequences/no4a.png  used on input line 442.
+(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
+<sequences/no4b.png, id=248, 972.63374pt x 552.0625pt>
+File: sequences/no4b.png Graphic file (type png)
+<use sequences/no4b.png>
+Package pdftex.def Info: sequences/no4b.png  used on input line 444.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/no5a.png, id=249, 982.67125pt x 552.0625pt>
+File: sequences/no5a.png Graphic file (type png)
+<use sequences/no5a.png>
+Package pdftex.def Info: sequences/no5a.png  used on input line 445.
+(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
+<sequences/no5b.png, id=250, 972.63374pt x 552.0625pt>
+File: sequences/no5b.png Graphic file (type png)
+<use sequences/no5b.png>
+Package pdftex.def Info: sequences/no5b.png  used on input line 446.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/with6a.png, id=251, 971.63pt x 552.0625pt>
+File: sequences/with6a.png Graphic file (type png)
+<use sequences/with6a.png>
+Package pdftex.def Info: sequences/with6a.png  used on input line 448.
+(pdftex.def)             Requested size: 102.0pt x 57.9472pt.
+<sequences/with6b.png, id=252, 972.63374pt x 552.0625pt>
+File: sequences/with6b.png Graphic file (type png)
+<use sequences/with6b.png>
+Package pdftex.def Info: sequences/with6b.png  used on input line 449.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/with7a.png, id=253, 982.67125pt x 552.0625pt>
+File: sequences/with7a.png Graphic file (type png)
+<use sequences/with7a.png>
+Package pdftex.def Info: sequences/with7a.png  used on input line 450.
+(pdftex.def)             Requested size: 102.0pt x 57.29857pt.
+<sequences/with7b.png, id=254, 972.63374pt x 552.0625pt>
+File: sequences/with7b.png Graphic file (type png)
+<use sequences/with7b.png>
+Package pdftex.def Info: sequences/with7b.png  used on input line 452.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/with8a.png, id=255, 984.67876pt x 552.0625pt>
+File: sequences/with8a.png Graphic file (type png)
+<use sequences/with8a.png>
+Package pdftex.def Info: sequences/with8a.png  used on input line 453.
+(pdftex.def)             Requested size: 102.0pt x 57.18065pt.
+<sequences/with8b.png, id=256, 972.63374pt x 552.0625pt>
+File: sequences/with8b.png Graphic file (type png)
+<use sequences/with8b.png>
+Package pdftex.def Info: sequences/with8b.png  used on input line 454.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/withShort0.png, id=257, 961.5925pt x 552.0625pt>
+File: sequences/withShort0.png Graphic file (type png)
+<use sequences/withShort0.png>
+Package pdftex.def Info: sequences/withShort0.png  used on input line 456.
+(pdftex.def)             Requested size: 102.0pt x 58.55371pt.
+<sequences/withShort1.png, id=258, 986.68625pt x 552.0625pt>
+File: sequences/withShort1.png Graphic file (type png)
+<use sequences/withShort1.png>
+Package pdftex.def Info: sequences/withShort1.png  used on input line 457.
+(pdftex.def)             Requested size: 102.0pt x 57.06271pt.
+<sequences/withShort1A.png, id=259, 972.63374pt x 552.0625pt>
+File: sequences/withShort1A.png Graphic file (type png)
+<use sequences/withShort1A.png>
+Package pdftex.def Info: sequences/withShort1A.png  used on input line 458.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/withShort1A200.png, id=260, 972.63374pt x 552.0625pt>
+File: sequences/withShort1A200.png Graphic file (type png)
+<use sequences/withShort1A200.png>
+Package pdftex.def Info: sequences/withShort1A200.png  used on input line 460.
+(pdftex.def)             Requested size: 102.0pt x 57.88824pt.
+<sequences/withShort1B.png, id=261, 977.6525pt x 552.0625pt>
+File: sequences/withShort1B.png Graphic file (type png)
+<use sequences/withShort1B.png>
+Package pdftex.def Info: sequences/withShort1B.png  used on input line 461.
+(pdftex.def)             Requested size: 102.0pt x 57.59341pt.
+<sequences/withShort2.png, id=262, 961.5925pt x 555.07375pt>
+File: sequences/withShort2.png Graphic file (type png)
+<use sequences/withShort2.png>
+Package pdftex.def Info: sequences/withShort2.png  used on input line 462.
+(pdftex.def)             Requested size: 102.0pt x 58.87311pt.
+ [11] [12 <./sequences/no3a.png> <./sequences/no3b.png> <./sequences/no4a.png> 
+<./sequences/no4b.png> <./sequences/no5a.png> <./sequences/no5b.png> <./sequenc
+es/with6a.png> <./sequences/with6b.png> <./sequences/with7a.png> <./sequences/w
+ith7b.png> <./sequences/with8a.png> <./sequences/with8b.png> <./sequences/withS
+hort0.png> <./sequences/withShort1.png> <./sequences/withShort1A.png> <./sequen
+ces/withShort1A200.png> <./sequences/withShort1B.png> <./sequences/withShort2.p
+ng>]
+(./ABModelCOVID-19Diffusion.bbl [13])
 \tf@thm=\write6
 \openout6 = `ABModelCOVID-19Diffusion.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
-
-(./ABModelCOVID-19Diffusion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 497.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 497.
+ (./ABModelCOVID-19Diffusion.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 497.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 497.
 Package rerunfilecheck Info: File `ABModelCOVID-19Diffusion.out' has not change
 d.
-(rerunfilecheck)             Checksum: 307E97383380072A69AC89F621D40736;1189.
+(rerunfilecheck)             Checksum: 515625757AE9F6397161AE4761901020;1282.
  ) 
 Here is how much of TeX's memory you used:
- 11344 strings out of 480608
- 158939 string characters out of 5903631
- 452372 words of memory out of 5000000
- 26926 multiletter control sequences out of 15000+600000
+ 11450 strings out of 480608
+ 161304 string characters out of 5903631
+ 452449 words of memory out of 5000000
+ 27013 multiletter control sequences out of 15000+600000
  598235 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,1192b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,1192b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/
 local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texliv
@@ -968,10 +1004,10 @@ type1/public/newtx/txsys.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newt
 x/ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.p
 fb>
-Output written on ABModelCOVID-19Diffusion.pdf (13 pages, 908458 bytes).
+Output written on ABModelCOVID-19Diffusion.pdf (14 pages, 1288120 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
