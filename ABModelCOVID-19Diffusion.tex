@@ -406,15 +406,52 @@ Examples.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Actual data}
+\label{actual}
 
 The key points for our analysis applying the simulation model to Piedmont, are Summer and Fall 2020, as in Figure
 
 \begin{figure}[t]
 \center
-\includegraphics[scale=0.25]{andamento900annotato.jpg}
-\caption{key points in epidemic dynamic in Summe and Fall 2020} 
-\label{Key points}
+\fbox{\includegraphics[width=0.45\textwidth]{andamento900annotato.jpg}}~~~
+\fbox{\includegraphics[width=0.45\textwidth]{andamento900.jpg}}
+\caption{key points in epidemic dynamic in Summer and Fall 2020} 
+\label{actualData}
 \end{figure}
+
+In Fig. \ref{actualData}, we have the time series of the first part of Piedmont's actual epidemic, with some crucial points. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted, but after the 2020 Summer, with the adoption of more generalized tests, also asymptomatic patients are included. The model instead has two categories of positive agents. (In Fig. \ref{piedNow} the time series cover whole the period.)
+
+Following the dynamic of the data in Figure \ref{actualData}, we search within the simulation batch for  cases with both:
+
+\begin{enumerate}[label=\roman*]
+\item numbers of infected persons quite similar at \verb|cp2| and at \verb|cp3|; besides, numbers not too different from those of the figure; 
+
+With \emph{cp}, we indicate the internal check points of the simulation program. In Fig. \ref{actualData} we also report the number of days from the beginning of the epidemic for each check point. 
+
+\item the number of infected persons at \verb|cp4| has to be significantly greater than those at the previous check point.
+
+\end{enumerate}
+
+In a lot of cases, epidemics satisfying condition (i) fail to match condition (ii); both the situations happen only in less than the 1.5\% of the instances in the batch of ten thousand epidemic. We can conclude that the second wave registered in Piedmont after the Summer stability is due to new infected agents coming from outside and restarting the contagion process, as in the batch represented in the slides at the given address. Again, see  \url{https://terna.to.it/simul/TernaCCA20210329.pdf}.
+
+Other critical points in our analysis are the day on which the vaccination campaign starts, 373 of the simulation (Feb. \nth{12}, 2021), and the day of the effectiveness of the initial vaccinations, 40 days later, day 413 (Mar. \nth{22}, 2021). At those dates, within the simulations, we can find either the presence of many infected agents or of few ones, as effectively was the situation in Piedmont.
+
+We simulate the vaccination campaigns with the GAs BehaviorSearch program, with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.
+
+
+Non homogeneous data
+
+\begin{itemize}
+
+\item Following the Civil Protection Department web site \url{http://www.protezionecivile.it/web/guest/department}, we find the
+ repository \url{https://github.com/pcm-dpc/COVID-19}.
+ 
+ \item In the first wave we had uniquely data about symptomatic infected people, but from October 2020 data are mixed.
+ 
+ \item In the above \emph{git}  repository, in October and November we had ``Positive cases emerged from clinical activity'', unfortunately then reported as ``No longer populated'' (from the end of November, my observation) and ``Positive cases emerging from surveys and tests, planned at national or regional level'', again ``No longer populated'' (from the end of November, my observation).
+ 
+ \item Using those two series, it was possible to estimate a subdivision between symptomatic and asymptomatic cases, which is no longer possible.
+ 
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
