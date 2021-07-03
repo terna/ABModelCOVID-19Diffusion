@@ -105,9 +105,15 @@ The infection transmission is related to three factors: the infected person's ch
 
 Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we work arguing that <<the study of collective behavior must rise to a ``crisis disciplin'' just as medicine, conservation, and climate science have, with a focus on providing actionable insight to policymakers and regulators for the stewardship of social systems>>, as in \cite{Bak-Colemane2025764118}. 
 
-In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions;
+Now a look at the structure of the whole presentation.
 
+In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
 
+A technique for contagion representation is reported in Section \ref{contag}. Then we explore simulation cases in Section  \ref{exploring}, building several batches of runs in Section  \ref{batches} and comparing extreme situations in Sections \ref{withoutWith}.
+
+Section \ref{actual} introduces the actual epidemic data of the reference region. With those data, we verify factual and counterfactual analyses in Section \ref{facCounterfac}. Considering the possibility of calculating infection indicators without delays (Section \ref{indicator}), we experiment with the effect of adopting the control measure with 20 days of anticipation (Section \ref{anticip}). In Section \ref{frag} we verify another counterfactual policy, that of concentrating the efforts uniquely in defense of fragile persons. Section recap \ref{recap} summarizes the results.
+
+The final application of the model is dedicated to a planning exercise on vaccination campaigns (Section \ref{planning}). We introduce an analysis of the vaccine mechanism in the perspective of our model (Section \ref{vaccineAction}) and using genetic algorithms to optimize the behavior of a meta-agent deciding the sequence of the vaccinations (Section \ref{GA}). Finally, a specific, realistic case is deeply analyzed in Section \ref{specific}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -362,6 +368,7 @@ Contagions arise from agents' interactions, in four situations, as specified in 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Contagion representation}
+\label{contag}
 
 P R O V V I S O R I O
 
@@ -403,25 +410,34 @@ Examples.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exploring cases}
+\label{exploring}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Simulation batches}
+\label{batches}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Epidemics without and with control}
+\label{withoutWith}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Actual data}
 \label{actual}
 
-The key points for our analysis applying the simulation model to Piedmont, are Summer and Fall 2020, as in Fig. \ref{actualA}.
+The critical points for our experiments with the simulation model of the epidemic in Piedmont are Summer and Fall 2020, as in Fig. \ref{actualA}, where we have the time series of the first part of Piedmont's actual epidemic. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, more generalized tests and asymptomatic patients are included.  
+
+From \href{http://www.protezionecivile.it/web/guest/department}{http://www.protezionecivile.it/web/guest/department}, the Italian Civil Protection Department web site, we find at  \href{https://github.com/pcm-dpc/COVID-19}{https://github.com/pcm-dpc/COVID-1}, i.e., the repository of regional data. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, more generalized tests and asymptomatic patients are included. We had data about symptomatic infected people in the first wave, but from October 2020, data are mixed. In the above \emph{git}  repository, in October and November, we had ``Positive cases emerged from clinical activity'', unfortunately then reported as ``No longer populated'' (from the end of November, our observation) and ``Positive cases emerging from surveys and tests, planned at national or regional level'', again ``No longer populated'' (from the end of November, our observation). As a consequence, the subdivision between symptomatic and asymptomatic cases is no longer possible.
+
+
+
+
 
 \begin{figure}[t]
 
      \begin{subfigure}{0.48\textwidth}
          \centering
          \fbox{\includegraphics[width=0.95\textwidth]{andamento900annotato.jpg}}
-         \subcaption{Key points in epidemic dynamic in Summer and Fall 2020 in Piedmont}
+         \subcaption{Critical points in epidemic dynamic in Summer and Fall 2020 in Piedmont}
          \label{actualA}
      \end{subfigure}
      \hfill
@@ -435,75 +451,71 @@ The key points for our analysis applying the simulation model to Piedmont, are S
      \label{actualData}
 \end{figure}
 
-In Fig. \ref{actualA}, we have the time series of the first part of Piedmont's actual epidemic, with some crucial points. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted, but after the 2020 Summer, with the adoption of more generalized tests, also asymptomatic patients are included. The model instead has two categories of positive agents. (In Fig. \ref{actualB} the time series cover whole the period.)
 
-Following the dynamic of the data in Fig. \ref{actualA}, we search within the simulation batch for  cases with both:
+
+Considering the dynamic of the data in Fig. \ref{actualA}, we search within the simulation batch for  cases with both:
 
 \begin{enumerate}[label=\roman*]
 \item numbers of infected persons quite similar at \verb|cp2| and at \verb|cp3|; besides, numbers not too different from those of the figure; 
 
-With \emph{cp}, we indicate the internal check points of the simulation program. In Fig. \ref{actualData} we also report the number of days from the beginning of the epidemic for each check point. 
+With \emph{cp}, we indicate the internal check points of the simulation program. In Fig. \ref{actualA} we also report the number of days from the beginning of the epidemic for each check point. 
 
 \item the number of infected persons at \verb|cp4| has to be significantly greater than those at the previous check point.
 
 \end{enumerate}
 
-In a lot of cases, epidemics satisfying condition (i) fail to match condition (ii); both the situations happen only in less than the 1.5\% of the instances in the batch of ten thousand epidemic. We can conclude that the second wave registered in Piedmont after the Summer stability is due to new infected agents coming from outside and restarting the contagion process, as in the batch represented in the slides at the given address. Again, see  \url{https://terna.to.it/simul/TernaCCA20210329.pdf}.
+In a lot of cases, epidemics satisfying condition (i) fail to match condition (ii); both the situations happen only in less than the 1.5\% of the instances in the batch of ten thousand epidemic. We can conclude that the second wave registered in Piedmont after the Summer stability is due to new infected agents coming from outside and restarting the contagion process.
 
 Other critical points in our analysis are the day on which the vaccination campaign starts, 373 of the simulation (Feb. \nth{12}, 2021), and the day of the effectiveness of the initial vaccinations, 40 days later, day 413 (Mar. \nth{22}, 2021). At those dates, within the simulations, we can find either the presence of many infected agents or of few ones, as effectively was the situation in Piedmont.
 
-We simulate the vaccination campaigns with the GAs BehaviorSearch program, with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.
+As a documentation, in Fig. \ref{actualB} the time series cover the whole the period.
 
-
-Non homogeneous data
-
-\begin{itemize}
-
-\item Following the Civil Protection Department web site \url{http://www.protezionecivile.it/web/guest/department}, we find the
- repository \url{https://github.com/pcm-dpc/COVID-19}.
- 
- \item In the first wave we had uniquely data about symptomatic infected people, but from October 2020 data are mixed.
- 
- \item In the above \emph{git}  repository, in October and November we had ``Positive cases emerged from clinical activity'', unfortunately then reported as ``No longer populated'' (from the end of November, my observation) and ``Positive cases emerging from surveys and tests, planned at national or regional level'', again ``No longer populated'' (from the end of November, my observation).
- 
- \item Using those two series, it was possible to estimate a subdivision between symptomatic and asymptomatic cases, which is no longer possible.
- 
-\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Factual and counterfactual analyses}
+\label{facCounterfac}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Spontaneous second wave, without specific measures}
+\label{spont}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Second wave, new infections from outside, without specific measures}
+\label{second}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Here a Stefano's section on calculating the infection indicator without delays }
+\subsection{Here a Stefano's section on calculating the infection indicator without delays}
+\label{indicator}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Second wave, new infections from outside, with new specific measure anticipation of -20 days}
+\label{anticip}
 
 N.B.: (i) anticipation limit Oct 5.; (ii) also the ending date of each measure is anticipated of 20 days.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Second wave, new infections from outs., stop fragile people. 60  days from Oct. 5}
+\label{frag}
 
 Schools are always working 100\% in this case.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{To recap}
+\label{recap}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Planning vaccination campaigns}
+\label{planning}
 
 \subsection{Here an Alberto's section on \emph{How vaccines work}}
+\label{vaccineAction}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Planning a vaccination campaign using GAs (with non-pharmaceutical containment measures in action)}
+\subsection{Planning a vaccination campaign using genetic algorithms (GAs), with non-pharmaceutical containment measures in action}
+
+We simulate the vaccination campaigns with the GAs BehaviorSearch program, with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.
 
 \subsubsection{Vaccination groups}
 
@@ -537,6 +549,7 @@ We take into consideration seven groups in order of decreasing fragility but als
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{A specific realistic case}
+\label{specific}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vaccination quotas, \emph{plain} strategy}
@@ -553,6 +566,7 @@ We take into consideration seven groups in order of decreasing fragility but als
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{An experiment with GA}
+\label{GA}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Time dynamics without vaccinations}
