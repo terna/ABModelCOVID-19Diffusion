@@ -79,7 +79,7 @@ There is also an inverse generative side of the model, coming from constructing 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{A quick introduction to epidemic modeling}
+\section{A quick introduction to our agent-based epidemic model}
 \label{intro}
 
 The starting point is a compartmental model with Susceptible, Infected, and Recovered people (S.I.R.), but adding both a more detailed breakdown of the subjects involved in the contagion process \cite{Scala:2020aa} and a multi-scale framework to account for the interaction at different dimensional, and spatial levels \cite{doi:10.1142/S0218202520500323}. From the virus micro-level, we move to individuals and up to the collective behavior of the population.
@@ -104,6 +104,11 @@ The infection transmission is related to three factors: the infected person's ch
 
 
 Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we work arguing that <<the study of collective behavior must rise to a ``crisis disciplin'' just as medicine, conservation, and climate science have, with a focus on providing actionable insight to policymakers and regulators for the stewardship of social systems>>, as in \cite{Bak-Colemane2025764118}. 
+
+In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions;
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Why model? Why agents? Why another model?}
@@ -415,15 +420,15 @@ The key points for our analysis applying the simulation model to Piedmont, are S
 
      \begin{subfigure}{0.48\textwidth}
          \centering
-         \fbox{\includegraphics[width=1\textwidth]{andamento900annotato.jpg}}
-         \caption{Key points in epidemic dynamic in Summer and Fall 2020 in Piedmont}
+         \fbox{\includegraphics[width=0.95\textwidth]{andamento900annotato.jpg}}
+         \subcaption{Key points in epidemic dynamic in Summer and Fall 2020 in Piedmont}
          \label{actualA}
      \end{subfigure}
      \hfill
      \begin{subfigure}{0.48\textwidth}
          \centering
-         \fbox{\includegraphics[width=1\textwidth]{andamento900.jpg}}
-         \caption{Data in Piedmont until July 2021, reporting three waves}
+         \fbox{\includegraphics[width=0.95\textwidth]{andamento900.jpg}}
+         \subcaption{Data in Piedmont until July 2021, reporting three waves}
          \label{actualB}
      \end{subfigure}
      \caption{Actual data}
