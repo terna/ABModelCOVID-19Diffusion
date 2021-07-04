@@ -13,35 +13,35 @@
 % choose options for [] as required from the list
 % in the Reference Guide
 
-\usepackage{type1cm}        % activate if the above 3 fonts are
-                            % not available on your system
+\usepackage{type1cm} % activate if the above 3 fonts are
+ % not available on your system
 %
-\usepackage{makeidx}         % allows index generation
-\usepackage{graphicx}        % standard LaTeX graphics tool
-                             % when including figure files
-\usepackage{multicol}        % used for the two-column index
+\usepackage{makeidx} % allows index generation
+\usepackage{graphicx} % standard LaTeX graphics tool
+ % when including figure files
+\usepackage{multicol} % used for the two-column index
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
 
-\usepackage{newtxtext}       % 
-\usepackage{newtxmath}       % selects Times Roman as basic font
+\usepackage{newtxtext} % 
+\usepackage{newtxmath} % selects Times Roman as basic font
 
 \usepackage{url} % Use the package "url.sty" to avoid problems with special characters used in your e-mail or web address
 
 % MY ADDENDA
 \usepackage{enumitem} %roman numbers
 \usepackage[super]{nth} % for dates
-\usepackage{verbatim}   % \begin and \end {comment}
-\usepackage{hyperref}   % to use \href
+\usepackage{verbatim} % \begin and \end {comment}
+\usepackage{hyperref} % to use \href
 \usepackage{subcaption}
 
 
 % see the list of further useful packages
 % in the Reference Guide
 
-\makeindex             % used for the subject index
-                       % please use the style svind.ist with
-                       % your makeindex program
+\makeindex % used for the subject index
+ % please use the style svind.ist with
+ % your makeindex program
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -109,7 +109,7 @@ Now a look at the structure of the whole presentation.
 
 In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
 
-A technique for contagion representation is reported in Section \ref{contag}. Then we explore simulation cases in Section  \ref{exploring}, building several batches of runs in Section  \ref{batches} and comparing extreme situations in Sections \ref{withoutWith}.
+A technique for contagion representation is reported in Section \ref{contag}. Then we explore simulation cases in Section \ref{exploring}, building several batches of runs in Section \ref{batches} and comparing extreme situations in Sections \ref{withoutWith}.
 
 Section \ref{actual} introduces the actual epidemic data of the reference region. With those data, we verify factual and counterfactual analyses in Section \ref{facCounterfac}. Considering the possibility of calculating infection indicators without delays (Section \ref{indicator}), we experiment with the effect of adopting the control measure with 20 days of anticipation (Section \ref{anticip}). In Section \ref{frag} we verify another counterfactual policy, that of concentrating the efforts uniquely in defense of fragile persons. Section recap \ref{recap} summarizes the results.
 
@@ -160,7 +160,7 @@ With our model, we move from a macro compartmental vision to a meso and micro-an
 \begin{itemize}
 
 \item
-scalability: we take in account the interactions between virus and molecules inside the host, the interactions between individuals in more or less restricted contexts, the movement between different environments (home, school, workplace, open spaces, shops); the movements occur in different parts of the daily life, as in  \cite{ghorbani2020assocc};
+scalability: we take in account the interactions between virus and molecules inside the host, the interactions between individuals in more or less restricted contexts, the movement between different environments (home, school, workplace, open spaces, shops); the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc};
 
 in detail, the scales are: 
 
@@ -179,17 +179,17 @@ granularity: at any level, the interactions are partially random and therefore t
 
 \end{itemize}
 
-Summing up, S.I.s.a.R. \cite{SIsaR} is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R. The model works on the structural data of Piedmont, an Italian region, but we can quite easily calibrate it for other areas. It can reproduce the events following a realistic calendar (national or local government decisions, as in Section \ref{par}), via its script interpreter.  The model is online at \href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}, from where it is also possible to run the code without installation. Into the \emph{Info} sheet of the model, we have more than 20 pages of Supporting Information about both the structure and the calibration of the model.
+Summing up, S.I.s.a.R. \cite{SIsaR} is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R. The model works on the structural data of Piedmont, an Italian region, but we can quite easily calibrate it for other areas. It can reproduce the events following a realistic calendar (national or local government decisions, as in Section \ref{par}), via its script interpreter. The model is online at \href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}, from where it is also possible to run the code without installation. Into the \emph{Info} sheet of the model, we have more than 20 pages of Supporting Information about both the structure and the calibration of the model.
 
 
 The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic. Examples of counterfactual situations are those considering:
 
 \begin{enumerate}[label=\roman*]
 \item different timing in the adoption of the non-pharmaceutical containment measures;
-\item  alternative strategies focusing exclusively on the defense of fragile people.
+\item alternative strategies focusing exclusively on the defense of fragile people.
 \end{enumerate}
 
-The model generates complex epidemic dynamics, emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the  contagion waves that occurred in the reference region. 
+The model generates complex epidemic dynamics, emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the contagion waves that occurred in the reference region. 
 
 We take charge of the variability of the epidemic paths within the simulation, running batches of executions with 10,000 occurrences for each experiment.
 
@@ -297,7 +297,7 @@ We define here the parameters of Fig. \ref{outline}, also with the short names u
 
 \begin{enumerate}[label=\roman*]
 
-\item \label{p1} \emph{probabilityOfGettingInfection} (\verb|prob|) is the base probability of getting infected, to be multiplied by the \emph{intrinsicSusceptibility} factor (\ref{p2}); it is activated if the subject is within a circle of radius  (\ref{p8}) with an infected person; values at (\ref{app1}, \ref{pp1});
+\item \label{p1} \emph{probabilityOfGettingInfection} (\verb|prob|) is the base probability of getting infected, to be multiplied by the \emph{intrinsicSusceptibility} factor (\ref{p2}); it is activated if the subject is within a circle of radius (\ref{p8}) with an infected person; values at (\ref{app1}, \ref{pp1});
 
 \item \label{p2} the \emph{intrinsicSusceptibility} is based on \emph{intrinsicSusceptibilityFactor} set to 5 in Eq. \ref{intrinsic}
 \begin{equation}
@@ -320,7 +320,7 @@ determines, in a probabilistic way, the number of people of any kind going aroun
 determines, in a probabilistic way, the number of regular people going around in case of limitations/lockdown;
 as above, the limitations operate only if the lockdown is on (into our simulated world, from day 20); values at (\ref{app1}, \ref{pp4});
 
-the parameters \ref{p3} and \ref{p4} in some time interval change very frequently, reproducing into the model the uncertainty of the decisions that were happening  in the real world in the same periods; 
+the parameters \ref{p3} and \ref{p4} in some time interval change very frequently, reproducing into the model the uncertainty of the decisions that were happening in the real world in the same periods; 
 
 NB, the parameters \ref{p3} and \ref{p4} produce independent effects, as in the following examples: (a) the activation of \emph{\%PeopleAny at 31, 0} and, simultaneously, of \emph{\%PeopleNot at 31, 80}, means that people had to stay home on that day, but people specifically not fragile could go out in 80\% of the cases; (b) \emph{\%PeopleAny at 339, 80} and, simultaneously, \emph{\%PeopleNot at 339, 100} means that fragile and not fragile persons cannot always go around, but only in the 80\% of the cases; instead, considering uniquely non-fragile persons they are free to go out; the construction is an attempt to reproduce a fuzzy situation;
 
@@ -334,7 +334,7 @@ in future versions of the model, we will define the quotas more straightforwardl
 determines, in a probabilistic way, what factories (small and large industries, commercial surfaces, private and government offices)
 are open when limitations are on; if the factory of a worker is open, the subject can go to work, avoiding restrictions (but uniquely in the first step of activity of each day); values at (\ref{app1}, \ref{pp5}); 
 
-\item \label{p6} \emph{stopFragileWorkers}  (\verb|sFW|) is \emph{off} (set to 0) by default; if \emph{on} (set to 1), fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but cannot go to work; the regular case is that the workers (fragile or regular) can go to their factory (if open) also when limitations are on; values at (\ref{app1}, \ref{pp6});
+\item \label{p6} \emph{stopFragileWorkers} (\verb|sFW|) is \emph{off} (set to 0) by default; if \emph{on} (set to 1), fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but cannot go to work; the regular case is that the workers (fragile or regular) can go to their factory (if open) also when limitations are on; values at (\ref{app1}, \ref{pp6});
 
 alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if \emph{on} (set to 1) the total of the workers is unchanged, but the workers are all regular; we can activate this counterfactual operation uniquely at the beginning of the simulation;
 
@@ -374,21 +374,21 @@ P R O V V I S O R I O
 
 collegare a Appendix~2~-~A gallery of contagion sequences (Section \ref{app2})
 
-  \begin{itemize}
-  \item
+ \begin{itemize}
+ \item
 The model allows analyzing the sequences of contagions in simulated epidemics, reporting the places where the contagion occur. 
-  \item
+ \item
 We represent each infected agent as a horizontal segment (from the starting date to the final date of the infection) with vertical connections to other agents if they receive the disease.
 
 We represent the new infected agents via further segments at an upper level. 
 
-  \item
+ \item
 With colors, line thickness, and styles, we display multiple information. 
 
-  \item
+ \item
 This enables understanding at a glance how an epidemic episode is developing. In this way, it is easier to reason about countermeasures and, thus, to develop intervention policies.
 
-  \end{itemize}
+ \end{itemize}
 
 Examples.
 
@@ -424,21 +424,21 @@ In Figs. \ref{10kNoControl} and \ref{10kBasicC} we \ldots
 
 \begin{figure}[t]
 
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{10kNoControl.png}}
-         \subcaption{Without non-pharmaceutical containment measures}
-         \label{10kNoControl}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{10kBasicC.png}}
-         \subcaption{With non-pharmaceutical containment measures}
-         \label{10kBasicC}
-     \end{subfigure}
-     \caption{Starting point: 10,000 epidemics in Piedmont}
-     \label{withoutWithFig}
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{10kNoControl.png}}
+ \subcaption{Without non-pharmaceutical containment measures}
+ \label{10kNoControl}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{10kBasicC.png}}
+ \subcaption{With non-pharmaceutical containment measures}
+ \label{10kBasicC}
+ \end{subfigure}
+ \caption{Starting point: 10,000 epidemics in Piedmont}
+ \label{withoutWithFig}
 \end{figure}
 
 
@@ -446,9 +446,9 @@ In Figs. \ref{10kNoControl} and \ref{10kBasicC} we \ldots
 \subsection{Actual data}
 \label{actual}
 
-The critical points for our experiments with the simulation model of the epidemic in Piedmont are Summer and Fall 2020, as in Fig. \ref{actualA}, where we have the time series of the first part of Piedmont's actual epidemic. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, more generalized tests and asymptomatic patients are included.  
+The critical points for our experiments with the simulation model of the epidemic in Piedmont are Summer and Fall 2020, as in Fig. \ref{actualA}, where we have the time series of the first part of Piedmont's actual epidemic. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, more generalized tests and asymptomatic patients are included. 
 
-From \href{http://www.protezionecivile.it/web/guest/department}{http://www.protezionecivile.it/web/guest/department}, the Italian Civil Protection Department web site, we find at  \href{https://github.com/pcm-dpc/COVID-19}{https://github.com/pcm-dpc/COVID-1}, i.e., the repository of regional data. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, more generalized tests and asymptomatic patients are included. We had data about symptomatic infected people in the first wave, but from October 2020, data are mixed. In the above \emph{git}  repository, in October and November, we had ``Positive cases emerged from clinical activity'', unfortunately then reported as ``No longer populated'' (from the end of November, our observation) and ``Positive cases emerging from surveys and tests, planned at national or regional level'', again ``No longer populated'' (from the end of November, our observation). As a consequence, the subdivision between symptomatic and asymptomatic cases is no longer possible.
+From \href{http://www.protezionecivile.it/web/guest/department}{http://www.protezionecivile.it/web/guest/department}, the Italian Civil Protection Department web site, we find at \href{https://github.com/pcm-dpc/COVID-19}{https://github.com/pcm-dpc/COVID-1}, i.e., the repository of regional data. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, more generalized tests and asymptomatic patients are included. We had data about symptomatic infected people in the first wave, but from October 2020, data are mixed. In the above \emph{git} repository, in October and November, we had ``Positive cases emerged from clinical activity'', unfortunately then reported as ``No longer populated'' (from the end of November, our observation) and ``Positive cases emerging from surveys and tests, planned at national or regional level'', again ``No longer populated'' (from the end of November, our observation). As a consequence, the subdivision between symptomatic and asymptomatic cases is no longer possible.
 
 
 
@@ -456,26 +456,26 @@ From \href{http://www.protezionecivile.it/web/guest/department}{http://www.prote
 
 \begin{figure}[t]
 
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{andamento900annotato.jpg}}
-         \subcaption{Critical points in epidemic dynamic in Summer and Fall 2020 in Piedmont}
-         \label{actualA}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{andamento900.jpg}}
-         \subcaption{Data in Piedmont until July 2021, reporting three waves}
-         \label{actualB}
-     \end{subfigure}
-     \caption{Actual data}
-     \label{actualData}
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{andamento900annotato.jpg}}
+ \subcaption{Critical points in epidemic dynamic in Summer and Fall 2020 in Piedmont}
+ \label{actualA}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{andamento900.jpg}}
+ \subcaption{Data in Piedmont until July 2021, reporting three waves}
+ \label{actualB}
+ \end{subfigure}
+ \caption{Actual data}
+ \label{actualData}
 \end{figure}
 
 
 
-Considering the dynamic of the data in Fig. \ref{actualA}, we search within the simulation batch for  cases with both:
+Considering the dynamic of the data in Fig. \ref{actualA}, we search within the simulation batch for cases with both:
 
 \begin{enumerate}[label=\roman*]
 \item numbers of infected persons quite similar at \verb|cp2| and at \verb|cp3|; besides, numbers not too different from those of the figure; 
@@ -502,41 +502,41 @@ In Fig. \ref{casesHeatM} we collect the heat-maps of the cases in Sections \ref{
 
 \begin{figure}[t]
 
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{10kSpontWave2.png}}
-         \subcaption{First wave with non-pharmaceutical containment measures, spontaneous second wave, without specific measures}
-         \label{spontaneousSec}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2.png}}
-         \subcaption{First wave with non-pharmaceutical containment measures, forcing the second wave, without specific measures}
-         \label{secondFromOut}
-     \end{subfigure}
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2Contr2.png}}
-         \subcaption{First wave with non-pharmaceutical containment measures, forcing the second wave, \emph{with new specific non-ph. containment measures}}
-         \label{secondFromOutWith}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2Contr2M-20.png}}
-         \subcaption{First wave with non-pharmaceutical cont. meas,, forcing the second wave, \emph{with new specific non-ph. cont. meas., 20 day anticipation}}
-         \label{secondFromOut-20}
-     \end{subfigure}
-     \center
-     \begin{subfigure}{0.48\textwidth}
-         \centering
-         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2NoFragOct5for60d.png}}
-         \subcaption{First wave with non-ph. cont. meas., forcing the sec. wave; \emph{in sec. wave, uniquely stop fragile people, including fragile workers}}
-         \label{secondFromOutNoFrag}
-     \end{subfigure}
-     \caption{Heat-maps of the factual and counterfactual analyses}
-     \label{casesHeatM}
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{10kSpontWave2.png}}
+ \subcaption{First wave with non-pharmaceutical containment measures, spontaneous second wave, without specific measures}
+ \label{spontaneousSec}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2.png}}
+ \subcaption{First wave with non-pharmaceutical containment measures, forcing the second wave, without specific measures}
+ \label{secondFromOut}
+ \end{subfigure}
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2Contr2.png}}
+ \subcaption{First wave with non-pharmaceutical containment measures, forcing the second wave, \emph{with new specific non-ph. containment measures}}
+ \label{secondFromOutWith}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2Contr2M-20.png}}
+ \subcaption{First wave with non-pharmaceutical cont. meas,, forcing the second wave, \emph{with new specific non-ph. cont. meas., 20 day anticipation}}
+ \label{secondFromOut-20}
+ \end{subfigure}
+ \center
+ \begin{subfigure}{0.48\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2NoFragOct5for60d.png}}
+ \subcaption{First wave with non-ph. cont. meas., forcing the sec. wave; \emph{in sec. wave, uniquely stop fragile people, including fragile workers}}
+ \label{secondFromOutNoFrag}
+ \end{subfigure}
+ \caption{Heat-maps of the factual and counterfactual analyses}
+ \label{casesHeatM}
 \end{figure}
 
 
@@ -547,6 +547,27 @@ In Fig. \ref{casesHeatM} we collect the heat-maps of the cases in Sections \ref{
 % selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptChangingWorld_plusHMlog,ipynb
 % using 10kCtrl1.csv from SIsaR_0.9.5.4.1trials10kCtrl1.nlogo
 
+170 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 140 cases; at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
+
+Fig. \ref{spontaneousSec} and Table \ref{selSpontWave2Tab} refer to \ldots
+
+\begin{table}[t]
+\center
+\tiny
+\begin{tabular}{lrrrrrrrrrrrrr}
+\hline\noalign{\smallskip}
+(1000) & Jun~1,~20 & & Sep~9,~20 & & Dec~15,~20 & & Feb~1,~21 & & May~1,~21 & & Dec~15,~20 \\
+& & & & & & & & & & & to~end \\
+cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+count & 170.0 & 170.0 & 170.0 & 170.0 & 140.0 & 140.0 & 131.0 & 131.0 & 128.0 & 128.0 & 140.0 & 140.0 & 140.0 \\
+mean & 37.9 & 100.2 & 60.4 & 159.3 & \emph{248.4} & \emph{648.7} & \emph{432.2} & \emph{1109.5} & \emph{656.3} & \emph{1655.5} & 701.1 & 1757.9 & 594.2 \\
+std & 16.4 & 61.0 & 19.6 & 71.7 & 167.4 & 424.3 & 220.4 & 538.4 & 215.4 & 513.3 & 246.4 & 599.7 & 118.9 \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Spontaneous second wave, without specific measures}
+\label{selSpontWave2Tab}
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Second wave, new infections from outside, without specific measures}
@@ -563,13 +584,13 @@ Fig. \ref{secondFromOut} and Table \ref{selForceWave2Tab} refer to \ldots
 \tiny
 \begin{tabular}{lrrrrrrrrrrrrr}
 \hline\noalign{\smallskip}
-(1000) &  Jun~1,~20 & &  Sep~9,~20 & & Dec~15,~20 & & Feb~1,~21 & & May~1,~21 & & Dec~15,~20   \\
-& & &  & & & & & & & & to~end \\
-cum.~v. &  sym. &  all &  sympt. &  totalInf. &  sympt. &  totalInf. &  sympt. &  totalInf. &  sympt. &  totalInf. &  sympt. &  totalInf.  & days\\
+(1000) & Jun~1,~20 & & Sep~9,~20 & & Dec~15,~20 & & Feb~1,~21 & & May~1,~21 & & Dec~15,~20 \\
+& & & & & & & & & & & to~end \\
+cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
-count &   1407.0 &                     1407.0 &   1407.0 &                     1407.0 &   1044.0 &                     1044.0 &   1005.0 &                     1005.0 &    980.0 &                      980.0 &              1044.0 &                  1044.0 & 1044.0 \\
-mean  &     35.6 &                       72.7 &     40.0 &                       84.1 &    \emph{180.4} &                      \emph{462.1} &    \emph{354.1} &                      \emph{900.4} &    \emph{623.8} &                     \emph{1563.3} &               726.6 &                  1810.9 &  620.9 \\
-std   &     14.1 &                       42.6 &     16.7 &                       52.8 &    134.6 &                      354.6 &    213.8 &                      535.4 &    217.9 &                      527.0 &               221.9 &                   544.0 &  110.8 \\
+count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 1044.0 & 1044.0 & 1005.0 & 1005.0 & 980.0 & 980.0 & 1044.0 & 1044.0 & 1044.0 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{180.4} & \emph{462.1} & \emph{354.1} & \emph{900.4} & \emph{623.8} & \emph{1563.3} & 726.6 & 1810.9 & 620.9 \\
+std & 14.1 & 42.6 & 16.7 & 52.8 & 134.6 & 354.6 & 213.8 & 535.4 & 217.9 & 527.0 & 221.9 & 544.0 & 110.8 \\
 \hline\noalign{\smallskip}
 \end{tabular}
 \caption{Second wave, new infections from outside, without specific measures}
@@ -583,6 +604,28 @@ std   &     14.1 &                       42.6 &     16.7 &                      
 \label{secondWith}
 % selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMarControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartCtrl2M.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M.nlogo
+
+1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 874 cases; at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
+
+Fig. \ref{secondFromOutWith} and Table \ref{selSpontWave2Contr2Tab} refer to \ldots
+
+\begin{table}[t]
+\center
+\tiny
+\begin{tabular}{lrrrrrrrrrrrrr}
+\hline\noalign{\smallskip}
+(1000) & Jun~1,~20 & & Sep~9,~20 & & Dec~15,~20 & & Feb~1,~21 & & May~1,~21 & & Dec~15,~20 \\
+& & & & & & & & & & & to~end \\
+cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 874.0 & 874.0 & 719.0 & 719.0 & 523.0 & 523.0 & 874.0 & 874.0 & 874.0 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{130.0} & \emph{340}.6 & \emph{194.4} & \emph{512.8} & \emph{295.7} & \emph{791.2} & 252.7 & 666.4 & 494.1 \\
+std & 14.1 & 42.6 & 16.7 & 52.8 & 83.9 & 232.6 & 104.1 & 276.9 & 119.1 & 300.6 & 156.8 & 416.4 & 122.7 \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Second wave, new infections from outside, with new specific measures}
+\label{selSpontWave2Contr2Tab}
+\end{table}
 
 
 
@@ -610,17 +653,61 @@ Methodology:
 %selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMar-20ControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartCtrl2M-20.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M-20.nlogo
 
+1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 769 cases; at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
 
 N.B.: (i) anticipation limit Oct 5.; (ii) also the ending date of each measure is anticipated of 20 days.
 
+Fig. \ref{secondFromOut-20} and Table \ref{selForceWave2Contr2M-20Tab} refer to \ldots
+
+\begin{table}[t]
+\center
+\tiny
+\begin{tabular}{lrrrrrrrrrrrrr}
+\hline\noalign{\smallskip}
+(1000) & Jun~1,~20 & & Sep~9,~20 & & Dec~15,~20 & & Feb~1,~21 & & May~1,~21 & & Dec~15,~20 \\
+& & & & & & & & & & & to~end \\
+cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 769.0 & 769.0 & 637.0 & 637.0 & 471.0 & 471.0 & 769.0 & 769.0 & 769.0 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{{\color{red}112.2}} & \emph{{\color{red} 294.2}} & \emph{172.0} & \ emph{467.9} & \emph{276.5} & \emph{748.6} & 248.9 & 663.4 & 499.3 \\
+std & 14.1 & 42.6 & 16.7 & 52.8 & 66.8 & 188.4 & 91.5 & 251.3 & 112.9 & 286.9 & 158.0 & 417.5 & 124.1 \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Second wave, new infections from outside, with new specific measure anticipation of -20 days}
+\label{selForceWave2Contr2M-20Tab}
+\end{table}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Second wave, new infections from outs., stop fragile people. 60  days from Oct. 5}
+\subsection{Second wave, new infections from outs., stop fragile people. 60 days from Oct. 5}
 \label{frag}
 %selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptNoFragOCT05-60dControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartNoFragOCT05-60d.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartNoFragOCT05-60d.nlogo
 
+1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 886 at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
 
 Schools are always working 100\% in this case.
+
+Fig. \ref{secondFromOutNoFrag} and Table \ref{selForceWave2NoFragTab} refer to \ldots
+
+\begin{table}[t]
+\center
+\tiny
+\begin{tabular}{lrrrrrrrrrrrrr}
+\hline\noalign{\smallskip}
+(1000) & Jun~1,~20 & & Sep~9,~20 & & Dec~15,~20 & & Feb~1,~21 & & May~1,~21 & & Dec~15,~20 \\
+& & & & & & & & & & & to~end \\
+cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 886.0 & 886.0 & 761.0 & 761.0 & 637.0 & 637.0 & 886.0 & 886.0 & 886.0 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{{\color{cyan}128.1}} & \emph{{\color{cyan}326.3}} & \emph{211.0} & \emph{555.1} & \emph{323.3} & \emph{862.1} & 301.1 & 792.3 & 515.5 \\
+std & 14.1 & 42.6 & 16.7 & 52.8 & 89.6 & 234.2 & 118.1 & 306.7 & 126.4 & 315.9 & 170.7 & 450.2 & 116.9 \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Second wave, new infections from outs., stop fragile people. 60 days from Oct. 5}
+\label{selForceWave2NoFragTab}
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{To recap}
@@ -654,7 +741,7 @@ We take into consideration seven groups in order of decreasing fragility but als
 			\item nursing homes operators;
 			\item healthcare operators;
  		\end{itemize} 
- 	\end{itemize}  
+ 	\end{itemize} 
 \item [\emph{g2}]
 	teachers;
 \item [\emph{g3}]
@@ -722,7 +809,7 @@ The values adopted in the experiments reported in this work are the following.
 
 \begin{enumerate}[label=\roman*]
 
-\item \label{pp1} The values of \emph{probabilityOfGettingInfection} (\verb|prob|) are: 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules).  
+\item \label{pp1} The values of \emph{probabilityOfGettingInfection} (\verb|prob|) are: 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules). 
 
 \item \label{pp2} \emph{intrinsicSusceptibility} is set discussing Eq. \ref{intrinsic} in (\ref{par}, \ref{p2}).
 
@@ -738,12 +825,12 @@ at 337, 50; at 339, 100; at 349, 90;
 at (day) 38, value4 0; at 49, 20; at 84, 70; at 106, 100; at 266, 90; at 277, 70; at 302, 80; at 320, 90; at 325, 30;
 at 329, 90; at 332, 30; 336, 90; at 337, 30; at 339, 100;
 
-\item \label{pp6} \emph{stopFragileWorkers}  (\verb|sFW|): by default, 0; in one of the experiments we used \verb|sFW| with set to 1 (on) at day 245  and to 0 (off) at day 275;
+\item \label{pp6} \emph{stopFragileWorkers} (\verb|sFW|): by default, 0; in one of the experiments we used \verb|sFW| with set to 1 (on) at day 245 and to 0 (off) at day 275;
 
 \item \label{pp7} The values of \emph{activateSchools} (\verb|aSch|) are:
 at (day) 1, on; at 17, off; at 225, on; at 325, off; at 339, on; 
 
-the values of  \emph{\%Students} (\verb|%St|) are: 
+the values of \emph{\%Students} (\verb|%St|) are: 
 at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not relevant for the model, but for the use of the programmer-author);
 
 \item \label{pp8} The value of \emph{radiusOfInfection} (\verb|radius|) is 0.2; in the model, space is missing of a scale, but forcing the area to be in the scale of a region as Piedmont, 0.2 is equivalent to 20 meters; we have to better calibrate this measure with movements and probabilities; this is a critical step in future developments of the model.
@@ -758,15 +845,15 @@ at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not rel
 \begin{footnotesize}
 \begin{tabular}{rrrrrrrrrrr}
 \hline\noalign{\smallskip}
- Day & Date  &~~~~~~~~& Day & Date &~~~~~~~~& Day & Date &~~~~~~~~& Day & Date \\
+ Day & Date &~~~~~~~~& Day & Date &~~~~~~~~& Day & Date &~~~~~~~~& Day & Date \\
  \noalign{\smallskip}\svhline\noalign{\smallskip}
- 25 & 28- 2-2020 & & 200 & 21- 8-2020 & & 375 & 12- 2-2021 & & 550 &  6- 8-2021 \\
- 50 & 24- 3-2020 & & 225 & 15- 9-2020 & & 400 &  9- 3-2021 & & 575 & 31- 8-2021 \\
- 75 & 18- 4-2020 & & 250 & 10-10-2020 & & 425 &  3- 4-2021 & & 600 & 25- 9-2021 \\
-100 & 13- 5-2020 & & 275 &  4-11-2020 & & 450 & 28- 4-2021 & & 625 & 20-10-2021 \\
-125 &  7- 6-2020 & & 300 & 29-11-2020 & & 475 & 23- 5-2021 & & 650 & 14-11-2021 \\
-150 &  2- 7-2020 & & 325 & 24-12-2020 & & 500 & 17- 6-2021 & & 675 &  9-12-2021 \\
-175 & 27- 7-2020 & & 350 & 18- 1-2021 & & 525 & 12- 7-2021 & & 700 &  3- 1-2022 \\
+ 25 & 28- 2-2020 & & 200 & 21- 8-2020 & & 375 & 12- 2-2021 & & 550 & 6- 8-2021 \\
+ 50 & 24- 3-2020 & & 225 & 15- 9-2020 & & 400 & 9- 3-2021 & & 575 & 31- 8-2021 \\
+ 75 & 18- 4-2020 & & 250 & 10-10-2020 & & 425 & 3- 4-2021 & & 600 & 25- 9-2021 \\
+100 & 13- 5-2020 & & 275 & 4-11-2020 & & 450 & 28- 4-2021 & & 625 & 20-10-2021 \\
+125 & 7- 6-2020 & & 300 & 29-11-2020 & & 475 & 23- 5-2021 & & 650 & 14-11-2021 \\
+150 & 2- 7-2020 & & 325 & 24-12-2020 & & 500 & 17- 6-2021 & & 675 & 9-12-2021 \\
+175 & 27- 7-2020 & & 350 & 18- 1-2021 & & 525 & 12- 7-2021 & & 700 & 3- 1-2022 \\
 \hline\noalign{\smallskip}
 \end{tabular}
 \end{footnotesize}
@@ -782,41 +869,41 @@ at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not rel
 
 A gallery of contagion sequences in Table \ref{gallery}.
 
-    \begin{table}
-        \centering
-        \begin{tabular}{cccc}
-           \hline\noalign{\smallskip}
-            Nr. & a & b & c  \\
-             \noalign{\smallskip}\svhline\noalign{\smallskip}
+ \begin{table}
+ \centering
+ \begin{tabular}{cccc}
+ \hline\noalign{\smallskip}
+ Nr. & a & b & c \\
+ \noalign{\smallskip}\svhline\noalign{\smallskip}
 1 & \includegraphics[width=12em]{sequences/no3a.png} & % no control case 10932215 10933923 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_10932215_10933923.csv
-      \includegraphics[width=12em]{sequences/no3b.png} & % no control case 10932215_10933923 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_10932215_10933923.csv
-      \includegraphics[width=12em]{sequences/no4a.png}    % no control case 12518034 12520144 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_12518034_12520144.csv
+ \includegraphics[width=12em]{sequences/no3b.png} & % no control case 10932215_10933923 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_10932215_10933923.csv
+ \includegraphics[width=12em]{sequences/no4a.png} % no control case 12518034 12520144 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_12518034_12520144.csv
 \\
 2 & \includegraphics[width=12em]{sequences/no4b.png} & % no control case 12518034 12520144 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, filee noControl_12518034_12520144.csv
-      \includegraphics[width=12em]{sequences/no5a.png} & % no control case 113790741 13792228 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_13790741 13792228.csv
-      \includegraphics[width=12em]{sequences/no5b.png}    % no control case 113790741 13792228 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_13790741 13792228.csv
+ \includegraphics[width=12em]{sequences/no5a.png} & % no control case 113790741 13792228 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_13790741 13792228.csv
+ \includegraphics[width=12em]{sequences/no5b.png} % no control case 113790741 13792228 in SIsaR_0.9.4.1tmp experiments 2 seeds no control-table_5000.csv, file noControl_13790741 13792228.csv
 \\
 3 & \includegraphics[width=12em]{sequences/with6a.png} & % with control case 268411 270578 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_268411_270578.csv
-      \includegraphics[width=12em]{sequences/with6b.png} & % with control case 268411 270578 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_268411_270578.csv
-      \includegraphics[width=12em]{sequences/with7a.png}    % with control case 2722110 2723664 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_2722110_2723664.csv
+ \includegraphics[width=12em]{sequences/with6b.png} & % with control case 268411 270578 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_268411_270578.csv
+ \includegraphics[width=12em]{sequences/with7a.png} % with control case 2722110 2723664 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_2722110_2723664.csv
 \\
 4 & \includegraphics[width=12em]{sequences/with7b.png} & % with control case 2722110 2723664 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_2722110_2723664.csv
-      \includegraphics[width=12em]{sequences/with8a.png} & % with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
-      \includegraphics[width=12em]{sequences/with8b.png}    % with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
+ \includegraphics[width=12em]{sequences/with8a.png} & % with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
+ \includegraphics[width=12em]{sequences/with8b.png} % with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
 \\
 5 & \includegraphics[width=12em]{sequences/withShort0.png} & %using SIsaR 9.4.2 as is (basic control) with 123456_22313, file ex123456_22313.csv
-      \includegraphics[width=12em]{sequences/withShort1.png} & %using SIsaR 9.4.2 as is (basic control) with 123456_22314
-      \includegraphics[width=12em]{sequences/withShort1A.png}   %using SIsaR 9.4.2 as is (basic control + 20 sFW 1,i.e., stop Fragile Workers) with 123456_22314
+ \includegraphics[width=12em]{sequences/withShort1.png} & %using SIsaR 9.4.2 as is (basic control) with 123456_22314
+ \includegraphics[width=12em]{sequences/withShort1A.png} %using SIsaR 9.4.2 as is (basic control + 20 sFW 1,i.e., stop Fragile Workers) with 123456_22314
 \\
 6 & \includegraphics[width=12em]{sequences/withShort1A200.png} & %using SIsaR 9.4.2 as is (basic control + 20 sFW 1,i.e., stop Fragile Workers) with 123456_22314
-      \includegraphics[width=12em]{sequences/withShort1B.png}       & %using SIsaR 9.4.2 as is (basic control + $$$) with 123456_22314
-      \includegraphics[width=12em]{sequences/withShort2.png}             %using SIsaR 9.4.2 as is (basic control) with 123456_22315, file ex123456_22315.csv123456_22314
+ \includegraphics[width=12em]{sequences/withShort1B.png} & %using SIsaR 9.4.2 as is (basic control + $$$) with 123456_22314
+ \includegraphics[width=12em]{sequences/withShort2.png} %using SIsaR 9.4.2 as is (basic control) with 123456_22315, file ex123456_22315.csv123456_22314
 \\
-           \hline\noalign{\smallskip}
-        \end{tabular}
-        \caption{Gallery of sequences}
-        \label{gallery}
-    \end{table}
+ \hline\noalign{\smallskip}
+ \end{tabular}
+ \caption{Gallery of sequences}
+ \label{gallery}
+ \end{table}
 
 \begin{itemize}
 \item [1a] Case 1, without containment measures: contagions in nursing homes (orange), workplaces (brown), homes (cyan), hospitals (pink)
@@ -836,7 +923,7 @@ A gallery of contagion sequences in Table \ref{gallery}.
 \item [5c] Case 8, with containment measures, stopping fragile workers at day 20, with a positive result, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown)
 \item [6a] Case 8, with containment measures, stopping fragile workers at day 20, with a positive effect, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown), first 200 infections with evidence of the event around day 110 with the new phase due to a unique asymptomatic worker
 \item [6b] Case 8, with containment measures, stopping fragile workers and any case of fragility at day 15, also isolating nursing homes
-\item [6c] Case 9, with containment measures: a spontaneously stopping epidemic in  short period
+\item [6c] Case 9, with containment measures: a spontaneously stopping epidemic in short period
 \end{itemize}
 
 
