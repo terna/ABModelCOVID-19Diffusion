@@ -402,7 +402,7 @@ Examples.
 
 \begin{figure}[t]
 \center
-\includegraphics[width=0.9\textwidth]{with8a.png}% with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
+\includegraphics[width=0.48\textwidth]{with8a.png}% with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
 \caption{A Case with containment measures, the whole epidemics: workplaces (brown) and nursing homes (orange) and then houses (cyan), with a bridge connecting two waves}
 \label{workplacesNursingHomesFull}
 \end{figure}
@@ -419,6 +419,28 @@ Examples.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Epidemics without and with control}
 \label{withoutWith}
+
+In Figs. \ref{10kNoControl} and \ref{10kBasicC} we \ldots
+
+\begin{figure}[t]
+
+     \begin{subfigure}{0.48\textwidth}
+         \centering
+         \fbox{\includegraphics[width=0.95\textwidth]{10kNoControl.png}}
+         \subcaption{Without non-pharmaceutical containment measures}
+         \label{10kNoControl}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}{0.48\textwidth}
+         \centering
+         \fbox{\includegraphics[width=0.95\textwidth]{10kBasicC.png}}
+         \subcaption{With non-pharmaceutical containment measures}
+         \label{10kBasicC}
+     \end{subfigure}
+     \caption{Starting point: 10,000 epidemics in Piedmont}
+     \label{withoutWithFig}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Actual data}
@@ -476,28 +498,126 @@ As a documentation, in Fig. \ref{actualB} the time series cover the whole the pe
 \section{Factual and counterfactual analyses}
 \label{facCounterfac}
 
+In Fig. \ref{casesHeatM} we collect the heat-maps of the cases in Sections \ref{spont}, \ref{secondWithout}, \ref{secondWith}, \ref{anticip}, and \ref{frag}.
+
+\begin{figure}[t]
+
+     \begin{subfigure}{0.48\textwidth}
+         \centering
+         \fbox{\includegraphics[width=0.95\textwidth]{10kSpontWave2.png}}
+         \subcaption{First wave with non-pharmaceutical containment measures, spontaneous second wave, without specific measures}
+         \label{spontaneousSec}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}{0.48\textwidth}
+         \centering
+         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2.png}}
+         \subcaption{First wave with non-pharmaceutical containment measures, forcing the second wave, without specific measures}
+         \label{secondFromOut}
+     \end{subfigure}
+     \begin{subfigure}{0.48\textwidth}
+         \centering
+         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2Contr2.png}}
+         \subcaption{First wave with non-pharmaceutical containment measures, forcing the second wave, \emph{with new specific non-ph. containment measures}}
+         \label{secondFromOutWith}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}{0.48\textwidth}
+         \centering
+         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2Contr2M-20.png}}
+         \subcaption{First wave with non-pharmaceutical cont. meas,, forcing the second wave, \emph{with new specific non-ph. cont. meas., 20 day anticipation}}
+         \label{secondFromOut-20}
+     \end{subfigure}
+     \center
+     \begin{subfigure}{0.48\textwidth}
+         \centering
+         \fbox{\includegraphics[width=0.95\textwidth]{10kForceWave2NoFragOct5for60d.png}}
+         \subcaption{First wave with non-ph. cont. meas., forcing the sec. wave; \emph{in sec. wave, uniquely stop fragile people, including fragile workers}}
+         \label{secondFromOutNoFrag}
+     \end{subfigure}
+     \caption{Heat-maps of the factual and counterfactual analyses}
+     \label{casesHeatM}
+\end{figure}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Spontaneous second wave, without specific measures}
 \label{spont}
+% selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptChangingWorld_plusHMlog,ipynb
+% using 10kCtrl1.csv from SIsaR_0.9.5.4.1trials10kCtrl1.nlogo
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Second wave, new infections from outside, without specific measures}
-\label{second}
+\label{secondWithout}
+% selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptChangingWorldNewStart_plusHMlog.ipynb
+% using 10kCtrl1NStart.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStart.nlogo
+
+1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 1044 cases; at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
+
+Fig. \ref{secondFromOut} and Table \ref{selForceWave2Tab} refer to \ldots
+
+\begin{table}[t]
+\center
+\scriptsize
+\begin{tabular}{lrrrrrrrrrrrrr}
+\hline\noalign{\smallskip}
+(1000) &  Jun~1,~20 & &  Sep~9,~20 & & Dec~15,~20 & & Feb~1,~21 & & May~1,~21 & & Dec~15,~20~~~to~~~end   \\
+cum.~v. &  sym. &  all &  sympt. &  totalInf. &  sympt. &  totalInf. &  sympt. &  totalInf. &  sympt. &  totalInf. &  sympt. &  totalInf.  & days\\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+count &   1407.0 &                     1407.0 &   1407.0 &                     1407.0 &   1044.0 &                     1044.0 &   1005.0 &                     1005.0 &    980.0 &                      980.0 &              1044.0 &                  1044.0 & 1044.0 \\
+mean  &     35.6 &                       72.7 &     40.0 &                       84.1 &    \emph{180.4} &                      \emph{462.1} &    \emph{354.1} &                      \emph{900.4} &    \emph{623.8} &                     \emph{1563.3} &               726.6 &                  1810.9 &  620.9 \\
+std   &     14.1 &                       42.6 &     16.7 &                       52.8 &    134.6 &                      354.6 &    213.8 &                      535.4 &    217.9 &                      527.0 &               221.9 &                   544.0 &  110.8 \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Second wave, new infections from outside, without specific measures}
+\label{selForceWave2Tab}
+\end{table}
+
+
+
+%3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Second wave, new infections from outside, with new specific measures}
+\label{secondWith}
+% selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMarControlChangingWorldNewStart_plusHMlog.ipynb
+% using 10kCtrl1NStartCtrl2M.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M.nlogo
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Here a Stefano's section on calculating the infection indicator without delays}
 \label{indicator}
 
+See Fig. \ref{Rt} about \ldots
+
+\begin{figure}[t]
+\center
+\includegraphics[width=0.7\textwidth]{RtEstimation.jpg}
+\caption{In blue the $R_t$ values as reported by the Istituto Superiore di Sanit\`{a} and in red the calculation published regularly at \href{https://mondoeconomico.eu}{https://mondoeconomico.eu} by Stefano Terna}
+\label{Rt}
+\end{figure}
+
+Methodology: 
+
+\href{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian_national\_data.ipynb}{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian\_national\_data.ipynb}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Second wave, new infections from outside, with new specific measure anticipation of -20 days}
 \label{anticip}
+%selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMar-20ControlChangingWorldNewStart_plusHMlog.ipynb
+% using 10kCtrl1NStartCtrl2M-20.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M-20.nlogo
+
 
 N.B.: (i) anticipation limit Oct 5.; (ii) also the ending date of each measure is anticipated of 20 days.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Second wave, new infections from outs., stop fragile people. 60  days from Oct. 5}
 \label{frag}
+%selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptNoFragOCT05-60dControlChangingWorldNewStart_plusHMlog.ipynb
+% using 10kCtrl1NStartNoFragOCT05-60d.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartNoFragOCT05-60d.nlogo
+
 
 Schools are always working 100\% in this case.
 
