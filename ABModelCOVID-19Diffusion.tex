@@ -370,33 +370,36 @@ Contagions arise from agents' interactions, in four situations, as specified in 
 \section{Contagion representation}
 \label{contag}
 
-P R O V V I S O R I O
 
-collegare a Appendix~2~-~A gallery of contagion sequences (Section \ref{app2})
+We introduce a tool that allows analyzing the contagions' sequences in simulated epidemics and identifying the places where they occur.
+
 
  \begin{itemize}
  \item
-The model allows analyzing the sequences of contagions in simulated epidemics, reporting the places where the contagion occur. 
- \item
 We represent each infected agent as a horizontal segment (from the starting date to the final date of the infection) with vertical connections to other agents if they receive the disease.
 
+ \item
 We represent the new infected agents via further segments at an upper level. 
 
  \item
-With colors, line thickness, and styles, we display multiple information. 
-
+We display multiple information using three elements.
+  \begin{itemize}
+   \item Colors: black for unknown places, gray for open spaces, cyan for houses, orange for nursing homes, pink for hospitals, yellow for schools, brown for factories, with shops and offices.
+   \item Line thickness; proportional to fragility.
+   \item Styles: dotted lines for incubation, dashed lines for asymptomatic subjects, solid lines of symptomatic ones.
+ \end{itemize}
  \item
-This enables understanding at a glance how an epidemic episode is developing. In this way, it is easier to reason about countermeasures and, thus, to develop intervention policies.
+@@@This enables understanding at a glance how an epidemic episode is developing. In this way, it is easier to reason about countermeasures and, thus, to develop intervention policies.
 
  \end{itemize}
 
-Examples.
-
+Fig. \ref{shortExample} is useful as an example. VEDERE WORD
+We start with two agents coming from the outside, with black as color code (external place), the first one–regular, as reported by the thickness of the segment, starting at day 0 and finishing at day 22–is asymptomatic (dashed line) and infects five agents; the second one–robust, as reported by the thickness of the segment, starting at day 0 and finishing at day 15–is asymptomatic (dashed line) and infects no one; the first of the five infected agents received the infection at home (cyan color) and turns to be asymptomatic after a few days of incubation (dotted line), and so on. Solid lines identify symptomatic agents; brown color refers to workplaces, orange to nursing homes; yellow to schools; pink to hospitals; gray to open spaces. Thick or extra-thick lines refer to fragile or extra-fragile agents, respectively.
 \begin{figure}[t]
 \center
 \includegraphics[width=0.9\textwidth]{with8b40.png}% with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
 \caption{A case with containment measures, first 40 infections: workplaces (brown) and nursing homes (orange) strictly interweaving}
-\label{workplacesNursingHomes}
+\label{shortExample}
 \end{figure}
 
 
@@ -407,6 +410,7 @@ Examples.
 \label{workplacesNursingHomesFull}
 \end{figure}
 
+collegare a Appendix~2~-~A gallery of contagion sequences (Section \ref{app2})
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exploring cases}
