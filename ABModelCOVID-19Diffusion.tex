@@ -717,7 +717,7 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 89.6 & 234.2 & 118.1 & 306.7 & 126.4 & 315.9 &
 \section{Cost-benefit analysis of the of interventions [Beppe's contribution]}
 \label{CBanalysis}
 
-Considering  the different interventions of Section \ref{facCounterfac} we can evaluate \ldots
+Considering the different interventions of Section \ref{facCounterfac} we can evaluate \ldots
 
 First of all, the costs for the attribution of sick pay to workers who are compulsorily absent from work, if they are not able to carry out telework activities and the benefits of continuing economic activities \ldots
 
@@ -737,7 +737,16 @@ WORKS IN PROGRESS.
 \subsection{Planning a vaccination campaign using genetic algorithms (GAs), with non-pharmaceutical containment measures in action}
 \label{planGA}
 
-We simulate the vaccination campaigns with the GAs BehaviorSearch program, with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.
+We compare the effect of choosing the vaccination quotas via GAs with two predetermined strategies, considering three hypotheses (vaccinated people: still spread the contagion; do not spread the contagion; do it in the 50\% of the case); we show here only the first case results.
+
+Key dates: 
+\begin{itemize}
+\item in the internal calendar of the model, day 373 is Feb. \nth{12}, 2021, which is effectively the starting point of the vaccinations in the region; 
+
+\item the day of the effectiveness of the initial vaccinations, 40 days later, is day 413 (Mar. \nth{22}, 2021).
+\end{itemize}
+
+(Technical detail.We simulate the vaccination campaigns with the GAs BehaviorSearch program, with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.)
 
 \subsubsection{Vaccination groups}
 \label{vgroups}
@@ -774,39 +783,211 @@ We take into consideration seven groups in order of decreasing fragility but als
 \subsection{A specific realistic case}
 \label{specific}
 
+We analyze the case of Fig. \ref{specificCaseGA} to \ldots
+
+\begin{figure}[t]
+\center
+\includegraphics[scale=0.2]{CaseForGA_I_base.png}
+\caption{Crucial dates: blue line for the starting point of the vaccination campaign and red line for the start of the effectiveness of the initial vaccinations}
+\label{specificCaseGA}
+\end{figure}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vaccination quotas, \emph{plain} strategy}
-\label{palin}
+\label{plain}
+
+Considering the \emph{plain} option adopted in Table \ref{quotaTable1} and remembering that the time-sequence in daily actions is the priority, we will primarily vaccinate the left column groups to move gradually to other columns: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
+
+In Tables \ref{quotaPlainTab} and \ref{susceptible} \ldots
+
+\begin{table}[t]
+\centering
+\begin{tabular}{ccccccccc}
+\hline\noalign{\smallskip}
+\begin{tabular}[c]{@{}c@{}}From \\ day\end{tabular} & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373 & 5 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+433 & 10 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+493 & 10 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+553 & 10 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+613 & 20 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+738 & end \\ 
+\hline\noalign{\smallskip} 
+\end{tabular}
+\caption{From the day of the first column, considering the quantity of the second column (000), the vaccination of each group follows the quota of the related columns}
+\label{quotaPlainTab}
+\end{table}
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccccccc}
+\hline\noalign{\smallskip}
+(000) & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+Susc. at t = 0 & 133 & 84 & 240 & 1560 & 1179 & 254 & 900 \\
+\hline\noalign{\smallskip} 
+\end{tabular}
+\caption{Susceptible persons at the beginning of the simulation}
+\label{susceptible}
+\end{table}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vaccination quotas, \emph{wise} strategy}
 \label{wise}
 
+In Tables \ref{quotaWiseTab} and \ref{susceptible} \ldots
+
+\begin{table}[t]
+\centering
+\begin{tabular}{ccccccccc}
+\hline\noalign{\smallskip}
+\begin{tabular}[c]{@{}c@{}}From \\ day\end{tabular} & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373 & 5 & 0.1 & 0.1 & 0.1 & 0.0 & 0.1 & 0.0 & 0.0 \\
+433 & 10 & 0.1 & 0.1 & 0.1 & 0.0 & 0.1 & 0.0 & 0.0 \\
+493 & 10 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+553 & 10 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+613 & 20 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 & 0.1 \\
+738 & end \\ 
+\hline\noalign{\smallskip} 
+\end{tabular}
+\caption{From the day of the first column, considering the quantity of the second column (000), the vaccination of each group follows the quota of the related columns}
+\label{quotaWiseTab}
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{GAs quotas in the experiment, with vac. people spreading or not spreading the infection}
 \label{GAquotas}
 
+In Tables \ref{quotaGATab} and \ref{susceptibleGA} \ldots
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccccccc}
+\hline\noalign{\smallskip}
+(000) & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+Susc. at t = 0 & 133 & 84 & 240 & 1560 & 1179 & 254 & 900 \\
+Susc. when\\vacc. starts & 124 & 81 & 162 & 1234 & 1032 & 245 & 891 \\
+\hline\noalign{\smallskip} 
+\end{tabular}
+\caption{Susceptible persons at the beginning of the simulation and when the vaccination campaign starts, day 373, Feb. \nth{12}, 2021}
+\label{susceptibleGA}
+\end{table}
+
+Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{ccccccccc}
+\hline\noalign{\smallskip}
+\begin{tabular}[c]{@{}c@{}}From \\ day\end{tabular} & \begin{tabular}[c]{@{}c@{}}Q. of \\ vaccines \\ (000)\end{tabular} & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+373 & 5 & 0.01 & 0 & 0 & 0.79 & 0.18 & 0.38 & 0.19 \\
+433 & 10 & 0.94 & 0.06 & 0.32 & 0.54 & 0.19 & 0.83 & 0.5 \\
+493 & 10 & 0.97 & 0.97 & 0.74 & 0.79 & 0.2 & 0.14 & 0.52 \\
+553 & 10 & 0.98 & 0.83 & 0.02 & 0.39 & 0.99 & 0.04 & 0.48 \\
+613 & 20 & 0.52 & 0.01 & 0.83 & 0.6 & 1 & 0.27 & 0.9 \\
+738 & end \\ 
+\hline\noalign{\smallskip} 
+\end{tabular}
+\caption{GAs best strategy in case I, with \textbf{\emph{vaccinated people still spreading the infection}}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quota of the related columns}
+\label{quotaGATab}
+\end{table}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{An experiment with GA}
 \label{GA}
+
+% using contagionSeriesByGroups.ipynb on Experiment_I_base.csv 
+\begin{figure}[t]
+\center
+\includegraphics[width=0.6\textwidth]{Experiment_I_base_symptomatic_series.png} 
+\caption{Base symptomatic series; the vertical line is at day 413 is not relevant here} 
+\label{symptomaticSeries}
+\end{figure}
+
+
+\begin{figure}[t]
+
+ \begin{subfigure}{0.4\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_plainVaccinationSequence.png}} % experiment_I_vaccination_plots.ipynb
+ \subcaption{``Plain'' vacc, sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)}
+ \label{seqPlain}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}{0.52\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_1_plain_symptomatic_series.png}} % using contagionSeriesByGroups.ipynb on Experiment_I_plain_1.csv 
+ \subcaption{``Plain'' vaccination symptomatic series; the vertical line is at day 413, when the effectiveness of first vaccination starts}
+ \label{timeSeriesPlain}
+ \end{subfigure}
+
+\begin{subfigure}{0.4\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_wiseVaccinationSequence.png}} % experiment_I_vaccination_plots.ipynb
+ \subcaption{``Wise'' vacc, sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)}
+ \label{seqWise}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}{0.52\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_1_wise_symptomatic_series.png}} % using contagionSeriesByGroups.ipynb on Experiment_I_wise_1.csv
+ \subcaption{``Wise'' vaccination symptomatic series; the vertical line is at day 413, when the effectiveness of first vaccination starts} 
+ \label{timeSeriesWise}
+ \end{subfigure}
+
+\begin{subfigure}{0.4\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_GA_1_VaccinationSequence.png}} % experiment_I_vaccination_plots.ipynb
+ \subcaption{GA vacc. sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
+ \label{seqGA}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}{0.52\textwidth}
+ \centering
+ \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_1_GAs_symptomatic_series.png}} % using contagionSeriesByGroups.ipynb on Experiment_I_1bestGA.csv 
+ \subcaption{GAs vaccination symptomatic series; the vertical line is at day 413, when the effectiveness of first vaccination starts}
+ \label{timeSeriesGA}
+ \end{subfigure}
+
+ \caption{Vaccination sequences and time series}
+ \label{vaccinCases}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Time dynamics without vaccinations}
 \label{dybWithout}
 
+In Fig. \ref{symptomaticSeries} \ldots
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Time dynamics with \emph{plain} vac. strategy, vac. people still spreading the infection}
 \label{dynPlain}
+
+In Figs. \ref{seqPlain} and \ref{timeSeriesPlain} \ldots
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Time dynamics with \emph{wise} vac. strategy, vac. people still spreading the infection}
 \label{dynWise}
 
+In Figs. \ref{seqWise} and \ref{timeSeriesWise} \ldots
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Time dynamics with best GAs strategy, vac, people still spreading the infection}
 \label{dynGA}
+
+In Figs. \ref{seqGA} and \ref{timeSeriesGA} \ldots
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A new model and future developments}
