@@ -210,7 +210,7 @@ The genome is a matrix of vaccination quotas by people groups, with their time r
 
 We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont. The size of the initial infected group is out of scale: it is the smallest number, ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For implausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is made with realistic numbers, not to be read in scale: e.g., a classroom contains 25 students, a home two persons, large factories up to 150 employees, small ones up to 15, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
 
-In Fig. \ref{3D} we have a 3D representation of the model world---as one of the possible random maps that the simulation generates--- with persons in gray, houses in cyan, nursing homes in orange, hospitals in orange, schools in yellow, factories (with shops and offices) in brown. Persons have a cylinder as shape, if regular; a capital X if fragile; temporary their colors can be: red, if symptomatic; violet, if asymptomatic; turquoise, if symptomatic recovered; green, if asymptomatic recovered.
+In Fig. \ref{3D} we have a 3D representation of the model world---as one of the possible random maps that the simulation generates--- with persons in gray, houses in cyan, nursing homes in orange, hospitals in orange, schools in yellow, factories (with shops and offices) in brown. Persons have a cylinder as shape, if regular or robust (young); a capital X if fragile; temporary their colors can be: red, if symptomatic; violet, if asymptomatic; turquoise, if symptomatic recovered; green, if asymptomatic recovered.
 
 We use random maps to have a neutral representation of the structure of the space when doing the batches of 10,000 repetitions of the simulation. 
 
@@ -230,7 +230,7 @@ We can set:
 
 \item the critical distance, i.e., the radius of the possibility of infection in open air, with a given probability;
 
-\item the correction of that probability, due to the personal characteristics of both active and the passive agents; passive agents, as receivers, can be robust, regular, fragile, and extra fragile.
+\item the correction of that probability, due to the personal characteristics of both active and the passive agents; passive agents, as receivers, can be robust (young), regular, fragile, and extra fragile.
 
 \end{itemize} 
 
@@ -384,24 +384,33 @@ We represent the new infected agents via further segments at an upper level.
  \item
 We display multiple information using three elements.
   \begin{itemize}
-   \item Colors: black for unknown places, gray for open spaces, cyan for houses, orange for nursing homes, pink for hospitals, yellow for schools, brown for factories, with shops and offices.
+   \item Colors in horizontal segments (areas of the infections): black for unknown places, gray for open spaces, cyan for houses, orange for nursing homes, pink for hospitals, yellow for schools, brown for factories, with shops and offices.
+   \item Vertical connecting segments keep the same color of the horizontal generating one. 
    \item Line thickness; proportional to fragility.
    \item Styles: dotted lines for incubation, dashed lines for asymptomatic subjects, solid lines of symptomatic ones.
  \end{itemize}
  \item
-@@@This enables understanding at a glance how an epidemic episode is developing. In this way, it is easier to reason about countermeasures and, thus, to develop intervention policies.
-
+This graphical presentation enables understanding at a glance how an epidemic episode is developing. In this way, it is easier to reason about countermeasures and, thus, to develop intervention policies. 
  \end{itemize}
 
-Fig. \ref{shortExample} is useful as an example. VEDERE WORD
-We start with two agents coming from the outside, with black as color code (external place), the first one–regular, as reported by the thickness of the segment, starting at day 0 and finishing at day 22–is asymptomatic (dashed line) and infects five agents; the second one–robust, as reported by the thickness of the segment, starting at day 0 and finishing at day 15–is asymptomatic (dashed line) and infects no one; the first of the five infected agents received the infection at home (cyan color) and turns to be asymptomatic after a few days of incubation (dotted line), and so on. Solid lines identify symptomatic agents; brown color refers to workplaces, orange to nursing homes; yellow to schools; pink to hospitals; gray to open spaces. Thick or extra-thick lines refer to fragile or extra-fragile agents, respectively.
+At \href{https://github.com/terna/contagionSequence}{https://github.com/terna/contagionSequence} we have the calculation tool, \emph{sequentialRecords.ipynb}, generating these sequences.
+ 
+
+Fig. \ref{shortExample} is useful as an example. 
+We start with two agents from the outside, with black as the color code (unknown place). The first one is young---as reported by the thickness of the segment, starting at day 0 and finishing at day 22---and asymptomatic (dashed line); it infects no one. The second one---regular, as reported by the thickness of the segment, starting at day 0 and finishing at day 15---is asymptomatic (dashed line) and infects four agents on day 2. All the four infected agents received the infection at work (brown color) and turn to be asymptomatic after the days of incubation (dotted line); the first and the fourth are regular agents; the second and the third are fragile ones.
+
+Continuing the analysis: on day 3, the second agent infects three other agents (at home, at work, at work) [\dots]; on day 13,  agent number five infects seven regular agents at work and an extra-fragile one in a nursing home (orange color), etc.
+
 \begin{figure}[t]
 \center
 \includegraphics[width=0.9\textwidth]{with8b40.png}% with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
-\caption{A case with containment measures, first 40 infections: workplaces (brown) and nursing homes (orange) strictly interweaving}
+\caption{A case with containment measures, first 40 infections: workplaces (brown) and nursing homes (orange) interweaving}
 \label{shortExample}
 \end{figure}
 
+If a vertical segment changes its color, we have an agent in an upper infecting someone on the same day of the infection transmitted by an agent in a lower row, so we lose some information.
+
+In Fig. \ref{workplacesNursingHomesFull} we see an example of an epidemic where non-pharmaceutical containment measures are in adoption: a first wave shows an interlaced effect of contagions at home, in nursing homes, and at work. After a phase in which contagions develop mainly at home, a skinny bridge connects the first wave to a second one, restarting from workplaces. The thickness of the \emph{snake} of the contagions measures the stock on infects agents on a given date; the slope reports the speediness of the epidemic development; the vertical coordinate reports the cumulative number of infected people.
 
 \begin{figure}[t]
 \center
@@ -410,7 +419,7 @@ We start with two agents coming from the outside, with black as color code (exte
 \label{workplacesNursingHomesFull}
 \end{figure}
 
-collegare a Appendix~2~-~A gallery of contagion sequences (Section \ref{app2})
+In Appendix~2~-~A gallery of contagion sequences (Section \ref{app2}) we have several examples of contagion sequences.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exploring cases}
@@ -801,7 +810,7 @@ We analyze the case of Fig. \ref{specificCaseGA} to \ldots
 \subsection{Vaccination quotas, \emph{plain} strategy}
 \label{plain}
 
-Considering the \emph{plain} option adopted in Table \ref{quotaTable1} and remembering that the time-sequence in daily actions is the priority, we will primarily vaccinate the left column groups to move gradually to other columns: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
+Considering the \emph{plain} option adopted in Table \ref{quotaPlainTab} and remembering that the time-sequence in daily actions is the priority, we will primarily vaccinate the left column groups to move gradually to other columns: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
 
 In Tables \ref{quotaPlainTab} and \ref{susceptible} \ldots
 
@@ -997,8 +1006,12 @@ In Figs. \ref{seqGA} and \ref{timeSeriesGA} \ldots
 \section{A new model and future developments}
 \label{newModel}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Appendix 1 - Parameter values}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Appendix 1---Parameter values}
 \label{app1}
 
 We report here the values of parameters of Fig. \ref{outline}, also with the short names used in program scripts, in round brackets. Look at Section \ref{par} for the definition. Day numbering is related to actual dates via the Table \ref{dates}. Day 1 is fixed at Feb \nth{4}, 2020.
@@ -1062,10 +1075,40 @@ at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not rel
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Appendix 2 - a gallery of contagion sequences}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Appendix 2---A gallery of contagion sequences}
 \label{app2}
 
-A gallery of contagion sequences in Table \ref{gallery}.
+The gallery of contagion sequences, reported in Table \ref{gallery}, shows the vast variety of situations generated by the agent-based simulations, producing actions and interactions of the agents.
+
+\begin{itemize}
+\item [1a] An outbreak without containment measures, with a unique wave, but very heavy: contagions are in nursing homes (orange), workplaces (brown), homes (cyan), hospitals (pink).
+\item [1b] This is the previous epidemic without containment measures, considering the first 200 infections, with the main contribution of nursing homes (orange) and workplaces (brown).
+\item [1c] Another outbreak, always without containment measures: nursing homes (orange) as a starter.
+
+\item [2a] The [1c] epidemic, without containment measures, first 200 infections: nursing homes (orange) as a starter; around day 70, a unique contagion at home makes the epidemic continue.
+\item [2b] Another case without containment measures showing the initial action of contagions in workplaces (brown) and homes (cyan).
+\item [2c] Here we see the first 200 infections showing that the initial profound effects of contagions in workplaces (brown) and homes are due, in the beginning, to the fragile persons, also asymptomatic,
+
+\item [3a] An outbreak with containment measures, where we see another influential contribution of workplaces (brown) and homes (cyan) to the epidemic diffusion.
+\item [3b] Here the first 200 infections: after day 100, we observe many significant cases of fragile workers diffusing the infection.
+\item [3c] In this outbreak, with containment measures, the infections arise from workplaces (brown), nursing homes (orange), and homes (cyan), but also hospitals (pink).
+
+\item [4a] Here we explore the first 200 infections of [3c]: in the beginning, workplaces (brown), hospitals (pink), nursing homes (orange), and homes (cyan) are interweaving.
+\item [4b] An outbreak with containment measures where the effect of the contagions in workplaces (brown), nursing homes (orange), and homes (cyan) is evident.
+\item [4c] In the first 200 infections of [4b], workplaces (brown) and nursing homes (orange) are strictly interweaving.
+
+\item [5a] An outbreak with containment measures where the effect of nursing homes (orange) is prevalent.
+\item [5b] An outbreak with containment measures with a highly significant effect from workplaces (brown).
+\item [5c] Stopping fragile workers at day 20 in the previous case, we obtain a beneficial effect, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown).
+
+\item [6a] Exploring the first 200 infections of the case [5c], we have evidence of the event around day 110 with the new phase due to a unique asymptomatic worker.
+\item [6b] Finally, the same epidemic stopped fragile workers and any fragility at day 15 and isolated nursing homes.
+\item [6c] An outbreak with containment measures spontaneously stopping in a short period.
+\end{itemize}
+
+
 
  \begin{table}
  \centering
@@ -1099,30 +1142,9 @@ A gallery of contagion sequences in Table \ref{gallery}.
 \\
  \hline\noalign{\smallskip}
  \end{tabular}
- \caption{Gallery of sequences}
+ \caption{Gallery of sequences, symptomatic and asymptomatic agents}
  \label{gallery}
  \end{table}
-
-\begin{itemize}
-\item [1a] Case 1, without containment measures: contagions in nursing homes (orange), workplaces (brown), homes (cyan), hospitals (pink)
-\item [1b] Case 1, without containment measures, first 200 infections with the main contribution of nursing homes (orange) and workplaces (brown)
-\item [1c] Case 2, without containment measures: nursing homes (orange) as starter
-\item [2a] Case 2, without containment measures, first 200 infections: nursing homes (orange) as starter and around day 70 a unique contagion at home continuing the epidemic
-\item [2b] Case 3, without containment measures: an initial deep effect of contagions in workplaces (brown) and homes (cyan)
-\item [2c] Case 3, without containment measures, first 200 infections: the initial deep effect of contagions in workplaces (brown) and homes is due in the initial steps to fragile persons, also asymptomatic
-\item [3a] Case 4, with containment measures: another case of strong contribution of workplaces (brown) and homes (cyan) to epidemic diffusion
-\item [3b] Case 4, with containment measures, first 200 infections: after day 100 we observe many significant cases of fragile workers diffusing the infection
-\item [3c] Case 5, with containment measures: workplaces (brown), hospitals (pink), nursing homes (orange) and homes (cyan), then workplaces
-\item [4a] Case 5, with containment measures, first 200 infections: in the beginning workplaces (brown), hospitals (pink), nursing homes (orange) and homes (cyan) interweaving
-\item [4b] Case 6, with containment measures: workplaces (brown), nursing homes (orange), homes (cyan)
-\item [4c] Case 6, with containment measures, first 200 infections: workplaces (brown) and nursing homes (orange) strictly interweaving
-\item [5a] Case 7, with containment measures: the effect of nursing homes (orange)
-\item [5b] Case 8, with containment measures: a highly significant effect of workplaces (brown)
-\item [5c] Case 8, with containment measures, stopping fragile workers at day 20, with a positive result, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown)
-\item [6a] Case 8, with containment measures, stopping fragile workers at day 20, with a positive effect, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown), first 200 infections with evidence of the event around day 110 with the new phase due to a unique asymptomatic worker
-\item [6b] Case 8, with containment measures, stopping fragile workers and any case of fragility at day 15, also isolating nursing homes
-\item [6c] Case 9, with containment measures: a spontaneously stopping epidemic in short period
-\end{itemize}
 
 
 
