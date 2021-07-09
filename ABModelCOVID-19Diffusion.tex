@@ -422,7 +422,7 @@ In Fig. \ref{workplacesNursingHomesFull} we see an example of an epidemic where 
 In Appendix~2~-~A gallery of contagion sequences (Section \ref{app2}) we have several examples of contagion sequences.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Exploring cases with simulation batches}
+\section{Exploring scenarios with simulation batches}
 \label{exploring}
 
 The sequences described in Section \ref{contag} offer mainly suggestions and interpretations. To explore systematically the introduction of factual, counterfactual, and prospective interventions to control the spread of the contagions, we need to analyze batches of simulations. In this perspective, each simulation run---whose length coincides with the disappearance of symptomatic or asymptomatic contagion cases---is a datum in a scenario of time and outcome variability. Consequently, we need to represent compactly the results emerging from batches of repetitions to compare the consequences of each batch's basic assumptions. 
@@ -435,48 +435,8 @@ At \href{https://github.com/terna/readSIsaR\_BatchResults}{https://github.com/te
 \subsection{Epidemics without and with control}
 \label{withoutWith}
 
-In Figs. \ref{10kNoControl} and \ref{10kBasicC} we \ldots
-
-@@@Here we are without any control, and the school always open. The values of Table \ref{EpidemicsWithoutControlT} are scary, and the concentration of the cases in the heat-map of Fig. \ref{EpidemicsWithoutControlHM} shows that, except a few instances spontaneously concluding in a short period (left bottom corner), we have a heavy \emph{cloud}\footnote{In the 2020 Summer, in the mountain, one of the authors saw the cloud configuration reporte at \url{https://terna.to.it/simul/HeatmapInTheCloud.png}; a curious coincidence.} of cases lasting one year or one year and a half, hitting (as symptomatic, asymptomatic and deceased) from 2.400 to 3,200 people on a total of 4,350.
-
-Figs. 5-6 provide two heat-maps reporting the duration of each simulated epidemic in the x axis and the number of the symptomatic, asymptomatic, and deceased agents in the y axis. 1,000 runs in both cases. 
-
-The actual data for Piedmont, where the curve of the contagions flattened with the end of May, with around 30 thousand subjects, is included in the cell in the first row, immediately to the right of the mode in Fig. 6. In the Fall, a second wave seems possible, jumping into one of the events of the range of events on the right side of the same figure.
-
-The non-p. control measures are reflected in the values of the parameters in app2. The implicit calendar is updated at ... \href{https://terna.to.it/simul/calendario092.pdf}{https://terna.to.it/simul/calendario092.pdf} 
-
-Online in Italian
-
-\begin{table}[t]
-\center
-\begin{tabular}{lrrr}
-\hline\noalign{\smallskip}
-{} & symptomatic & totalInfected\&Deceased & duration \\
-\noalign{\smallskip}\svhline\noalign{\smallskip}
-count & 10000.00 & 10000.00 & 10000.00 \\
-mean & 969.46 & 2500.45 & 303.10 \\
-std & 308.80 & 802.88 & 93.50 \\
-\hline\noalign{\smallskip}
-\end{tabular}
-\label{noCTab}
-%\caption{a caption}
-\end{table}
-
-
-\begin{table}[t]
-\center
-\begin{tabular}{lrrr}
-\hline\noalign{\smallskip}
-{} & symptomatic & totalInfected\&Deceased & duration \\
-\noalign{\smallskip}\svhline\noalign{\smallskip}
-count & 10000.00 & 10000.00 & 10000.00 \\
-mean & 344.22 & 851.64 & 277.93 \\
-std & 368.49 & 916.41 & 213.48 \\
-\hline\noalign{\smallskip}
-\end{tabular}
-\label{basicCTab}
-%\caption{a caption}
-\end{table}
+As a starting point, we compare the situations represented in Figs. \ref{10kNoControl} and \ref{10kBasicC}. In Fig. \ref{10kNoControl} the heat-map reports the distribution in duration and infection causation of 10,000 simulated outbreaks left to spread without any control; coherently, with the school always open. 
+The numbers in Table \ref{noCTab} are scary. The concentration of the cases in the heat-map shows that, except a few instances spontaneously concluding in a short period (left bottom corner), produces a heavy \emph{cloud} of cases lasting one year or one year and a half, hitting (as symptomatic, asymptomatic and deceased) from 2.000 to 3,500 persons on a total of 4,350 in the region (scale of 1:1000).
 
 
 \begin{figure}[t]
@@ -494,9 +454,42 @@ std & 368.49 & 916.41 & 213.48 \\
  \subcaption{Outbreaks with non-pharmaceutical containment measures}
  \label{10kBasicC}
  \end{subfigure}
- \caption{Starting point: 10,000 epidemics in Piedmont}
+ \caption{Starting our analyses: 10,000 epidemics in Piedmont}
  \label{withoutWithFig}
 \end{figure}
+
+
+In Fig. \ref{10kBasicC} and the related Table \ref{basicCTab} we report a similar simulation batch of 10,000 runs of the model, but with the adoption of the basic non-pharmaceutical containment measures, registered in the values of the parameters in Appendix~1~-~Parameter~values (Section \ref{app1}). A calendar is at  \href{https://terna.to.it/simul/calendario092.pdf}{https://terna.to.it/simul/calendario092.pdf}, and the model---version 0.9.6--- is updated until April 2021. The results are dramatically different, showing the efficacy of the containment measures. 
+
+
+\begin{table}[t]
+\center
+\begin{tabular}{lrrr}
+\hline\noalign{\smallskip}
+(000) & symptomatic & totalInfected\&Deceased & duration \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+mean & 969.46 & 2500.45 & 303.10 \\
+std & 308.80 & 802.88 & 93.50 \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Mean values and standard deviations in Fig. \ref{10kNoControl} cases}
+\label{noCTab}
+\end{table}
+
+
+\begin{table}[t]
+\center
+\begin{tabular}{lrrr}
+\hline\noalign{\smallskip}
+(000) & symptomatic & totalInfected\&Deceased & duration \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+mean & 344.22 & 851.64 & 277.93 \\
+std & 368.49 & 916.41 & 213.48 \\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Mean values and standard deviations in Fig. \ref{10kBasicC} cases}
+\label{basicCTab}
+\end{table}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
