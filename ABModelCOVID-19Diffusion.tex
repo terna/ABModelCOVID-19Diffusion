@@ -616,7 +616,7 @@ In Fig. \ref{casesHeatM} we collect the heat-maps of the experiments:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Spontaneous second wave, without specific measures}
+\subsection{Spontaneous second wave, without specific containment measures}
 \label{spont}
 % selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptChangingWorld_plusHMlog,ipynb
 % using 10kCtrl1.csv from SIsaR_0.9.5.4.1trials10kCtrl1.nlogo
@@ -624,7 +624,7 @@ In Fig. \ref{casesHeatM} we collect the heat-maps of the experiments:
 In an initial plain batch of 10.000 runs of the Piedmont related model, we count only 140 cases of epidemics with both the absence of new contagions in Summer 2020 and their explosion in Fall, as in Fig. \ref{actualA}.
 
 We select, first of all, 170 cases in the following way. Considering June \nth{1}, we choose the epidemics that have a number of symptomatic agents in the (10, 70] interval (their mean: 37.9) and, on  September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 60.4).  
-Due to the lack of data described in Section \ref{actual}, to compare December \nth{15} and September \nth{20} situations, we use symptomatic plus asymptomatic agents' count. We observe the existence of 140 outbreaks with the required characteristics; the December mean of the infected agents is 648.7, sensibly larger than the actual value: 200.0. We overestimate the reality being the long-lasting simulated outbreaks, the larger ones, and, most of all, having no containment measures operating in the simulations.
+Due to the lack of data described in Section \ref{actual}, to compare December \nth{15} and September \nth{20} situations, we use symptomatic plus asymptomatic agents' count. We observe the existence of 140 outbreaks with the required characteristics; the December mean of the infected agents is 648.7, sensibly larger than the actual value: $\approx$200.0. We overestimate the reality being the long-lasting simulated outbreaks, the larger ones, and, most of all, having no containment measures operating in the simulations.
 
 Fig. \ref{spontaneousSec} and Table \ref{selSpontWave2Tab} show the outbreaks with similar cumulative numbers before and after the Summer 2020 pause (170 cases), with the second wave of 140 cases developing in the absence of containment measures.
 
@@ -640,7 +640,7 @@ The adverse cases are 140 out of 10,000, a very light ratio as the second wave o
 cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 count & 170.0 & 170.0 & 170.0 & 170.0 & 140.0 & 140.0 & 131.0 & 131.0 & 128.0 & 128.0 & 140.0 & 140.0 & 140.0 \\
-mean & 37.9 & 100.2 & 60.4 & 159.3 & \emph{248.4} & \emph{648.7} & \emph{432.2} & \emph{1109.5} & \emph{656.3} & \emph{1655.5} & 701.1 & 1757.9 & 594.2 \\
+mean & 37.9 & 100.2 & 60.4 & 159.3 & 248.4 & 648.7 & 432.2 & 1109.5 & 656.3 & 1655.5 & 701.1 & 1757.9 & 594.2 \\
 std & 16.4 & 61.0 & 19.6 & 71.7 & 167.4 & 424.3 & 220.4 & 538.4 & 215.4 & 513.3 & 246.4 & 599.7 & 118.9 \\
 \hline\noalign{\smallskip}
 \end{tabular}
@@ -649,22 +649,20 @@ std & 16.4 & 61.0 & 19.6 & 71.7 & 167.4 & 424.3 & 220.4 & 538.4 & 215.4 & 513.3 
 \end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Second wave, new infections from outside, without specific measures}
+\subsection{Second wave, new infections from outside, without specific containment measures}
 \label{secondWithout}
 % selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStart.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStart.nlogo
 
 To generate a framework consistent with the presence of a second wave after a period of substantial inactivity of the epidemic, we introduced the occurrence of two cases of infected persons coming back from outside after Summer vacancies, conventionally on September \nth{1}, 2020.
 
-@@@
 Now we have 1407 cases of epidemics with: (i) on June \nth{1}, a number of symptomatic agents in the (10, 70] interval (their mean: 35.6) and (ii), on  September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 40.0).
-As in Section \ref{spont}, to compare December \nth{15} and September \nth{20} situations we use symptomatic plus asymptomatic agents' count. We observe the existence of 140 outbreaks with the required characteristics; the December mean of the infected agents is 648.7, sensibly larger than the actual value: 200.0. We overestimate the reality being the long-lasting simulated outbreaks, the larger ones.
+As in Section \ref{spont}, to compare December \nth{15} and September \nth{20} situations we use symptomatic plus asymptomatic agents' count. We observe the existence of 1044 outbreaks with the required characteristics; the December mean of the infected agents is 462.1, again sensibly larger than the actual value: $\approx$200.0. We overestimate the reality being the simulations run without the adoption of containment measures.
 
-Fig. \ref{spontaneousSec} and Table \ref{selSpontWave2Tab} show the outbreaks with similar cumulative numbers before and after the Summer 2020 pause (170 cases), with the second wave of 140 cases developing in the absence of containment measures.
+Both Fig. \ref{secondFromOut} and Table \ref{selForceWave2Tab} show the outbreaks with similar cumulative numbers before and after the Summer 2020 pause (1407 cases), with the second wave of 1044 cases producing, in the absence of containment measures, a heavy cloud as that of Fig. \ref{10kNoControl}, with infected people of any kind in a range approximately from 1,500 to 2,800 realizations, with an equivalence, to the Piedmont scale, to 1,5-2,8 millions of subjects.
 
-The adverse cases are 140 out of 10,000, a very light ratio as the second wave occurred in the Fall. The transition to the third wave that we see in Fig. \ref{actualB} is easy to explain, as the second wave never completely ended.
+The number of cases is now sufficient to evaluate the effects of factual (Section \ref{secondWith} and counterfactual (Sections \ref{anticip}) and \ref{frag}) simulation experiments.
 
-Fig. \ref{secondFromOut} and Table \ref{selForceWave2Tab} refer to \ldots
 
 \begin{table}[t]
 \center
@@ -676,7 +674,7 @@ Fig. \ref{secondFromOut} and Table \ref{selForceWave2Tab} refer to \ldots
 cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 1044.0 & 1044.0 & 1005.0 & 1005.0 & 980.0 & 980.0 & 1044.0 & 1044.0 & 1044.0 \\
-mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{180.4} & \emph{462.1} & \emph{354.1} & \emph{900.4} & \emph{623.8} & \emph{1563.3} & 726.6 & 1810.9 & 620.9 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & 180.4 & 462.1 & 354.1 & 900.4 & 623.8 & 1563.3 & 726.6 & 1810.9 & 620.9 \\
 std & 14.1 & 42.6 & 16.7 & 52.8 & 134.6 & 354.6 & 213.8 & 535.4 & 217.9 & 527.0 & 221.9 & 544.0 & 110.8 \\
 \hline\noalign{\smallskip}
 \end{tabular}
@@ -687,14 +685,16 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 134.6 & 354.6 & 213.8 & 535.4 & 217.9 & 527.0 
 
 
 %3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Second wave, new infections from outside, with new specific measures}
+\subsection{Second wave, new infections from outside, with new specific containment measures}
 \label{secondWith}
 % selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMarControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartCtrl2M.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M.nlogo
 
-1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 874 cases; at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
+As in Section \ref{secondWithout} we have 1407 cases of epidemics with: (i) on June \nth{1}, a number of symptomatic agents in the (10, 70] interval (their mean: 35.6) and (ii), on  September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 40.0).
+We use symptomatic plus asymptomatic agents' count December \nth{15} and September \nth{20} situations, recording 874 outbreaks with the required characteristics. The December mean of the infected agents is 340.6, closer to the actual value ($\approx$200.0) due to the introduction into the simulation of specific control measures for the second wave. We always overestimate the reality because the surviving epidemics are the larger ones.
 
-Fig. \ref{secondFromOutWith} and Table \ref{selSpontWave2Contr2Tab} refer to \ldots
+In Fig. \ref{secondFromOutWith} we see that the heavy cloud of the previous figure dissolved, and in Table \ref{selSpontWave2Contr2Tab} the figures in italic emphasize the effect of the containment interventions on the cases of epidemic continuation, in any case, reduced for the same motivation.
+
 
 \begin{table}[t]
 \center
@@ -731,16 +731,19 @@ See Fig. \ref{Rt} about \ldots
 
 Methodology: 
 
-\href{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian_national\_data.ipynb}{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian\_national\_data.ipynb}
+{\scriptsize
+\href{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian\_national\_data.ipynb}{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian\_national\_data.ipynb}
+}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Second wave, new infections from outside, with new specific measure anticipation of -20 days}
+\subsection{Second wave, new infections from outside, with new specific containment measures, introduced 20 days in advance}
 \label{anticip}
 %selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMar-20ControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartCtrl2M-20.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M-20.nlogo
 
-1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 769 cases; at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
+1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 769 cases; at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: $\approx$200.0.
 
 N.B.: (i) anticipation limit Oct 5.; (ii) also the ending date of each measure is anticipated of 20 days.
 
@@ -756,7 +759,7 @@ Fig. \ref{secondFromOut-20} and Table \ref{selForceWave2Contr2M-20Tab} refer to 
 cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 769.0 & 769.0 & 637.0 & 637.0 & 471.0 & 471.0 & 769.0 & 769.0 & 769.0 \\
-mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{{\color{red}112.2}} & \emph{{\color{red} 294.2}} & \emph{172.0} & \ emph{467.9} & \emph{276.5} & \emph{748.6} & 248.9 & 663.4 & 499.3 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{{\color{red}112.2}} & \emph{{\color{red} 294.2}} & \emph{172.0} & \emph{467.9} & \emph{276.5} & \emph{748.6} & 248.9 & 663.4 & 499.3 \\
 std & 14.1 & 42.6 & 16.7 & 52.8 & 66.8 & 188.4 & 91.5 & 251.3 & 112.9 & 286.9 & 158.0 & 417.5 & 124.1 \\
 \hline\noalign{\smallskip}
 \end{tabular}
@@ -771,7 +774,7 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 66.8 & 188.4 & 91.5 & 251.3 & 112.9 & 286.9 & 
 %selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptNoFragOCT05-60dControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartNoFragOCT05-60d.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartNoFragOCT05-60d.nlogo
 
-1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 886 at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: 200.0.
+1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 886 at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: $\approx$200.0.
 
 Schools are always working 100\% in this case.
 
