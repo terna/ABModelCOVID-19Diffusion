@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: ABModelCOVID-19Diffusion.aux
+The style file: spphys.bst
+Database file #1: bibliografiaGenerale.bib
+You've used 16 entries,
+            2812 wiz_defined-function locations,
+            716 strings with 9344 characters,
+and the built_in function-call counts, 6147 in all, are:
+= -- 329
+> -- 283
+< -- 0
++ -- 105
+- -- 89
+* -- 401
+:= -- 756
+add.period$ -- 23
+call.type$ -- 16
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 663
+empty$ -- 583
+format.name$ -- 100
+if$ -- 1326
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 191
+newline$ -- 79
+num.names$ -- 16
+pop$ -- 259
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 114
+stack$ -- 0
+substring$ -- 115
+swap$ -- 442
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 26
+width$ -- 18
+write$ -- 176
