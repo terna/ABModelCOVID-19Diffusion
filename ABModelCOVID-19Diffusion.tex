@@ -459,7 +459,7 @@ The numbers in Table \ref{noCTab} are scary. The concentration of the cases in t
 \end{figure}
 
 
-In Fig. \ref{10kBasicC} and the related Table \ref{basicCTab} we report a similar simulation batch of 10,000 runs of the model, but with the adoption of the basic non-pharmaceutical containment measures, registered in the values of the parameters in Appendix~1~-~Parameter~values (Section \ref{app1}). A calendar is at  \href{https://terna.to.it/simul/calendario092.pdf}{https://terna.to.it/simul/calendario092.pdf}, and the model---version 0.9.6--- is updated until April 2021. The results are dramatically different, showing the efficacy of the containment measures. 
+In Fig. \ref{10kBasicC} and the related Table \ref{basicCTab} we report a similar simulation batch of 10,000 runs of the model, but with the adoption of the basic non-pharmaceutical containment measures, registered in the values of the parameters in Appendix~1~-~Parameter~values (Section \ref{app1}). A calendar is at \href{https://terna.to.it/simul/calendario092.pdf}{https://terna.to.it/simul/calendario092.pdf}, and the model---version 0.9.6--- is updated until April 2021. The results are dramatically different, showing the efficacy of the containment measures. 
 
 
 \begin{table}[t]
@@ -623,7 +623,7 @@ In Fig. \ref{casesHeatM} we collect the heat-maps of the experiments:
 
 In an initial plain batch of 10.000 runs of the Piedmont related model, we count only 140 cases of epidemics with both the absence of new contagions in Summer 2020 and their explosion in Fall, as in Fig. \ref{actualA}.
 
-We select, first of all, 170 cases in the following way. Considering June \nth{1}, we choose the epidemics that have a number of symptomatic agents in the (10, 70] interval (their mean: 37.9) and, on  September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 60.4).  
+We select, first of all, 170 cases in the following way. Considering June \nth{1}, we choose the epidemics that have a number of symptomatic agents in the (10, 70] interval (their mean: 37.9) and, on September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 60.4). 
 Due to the lack of data described in Section \ref{actual}, to compare December \nth{15} and September \nth{20} situations, we use symptomatic plus asymptomatic agents' count. We observe the existence of 140 outbreaks with the required characteristics; the December mean of the infected agents is 648.7, sensibly larger than the actual value: $\approx$200.0. We overestimate the reality being the long-lasting simulated outbreaks, the larger ones, and, most of all, having no containment measures operating in the simulations.
 
 Fig. \ref{spontaneousSec} and Table \ref{selSpontWave2Tab} show the outbreaks with similar cumulative numbers before and after the Summer 2020 pause (170 cases), with the second wave of 140 cases developing in the absence of containment measures.
@@ -656,7 +656,7 @@ std & 16.4 & 61.0 & 19.6 & 71.7 & 167.4 & 424.3 & 220.4 & 538.4 & 215.4 & 513.3 
 
 To generate a framework consistent with the presence of a second wave after a period of substantial inactivity of the epidemic, we introduced the occurrence of two cases of infected persons coming back from outside after Summer vacancies, conventionally on September \nth{1}, 2020.
 
-Now we have 1407 cases of epidemics with: (i) on June \nth{1}, a number of symptomatic agents in the (10, 70] interval (their mean: 35.6) and (ii), on  September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 40.0).
+Now we have 1407 cases of epidemics with: (i) on June \nth{1}, a number of symptomatic agents in the (10, 70] interval (their mean: 35.6) and (ii), on September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 40.0).
 As in Section \ref{spont}, to compare December \nth{15} and September \nth{20} situations we use symptomatic plus asymptomatic agents' count. We observe the existence of 1044 outbreaks with the required characteristics; the December mean of the infected agents is 462.1, again sensibly larger than the actual value: $\approx$200.0. We overestimate the reality being the simulations run without the adoption of containment measures.
 
 Both Fig. \ref{secondFromOut} and Table \ref{selForceWave2Tab} show the outbreaks with similar cumulative numbers before and after the Summer 2020 pause (1407 cases), with the second wave of 1044 cases producing, in the absence of containment measures, a heavy cloud as that of Fig. \ref{10kNoControl}, with infected people of any kind in a range approximately from 1,500 to 2,800 realizations, with an equivalence, to the Piedmont scale, to 1,5-2,8 millions of subjects.
@@ -690,10 +690,10 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 134.6 & 354.6 & 213.8 & 535.4 & 217.9 & 527.0 
 % selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMarControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartCtrl2M.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M.nlogo
 
-As in Section \ref{secondWithout} we have 1407 cases of epidemics with: (i) on June \nth{1}, a number of symptomatic agents in the (10, 70] interval (their mean: 35.6) and (ii), on  September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 40.0).
+As in Section \ref{secondWithout} we have 1407 cases of epidemics with: (i) on June \nth{1}, a number of symptomatic agents in the (10, 70] interval (their mean: 35.6) and (ii), on September \nth{20}, a number of symptomatic agents in the (20, 90] interval (their mean: 40.0).
 We use symptomatic plus asymptomatic agents' count December \nth{15} and September \nth{20} situations, recording 874 outbreaks with the required characteristics. The December mean of the infected agents is 340.6, closer to the actual value ($\approx$200.0) due to the introduction into the simulation of specific control measures for the second wave. We always overestimate the reality because the surviving epidemics are the larger ones.
 
-In Fig. \ref{secondFromOutWith} we see that the heavy cloud of the previous figure dissolved, and in Table \ref{selSpontWave2Contr2Tab} the figures in italic emphasize the effect of the containment interventions on the cases of epidemic continuation, in any case, reduced for the same motivation.
+In Fig. \ref{secondFromOutWith} we see that the heavy cloud of the previous figure dissolved, and in Table \ref{selForceWave2Contr2Tab} the figures in italic emphasize the effect of the containment interventions on the cases of epidemic continuation, in any case, reduced for the same motivation.
 
 
 \begin{table}[t]
@@ -711,7 +711,7 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 83.9 & 232.6 & 104.1 & 276.9 & 119.1 & 300.6 &
 \hline\noalign{\smallskip}
 \end{tabular}
 \caption{Second wave, new infections from outside, with new specific measures}
-\label{selSpontWave2Contr2Tab}
+\label{selForceWave2Contr2Tab}
 \end{table}
 
 
@@ -743,14 +743,14 @@ Methodology:
 %selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMar-20ControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartCtrl2M-20.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M-20.nlogo
 
-The counterfactual situation is related to the start and end dates of the actions of containment, both occurring 20 days in advance, with a natural barrier set on October \nth{5}, 2020. Before that date, the conditions to start new policies were missing.
+The counterfactual situation is related to the start and end dates of the actions of containment, both occurring 20 days in advance, with a natural barrier set on October \nth{5}, 2020. Before that date, the conditions to start second wave new policies were missing.
 
-As in the last two sections, we have 1407 cases of epidemics alive at the critical dates of June \nth{1} and  September \nth{20}, after a Summer interval characterized by a quiet phase.
+As in the last two sections, we have 1407 cases of epidemics alive at the critical dates of June \nth{1} and September \nth{20}, after a Summer interval characterized by a quiet phase.
 Considering December \nth{15} and September \nth{20} situations, the second wave epidemics are 769, again decreasing because the anticipated actions have eliminated some other cases. The December mean of the infected agents is 294.2, higher than the actual value ($\approx$200.0). We always overestimate the mean of the epidemic effects, being the surviving epidemics the larger ones.
 
-@@@ segnalare red corsivo
 
-Fig. \ref{secondFromOut-20} and Table \ref{selForceWave2Contr2M-20Tab} refer to \ldots
+Comparing Fig. \ref{secondFromOut-20} and Fig. \ref{secondFromOutWith} the difference is not evident; instead, the italic figures, and must of all, the red bold ones, in Table \ref{selForceWave2Contr2M-20Tab} reports clearly the comparative advantage of this counterfactual experiment with respect to the values of Table \ref{selForceWave2Contr2Tab}.
+
 
 \begin{table}[t]
 \center
@@ -762,7 +762,7 @@ Fig. \ref{secondFromOut-20} and Table \ref{selForceWave2Contr2M-20Tab} refer to 
 cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 769.0 & 769.0 & 637.0 & 637.0 & 471.0 & 471.0 & 769.0 & 769.0 & 769.0 \\
-mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{{\color{red}112.2}} & \emph{{\color{red} 294.2}} & \emph{172.0} & \emph{467.9} & \emph{276.5} & \emph{748.6} & 248.9 & 663.4 & 499.3 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & \textbf{{\color{red}112.2}} & \textbf{{\color{red} 294.2}} & \emph{172.0} & \emph{467.9} & \emph{276.5} & \emph{748.6} & 248.9 & 663.4 & 499.3 \\
 std & 14.1 & 42.6 & 16.7 & 52.8 & 66.8 & 188.4 & 91.5 & 251.3 & 112.9 & 286.9 & 158.0 & 417.5 & 124.1 \\
 \hline\noalign{\smallskip}
 \end{tabular}
@@ -772,16 +772,19 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 66.8 & 188.4 & 91.5 & 251.3 & 112.9 & 286.9 & 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Second wave, new infections from outs., stop fragile people. 60 days from Oct. 5}
+\subsection{Second wave, new infections from outside, with a unique intervention measure: stopping fragile people for 60 days}
 \label{frag}
 %selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptNoFragOCT05-60dControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartNoFragOCT05-60d.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartNoFragOCT05-60d.nlogo
 
-1407 cases; epidemics stable in Summer 2020 out of 10,000, rule: at Jun~1,~20 select if sym. (10, 70], actual v. 33.3 \& at Sep~20,~20 select if sym. (20, 90], actual value 37.5; 886 at Dec~15,~20, rule: sym.+asym.>Sep~20,~20, actual value: $\approx$200.0.
+This second counterfactual experiment is based on an immediate stop to the circulation of fragile persons and specifically of fragile workers, plus isolating nursing homes and hospitals. Schools are always open in this experiment. The decision is activated on October \nth{5}, 2020, as the second wave is becoming evident. @@@
+phillips2021coronavirus
 
-Schools are always working 100\% in this case.
+As in the last three sections, we have 1407 cases of epidemics alive at the critical dates of June \nth{1} and September \nth{20}, after a Summer interval characterized by a quiet phase.
+Considering December \nth{15} and September \nth{20} situations, the second wave epidemics are 886, lightly above the values of Section \ref{secondWith} and Section \ref{anticip}, but without locking the economic and the society as a whole. The December mean of the infected agents is 326.3, higher than the actual value ($\approx$200.0) for the explained overestimation bias.
 
-Fig. \ref{secondFromOutNoFrag} and Table \ref{selForceWave2NoFragTab} refer to \ldots
+Comparing Fig. \ref{secondFromOutNoFrag} and Fig. \ref{secondFromOutWith} the difference is not evident; instead, the italic figures, and must of all, the violet bold ones, in Table \ref{selForceWave2NoFragTab} reports the similarity of the effects of this counterfactual experiment with respect to the values of Table \ref{selForceWave2Contr2Tab}.
+
 
 \begin{table}[t]
 \center
@@ -793,7 +796,7 @@ Fig. \ref{secondFromOutNoFrag} and Table \ref{selForceWave2NoFragTab} refer to \
 cum.~v. & sym. & all & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & sympt. & totalInf. & days\\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 count & 1407.0 & 1407.0 & 1407.0 & 1407.0 & 886.0 & 886.0 & 761.0 & 761.0 & 637.0 & 637.0 & 886.0 & 886.0 & 886.0 \\
-mean & 35.6 & 72.7 & 40.0 & 84.1 & \emph{{\color{cyan}128.1}} & \emph{{\color{cyan}326.3}} & \emph{211.0} & \emph{555.1} & \emph{323.3} & \emph{862.1} & 301.1 & 792.3 & 515.5 \\
+mean & 35.6 & 72.7 & 40.0 & 84.1 & \textbf{{\color{violet}128.1}} & \textbf{{\color{violet}326.3}} & \emph{211.0} & \emph{555.1} & \emph{323.3} & \emph{862.1} & 301.1 & 792.3 & 515.5 \\
 std & 14.1 & 42.6 & 16.7 & 52.8 & 89.6 & 234.2 & 118.1 & 306.7 & 126.4 & 315.9 & 170.7 & 450.2 & 116.9 \\
 \hline\noalign{\smallskip}
 \end{tabular}
@@ -801,21 +804,77 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 89.6 & 234.2 & 118.1 & 306.7 & 126.4 & 315.9 &
 \label{selForceWave2NoFragTab}
 \end{table}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cost-benefit analysis of the of interventions [Beppe's contribution]}
+\label{CBanalysis}
+
+draft, draft, draft, draft, draft
+
+Considering the different interventions of Section \ref{secondWith} and \ref{frag}, we can evaluate \ldots
+
+First of all, we can evaluate the costs for the attribution of sick pay to workers who are compulsorily absent from work, if they are not able to carry out remotely their work activities \ldots
+
+We have also relevant social benefits, e.g., schooling, and economic benefits, as activities do not stop \ldots
+
+An interesting reference is \cite{doi:10.1111/ijcp.13674}, where \ldots 
+WORKS IN PROGRESS.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{To recap}
 \label{recap}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Cost-benefit analysis of the of interventions [Beppe's contribution]}
-\label{CBanalysis}
+Write a nice global comment here
 
-Considering the different interventions of Section \ref{facCounterfac} we can evaluate \ldots
+All waves, in second wave and a the end, with day count
 
-First of all, the costs for the attribution of sick pay to workers who are compulsorily absent from work, if they are not able to carry out telework activities and the benefits of continuing economic activities \ldots
+Fig. \ref{keyResultsT}
 
-An interesting reference is \cite{doi:10.1111/ijcp.13674}, where \ldots 
-WORKS IN PROGRESS.
+
+
+\begin{table}[t]
+\center
+\footnotesize
+\begin{tabular}{lrrrrrr}
+\hline\noalign{\smallskip}
+Scenarios & & Dec~15,~20 & & Dec~15,~20\\
+& & & & to~end~~~~~~ \\
+ & & sympt. & totalInf. & sympt. & totalInf. & days \\ 
+
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+
+no containment & count & 140.0 & 140.0 & 140.0 & 140.0 & 140.0 \\
+in spontaneous & mean & 248.4 & 648.7 & 701.1 & 1757.9 & 594.2 \\
+second wave & std & 167.4 & 424.3 & 246.4 & 599.7 & 118.9 \\
+
+\hline\noalign{\smallskip}
+no containment & count & 1044.0 & 1044.0 & 1044.0 & 1044.0 & 1044.0 \\
+in forced & mean & 180.4 & 462.1 & 726.6 & 1810.9 & 620.9 \\
+second wave & std & 134.6 & 354.6 & 221.9 & 544.0 & 110.8 \\
+
+\hline\noalign{\smallskip}
+basic containment & count & 874.0 & 874.0 & 874.0 & 874.0 & 874.0 \\
+in forced & mean & \emph{130.0} & \emph{340}.6 & 252.7 & 666.4 & 494.1 \\
+second wave & std & 83.9 & 232.6 & 156.8 & 416.4 & 122.7 \\
+ 
+\hline\noalign{\smallskip}
+-20 days cont. & count & 769.0 & 769.0 & 769.0 & 769.0 & 769.0 \\
+in forced & mean & \textbf{{\color{red}112.2}} & \textbf{{\color{red} 294.2}} & 248.9 & 663.4 & 499.3 \\
+second wave & std & 66.8 & 188.4 & 158.0 & 417.5 & 124.1 \\
+
+\hline\noalign{\smallskip}
+frag. subj. \& \\ 
+workers control & count & 886.0 & 886.0 & 886.0 & 886.0 & 886.0 \\
+in forced & mean & \textbf{{\color{violet}128.1}} & \textbf{{\color{violet}326.3}} & 301.1 & 792.3 & 515.5 \\
+second wave & std & 89.6 & 234.2 & 170.7 & 450.2 & 116.9 \\
+
+
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Report of the key results, with count, mean, and std}
+\label{keyResultsT}
+\end{table}
 
 
 
@@ -1187,7 +1246,7 @@ The gallery of contagion sequences, reported in Table \ref{gallery}, shows the v
 \item [5c] Stopping fragile workers at day 20 in the previous case, we obtain a beneficial effect, but home contagions (cyan) keep alive the pandemic, which explodes again in workplaces (brown).
 
 \item [6a] Exploring the first 200 infections of the case [5c], we have evidence of the event around day 110 with the new phase due to a unique asymptomatic worker.
-\item [6b] Finally, the same epidemic stopped fragile workers and any fragility at day 15 and isolated nursing homes.
+\item [6b] Finally, the same epidemic stopping fragile workers and any fragility at day 15 case and isolating nursing homes.
 \item [6c] An outbreak with containment measures spontaneously stopping in a short period.
 \end{itemize}
 
@@ -1234,7 +1293,7 @@ The gallery of contagion sequences, reported in Table \ref{gallery}, shows the v
 
 Many thanks to Simone Landini, Nizar Mansour, Matteo Morini, Fabio Pammolli, Enrico Scalas, and Federico Tedeschi for precious discussions, insights, and critics. The usual disclaimer applies.
 
-To run our model, we tremendously benefit from the use of HPC facilities provided by Matteo Morini and Sarah de Nigris,  \href{http://tomorrowdata.io}{http://tomorrowdata.io}, and the HP4AI (\href{https://hpc4ai.unito.it/}{https://hpc4ai.unito.it/}) and C3S centers at University of Torino.
+To run our model, we tremendously benefit from the use of HPC facilities provided by Matteo Morini and Sarah de Nigris, \href{http://tomorrowdata.io}{http://tomorrowdata.io}, and the HP4AI (\href{https://hpc4ai.unito.it/}{https://hpc4ai.unito.it/}) and C3S centers at University of Torino.
 
 
 \bibliography{bibliografiaGenerale}
