@@ -885,23 +885,23 @@ second wave & std & 89.6 & 234.2 & 170.7 & 450.2 & 116.9 \\
 \subsection{{How vaccines work}, (Alberto's section)}
 \label{vaccineAction}
 Vaccines are biological preparations made from killed or attenuated microorganisms, from viruses or from some of their components (antigens), or from substances they produce made safe by chemical (e.g.: formaldehyde) or heat treatment, while maintaining their immunogenic properties. (CITATION). Today, vaccines can be composed of proteins obtained by recombinant DNA techniques (CITATION) using genetic engineering techniques.
-They usually contain, in addition to the antigenic fraction, sterile water (or a saline-based physiological solution), as well as adjuvants, preservatives and stabilisers. Adjuvants are included in the vaccine in order to enhance the immune system response; preservatives are added to prevent contamination of the prpeparate by bacteria; stabilisers are introduced to increase the shelf life of the product and to maintain the properties of the vaccine during storage.
+They usually contain, in addition to the antigenic fraction, sterile water (or a saline-based physiological solution), as well as adjuvants, preservatives and stabilizers. Adjuvants are included in the vaccine in order to enhance the immune system response; preservatives are added to prevent contamination of the preparate by bacteria; stabilizers are introduced to increase the shelf life of the product and to maintain the properties of the vaccine during storage.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Planning a vaccination campaign using genetic algorithms (GAs), with non-pharmaceutical containment measures in action}
+\subsection{Planning a vaccination campaign using genetic algorithms, with non-pharmaceutical containment measures in action}
 \label{planGA}
 
-We compare the effect of choosing the vaccination quotas via GAs with two predetermined strategies, considering three hypotheses (vaccinated people: still spread the contagion; do not spread the contagion; do it in the 50\% of the case); we show here only the first case results.
+We compare the effect of choosing the vaccination quotas via genetic algorithms (GAs) with two predetermined strategies, considering three hypotheses: vaccinated people still spread the contagion; they do not spread the contagion; they do it in the 50\% of the case); we show here only the results of the first case, the worst.
 
-Key dates: 
+Important dates: 
 \begin{itemize}
-\item in the internal calendar of the model, day 373 is Feb. \nth{12}, 2021, which is effectively the starting point of the vaccinations in the region; 
+\item in the internal calendar of the model, day 373 is February \nth{12}, 2021; it is effectively the starting point of the vaccinations in Piedmont; 
 
-\item the day of the effectiveness of the initial vaccinations, 40 days later, is day 413 (Mar. \nth{22}, 2021).
+\item the day of the effectiveness of the initial vaccinations, 40 days later, is day 413 (March \nth{22}, 2021).
 \end{itemize}
 
-(Technical detail.We simulate the vaccination campaigns with the GAs BehaviorSearch program, with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.)
+A technical detail: we simulate the vaccination campaigns with the GAs using the BehaviorSearch program, \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, which is strictly related to NetLogo.
 
 \subsubsection{Vaccination groups}
 \label{vgroups}
@@ -946,6 +946,9 @@ We analyze the case of Fig. \ref{specificCaseGA} to \ldots
 \caption{Crucial dates: blue line for the starting point of the vaccination campaign and red line for the start of the effectiveness of the initial vaccinations}
 \label{specificCaseGA}
 \end{figure}
+
+We chose a representative case of simulation  
+with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
