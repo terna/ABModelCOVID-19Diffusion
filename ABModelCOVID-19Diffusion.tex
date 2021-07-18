@@ -892,7 +892,7 @@ They usually contain, in addition to the antigenic fraction, sterile water (or a
 \subsection{Planning a vaccination campaign using genetic algorithms, with non-pharmaceutical containment measures in action}
 \label{planGA}
 
-We compare the effect of choosing the vaccination quotas via genetic algorithms (GAs) with two predetermined strategies, considering three hypotheses: vaccinated people still spread the contagion; they do not spread the contagion; they do it in the 50\% of the case); we show here only the results of the first case, the worst.
+We compare the effect of choosing the vaccination quotas via genetic algorithms (GAs) with two predetermined strategies. Our model considers three hypotheses: vaccinated people still spread the contagion; they do not spread the contagion; they do it in the 50\% of the case. We show here only the results of the first case, the worst.
 
 Important dates: 
 \begin{itemize}
@@ -906,13 +906,13 @@ A technical detail: we simulate the vaccination campaigns with the GAs using the
 \subsubsection{Vaccination groups}
 \label{vgroups}
 
-We take into consideration seven groups in order of decreasing fragility but also considering the exposure to contagion:
+We take into consideration seven groups in order of decreasing fragility and considering the exposure to contagions:
 
 \begin{enumerate}
 \item [\emph{g1}]
 	extra fragile people with three components;
 	\begin{itemize}
-		\item due to intrinsic characteristics: people in nursing homes;
+		\item due to intrinsic characteristics: people in living in nursing homes;
 		\item due to risk exposure:
 		\begin{itemize}
 			\item nursing homes operators;
@@ -938,7 +938,15 @@ We take into consideration seven groups in order of decreasing fragility but als
 \subsection{A specific realistic case}
 \label{specific}
 
-We analyze the case of Fig. \ref{specificCaseGA} to \ldots
+The description of the vaccination effects on an outbreak is quite lengthy. Considering the collection at  \href{https://terna.to.it/simul/GAresultPresentation.pdf}{https://terna.to.it/simul/GAresultPresentation.pdf}, we concentrate on a unique case.
+Considering the adoption of the government non-pharmaceutical measures, we search---in the batch of the 10,000 outbreaks of Section \ref{secondWith}---for realizations of sequences similar to the actual events that occurred in Piedmont. As we see in Fig. \ref{specificCaseGA} and the related Fig. \ref{symptomaticSeries}, the artificial case that we adopt for the GAs exploration has the following critical characteristics:
+
+\begin{itemize}
+\item [(i)] numbers of infected persons quite similar at \verb|cp2| and at \verb|cp3| in Fig. \ref{actualA}; besides, numbers not too different from those of the same figure;
+
+\item [(ii)] number of infected persons at \verb|cp4| significantly greater than those at the previous checkpoint.
+\end{itemize}
+% calculation made using SIsaR_0.9.6.nlogo with 66507108 94261776 44424105
 
 \begin{figure}[t]
 \center
@@ -947,8 +955,7 @@ We analyze the case of Fig. \ref{specificCaseGA} to \ldots
 \label{specificCaseGA}
 \end{figure}
 
-We chose a representative case of simulation  
-with a maximum step number of 865, related to the actual duration of case I. In the case of "y" use, the simulation never ends; when applying the GAs quotas ex-post, the simulation stops when no more infected people exist. In any case, if necessary, we have a hard finish button.)
+We have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1069,7 +1076,7 @@ Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) frag
 \begin{figure}[t]
 \center
 \includegraphics[width=0.6\textwidth]{Experiment_I_base_symptomatic_series.png} 
-\caption{Base symptomatic series; the vertical line is at day 413 is not relevant here} 
+\caption{Base symptomatic series; the vertical line at day 413 is not relevant here} 
 \label{symptomaticSeries}
 \end{figure}
 
