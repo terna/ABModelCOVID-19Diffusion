@@ -938,7 +938,7 @@ We take into consideration seven groups in order of decreasing fragility and con
 \subsection{A specific realistic case}
 \label{specific}
 
-The description of the vaccination effects on an outbreak is quite lengthy. Considering the collection at  \href{https://terna.to.it/simul/GAresultPresentation.pdf}{https://terna.to.it/simul/GAresultPresentation.pdf}, we concentrate on a unique case.
+The description of the vaccination effects on an outbreak is quite lengthy. Considering the collection at  \href{https://terna.to.it/simul/GAresultPresentation.pdf}{https://terna.to.it/simul/GAresultPresentation.pdf}, we concentrate on a unique case: the experiment I reported there, maintaining the reference to I in the titles of the figures here.
 Considering the adoption of the government non-pharmaceutical measures, we search---in the batch of the 10,000 outbreaks of Section \ref{secondWith}---for realizations of sequences similar to the actual events that occurred in Piedmont. As we see in Fig. \ref{specificCaseGA} and the related Fig. \ref{symptomaticSeries}, the artificial case that we adopt for the GAs exploration has the following critical characteristics:
 
 \begin{itemize}
@@ -955,7 +955,17 @@ Considering the adoption of the government non-pharmaceutical measures, we searc
 \label{specificCaseGA}
 \end{figure}
 
-We have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
+In Fig. \ref{symptomaticSeries} we have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
+
+Here and in the following sections, we analyze the count of symptomatic persons, being the goal of our simulated vaccination campaign exactly that of decreasing the number of symptomatic people, as deceased persons come from there.
+
+% using contagionSeriesByGroups.ipynb on Experiment_I_base.csv 
+\begin{figure}[t]
+\center
+\fbox{\includegraphics[width=0.6\textwidth]{Experiment_I_base_symptomatic_series.png}}
+\caption{Base symptomatic series; the vertical line at day 413 is not relevant here} 
+\label{symptomaticSeries}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1010,7 +1020,7 @@ We anticipate that the GAs procedure does not optimize the coefficients of cases
 
 The series that we introduce hereafter are most significant from day 413, March \nth{22}, when the initial vaccinations' effectiveness---if any---begins, after 40 days from initial vaccinations.
 
-In Fig. \ref{seqPlain} we have the effects of the vaccination plan as number of vaccinated persons by groups. In Fig. \ref{timeSeriesPlain} we have the most important observation: 
+In Fig. \ref{seqPlain} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesPlain} we have the most important outcome: the no vaccination testbed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but anyway, those further waves are there.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1070,14 +1080,6 @@ Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) frag
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{An experiment with GA}
 \label{GA}
-
-% using contagionSeriesByGroups.ipynb on Experiment_I_base.csv 
-\begin{figure}[t]
-\center
-\includegraphics[width=0.6\textwidth]{Experiment_I_base_symptomatic_series.png} 
-\caption{Base symptomatic series; the vertical line at day 413 is not relevant here} 
-\label{symptomaticSeries}
-\end{figure}
 
 
 \begin{figure}[t]
@@ -1157,7 +1159,7 @@ In Figs. \ref{seqGA} and \ref{timeSeriesGA} \ldots
 \section{A new model and future developments}
 \label{newModel}
 
-
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulumut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arculibero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augueeu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectusvestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat.Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem velleo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinarat, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duisnibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit ametorci dignissim rutrum.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
