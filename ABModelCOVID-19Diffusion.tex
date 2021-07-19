@@ -955,16 +955,16 @@ Considering the adoption of the government non-pharmaceutical measures, we searc
 \label{specificCaseGA}
 \end{figure}
 
-We have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops.
+We have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vaccination quotas, \emph{plain} strategy}
 \label{plain}
 
-Considering the \emph{plain} option adopted in Table \ref{quotaPlainTab} and remembering that the time-sequence in daily actions is the priority, we will primarily vaccinate the left column groups to move gradually to other columns: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
+The vaccination plans are related to the first dose; the second dose is automatically scheduled, with an independent supply. The vaccinated person is supposed to benefit from immunity 40 days after the first dose.
 
-In Tables \ref{quotaPlainTab} and \ref{susceptible} \ldots
+Considering a \emph{plain} option as that adopted in Table \ref{quotaPlainTab} with, in each day, the quantities of doses of the first column, we will primarily vaccinate the left column groups to move gradually to people of the other columns, as those on the left have already received the vaccine. The order is (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people. In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of this experiment (and in the following ones) and when the vaccination campaign starts.
 
 \begin{table}[t]
 \centering
@@ -992,13 +992,25 @@ In Tables \ref{quotaPlainTab} and \ref{susceptible} \ldots
 (000) & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 Susc. at t = 0 & 133 & 84 & 240 & 1560 & 1179 & 254 & 900 \\
+Susc. when\\vacc. starts & 124 & 81 & 162 & 1234 & 1032 & 245 & 891 \\
 \hline\noalign{\smallskip} 
 \end{tabular}
-\caption{Susceptible persons at the beginning of the simulation}
+\caption{Susceptible persons at the beginning of the simulation and when the vaccination campaign starts, day 373, Feb. \nth{12}, 2021}
 \label{susceptible}
 \end{table}
 
+Some of the coefficients in Table \ref{quotaPlainTab}, and all the successive similar ones, are not used in two situations:
 
+\begin{enumerate}[label=\roman*]
+\item \label{quo1} when the persons of a group have fully vaccinated, the quotas in the rows below that day are not relevant;
+\item \label{quo2} when the people in the columns to the left of a given column completely absorb the available doses of vaccine on that day, the quotas in that column have unimportant values.
+\end{enumerate}
+
+We anticipate that the GAs procedure does not optimize the coefficients of cases \ref{quo1} and \ref{quo2}.
+
+The series that we introduce hereafter are most significant from day 413, March \nth{22}, when the initial vaccinations' effectiveness---if any---begins, after 40 days from initial vaccinations.
+
+In Fig. \ref{seqPlain} we have the effects of the vaccination plan as number of vaccinated persons by groups. In Fig. \ref{timeSeriesPlain} we have the most important observation: 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1030,21 +1042,8 @@ In Tables \ref{quotaWiseTab} and \ref{susceptible} \ldots
 \subsection{GAs quotas in the experiment, with vac. people spreading or not spreading the infection}
 \label{GAquotas}
 
-In Tables \ref{quotaGATab} and \ref{susceptibleGA} \ldots
+In Tables \ref{quotaGATab} and \ref{susceptible} \ldots
 
-\begin{table}[t]
-\centering
-\begin{tabular}{lccccccc}
-\hline\noalign{\smallskip}
-(000) & \emph{g1} & \emph{g2} & \emph{g3} & \emph{g4} & \emph{g5} & \emph{g6} & \emph{g7} \\
-\noalign{\smallskip}\svhline\noalign{\smallskip}
-Susc. at t = 0 & 133 & 84 & 240 & 1560 & 1179 & 254 & 900 \\
-Susc. when\\vacc. starts & 124 & 81 & 162 & 1234 & 1032 & 245 & 891 \\
-\hline\noalign{\smallskip} 
-\end{tabular}
-\caption{Susceptible persons at the beginning of the simulation and when the vaccination campaign starts, day 373, Feb. \nth{12}, 2021}
-\label{susceptibleGA}
-\end{table}
 
 Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
 
@@ -1086,35 +1085,35 @@ Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) frag
  \begin{subfigure}{0.4\textwidth}
  \centering
  \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_plainVaccinationSequence.png}} % experiment_I_vaccination_plots.ipynb
- \subcaption{``Plain'' vacc, sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)}
+ \subcaption{\emph{Plain} vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)}
  \label{seqPlain}
  \end{subfigure}
  \hfill
  \begin{subfigure}{0.52\textwidth}
  \centering
  \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_1_plain_symptomatic_series.png}} % using contagionSeriesByGroups.ipynb on Experiment_I_plain_1.csv 
- \subcaption{``Plain'' vaccination symptomatic series; the vertical line is at day 413, when the effectiveness of first vaccination starts}
+ \subcaption{\emph{Plain} vaccination symptomatic series; the vertical line is at day 413, when the effectiveness of first vaccination starts}
  \label{timeSeriesPlain}
  \end{subfigure}
 
 \begin{subfigure}{0.4\textwidth}
  \centering
  \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_wiseVaccinationSequence.png}} % experiment_I_vaccination_plots.ipynb
- \subcaption{``Wise'' vacc, sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)}
+ \subcaption{\emph{Wise} vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)}
  \label{seqWise}
  \end{subfigure}
  \hfill
  \begin{subfigure}{0.52\textwidth}
  \centering
  \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_1_wise_symptomatic_series.png}} % using contagionSeriesByGroups.ipynb on Experiment_I_wise_1.csv
- \subcaption{``Wise'' vaccination symptomatic series; the vertical line is at day 413, when the effectiveness of first vaccination starts} 
+ \subcaption{\emph{Wise} vaccination symptomatic series; the vertical line is at day 413, when the effectiveness of first vaccination starts} 
  \label{timeSeriesWise}
  \end{subfigure}
 
 \begin{subfigure}{0.4\textwidth}
  \centering
  \fbox{\includegraphics[width=0.95\textwidth]{Experiment_I_GA_1_VaccinationSequence.png}} % experiment_I_vaccination_plots.ipynb
- \subcaption{GA vacc. sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
+ \subcaption{GA vaccination sequence; on the $y$ axis the number of vaccinated subjects of each group (if vaccination is complete, the line is horizontal)} 
  \label{seqGA}
  \end{subfigure}
  \hfill
