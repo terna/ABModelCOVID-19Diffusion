@@ -1048,25 +1048,23 @@ We primarily vaccinate the left column groups to move gradually to other columns
 \label{quotaWiseTab}
 \end{table}
 
-In Fig. \ref{seqWise} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the most important outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but we have significant further waves in this case too.
+In Fig. \ref{seqWise} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the experiment outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but we have significant further waves in this case too.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{GAs quotas in the experiment, with vaccinated people spreading the infection}
 \label{GAquotas}
 
-Finally, the objective of this whole section: the use of GAs, evolving populations of models repeating this same experiment, but choosing the parameters to decide daily vaccination on a random basis initially and successively considering them as a genetic chromosome of the model re-productively crossed with those of other models searching for the best fitness related to the goal of reducing the number of symptomatic persons. \cite{miller1998active}, also quoted at \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, is a useful introduction to the methodology; the sources of the GAs used here are at \href{https://github.com/terna/GAs}{https://github.com/terna/GAs}. The GAs action, determining the vaccination quotas, optimizes the behavior of a meta-agent, in a sort of \emph{inverse generative social science perspective} \cite{vu2019toward}.
+Finally, the objective of this whole section: the use of GAs, evolving populations of models repeating this same experiment, but choosing the parameters to decide daily vaccination on a random basis initially and successively considering them as a genetic chromosome of the model re-productively crossed with those of other models searching for the best fitness related to the goal of reducing the number of symptomatic persons. \cite{miller1998active}, also quoted at \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, is a helpful introduction to the methodology; the sources of the GAs used here are at \href{https://github.com/terna/GAs}{https://github.com/terna/GAs}. The GAs action, determining the vaccination quotas, optimizes the behavior of a meta-agent, in a sort of \emph{inverse generative social science perspective} \cite{vu2019toward}.
 
-With the GAs option we use the quotas of Table \ref{quotaGATab}, with the exact mechanism of the previous section. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} apply also here, but we underline that the GAs procedure does not optimize the coefficients of the two cases, because they have no effect on the fitness related to the minimum number of symptomatic subjects.  
+With the GAs option, we use the quotas of Table \ref{quotaGATab}, with the exact mechanism of the previous section. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} also apply here. Still, we underline that the GAs procedure does not optimize the coefficients of the two cases because they do not affect the fitness related to the minimum number of symptomatic subjects.  
 
+In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of this experiment (and in the following ones) and when the vaccination campaign starts.
 
-We primarily vaccinate the left column groups to move gradually to other columns, but postponing group \emph{g4} (regular workers), \emph{g6} (regular people), and \emph{g7} (young people). In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of this experiment (and in the following ones) and when the vaccination campaign starts. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} apply also here.
+In Fig. \ref{seqGA} we have the effects of the vaccination plan as the number of vaccinated persons by groups. 
+The main attention of the GAs is initially is related to the groups: \emph{g4} (workers), \emph{g1} (extra-fragile persons), \emph{g3} (fragile workers), \emph{g2}  (teachers). Then \emph{g5} (fragile people) finally \emph{g6} (regular people) and \emph{g7} (young people).
+The priority is for highly circulating persons (workers and teachers), then for fragile persons.
 
-
-In Fig. \ref{seqWise} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the most important outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but we have significant further waves in this case too.
-In Tables \ref{quotaGATab} and \ref{susceptible} \ldots
-
-
-Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
+In Fig. \ref{timeSeriesGA} we have the crucial result of this experiment: the no vaccination test-bed is always that of Fig. \ref{symptomaticSeries}. With GAs' choices, the waves after the vertical line---when vaccinations start to operate---disappear, and the whole outbreak is a lot shorter.
 
 
 
