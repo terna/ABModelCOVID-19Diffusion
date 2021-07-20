@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  16 JUL 2021 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  20 JUL 2021 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -998,182 +998,182 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.5pt on input line 863.
  [21] [22]
-<CaseForGA_I_base.png, id=507, 982.67125pt x 552.0625pt>
+<CaseForGA_I_base.png, id=512, 982.67125pt x 552.0625pt>
 File: CaseForGA_I_base.png Graphic file (type png)
 <use CaseForGA_I_base.png>
-Package pdftex.def Info: CaseForGA_I_base.png  used on input line 945.
+Package pdftex.def Info: CaseForGA_I_base.png  used on input line 953.
 (pdftex.def)             Requested size: 196.53076pt x 110.41054pt.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 11.0pt on input line 952.
  [23 <./CaseForGA_I_base.png>]
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1055.
-<Experiment_I_base_symptomatic_series.png, id=524, 972.63374pt x 568.1225pt>
+<Experiment_I_base_symptomatic_series.png, id=522, 972.63374pt x 568.1225pt>
 File: Experiment_I_base_symptomatic_series.png Graphic file (type png)
 <use Experiment_I_base_symptomatic_series.png>
 Package pdftex.def Info: Experiment_I_base_symptomatic_series.png  used on inpu
-t line 1068.
+t line 965.
 (pdftex.def)             Requested size: 199.74036pt x 116.66524pt.
- [24]
-<Experiment_I_plainVaccinationSequence.png, id=532, 719.68875pt x 497.86pt>
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
+(Font)              scaled to size 11.0pt on input line 972.
+ [24 <./Experiment_I_base_symptomatic_series.png>] [25]
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
+(Font)              scaled to size 10.0pt on input line 1078.
+<Experiment_I_plainVaccinationSequence.png, id=560, 719.68875pt x 497.86pt>
 File: Experiment_I_plainVaccinationSequence.png Graphic file (type png)
 <use Experiment_I_plainVaccinationSequence.png>
 Package pdftex.def Info: Experiment_I_plainVaccinationSequence.png  used on inp
-ut line 1078.
+ut line 1093.
 (pdftex.def)             Requested size: 126.4986pt x 87.50664pt.
-<Experiment_I_1_plain_symptomatic_series.png, id=533, 972.63374pt x 568.1225pt>
+<Experiment_I_1_plain_symptomatic_series.png, id=561, 972.63374pt x 568.1225pt>
 
 File: Experiment_I_1_plain_symptomatic_series.png Graphic file (type png)
 <use Experiment_I_1_plain_symptomatic_series.png>
 Package pdftex.def Info: Experiment_I_1_plain_symptomatic_series.png  used on i
-nput line 1085.
+nput line 1100.
 (pdftex.def)             Requested size: 164.45204pt x 96.05074pt.
-<Experiment_I_wiseVaccinationSequence.png, id=534, 719.68875pt x 497.86pt>
+<Experiment_I_wiseVaccinationSequence.png, id=562, 719.68875pt x 497.86pt>
 File: Experiment_I_wiseVaccinationSequence.png Graphic file (type png)
 <use Experiment_I_wiseVaccinationSequence.png>
 Package pdftex.def Info: Experiment_I_wiseVaccinationSequence.png  used on inpu
-t line 1092.
+t line 1107.
 (pdftex.def)             Requested size: 126.4986pt x 87.50664pt.
-<Experiment_I_1_wise_symptomatic_series.png, id=535, 972.63374pt x 568.1225pt>
+<Experiment_I_1_wise_symptomatic_series.png, id=563, 972.63374pt x 568.1225pt>
 File: Experiment_I_1_wise_symptomatic_series.png Graphic file (type png)
 <use Experiment_I_1_wise_symptomatic_series.png>
 Package pdftex.def Info: Experiment_I_1_wise_symptomatic_series.png  used on in
-put line 1099.
+put line 1114.
 (pdftex.def)             Requested size: 164.45204pt x 96.05074pt.
-<Experiment_I_GA_1_VaccinationSequence.png, id=536, 719.68875pt x 497.86pt>
+<Experiment_I_GA_1_VaccinationSequence.png, id=564, 719.68875pt x 497.86pt>
 File: Experiment_I_GA_1_VaccinationSequence.png Graphic file (type png)
 <use Experiment_I_GA_1_VaccinationSequence.png>
 Package pdftex.def Info: Experiment_I_GA_1_VaccinationSequence.png  used on inp
-ut line 1106.
+ut line 1121.
 (pdftex.def)             Requested size: 126.4986pt x 87.50664pt.
-<Experiment_I_1_GAs_symptomatic_series.png, id=537, 972.63374pt x 568.1225pt>
+<Experiment_I_1_GAs_symptomatic_series.png, id=565, 972.63374pt x 568.1225pt>
 File: Experiment_I_1_GAs_symptomatic_series.png Graphic file (type png)
 <use Experiment_I_1_GAs_symptomatic_series.png>
 Package pdftex.def Info: Experiment_I_1_GAs_symptomatic_series.png  used on inp
-ut line 1113.
+ut line 1128.
 (pdftex.def)             Requested size: 164.45204pt x 96.05074pt.
- [25 <./Experiment_I_base_symptomatic_series.png>] [26 <./Experiment_I_plainVac
-cinationSequence.png> <./Experiment_I_1_plain_symptomatic_series.png> <./Experi
-ment_I_wiseVaccinationSequence.png> <./Experiment_I_1_wise_symptomatic_series.p
-ng> <./Experiment_I_GA_1_VaccinationSequence.png> <./Experiment_I_1_GAs_symptom
-atic_series.png>] [27] [28]
-<sequences/no3a.png, id=586, 982.67125pt x 552.0625pt>
+ [26]
+[27] [28 <./Experiment_I_plainVaccinationSequence.png> <./Experiment_I_1_plain_
+symptomatic_series.png> <./Experiment_I_wiseVaccinationSequence.png> <./Experim
+ent_I_1_wise_symptomatic_series.png> <./Experiment_I_GA_1_VaccinationSequence.p
+ng> <./Experiment_I_1_GAs_symptomatic_series.png>] [29] [30]
+<sequences/no3a.png, id=615, 982.67125pt x 552.0625pt>
 File: sequences/no3a.png Graphic file (type png)
 <use sequences/no3a.png>
-Package pdftex.def Info: sequences/no3a.png  used on input line 1261.
+Package pdftex.def Info: sequences/no3a.png  used on input line 1276.
 (pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-<sequences/no3b.png, id=587, 972.63374pt x 552.0625pt>
+<sequences/no3b.png, id=616, 972.63374pt x 552.0625pt>
 File: sequences/no3b.png Graphic file (type png)
 <use sequences/no3b.png>
-Package pdftex.def Info: sequences/no3b.png  used on input line 1262.
+Package pdftex.def Info: sequences/no3b.png  used on input line 1277.
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/no4a.png, id=588, 982.67125pt x 552.0625pt>
+<sequences/no4a.png, id=617, 982.67125pt x 552.0625pt>
 File: sequences/no4a.png Graphic file (type png)
 <use sequences/no4a.png>
-Package pdftex.def Info: sequences/no4a.png  used on input line 1263.
+Package pdftex.def Info: sequences/no4a.png  used on input line 1278.
 (pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-<sequences/no4b.png, id=589, 972.63374pt x 552.0625pt>
+<sequences/no4b.png, id=618, 972.63374pt x 552.0625pt>
 File: sequences/no4b.png Graphic file (type png)
 <use sequences/no4b.png>
-Package pdftex.def Info: sequences/no4b.png  used on input line 1265.
+Package pdftex.def Info: sequences/no4b.png  used on input line 1280.
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/no5a.png, id=590, 982.67125pt x 552.0625pt>
+<sequences/no5a.png, id=619, 982.67125pt x 552.0625pt>
 File: sequences/no5a.png Graphic file (type png)
 <use sequences/no5a.png>
-Package pdftex.def Info: sequences/no5a.png  used on input line 1266.
+Package pdftex.def Info: sequences/no5a.png  used on input line 1281.
 (pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-<sequences/no5b.png, id=591, 972.63374pt x 552.0625pt>
+<sequences/no5b.png, id=620, 972.63374pt x 552.0625pt>
 File: sequences/no5b.png Graphic file (type png)
 <use sequences/no5b.png>
-Package pdftex.def Info: sequences/no5b.png  used on input line 1267.
+Package pdftex.def Info: sequences/no5b.png  used on input line 1282.
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/with6a.png, id=592, 971.63pt x 552.0625pt>
+<sequences/with6a.png, id=621, 971.63pt x 552.0625pt>
 File: sequences/with6a.png Graphic file (type png)
 <use sequences/with6a.png>
-Package pdftex.def Info: sequences/with6a.png  used on input line 1269.
+Package pdftex.def Info: sequences/with6a.png  used on input line 1284.
 (pdftex.def)             Requested size: 102.0pt x 57.9472pt.
-<sequences/with6b.png, id=593, 972.63374pt x 552.0625pt>
+<sequences/with6b.png, id=622, 972.63374pt x 552.0625pt>
 File: sequences/with6b.png Graphic file (type png)
 <use sequences/with6b.png>
-Package pdftex.def Info: sequences/with6b.png  used on input line 1270.
+Package pdftex.def Info: sequences/with6b.png  used on input line 1285.
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/with7a.png, id=594, 982.67125pt x 552.0625pt>
+<sequences/with7a.png, id=623, 982.67125pt x 552.0625pt>
 File: sequences/with7a.png Graphic file (type png)
 <use sequences/with7a.png>
-Package pdftex.def Info: sequences/with7a.png  used on input line 1271.
+Package pdftex.def Info: sequences/with7a.png  used on input line 1286.
 (pdftex.def)             Requested size: 102.0pt x 57.29857pt.
-<sequences/with7b.png, id=595, 972.63374pt x 552.0625pt>
+<sequences/with7b.png, id=624, 972.63374pt x 552.0625pt>
 File: sequences/with7b.png Graphic file (type png)
 <use sequences/with7b.png>
-Package pdftex.def Info: sequences/with7b.png  used on input line 1273.
+Package pdftex.def Info: sequences/with7b.png  used on input line 1288.
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/with8a.png, id=596, 984.67876pt x 552.0625pt>
+<sequences/with8a.png, id=625, 984.67876pt x 552.0625pt>
 File: sequences/with8a.png Graphic file (type png)
 <use sequences/with8a.png>
-Package pdftex.def Info: sequences/with8a.png  used on input line 1274.
+Package pdftex.def Info: sequences/with8a.png  used on input line 1289.
 (pdftex.def)             Requested size: 102.0pt x 57.18065pt.
-<sequences/with8b.png, id=597, 972.63374pt x 552.0625pt>
+<sequences/with8b.png, id=626, 972.63374pt x 552.0625pt>
 File: sequences/with8b.png Graphic file (type png)
 <use sequences/with8b.png>
-Package pdftex.def Info: sequences/with8b.png  used on input line 1275.
+Package pdftex.def Info: sequences/with8b.png  used on input line 1290.
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/withShort0.png, id=598, 961.5925pt x 552.0625pt>
+<sequences/withShort0.png, id=627, 961.5925pt x 552.0625pt>
 File: sequences/withShort0.png Graphic file (type png)
 <use sequences/withShort0.png>
-Package pdftex.def Info: sequences/withShort0.png  used on input line 1277.
+Package pdftex.def Info: sequences/withShort0.png  used on input line 1292.
 (pdftex.def)             Requested size: 102.0pt x 58.55371pt.
-<sequences/withShort1.png, id=599, 986.68625pt x 552.0625pt>
+<sequences/withShort1.png, id=628, 986.68625pt x 552.0625pt>
 File: sequences/withShort1.png Graphic file (type png)
 <use sequences/withShort1.png>
-Package pdftex.def Info: sequences/withShort1.png  used on input line 1278.
+Package pdftex.def Info: sequences/withShort1.png  used on input line 1293.
 (pdftex.def)             Requested size: 102.0pt x 57.06271pt.
-<sequences/withShort1A.png, id=600, 972.63374pt x 552.0625pt>
+<sequences/withShort1A.png, id=629, 972.63374pt x 552.0625pt>
 File: sequences/withShort1A.png Graphic file (type png)
 <use sequences/withShort1A.png>
-Package pdftex.def Info: sequences/withShort1A.png  used on input line 1279.
+Package pdftex.def Info: sequences/withShort1A.png  used on input line 1294.
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/withShort1A200.png, id=601, 972.63374pt x 552.0625pt>
+<sequences/withShort1A200.png, id=630, 972.63374pt x 552.0625pt>
 File: sequences/withShort1A200.png Graphic file (type png)
 <use sequences/withShort1A200.png>
-Package pdftex.def Info: sequences/withShort1A200.png  used on input line 1281.
+Package pdftex.def Info: sequences/withShort1A200.png  used on input line 1296.
 
 (pdftex.def)             Requested size: 102.0pt x 57.88824pt.
-<sequences/withShort1B.png, id=602, 977.6525pt x 552.0625pt>
+<sequences/withShort1B.png, id=631, 977.6525pt x 552.0625pt>
 File: sequences/withShort1B.png Graphic file (type png)
 <use sequences/withShort1B.png>
-Package pdftex.def Info: sequences/withShort1B.png  used on input line 1282.
+Package pdftex.def Info: sequences/withShort1B.png  used on input line 1297.
 (pdftex.def)             Requested size: 102.0pt x 57.59341pt.
-<sequences/withShort2.png, id=603, 961.5925pt x 555.07375pt>
+<sequences/withShort2.png, id=632, 961.5925pt x 555.07375pt>
 File: sequences/withShort2.png Graphic file (type png)
 <use sequences/withShort2.png>
-Package pdftex.def Info: sequences/withShort2.png  used on input line 1283.
+Package pdftex.def Info: sequences/withShort2.png  used on input line 1298.
 (pdftex.def)             Requested size: 102.0pt x 58.87311pt.
- (./ABModelCOVID-19Diffusion.bbl [29] [30 <./sequences/no3a.png> <./sequences/n
-o3b.png> <./sequences/no4a.png> <./sequences/no4b.png> <./sequences/no5a.png> <
-./sequences/no5b.png> <./sequences/with6a.png> <./sequences/with6b.png> <./sequ
-ences/with7a.png> <./sequences/with7b.png> <./sequences/with8a.png> <./sequence
-s/with8b.png> <./sequences/withShort0.png> <./sequences/withShort1.png> <./sequ
-ences/withShort1A.png> <./sequences/withShort1A200.png> <./sequences/withShort1
-B.png> <./sequences/withShort2.png>])
+ [31 <./sequences/no3a.png> <./sequences/no3b.png> <./sequences/no4a.png> <./se
+quences/no4b.png> <./sequences/no5a.png> <./sequences/no5b.png> <./sequences/wi
+th6a.png> <./sequences/with6b.png> <./sequences/with7a.png> <./sequences/with7b
+.png> <./sequences/with8a.png> <./sequences/with8b.png> <./sequences/withShort0
+.png> <./sequences/withShort1.png> <./sequences/withShort1A.png> <./sequences/w
+ithShort1A200.png> <./sequences/withShort1B.png> <./sequences/withShort2.png>]
+(./ABModelCOVID-19Diffusion.bbl [32])
 \tf@thm=\write6
 \openout6 = `ABModelCOVID-19Diffusion.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1302.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1302.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1317.
+ [33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1317.
  (./ABModelCOVID-19Diffusion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1302.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1302.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1317.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1317.
 
 Package rerunfilecheck Info: File `ABModelCOVID-19Diffusion.out' has not change
 d.
-(rerunfilecheck)             Checksum: 37F51D51074D4F21A45B5BA66CB166A5;3609.
+(rerunfilecheck)             Checksum: C1DBE04224DD9895B4B47DB76BE9F5C8;3601.
  ) 
 Here is how much of TeX's memory you used:
- 12905 strings out of 480608
- 188427 string characters out of 5903631
- 487572 words of memory out of 5000000
- 28365 multiletter control sequences out of 15000+600000
+ 12911 strings out of 480608
+ 188475 string characters out of 5903631
+ 485670 words of memory out of 5000000
+ 28367 multiletter control sequences out of 15000+600000
  615645 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,100p,1197b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1188,10 +1188,10 @@ type1/public/newtx/txsys.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newt
 x/ztmbi.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmr.p
 fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on ABModelCOVID-19Diffusion.pdf (31 pages, 2391416 bytes).
+Output written on ABModelCOVID-19Diffusion.pdf (33 pages, 2397250 bytes).
 PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
- 597 compressed objects within 6 object streams
- 151 named destinations out of 1000 (max. 500000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 626 compressed objects within 7 object streams
+ 155 named destinations out of 1000 (max. 500000)
  497 words of extra memory for PDF output out of 10000 (max. 10000000)
 
