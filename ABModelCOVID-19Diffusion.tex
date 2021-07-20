@@ -444,7 +444,7 @@ The numbers in Table \ref{noCTab} are scary. The concentration of the cases in t
  \begin{subfigure}{0.48\textwidth}
  \centering
  \fbox{\includegraphics[width=0.95\textwidth]{10kNoControl.png}}
- \subcaption{Outbreaks Without non-pharmaceutical containment measures}
+ \subcaption{Outbreaks without non-pharmaceutical containment measures}
  \label{10kNoControl}
  \end{subfigure}
  \hfill
@@ -951,11 +951,11 @@ Considering the adoption of the government non-pharmaceutical measures, we searc
 \begin{figure}[t]
 \center
 \includegraphics[scale=0.2]{CaseForGA_I_base.png}
-\caption{Crucial dates: blue line for the starting point of the vaccination campaign and red line for the start of the effectiveness of the initial vaccinations}
+\caption{Crucial dates: blue line for the starting point of the vaccination campaign and red line for the start of the effectiveness of the initial vaccinations; all the situations without vaccination}
 \label{specificCaseGA}
 \end{figure}
 
-In Fig. \ref{symptomaticSeries} we have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
+In Fig. \ref{symptomaticSeries}, with all the situation without vaccinations, we have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
 
 Here and in the following sections, we analyze the count of symptomatic persons, being the goal of our simulated vaccination campaign exactly that of decreasing the number of symptomatic people, as deceased persons come from there.
 
@@ -1048,18 +1048,27 @@ We primarily vaccinate the left column groups to move gradually to other columns
 \label{quotaWiseTab}
 \end{table}
 
-In Fig. \ref{seqWise} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the most important outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but we have significant further waves in this too.
+In Fig. \ref{seqWise} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the most important outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but we have significant further waves in this case too.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{GAs quotas in the experiment, with vac. people spreading or not spreading the infection}
+\subsection{GAs quotas in the experiment, with vaccinated people spreading the infection}
 \label{GAquotas}
 
-Finally, the objective of this whole section: the use of GAs, evolving populations of models repeating this same experiment, but choosing the parameters to decide daily vaccination on a random basis initially and successively considering them as a genetic chromosome of the model re-productively crossed with those of other models searching for the best fit. In \cite{miller1998active} dove sono i source
+Finally, the objective of this whole section: the use of GAs, evolving populations of models repeating this same experiment, but choosing the parameters to decide daily vaccination on a random basis initially and successively considering them as a genetic chromosome of the model re-productively crossed with those of other models searching for the best fitness related to the goal of reducing the number of symptomatic persons. \cite{miller1998active}, also quoted at \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, is a useful introduction to the methodology; the sources of the GAs used here are at \href{https://github.com/terna/GAs}{https://github.com/terna/GAs}.
 
+With the GAs option we use the quotas of Table \ref{quotaGATab}, with the exact mechanism of the previous section. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} apply also here, but we underline that the GAs procedure does not optimize the coefficients of the two cases, because they have no effect on the fitness related to the minimum number of symptomatic subjects.  
+
+
+We primarily vaccinate the left column groups to move gradually to other columns, but postponing group \emph{g4} (regular workers), \emph{g6} (regular people), and \emph{g7} (young people). In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of this experiment (and in the following ones) and when the vaccination campaign starts. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} apply also here.
+
+
+In Fig. \ref{seqWise} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the most important outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but we have significant further waves in this case too.
 In Tables \ref{quotaGATab} and \ref{susceptible} \ldots
 
 
 Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people.
+
+
 
 \begin{table}[t]
 \centering
@@ -1075,15 +1084,9 @@ Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) frag
 738 & end \\ 
 \hline\noalign{\smallskip} 
 \end{tabular}
-\caption{GAs best strategy in case I, with \textbf{\emph{vaccinated people still spreading the infection}}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quota of the related columns}
+\caption{GAs best strategy with \emph{vaccinated people still spreading the infection}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quota of the related columns}
 \label{quotaGATab}
 \end{table}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{An experiment with GA}
-\label{GA}
 
 
 \begin{figure}[t]
@@ -1135,29 +1138,6 @@ Groups: (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) frag
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Time dynamics without vaccinations}
-\label{dybWithout}
-
-In Fig. \ref{symptomaticSeries} \ldots
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Time dynamics with \emph{plain} vac. strategy, vac. people still spreading the infection}
-\label{dynPlain}
-
-In Figs. \ref{seqPlain} and \ref{timeSeriesPlain} \ldots
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Time dynamics with \emph{wise} vac. strategy, vac. people still spreading the infection}
-\label{dynWise}
-
-In Figs. \ref{seqWise} and \ref{timeSeriesWise} \ldots
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Time dynamics with best GAs strategy, vac, people still spreading the infection}
-\label{dynGA}
-
-In Figs. \ref{seqGA} and \ref{timeSeriesGA} \ldots
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A new model and future developments}
