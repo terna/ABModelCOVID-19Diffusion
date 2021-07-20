@@ -106,4 +106,10 @@ D.~Miles, M.~Stedman, A.H. Heald, International Journal of Clinical Practice
 J.H. Miller, Management Science \textbf{44}(6), 820 (1998).
 \newblock \urlprefix\url{https://www.jstor.org/stable/pdf/2634650.pdf}
 
+\bibitem{vu2019toward}
+T.M. Vu, C.~Probst, J.M. Epstein, A.~Brennan, M.~Strong, R.C. Purshouse, in
+  \emph{Proceedings of the Genetic and Evolutionary Computation Conference}
+  (2019), pp. 1356--1363.
+\newblock \urlprefix\url{https://dl.acm.org/doi/abs/10.1145/3321707.3321840}
+
 \end{thebibliography}
