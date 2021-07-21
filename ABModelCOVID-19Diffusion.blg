@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ABModelCOVID-19Diffusion.aux
 The style file: spphys.bst
 Database file #1: bibliografiaGenerale.bib
-You've used 18 entries,
+You've used 19 entries,
             2812 wiz_defined-function locations,
-            726 strings with 9618 characters,
-and the built_in function-call counts, 7649 in all, are:
-= -- 505
-> -- 306
+            731 strings with 9783 characters,
+and the built_in function-call counts, 7981 in all, are:
+= -- 529
+> -- 313
 < -- 1
-+ -- 122
-- -- 96
-* -- 466
-:= -- 875
-add.period$ -- 25
-call.type$ -- 18
++ -- 125
+- -- 98
+* -- 488
+:= -- 914
+add.period$ -- 27
+call.type$ -- 19
 change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 841
-empty$ -- 688
-format.name$ -- 108
-if$ -- 1658
+cite$ -- 19
+duplicate$ -- 879
+empty$ -- 723
+format.name$ -- 111
+if$ -- 1733
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 212
-newline$ -- 87
-num.names$ -- 18
-pop$ -- 322
+int.to.str$ -- 19
+missing$ -- 221
+newline$ -- 92
+num.names$ -- 19
+pop$ -- 332
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 217
+skip$ -- 224
 stack$ -- 0
-substring$ -- 195
-swap$ -- 598
+substring$ -- 202
+swap$ -- 623
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 33
-width$ -- 20
-write$ -- 196
+while$ -- 35
+width$ -- 21
+write$ -- 208

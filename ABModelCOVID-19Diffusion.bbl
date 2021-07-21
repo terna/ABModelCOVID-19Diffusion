@@ -112,4 +112,10 @@ T.M. Vu, C.~Probst, J.M. Epstein, A.~Brennan, M.~Strong, R.C. Purshouse, in
   (2019), pp. 1356--1363.
 \newblock \urlprefix\url{https://dl.acm.org/doi/abs/10.1145/3321707.3321840}
 
+\bibitem{manzo2020}
+G.~Manzo, A.~van~de Rijt, Journal of Artificial Societies and Social Simulation
+  \textbf{23}(4), 10 (2020).
+\newblock \doi{10.18564/jasss.4435}.
+\newblock \urlprefix\url{http://jasss.soc.surrey.ac.uk/23/4/10.html}
+
 \end{thebibliography}
