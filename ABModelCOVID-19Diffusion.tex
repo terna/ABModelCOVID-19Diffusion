@@ -70,12 +70,12 @@
 \maketitle
 
 \abstract*{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the characteristics of both the infected person and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
-The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the successive contagion waves in the reference region. 
-There is also an inverse generative side of the model, coming from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people, using genetic algorithms.}
+The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes and stunning realistic reproduction of the successive contagion waves in the reference region. 
+There is also an inverse generative side of the model, coming from the idea of using genetic algorithms to construct a meta-agent to optimize the vaccine distribution. This agent takes into account groups' characteristics---by age, fragility, work conditions---to minimize the number of symptomatic people.}
 
 \abstract{A model of interacting agents, following plausible behavioral rules into a world where the Covid-19 epidemic is affecting the actions of everyone. The model works with (i) infected agents categorized as symptomatic or asymptomatic and (ii) the places of contagion specified in a detailed way. The infection transmission is related to three factors: the characteristics of both the infected person and the susceptible one, plus those of the space in which contact occurs. The model includes the structural data of Piedmont, an Italian region, but we can easily calibrate it for other areas. The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic.\newline\indent
-The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the successive contagion waves in the reference region. 
-There is also an inverse generative side of the model, coming from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people, using genetic algorithms.}
+The model is generative of complex epidemic dynamics emerging from the consequences of agents' actions and interactions, with high variability in outcomes and stunning realistic reproduction of the successive contagion waves in the reference region. 
+There is also an inverse generative side of the model, coming from the idea of using genetic algorithms to construct a meta-agent to optimize the vaccine distribution. This agent takes into account groups' characteristics---by age, fragility, work conditions---to minimize the number of symptomatic people.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,13 +84,13 @@ There is also an inverse generative side of the model, coming from constructing 
 
 The starting point is a compartmental model with Susceptible, Infected, and Recovered people (S.I.R.), but adding both a more detailed breakdown of the subjects involved in the contagion process \cite{Scala:2020aa} and a multi-scale framework to account for the interaction at different dimensional, and spatial levels \cite{doi:10.1142/S0218202520500323}. From the virus micro-level, we move to individuals and up to the collective behavior of the population.
 
-Following \cite{rahmandad2008heterogeneity}, we know that the analysis based on the assumption of heterogeneity strongly differs from S.I.R. compartmental structures modeled by differential equations. Their work ponders when it is better to use agent-based models and when it would be better to use differential equation models. Differential equation models assume homogeneity and perfect mixing of characteristics within compartments, while agent-based models can capture heterogeneity in agent attributes and the structure of their interactions. We follow the second approach.
+Following \cite{rahmandad2008heterogeneity}, we know that the analysis based on the assumption of heterogeneity strongly differs from S.I.R. compartmental structures modeled by differential equations. That work authors ponder when it is better to use agent-based models and when it would be better to use differential equation models. Differential equation models assume homogeneity and perfect mixing of characteristics within compartments, while agent-based models can capture heterogeneity in agent attributes and the structure of their interactions. We follow the second approach.
 
 \begin{itemize}
 
 \item
 
-The model works with: 
+Our model takes into consideration: 
 
 \begin{enumerate}[label=\roman*]
 \item infected agents categorized as symptomatic or asymptomatic and 
@@ -107,11 +107,11 @@ Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behav
 
 Now a look at the structure of the whole presentation.
 
-In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
+In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with: conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
 
-A technique for contagion representation is reported in Section \ref{contag}. Then we explore simulation cases in Section \ref{exploring}, building several batches of runs and comparing extreme situations in Sections \ref{withoutWith}.
+A technique for contagion representation is introduced in Section \ref{contag}. Then we explore simulation cases in Section \ref{exploring}, building several batches of runs and comparing extreme situations in Sections \ref{withoutWith}.
 
-Section \ref{actual} introduces the actual epidemic data of the reference region. With those data, we verify factual and counterfactual analyses in Section \ref{facCounterfac}. Considering the possibility of calculating infection indicators without delays (Section \ref{indicator}), we experiment with the effect of adopting the control measure with 20 days of anticipation (Section \ref{anticip}). In Section \ref{frag} we verify another counterfactual policy, that of concentrating the efforts uniquely in defense of fragile persons. Section recap \ref{recap} summarizes the results.
+Section \ref{actual} reports the actual epidemic data in the reference region. With those data, we verify factual and counterfactual analyses in Section \ref{facCounterfac}. Considering the possibility of calculating infection indicators without delays (Section \ref{indicator}), we experiment with the effect of adopting the control measure with 20 days of anticipation (Section \ref{anticip}). In Section \ref{frag} we verify another counterfactual policy, that of concentrating the efforts uniquely in defense of fragile persons. Section recap \ref{recap} summarizes these results.
 
 The final application of the model is dedicated to a planning exercise on vaccination campaigns (Section \ref{planning}). We introduce an analysis of the vaccine mechanism in the perspective of our model (Section \ref{vaccineAction}), using both planned strategies (Sections \ref{plain}, \ref{wise}) and genetic algorithms (Section \ref{GAquotas}). The GAs goal is to optimize the behavior of a meta-agent, deciding the sequence of the vaccinations.
 
@@ -140,7 +140,7 @@ More in detail:
 There are, ostensibly, several advantages of agent-based computational modeling over conventional mathematical theorizing. First, [\ldots] it is easy to limit agent rationality in agent-based computational models. Second, even if one wishes to use completely rational agents, it is a trivial matter to make agents heterogeneous in agent-based models. One simply instantiates a population having some distribution of initial states, e.g., preferences. That is, there is no need to appeal to representative agents. [\ldots] Finally, in most social processes either physical space or social networks matter. These are difficult to account for mathematically except in highly stylized ways. However, in agent-based models it is usually quite easy to have the agent interactions mediated by space or networks or both.
 \end{quote}
 
-And now, "why another?" As a commitment to our creativity, using our knowledge to understand what is happening. Indeed, with arbitrariness: it is up to others and time to judge. Modeling the Covid-19 pandemic requires a scenario and the actors.
+And now, "why another?" As a commitment to our creativity, using our knowledge to understand what is happening. Indeed, with arbitrariness: it is up to others and time to judge.
 
 As any model, also this one is based on assumptions: time will tell whether these were reasonable hypotheses. Modeling the Covid-19 pandemic requires a scenario and the actors. As in a theater play, the author defines the roles of the actors and the environment. The characters are not real, they are prebuilt by the author, and they act according to their peculiar constraints. If the play is successful, it will run for a long time, even centuries. If not, we will rapidly forget it. Shakespeare’s Hamlet is still playing after centuries, even if the characters and the plot are entirely imaginary. The same holds for our simulations: we are the authors, we arbitrarily define the characters, we force them to act again and again in different scenarios. However, in our model, the micro-micro assumptions are not arbitrary but based on scientific hypotheses at the molecular level, the micro agents’ behaviors are modeled in an explicit and realistic way. In both plays and simulations, we compress the time: a whole life to two or three hours on the stage. In a few seconds, we run the Covid-19 pandemic spread in a given regional area.
 
@@ -160,7 +160,7 @@ With our model, we move from a macro compartmental vision to a meso and micro-an
 \begin{itemize}
 
 \item
-scalability: we take in account the interactions between virus and molecules inside the host, the interactions between individuals in more or less restricted contexts, the movement between different environments (home, school, workplace, open spaces, shops); the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc};
+scalability: we take into account the interactions between virus and molecules inside the host, determining individual susceptibility; the interactions between individuals in more or less restricted contexts; the movement between different environments (home, school, workplace, open spaces, shops); the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc};
 
 in detail, the scales are: 
 
@@ -179,29 +179,27 @@ granularity: at any level, the interactions are partially random and therefore t
 
 \end{itemize}
 
-Summing up, S.I.s.a.R. \cite{SIsaR} is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R. The model works on the structural data of Piedmont, an Italian region, but we can quite easily calibrate it for other areas. It can reproduce the events following a realistic calendar (national or local government decisions, as in Section \ref{par}), via its script interpreter. The model is online at \href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}, from where it is also possible to run the code without installation. Into the \emph{Info} sheet of the model, we have more than 20 pages of Supporting Information about both the structure and the calibration of the model.
+Summing up, S.I.s.a.R. (\href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}) is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R. The model works on the structural data of Piedmont, an Italian region, but we can quite easily calibrate it for other areas. It reproduces the events following a realistic calendar (national or local government decisions, as in Section \ref{par}), via its script interpreter. At the above address, it is also possible to run the code without installation. Into the \emph{Info} sheet of the model, we have more than 20 pages of Supporting Information about both the structure and the calibration of the model.
 
 
-The micro-based structure of the model allows factual, counterfactual, and conditional simulations to investigate both the spontaneous or controlled development of the epidemic. Examples of counterfactual situations are those considering:
+The micro-based structure of the model allows factual, counterfactual, and conditional simulations. Examples of counterfactual situations are those considering:
 
 \begin{enumerate}[label=\roman*]
 \item different timing in the adoption of the non-pharmaceutical containment measures;
-\item alternative strategies focusing exclusively on the defense of fragile people.
+\item an alternative strategy, focusing exclusively on the defense of fragile people.
 \end{enumerate}
 
-The model generates complex epidemic dynamics, emerging from the consequences of agents' actions and interactions, with high variability in outcomes, but frequently with a stunning realistic reproduction of the contagion waves that occurred in the reference region. 
+The model generates complex epidemic dynamics, emerging from the consequences of agents' actions and interactions, with high variability in outcomes, and with a stunning realistic reproduction of the contagion waves that occurred in the reference region. 
 
 We take charge of the variability of the epidemic paths within the simulation, running batches of executions with 10,000 occurrences for each experiment.
 
-Following \cite{inverseGen}, the AI and inverse generative side of the model comes from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people (deceased persons come from there).
+Following \cite{inverseGen}, the AI and inverse generative side of the model comes from constructing a meta-agent optimizing the vaccine distribution among people groups---characterized by age, fragility, work conditions---to minimize the number of symptomatic people (as deceased persons come from there).
 
 We can characterize the action of the planner both:
 \begin{enumerate}[label=\roman*]
 \item introducing ex-ante rules following ``plain'' or ``wise'' strategies that we imagine as observers or
-\item evolving those strategies via the application of a genetic algorithm. 
+\item evolving those strategies via the application of a genetic algorithm, where the genome is a matrix of vaccination quotas by people groups, with their time range of adoption. 
 \end{enumerate}
-
-The genome is a matrix of vaccination quotas by people groups, with their time range of adoption. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -217,7 +215,7 @@ We use random maps to have a neutral representation of the structure of the spac
 \begin{figure}[t]
 \center
 \fbox{\includegraphics[width=0.9\textwidth,,angle=0]{3D.png}}
-\caption{A 3D representation of the model world}
+\caption{A live 3D picture of the model world}
 \label{3D}
 \end{figure}
 
