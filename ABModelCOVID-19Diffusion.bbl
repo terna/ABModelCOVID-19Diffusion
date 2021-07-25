@@ -67,13 +67,6 @@ R.~Horton, Lancet (London, England) \textbf{396}(10255), 874 (2020).
 \newblock
   \urlprefix\url{https://www.thelancet.com/action/showPdf?pii=S0140-6736\%2820\%2932000-6}
 
-\bibitem{SIsaR}
-P.~Terna, G.~Pescarmona, A.~Acquadro, P.~Pescarmona, G.~Russo, S.~Terna.
-\newblock {SIsaR, An Agent-Based Model of the Diffusion of Covid-19 Using
-  NetLogo, with Susceptible, Infected, symptomatic, asymptomatic, and Recovered
-  People} (2020).
-\newblock \urlprefix\url{https://terna.to.it/simul/SIsaR.html}
-
 \bibitem{NetLogo}
 U.~Wilensky.
 \newblock Netlogo (1999).
@@ -107,7 +100,7 @@ E.~Jenner, \emph{An inquiry into the causes and effects of the variolae
   vaccinae, a disease discovered in some of the western counties of England,
   particularly Gloucestershire, and known by the name of the cow pox}
   (Springfield [Mass.] : Re-printed for Dr. Samuel Cooley, by Ashley \& Brewer,
-  1802, 1802).
+  1802, 1800).
 \newblock \urlprefix\url{http://resource.nlm.nih.gov/2559001R}
 
 \bibitem{monslow2020}
