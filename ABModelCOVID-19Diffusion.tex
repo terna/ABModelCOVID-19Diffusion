@@ -206,11 +206,11 @@ We can characterize the action of the planner both:
 \section{How S.I.s.a.R. works}
 \label{howWorks}
 
-We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont. The size of the initial infected group is out of scale: it is the smallest number, ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For implausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is made with realistic numbers, not to be read in scale: e.g., a classroom contains 25 students, a home two persons, large factories up to 150 employees, small ones up to 15, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
+We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont. The size of the initial infected group is out of scale: it is the smallest number ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For plausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is set with realistic numbers, out of scale: e.g., a classroom contains 25 students, a home two persons, large factories up to 150 employees, small ones up to 15, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
 
-In Fig. \ref{3D} we have a 3D representation of the model world---as one of the possible random maps that the simulation generates--- with persons in gray, houses in cyan, nursing homes in orange, hospitals in orange, schools in yellow, factories (with shops and offices) in brown. Persons have a cylinder as shape, if regular or robust (young); a capital X if fragile; temporary their colors can be: red, if symptomatic; violet, if asymptomatic; turquoise, if symptomatic recovered; green, if asymptomatic recovered.
+In Fig. \ref{3D} we have a 3D representation of the model world, with one of the possible random maps that the simulation generates. Persons are in gray, houses in cyan, nursing homes in orange, hospitals in pink, schools in yellow, factories (with shops and offices) in brown. Persons have a cylinder as shape, if regular or robust (young); a capital X if fragile; temporary their colors can be: red, if symptomatic; violet, if asymptomatic; turquoise, if symptomatic recovered; green, if asymptomatic recovered.
 
-We use random maps to have a neutral representation of the structure of the space when doing the batches of 10,000 repetitions of the simulation. 
+Doing the batches of 10,000 repetitions of the simulation, we use random maps to have a neutral effect of the structure of the space. 
 
 \begin{figure}[t]
 \center
@@ -228,27 +228,32 @@ We can set:
 
 \item the critical distance, i.e., the radius of the possibility of infection in open air, with a given probability;
 
-\item the correction of that probability, due to the personal characteristics of both active and the passive agents; passive agents, as receivers, can be robust (young), regular, fragile, and extra fragile.
+\item the corrections of that probability, due to the personal characteristics of both active and the passive agents; 
+
+\begin{itemize}
+\item active agents can be symptomatic or asymptomatic, with different spreading characteristics (see \ref{D} in Section \ref{par});
+
+\item passive agents, as receivers, can be robust (young), regular, fragile, and extra fragile.
+\end{itemize} 
 
 \end{itemize} 
 
-We have two main types of contagion: (a) within a radius, for people moving around, also if only temporary present in a house/factory/nursing home/hospital (in schools we only have students and teachers); (b) in a given space (room or apartment) for people resident in their home or in a hospital or in a nursing home or being in school or in a working environment.
+We have two main types of contagion: (a) within a radius, for people moving around, temporary in a house/factory/nursing home/hospital; (b) in a given space (room or apartment) for people resident in their home or in a hospital or in a nursing home or being in school or in a working environment.
 
-People in hospitals and nursing homes can be infected in two ways: (a) and (b). Instead, while people are at school, they can only receive the disease from people in the same classroom, where only teachers and students are present, so this is a third infection mechanism (c). In all cases, the personal characteristics of the recipients are decisive.
+People in hospitals and nursing homes can be infected in ways (a) and (b). Instead, while people are at school, they can only receive the disease from people in the same classroom, where only teachers and students are present, so this is a third infection mechanism (c). In all cases, the personal characteristics of the recipients are decisive.
 
-We remark that workplaces are open to all persons, as clients, vendors, suppliers, external workers can go there. In contrast, schools are mainly reserved for students and school operators and are less affected by contact with other types of agents.
+We remark that workplaces are open to all persons, as clients, vendors, suppliers, external workers can go there. In contrast, schools are reserved for students and school operators.
 
-All agents have their home, inside a city, or a town. The agents also have usual places (UPs) where they act and interact, moving around. These positions can be interpreted as free time elective places. When we activate the schools, students and teachers have both UPs and schools; healthcare operators have both UPs and hospitals or nursing homes; finally, workers have both UPs and working places. In each day (or tick of the model), we simulated realistic sequences of actions.
+All agents have their home, inside a city, or a town. The agents also have usual places (UPs) where they act and interact, moving around. These positions can be interpreted as free time elective places. When we activate the schools, students and teachers have both UPs and schools; healthcare operators have both UPs and hospitals or nursing homes; finally, workers have both UPs and working places. In each day (or tick of the model), we simulated full sequences of actions.
+
+Fig. \ref{outline} describes what happens during every \emph{day} in our simulated world, with the daily sequences of actions.
 
 
-
-
-Fig. \ref{outline} describes what happens during every \emph{day} in our simulated world, with each day as a sequence of several actions.
 
 \begin{figure}[t]
 \center
 \fbox{\includegraphics[width=1.3\textwidth,,angle=90]{SIsaR_outline2.png}}
-\caption{A day in the simulation, with $N$ repetitions where $N$ is the duration of a specific outbreak; look at: Section \ref{cond} for the rules of the conditional actions; Section \ref{par} for the parameter definitions; and Section \ref{inter} for details on the agent interactions}
+\caption{A day in the simulation, with $N$ repetitions where $N$ is the duration of a given outbreak; look at: Section \ref{cond} for the rules of the conditional actions; Section \ref{par} for the parameter definitions; and Section \ref{inter} for details on the agent interactions}
 \label{outline}
 \end{figure}
 
@@ -263,7 +268,7 @@ Agents' movements in space, to go to work, school, and other UPs are subject to 
 
 \item Symptomatic persons are at home or in a hospital or a nursing home and do not move. 
 
-\item People not constrained by \emph{condition I} can move if (primary rule) there are no general limitations (e.g., lockdown) \emph{OR} or one of the following specific sub-conditions applies:
+\item People not constrained by \emph{condition I} can move if (primary rule) there are no general limitations (e.g., lockdown) \emph{OR} if one of the following sub-conditions applies:
 
 \begin{enumerate}
 \item agents who are hospital healthcare operators or nursing home healthcare operators;
@@ -273,7 +278,7 @@ Agents' movements in space, to go to work, school, and other UPs are subject to 
 \item regular people, according to the probability of moving of the regular non-symptomatic agents
 (\ref{par}, \ref{p4});
 
-\item workers, if all the factories are open or it is open their workplace
+\item workers, if all the factories are open or it is open their own workplace
 (\ref{par}, \ref{p5});
 
 \item teachers, if the schools are open
@@ -291,18 +296,20 @@ Agents' movements in space, to go to work, school, and other UPs are subject to 
 \subsection{Parameter definition}
 \label{par}
 
-We define here the parameters of Fig. \ref{outline}, also with the short names used in program scripts, in round brackets. The values of the parameters are reported in detail in Appendix~1~-~Parameter~values (Section \ref{app1}).
+We define the parameters of Fig. \ref{outline}, also with their short names used in program scripts, in round brackets. The values of the parameters are reported in detail in Appendix~1~-~Parameter~values (Section \ref{app1}).
 
 \begin{enumerate}[label=\roman*]
 
 \item \label{p1} \emph{probabilityOfGettingInfection} (\verb|prob|) is the base probability of getting infected, to be multiplied by the \emph{intrinsicSusceptibility} factor (\ref{p2}); it is activated if the subject is within a circle of radius (\ref{p8}) with an infected person; values at (\ref{app1}, \ref{pp1});
 
-\item \label{p2} the \emph{intrinsicSusceptibility} is based on \emph{intrinsicSusceptibilityFactor} set to 5 in Eq. \ref{intrinsic}
+\item \label{D} \emph{D\%}, without the short name, is the percent increasing or decreasing factor of the contagion spread of an asymptomatic subject, compared to that of a symptomatic one, value at (\ref{app1}, \ref{pD});
+
+\item \label{p2} the \emph{intrinsicSusceptibility} in defined in Eq. \ref{intrinsic} 
 \begin{equation}
 intrinsicSusceptibility = intrinsicSusceptibilityFactor^{groupFragility}
 \label{intrinsic}
 \end{equation}
-with $groupFragility$ exponent set to:
+with \emph{intrinsicSusceptibilityFactor} set to 5 , and $groupFragility$ exponent set to:
 
 \begin{description}
 \item [1] for extra-fragile persons,
@@ -318,25 +325,25 @@ determines, in a probabilistic way, the number of people of any kind going aroun
 determines, in a probabilistic way, the number of regular people going around in case of limitations/lockdown;
 as above, the limitations operate only if the lockdown is on (into our simulated world, from day 20); values at (\ref{app1}, \ref{pp4});
 
-the parameters \ref{p3} and \ref{p4} in some time interval change very frequently, reproducing into the model the uncertainty of the decisions that were happening in the real world in the same periods; 
+we try to reproduce the uncertainty of the decisions in the real world into the model via frequent changes of the parameters \ref{p3} and \ref{p4};
 
 NB, the parameters \ref{p3} and \ref{p4} produce independent effects, as in the following examples: (a) the activation of \emph{\%PeopleAny at 31, 0} and, simultaneously, of \emph{\%PeopleNot at 31, 80}, means that people had to stay home on that day, but people specifically not fragile could go out in 80\% of the cases; (b) \emph{\%PeopleAny at 339, 80} and, simultaneously, \emph{\%PeopleNot at 339, 100} means that fragile and not fragile persons cannot always go around, but only in the 80\% of the cases; instead, considering uniquely non-fragile persons they are free to go out; the construction is an attempt to reproduce a fuzzy situation;
 
-in future versions of the model, we will define the quotas more straightforwardly:
+in future versions of the model, we will define the quotas straightforwardly:
 \begin{itemize}
 \item \verb|%FragilePeopleNotSymptomaticLeavingHome|;
 \item \verb|%NotFragilePeopleNotSymptomaticLeavingHome|;
 \end{itemize}
 
 \item \label{p5} \emph{\%openFactoriesWhenLimitationsOn} (\verb|%Fac|) 
-determines, in a probabilistic way, what factories (small and large industries, commercial surfaces, private and government offices)
-are open when limitations are on; if the factory of a worker is open, the subject can go to work, avoiding restrictions (but uniquely in the first step of activity of each day); values at (\ref{app1}, \ref{pp5}); 
+determines, in a probabilistic way, the factories (small and large industries, commercial surfaces, private and government offices) that
+are open when limitations are on; if the factory of a worker is open, the subject can go to work, not considering the restrictions (but uniquely in the first step of activity of each day); values at (\ref{app1}, \ref{pp5}); 
 
-\item \label{p6} \emph{stopFragileWorkers} (\verb|sFW|) is \emph{off} (set to 0) by default; if \emph{on} (set to 1), fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but cannot go to work; the regular case is that the workers (fragile or regular) can go to their factory (if open) also when limitations are on; values at (\ref{app1}, \ref{pp6});
+\item \label{p6} \emph{stopFragileWorkers} (\verb|sFW|) is \emph{off} (set to 0) by default; if \emph{on} (set to 1), fragile workers (i.e., people fragile due to prior illnesses) can move out of their homes following the \ref{p3} and \ref{p4} parameters, but cannot go to work; in the \emph{off} case, workers (fragile or regular) can go to their factory (if open) also when limitations are on; values at (\ref{app1}, \ref{pp6});
 
 alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if \emph{on} (set to 1) the total of the workers is unchanged, but the workers are all regular; we can activate this counterfactual operation uniquely at the beginning of the simulation;
 
-\item \label{p7} when \emph{activateSchools} (\verb|aSch|) is \emph{on} (set to 1), teachers and students go to school avoiding restrictions (but uniquely in the first step of activity of each day); \emph{\%Students} (\verb|%St|) limits to its value the quota of the students moving to school; the residual part is following the lessons from home; values at (\ref{app1}, \ref{pp7});
+\item \label{p7} when \emph{activateSchools} (\verb|aSch|) is \emph{on} (set to 1), teachers and students go to school avoiding restrictions (but uniquely in the first step of activity of each day); \emph{\%Students} (\verb|%St|) sets the quota of the students moving to school; the residual part is following the lessons from home; values at (\ref{app1}, \ref{pp7});
 
 \item \label{p8} following \emph{radiusOfInfection} (\verb|radius|), the effect of the contagion---outside enclosed spaces, or there, but for temporary presences---is possible within that distance; values at (\ref{app1}, \ref{pp8}).
 
@@ -346,17 +353,17 @@ alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if \emph{
 \subsection{Agents' interaction}
 \label{inter}
 
-We underline that our simulation tool is not based on micro-simulation sequences, calculating the contagion agent by agent, on the base of their characteristics and ex-ante probabilities. It implements a true agent-based simulation, with the agents acting and, most of all, interacting, thus generating continuously contagion situations.
+We underline that our simulation tool is not based on micro-simulation sequences, calculating the contagion agent by agent, on the base of their characteristics and ex-ante probabilities. It implements a true agent-based simulation, with the agents acting and, most of all, interacting. The effect is that of generating continuously contagion situations.
 
 Each run creates a population with expected characteristics, but also with random specifications, to assure the heterogeneity in agents. The daily choices of the agents are partially randomized, to reproduce real-life variability.
 
-Contagions arise from agents' interactions, in four situations, as specified in Fig. \ref{outline}:
+Contagions arise from agents' interactions, in four time phases, as specified in Fig. \ref{outline}:
 
 \begin{enumerate}[label=\Alph*]
 
 \item - in houses (at night), hospitals, nursing homes;
 
-\item - in schools, workplaces in general, among people stable there;
+\item - in schools and workplaces in general, among people stable there;
 
 \item - in the places above (excluding schools) by people temporary there and in open spaces (UPs above);
 
@@ -1193,6 +1200,8 @@ The values adopted in the experiments reported in this work are the following.
 \begin{enumerate}[label=\roman*]
 
 \item \label{pp1} The values of \emph{probabilityOfGettingInfection} (\verb|prob|) are: 0.05 (starting phase); 0.02 at day 49 (adoption of non-pharmaceutical measures); 0.035 at day 149 (some relaxation in compliance); 0.02 at day 266 (again, compliance to rules). 
+
+\item \label{pD} The value of \emph{D\%} is -50 in all the runs;
 
 \item \label{pp2} \emph{intrinsicSusceptibility} is set discussing Eq. \ref{intrinsic} in (\ref{par}, \ref{p2}).
 
