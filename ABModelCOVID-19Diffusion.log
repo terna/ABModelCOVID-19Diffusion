@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  26 JUL 2021 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.4)  27 JUL 2021 20:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1161,6 +1161,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1341.
 Package rerunfilecheck Info: File `ABModelCOVID-19Diffusion.out' has not change
 d.
 (rerunfilecheck)             Checksum: 3E9B5BE5E6775D2E6C705F67095C2255;3519.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  12923 strings out of 480608
@@ -1181,7 +1185,7 @@ type1/public/newtx/txsys.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newt
 x/ztmbi.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmr.p
 fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on ABModelCOVID-19Diffusion.pdf (35 pages, 2415890 bytes).
+Output written on ABModelCOVID-19Diffusion.pdf (35 pages, 2415923 bytes).
 PDF statistics:
  797 PDF objects out of 1000 (max. 8388607)
  659 compressed objects within 7 object streams
