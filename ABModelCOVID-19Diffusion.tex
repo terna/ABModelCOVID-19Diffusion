@@ -376,12 +376,12 @@ Contagions arise from agents' interactions, in four time phases, as specified in
 \label{contag}
 
 
-We introduce a tool that allows analyzing the contagions' sequences in simulated epidemics and identifying the places where they occur.
+We introduce a tool analyzing the contagions' sequences in simulated epidemics and identifying the places where they occur.
 
 
  \begin{itemize}
  \item
-We represent each infected agent as a horizontal segment (from the starting date to the final date of the infection) with vertical connections to other agents if they receive the disease.
+We represent each infected agent as a horizontal segment (from the starting date to the final date of the infection) with vertical connections to other agents receiving the disease from it.
 
  \item
 We represent the new infected agents via further segments at an upper level. 
@@ -398,11 +398,11 @@ We display multiple information using three elements.
 This graphical presentation enables understanding at a glance how an epidemic episode is developing. In this way, it is easier to reason about countermeasures and, thus, to develop intervention policies. 
  \end{itemize}
 
-At \href{https://github.com/terna/contagionSequence}{https://github.com/terna/contagionSequence} we have the calculation tool, \emph{sequentialRecords.ipynb}, generating these sequences.
+At \href{https://github.com/terna/contagionSequence}{https://github.com/terna/contagionSequence} we have the program \emph{sequentialRecords.ipynb}, generating these sequences.
  
 
 Fig. \ref{shortExample} is useful as an example. 
-We start with two agents from the outside, with black as the color code (unknown place). The first one is young---as reported by the thickness of the segment, starting at day 0 and finishing at day 22---and asymptomatic (dashed line); it infects no one. The second one---regular, as reported by the thickness of the segment, starting at day 0 and finishing at day 15---is asymptomatic (dashed line) and infects four agents on day 2. All the four infected agents received the infection at work (brown color) and turn to be asymptomatic after the days of incubation (dotted line); the first and the fourth are regular agents; the second and the third are fragile ones.
+We start with two agents from the outside, with black as the color code (unknown place). The first one is young---as reported by the thickness of the segment, with the infection starting at day 0 and finishing at day 22---and asymptomatic (dashed line); it infects no one. The second one---regular, as reported by the thickness of the segment, with the infection starting at day 0 and finishing at day 15---is asymptomatic (dashed line) and infects four agents on day 2. All the four infected agents receive the infection at work (brown color) and turn to be asymptomatic after the days of incubation (dotted line); the first and the fourth are regular agents; the second and the third are fragile ones.
 
 Continuing the analysis: on day 3, the second agent infects three other agents (at home, at work, at work) [\dots]; on day 13, agent number five infects seven regular agents at work and an extra-fragile one in a nursing home (orange color), etc.
 
@@ -413,14 +413,14 @@ Continuing the analysis: on day 3, the second agent infects three other agents (
 \label{shortExample}
 \end{figure}
 
-If a vertical segment changes its color, we have an agent in an upper infecting someone on the same day of the infection transmitted by an agent in a lower row, so we lose some information.
+If a vertical segment changes its color, we have an agent in an upper layer infecting someone on the same day of the infection transmitted by an agent in a lower row, so we lose some graphical information.
 
-In Fig. \ref{workplacesNursingHomesFull} we see an example of an epidemic where non-pharmaceutical containment measures are in adoption: a first wave shows an interlaced effect of contagions at home, in nursing homes, and at work. After a phase in which contagions develop mainly at home, a skinny bridge connects the first wave to a second one, restarting from workplaces. The thickness of the \emph{snake} of the contagions measures the stock on infects agents on a given date; the slope reports the speediness of the epidemic development; the vertical coordinate reports the cumulative number of infected people.
+In Fig. \ref{workplacesNursingHomesFull} we see the example of an epidemic with non-pharmaceutical containment measures in adoption: a first wave shows an interlaced effect of contagions at home, in nursing homes, and at work. After a phase in which contagions develop mainly at home, a skinny bridge connects the first wave to a second one, which restarts from workplaces. The thickness of the \emph{snake} of the contagions measures the stock on infects agents on a given date; the slope reports the speediness of the epidemic development; the upper vertical coordinate reports the cumulative number of infected people.
 
 \begin{figure}[t]
 \center
 \includegraphics[width=0.48\textwidth]{with8a.png}% with control case 473323 474697 in SIsaR_0.9.4.1 experiments 2 seeds with control-table_10000.csv, file withControl_473323_474697.csv
-\caption{A Case with containment measures, the whole epidemics: workplaces (brown) and nursing homes (orange) and then houses (cyan), with a bridge connecting two waves}
+\caption{A case with containment measures, the whole epidemics: workplaces (brown) and nursing homes (orange) and then houses (cyan), with a bridge connecting two waves}
 \label{workplacesNursingHomesFull}
 \end{figure}
 
@@ -430,11 +430,11 @@ In Appendix~2~-~A gallery of contagion sequences (Section \ref{app2}) we have se
 \section{Exploring scenarios with simulation batches}
 \label{exploring}
 
-The sequences described in Section \ref{contag} offer mainly suggestions and interpretations. To explore systematically the introduction of factual, counterfactual, and prospective interventions to control the spread of the contagions, we need to analyze batches of simulations. In this perspective, each simulation run---whose length coincides with the disappearance of symptomatic or asymptomatic contagion cases---is a datum in a scenario of time and outcome variability. Consequently, we need to represent compactly the results emerging from batches of repetitions to compare the consequences of each batch's basic assumptions. 
+The sequences described in Section \ref{contag} offer suggest possible interventions, but are single cases. To explore systematically the introduction of factual, counterfactual, and prospective actions, we need to analyze batches of simulations. In this perspective, each simulation run---whose length coincides with the disappearance of symptomatic or asymptomatic contagion cases---is a datum in a set of different duration and contagion outcomes. To compare the consequences of each batch's basic assumptions, we need to represent compactly the results emerging from simulation repetitions . 
 
-For this purpose, we used blocks of ten thousand repetitions. Besides summarizing the results with the usual statistical indicators, we adopt the technique of the heat-maps. With \cite{steinmann2020don}, we develop a search for comparative analyzes, not for forecasting. This consideration is consistent with the enormous standard deviation values that are intrinsic to the specific reality. 
+We use blocks of ten thousand repetitions. Besides summarizing the results with the usual statistical indicators, we adopt the technique of the heat-maps. With \cite{steinmann2020don}, our goal is that of making comparative analyzes, not forecasts. This consideration is consistent with the enormous standard deviation values that are intrinsic to the specific reality. 
 
-At \href{https://github.com/terna/readSIsaR\_BatchResults}{https://github.com/terna/readSIsaR\_BatchResults} we have the codes producing the maps of the batches. A heat-map is a double histogram: in our application, it displays each simulated epidemic's duration in the $x$ axis and the count of the symptomatic, asymptomatic, and deceased agents in the $y$ axis (on a scale of 1:1000). The cells contain the number of epidemics of each specific duration and outcome, reported via a logarithmic color scale.
+At \href{https://github.com/terna/readSIsaR\_BatchResults}{https://github.com/terna/readSIsaR\_BatchResults} we have the codes producing the maps of the batches. A heat-map is a double histogram: in our application, it displays each simulated epidemic's duration in the $x$ axis and the total number of the symptomatic, asymptomatic, and deceased agents in the $y$ axis (on a scale of 1:1000). Each cell contains the number of epidemics with $x$ duration and $y$ outcome. Besides the number, a logarithmic color scale improves the readability of the map.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Epidemics without and with control}
