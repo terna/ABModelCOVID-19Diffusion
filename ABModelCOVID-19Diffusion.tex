@@ -84,7 +84,7 @@ There is also an inverse generative side of the model, coming from the idea of u
 
 The starting point is a compartmental model with Susceptible, Infected, and Recovered people (S.I.R.), but adding both a more detailed breakdown of the subjects involved in the contagion process \cite{Scala:2020aa} and a multi-scale framework to account for the interaction at different dimensional, and spatial levels \cite{doi:10.1142/S0218202520500323}. From the virus micro-level, we move to individuals and up to the collective behavior of the population.
 
-Following \cite{rahmandad2008heterogeneity}, we know that the analysis based on the assumption of heterogeneity strongly differs from S.I.R. compartmental structures modeled by differential equations. That work authors ponder when it is better to use agent-based models and when it would be better to use differential equation models. Differential equation models assume homogeneity and perfect mixing of characteristics within compartments, while agent-based models can capture heterogeneity in agent attributes and the structure of their interactions. We follow the second approach.
+Following \cite{rahmandad2008heterogeneity}, we know that the analysis based on the assumption of heterogeneity strongly differs from S.I.R. compartmental structures modeled by differential equations. The authors of this work argue when it is best to use agent-based models and when it would be better to use differential equation models ponder when it is better to use agent-based models and when it would be better to use differential equation models. Differential equation models assume homogeneity and perfect mixing of characteristics within compartments, while agent-based models can capture heterogeneity in agent attributes and the structure of their interactions. We follow the second approach (about agent-based approach, see Section \ref{why}).
 
 \begin{itemize}
 
@@ -106,7 +106,6 @@ The infection transmission is related to three factors: the infected person's ch
 Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we work arguing that <<the study of collective behavior must rise to a ``crisis disciplin'' just as medicine, conservation, and climate science have, with a focus on providing actionable insight to policymakers and regulators for the stewardship of social systems>>, as in \cite{Bak-Colemane2025764118}. 
 
 Now a look at the structure of the whole presentation.
-
 In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with: conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
 
 A technique for contagion representation is introduced in Section \ref{contag}. Then we explore simulation cases in Section \ref{exploring}, building several batches of runs and comparing extreme situations in Sections \ref{withoutWith}.
@@ -206,11 +205,11 @@ We can characterize the action of the planner both:
 \section{How S.I.s.a.R. works}
 \label{howWorks}
 
-We have two initial infected individuals in a population of 4350 individuals, on a scale of 1:1000 with Piedmont. The size of the initial infected group is out of scale: it is the smallest number ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For plausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is set with realistic numbers, out of scale: e.g., a classroom contains 25 students, a home two persons, large factories up to 150 employees, small ones up to 15, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
+We have two initial infected individuals in a population of 4,350 individuals, on a scale of 1:1000 with Piedmont. The size of the initial infected group is out of scale: it is the smallest number ensuring the epidemic's activation in a substantial number of cases. Initial infected people bypass the incubation period. For plausibility reasons, we never choose initial infected people among persons in nursing homes or hospitals. The presence of agents in close spaces---such as classrooms, factories, homes, hospitals, nursing homes---is set with realistic numbers, out of scale: e.g., a classroom contains 25 students, a home two persons, large factories up to 150 employees, small ones up to 15, etc.; the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc}.
 
 In Fig. \ref{3D} we have a 3D representation of the model world, with one of the possible random maps that the simulation generates. Persons are in gray, houses in cyan, nursing homes in orange, hospitals in pink, schools in yellow, factories (with shops and offices) in brown. Persons have a cylinder as shape, if regular or robust (young); a capital X if fragile; temporary their colors can be: red, if symptomatic; violet, if asymptomatic; turquoise, if symptomatic recovered; green, if asymptomatic recovered.
 
-Doing the batches of 10,000 repetitions of the simulation, we use random maps to have a neutral effect of the structure of the space. 
+Doing the batches of repetitions of the simulation, we use random maps to have a neutral effect of the structure of the space. 
 
 \begin{figure}[t]
 \center
@@ -434,14 +433,14 @@ The sequences described in Section \ref{contag} offer suggest possible intervent
 
 We use blocks of ten thousand repetitions. Besides summarizing the results with the usual statistical indicators, we adopt the technique of the heat-maps. With \cite{steinmann2020don}, our goal is that of making comparative analyzes, not forecasts. This consideration is consistent with the enormous standard deviation values that are intrinsic to the specific reality. 
 
-At \href{https://github.com/terna/readSIsaR\_BatchResults}{https://github.com/terna/readSIsaR\_BatchResults} we have the codes producing the maps of the batches. A heat-map is a double histogram: in our application, it displays each simulated epidemic's duration in the $x$ axis and the total number of the symptomatic, asymptomatic, and deceased agents in the $y$ axis (on a scale of 1:1000). Each cell contains the number of epidemics with $x$ duration and $y$ outcome. Besides the number, a logarithmic color scale improves the readability of the map.
+At \href{https://github.com/terna/readSIsaR\_BatchResults}{https://github.com/terna/readSIsaR\_BatchResults} we have the codes producing the maps of the batches. A heat-map is a double histogram: in our application, it displays each simulated epidemic's duration in the $x$ axis and the total number of the symptomatic, asymptomatic, and deceased agents in the $y$ axis (on a scale of 1:1000). Each cell contains the number of epidemics with $x$ duration and $y$ outcome. Besides the number, a logarithmic color scale improves the readability of the maps.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Epidemics without and with control}
+\subsection{Epidemics without and with control measures}
 \label{withoutWith}
 
-As a starting point, we compare the situations represented in Figs. \ref{10kNoControl} and \ref{10kBasicC}. In Fig. \ref{10kNoControl} the heat-map reports the distribution in duration and infection causation of 10,000 simulated outbreaks left to spread without any control; coherently, with the school always open. 
-The numbers in Table \ref{noCTab} are scary. The concentration of the cases in the heat-map shows that, except a few instances spontaneously concluding in a short period (left bottom corner), produces a heavy \emph{cloud} of cases lasting one year or one year and a half, hitting (as symptomatic, asymptomatic and deceased) from 2.000 to 3,500 persons on a total of 4,350 in the region (scale of 1:1000).
+As a starting point, we compare the situations represented in Figs. \ref{10kNoControl} and \ref{10kBasicC}. In Fig. \ref{10kNoControl}, the heat-map reports the distribution in duration and infection causation of 10,000 simulated outbreaks left to spread without any control; coherently, with the school always open. 
+The results in Table \ref{noCTab} are scary. The concentration of the cases in the heat-map shows that, except a few instances spontaneously concluding in a short period (left bottom corner), produces a heavy \emph{cloud} of cases lasting one year or one year and a half, hitting (as symptomatic, asymptomatic and deceased) from 2,000 to 3,500 persons on a total of 4,350 in the region (scale of 1:1000).
 
 
 \begin{figure}[t]
@@ -464,7 +463,7 @@ The numbers in Table \ref{noCTab} are scary. The concentration of the cases in t
 \end{figure}
 
 
-In Fig. \ref{10kBasicC} and the related Table \ref{basicCTab} we report a similar simulation batch of 10,000 runs of the model, but with the adoption of the basic non-pharmaceutical containment measures, registered in the values of the parameters in Appendix~1~-~Parameter~values (Section \ref{app1}). A calendar is at \href{https://terna.to.it/simul/calendario092.pdf}{https://terna.to.it/simul/calendario092.pdf}, and the model---version 0.9.6--- is updated until April 2021. The results are dramatically different, showing the efficacy of the containment measures. 
+In Fig. \ref{10kBasicC} and the related Table \ref{basicCTab}, we report a similar simulation batch of 10,000 runs of the model, but with the adoption of the basic non-pharmaceutical containment measures, registered in the values of the parameters in Appendix~1~-~Parameter~values (Section \ref{app1}). A calendar is at \href{https://terna.to.it/simul/calendario092.pdf}{https://terna.to.it/simul/calendario092.pdf}, and the model---version 0.9.6--- is updated until April 2021. The results are dramatically different, showing the efficacy of the containment measures. 
 
 
 \begin{table}[t]
@@ -501,19 +500,15 @@ std & 368.49 & 916.41 & 213.48 \\
 \subsection{Actual data}
 \label{actual}
 
-The critical points for our experiments with the simulation model of the epidemic in Piedmont are Summer and Fall 2020, as in Fig. \ref{actualA}, where we have the time series of the first part of Piedmont's actual epidemic. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, with more generalized tests also asymptomatic patients are included. 
-
-Explanation:
+The critical points for our simulation experiments in Piedmont are Summer and Fall 2020 in Fig. \ref{actualA}, where we have the time series of the first part of Piedmont's actual epidemic. The blue line represents the cumulative number of infected persons. Initially, only symptomatic cases were accounted for, but after the 2020 Summer, with more generalized tests, also asymptomatic patients are included:
 
 \begin{itemize}
 
 \item from \href{http://www.protezionecivile.it/web/guest/department}{http://www.protezionecivile.it/web/guest/department}, the Italian Civil Protection Department web site, we find at \href{https://github.com/pcm-dpc/COVID-19}{https://github.com/pcm-dpc/COVID-1}, i.e., the repository of regional data; 
 
-\item initially, only symptomatic cases were accounted for, but after the 2020 Summer, with more generalized tests, asymptomatic patients are included; 
+\item we observe data about symptomatic infected people in the first wave, but from October 2020, data are mixed: in the above \emph{git} repository, in October and November, we had ``Positive cases emerged from clinical activity'', unfortunately then reported as ``No longer populated'' (from the end of November, our observation) and ``Positive cases emerging from surveys and tests, planned at national or regional level'', again ``No longer populated'' (from the end of November, our observation); 
 
-\item we had data about symptomatic infected people in the first wave, but from October 2020, data are mixed: in the above \emph{git} repository, in October and November, we had ``Positive cases emerged from clinical activity'', unfortunately then reported as ``No longer populated'' (from the end of November, our observation) and ``Positive cases emerging from surveys and tests, planned at national or regional level'', again ``No longer populated'' (from the end of November, our observation); 
-
-\item as a consequence, the subdivision between symptomatic and asymptomatic cases is no longer possible.
+\item as a consequence, the subdivision between symptomatic and asymptomatic cases is impossible after that date.
 \end{itemize}
 
 
@@ -530,7 +525,7 @@ Explanation:
  \begin{subfigure}{0.48\textwidth}
  \centering
  \fbox{\includegraphics[width=0.95\textwidth]{andamento900.jpg}}
- \subcaption{Data in Piedmont until July 2021, reporting three waves}
+ \subcaption{Data in Piedmont until July 2021, showing three waves}
  \label{actualB}
  \end{subfigure}
  \caption{Actual data}
@@ -543,17 +538,17 @@ Considering the dynamic of the data in Fig. \ref{actualA}, we search within the 
 
 \begin{enumerate}[label=\roman*]
 \item numbers of infected persons quite similar at \verb|cp2| and at \verb|cp3|; besides, numbers not too different from those of the figure; 
-(with \emph{cp}, we indicate the internal check points of the simulation program. In Fig. \ref{actualA} we also report the number of days from the beginning of the epidemic for each check point); 
+(with \emph{cp}, we indicate the internal check points of the simulation program; in Fig. \ref{actualA} we also report the number of days from the beginning of the epidemic for each check point); 
 
 \item the number of infected persons at \verb|cp4| has to be significantly greater than those at the previous check point.
 
 \end{enumerate}
 
-In a lot of cases, epidemics satisfying condition (i) fail to match condition (ii); both the situations happen only in less than the 1.5\% of the instances in a batch of ten thousand epidemic. We can conclude that the second wave registered in Piedmont after the Summer stability is due to new infected agents coming from outside and restarting the contagion process.
+In a lot of cases, epidemics satisfying condition (i) fail to match condition (ii); both the situations happen only in less than the 1.5\% of the instances in a batch of ten thousand epidemic. We can guess that the second wave registered in Piedmont after the Summer ``pause'' is due to new infected agents coming from outside and restarting the contagion process.
 
 Other critical points in our analysis are the day on which the vaccination campaign starts, 373 of the simulation (Feb. \nth{12}, 2021), and the day of the effectiveness of the initial vaccinations, 40 days later, day 413 (Mar. \nth{22}, 2021). At those dates, within the simulations, we can find either the presence of many infected agents or of few ones, as effectively was the situation in Piedmont.
 
-As documentation, in Fig. \ref{actualB} the time series covering the whole period.
+In Fig. \ref{actualB}, the time series covering the whole period.
 
 
 
