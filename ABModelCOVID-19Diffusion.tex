@@ -105,7 +105,7 @@ The infection transmission is related to three factors: the infected person's ch
 
 Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we work arguing that <<the study of collective behavior must rise to a ``crisis disciplin'' just as medicine, conservation, and climate science have, with a focus on providing actionable insight to policymakers and regulators for the stewardship of social systems>>, as in \cite{Bak-Colemane2025764118}. 
 
-Now a look at the structure of the whole presentation.
+A look at the structure of the whole presentation.
 In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with: conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
 
 A technique for contagion representation is introduced in Section \ref{contag}. Then we explore simulation cases in Section \ref{exploring}, building several batches of runs and comparing extreme situations in Sections \ref{withoutWith}.
@@ -959,17 +959,17 @@ We compare the effect of choosing the vaccination quotas via genetic algorithms 
 
 Important dates: 
 \begin{itemize}
-\item in the internal calendar of the model, day 373 is February \nth{12}, 2021; it is effectively the starting point of the vaccinations in Piedmont; 
+\item in the internal calendar of the model, day 373 is February \nth{12}, 2021; it is the starting point of the vaccinations in Piedmont; 
 
-\item the day of the effectiveness of the initial vaccinations, 40 days later, is day 413 (March \nth{22}, 2021).
+\item the effectiveness of the initial vaccinations, 40 days later, starts on day 413 (March \nth{22}, 2021).
 \end{itemize}
 
-A technical detail: we simulate the vaccination campaigns with the GAs using the BehaviorSearch program, \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, which is strictly related to NetLogo.
+A technical detail: we simulate the vaccination campaigns with the GAs using the BehaviorSearch program, \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, strictly related to NetLogo.
 
 \subsubsection{Vaccination groups}
 \label{vgroups}
 
-We take into consideration seven groups in order of decreasing fragility and considering the exposure to contagions:
+We take into consideration seven groups, in order of decreasing fragility, also considering the exposure to contagions:
 
 \begin{enumerate}
 \item [\emph{g1}]
@@ -1001,7 +1001,7 @@ We take into consideration seven groups in order of decreasing fragility and con
 \subsection{A specific realistic case}
 \label{specific}
 
-The description of the vaccination effects on an outbreak is quite lengthy. Considering the collection at  \href{https://terna.to.it/simul/GAresultPresentation.pdf}{https://terna.to.it/simul/GAresultPresentation.pdf}, we concentrate on a unique case: the experiment I reported there, maintaining the reference to I in the titles of the figures here.
+The description of the vaccination effects on an outbreak is quite lengthy. Considering the collection at  \href{https://terna.to.it/simul/GAresultPresentation.pdf}{https://terna.to.it/simul/GAresultPresentation.pdf}, we report here a unique case: the experiment I reported there, maintaining the reference to I in the titles of the figures.
 Considering the adoption of the government non-pharmaceutical measures, we search---in the batch of the 10,000 outbreaks of Section \ref{secondWith}---for realizations of sequences similar to the actual events that occurred in Piedmont. As we see in Fig. \ref{specificCaseGA} and the related Fig. \ref{symptomaticSeries}, the artificial case that we adopt for the GAs exploration has the following critical characteristics:
 
 \begin{itemize}
@@ -1018,7 +1018,7 @@ Considering the adoption of the government non-pharmaceutical measures, we searc
 \label{specificCaseGA}
 \end{figure}
 
-In Fig. \ref{symptomaticSeries}, with all the situation without vaccinations, we have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA} when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
+In Fig. \ref{symptomaticSeries}, without vaccinations, we have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA}, when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
 
 Here and in the following sections, we analyze the count of symptomatic persons, being the goal of our simulated vaccination campaign exactly that of decreasing the number of symptomatic people, as deceased persons come from there.
 
