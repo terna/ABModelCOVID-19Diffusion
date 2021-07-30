@@ -1035,7 +1035,7 @@ Here and in the following sections, we analyze the count of symptomatic persons,
 \subsection{Vaccination quotas, \emph{plain} strategy}
 \label{plain}
 
-The vaccination plans are related to the first dose; the second dose is automatically scheduled, with an independent supply. The vaccinated person is supposed to benefit from immunity 40 days after the first dose.
+The vaccination plans are related to the first dose; the second dose is supposed to be automatically scheduled, with an independent supply. The vaccinated person starts to benefit from immunity 40 days after the first dose.
 
 Considering a \emph{plain} option as that adopted in Table \ref{quotaPlainTab} with, in each day, the quantities of doses of the first column, we will primarily vaccinate the left column groups to move gradually to people of the other columns, as those on the left have already received the vaccine. The order is (\emph{g1}) extra fragile people, (\emph{g2}) teachers, (\emph{g3}) fragile workers, (\emph{g4}) regular workers, (\emph{g5}) fragile people, (\emph{g6}) regular people, (\emph{g7}) young people. In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of this experiment (and in the following ones) and when the vaccination campaign starts.
 
@@ -1053,7 +1053,7 @@ Considering a \emph{plain} option as that adopted in Table \ref{quotaPlainTab} w
 738 & end \\ 
 \hline\noalign{\smallskip} 
 \end{tabular}
-\caption{From the day of the first column, considering the quantity of the second column (000), the vaccination of each group follows the quota of the related columns}
+\caption{From the day of the first column, considering the quantity of the second column (000), the vaccination of each group follows the quotas of the related columns}
 \label{quotaPlainTab}
 \end{table}
 
@@ -1075,22 +1075,22 @@ Susc. when\\vacc. starts & 124 & 81 & 162 & 1234 & 1032 & 245 & 891 \\
 Some of the coefficients in Table \ref{quotaPlainTab}, and all the successive similar ones, are not used in two situations:
 
 \begin{enumerate}[label=\roman*]
-\item \label{quo1} when the persons of a group have fully vaccinated, the quotas in the rows below that day are not relevant;
-\item \label{quo2} when the people in the columns to the left of a given column completely absorb the available doses of vaccine on that day, the quotas in that column have unimportant values.
+\item \label{quo1} when the persons of a group are fully vaccinated, the quotas in the rows below that day are not relevant;
+\item \label{quo2} when the people in the columns to the left of a given column completely absorb the available doses of vaccine on that day (the quotas in that column have unimportant values).
 \end{enumerate}
 
 We anticipate that the GAs procedure does not optimize the coefficients of cases \ref{quo1} and \ref{quo2}.
 
-The series that we introduce hereafter are most significant from day 413, March \nth{22}, when the initial vaccinations' effectiveness---if any---begins, after 40 days from initial vaccinations.
+The series that we introduce hereafter are significant from day 413, March \nth{22}, when the initial vaccinations' effectiveness begins, after 40 days from initial vaccinations.
 
-In Fig. \ref{seqPlain} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesPlain} we have the most important outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but anyway, those further waves are there.
+In Fig. \ref{seqPlain} we have the effects of the vaccination plan as numbers of vaccinated persons by groups. In Fig. \ref{timeSeriesPlain} we have the most important outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are lower than in the test plot, but anyway, those further waves are there.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vaccination quotas, \emph{wise} strategy}
 \label{wise}
 
-Considering now a \emph{wise} option, as an attempt to mimic the actual (and complex) vaccine distribution of the vaccination in the region, we use the quotas of Table \ref{quotaWiseTab}, with the exact mechanism of the previous section.
+Considering now a \emph{wise} option, as an attempt to mimic the actual (and complex) vaccine distribution in the region, we use the quotas of Table \ref{quotaWiseTab}, with the exact mechanism of the previous section.
 We primarily vaccinate the left column groups to move gradually to other columns, but postponing group \emph{g4} (regular workers), \emph{g6} (regular people), and \emph{g7} (young people). In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of this experiment (and in the following ones) and when the vaccination campaign starts. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} apply also here.
 
 \begin{table}[t]
@@ -1107,24 +1107,24 @@ We primarily vaccinate the left column groups to move gradually to other columns
 738 & end \\ 
 \hline\noalign{\smallskip} 
 \end{tabular}
-\caption{From the day of the first column, considering the quantity of the second column (000), the vaccination of each group follows the quota of the related columns}
+\caption{From the day of the first column, considering the quantity of the second column (000), the vaccination of each group follows the quotas of the related columns}
 \label{quotaWiseTab}
 \end{table}
 
-In Fig. \ref{seqWise} we have the effects of the vaccination plan as the number of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the experiment outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are less relevant than in the test plot, but we have significant further waves in this case too.
+In Fig. \ref{seqWise} we have the effects of the vaccination plan as numbers of vaccinated persons by groups. In Fig. \ref{timeSeriesWise} we have the experiment outcome: the no vaccination test-bed is that of Fig. \ref{symptomaticSeries}. We note the waves after the vertical line---when vaccinations start to operate---are lower  than in the test plot, but we have significant further waves in this case too.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{GAs quotas in the experiment, with vaccinated people spreading the infection}
 \label{GAquotas}
 
-Finally, the objective of this whole section: the use of GAs, evolving populations of models repeating this same experiment, but choosing the parameters to decide daily vaccination on a random basis initially and successively considering them as a genetic chromosome of the model re-productively crossed with those of other models searching for the best fitness related to the goal of reducing the number of symptomatic persons. \cite{miller1998active}, also quoted at \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, is a helpful introduction to the methodology; the sources of the GAs used here are at \href{https://github.com/terna/GAs}{https://github.com/terna/GAs}. The GAs action, determining the vaccination quotas, optimizes the behavior of a meta-agent, in a sort of \emph{inverse generative social science perspective} \cite{vu2019toward}.
+Finally, this whole section's objective is to use GAs to evolve populations of models by choosing ``genetically'' the parameters to decide daily vaccination. Initially, on a random basis and successively considering them as a genetic chromosome of each model, re-productively crossed with those of other models. The search is for the best fitness related to the goal of reducing the number of symptomatic persons. \cite{miller1998active}, also quoted at \href{https://www.behaviorsearch.org}{https://www.behaviorsearch.org}, is a helpful introduction to the methodology; the sources of the GAs used here are at \href{https://github.com/terna/GAs}{https://github.com/terna/GAs}. The GAs action, determining the vaccination quotas, optimizes the behavior of a \emph{deciding} meta-agent, in a sort of \emph{inverse generative social science perspective} \cite{vu2019toward}.
 
-With the GAs option, we use the quotas of Table \ref{quotaGATab}, with the exact mechanism of the previous section. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} also apply here. Still, we underline that the GAs procedure does not optimize the coefficients of the two cases because they do not affect the fitness related to the minimum number of symptomatic subjects.  
+With the GAs option, we use the quotas of Table \ref{quotaGATab}, with the exact mechanism of the previous section. The considerations sub \ref{quo1} and \ref{quo2} in Section \ref{plain} also apply here. We underline that the GAs procedure does not optimize the coefficients of those two cases, because they do not affect the fitness related to the goal of minimizing the number of symptomatic subjects.  
 
-In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of this experiment (and in the following ones) and when the vaccination campaign starts.
+In Table \ref{susceptible} we have numbers both of persons in each category at the beginning of the experiment and when the vaccination campaign starts.
 
-In Fig. \ref{seqGA} we have the effects of the vaccination plan as the number of vaccinated persons by groups. 
-The main attention of the GAs is initially is related to the groups: \emph{g4} (workers), \emph{g1} (extra-fragile persons), \emph{g3} (fragile workers), \emph{g2}  (teachers). Then \emph{g5} (fragile people) finally \emph{g6} (regular people) and \emph{g7} (young people).
+In Fig. \ref{seqGA} we have the effects of the vaccination plan as numbers of vaccinated persons by groups. 
+The main attention of the GAs is initially related to the groups: \emph{g4} (workers), \emph{g1} (extra-fragile persons), \emph{g3} (fragile workers), \emph{g2}  (teachers). Then \emph{g5} (fragile people), finally \emph{g6} (regular people), and \emph{g7} (young people).
 The priority is for highly circulating persons (workers and teachers), then for fragile persons.
 
 In Fig. \ref{timeSeriesGA} we have the crucial result of this experiment: the no vaccination test-bed is always that of Fig. \ref{symptomaticSeries}. With GAs' choices, the waves after the vertical line---when vaccinations start to operate---disappear, and the whole outbreak is a lot shorter.
@@ -1145,7 +1145,7 @@ In Fig. \ref{timeSeriesGA} we have the crucial result of this experiment: the no
 738 & end \\ 
 \hline\noalign{\smallskip} 
 \end{tabular}
-\caption{GAs best strategy with \emph{vaccinated people still spreading the infection}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quota of the related columns}
+\caption{GAs best strategy with \emph{vaccinated people still spreading the infection}: from the day of the first column, considering the quantity of the second column, the vaccination of each group follows the quotas of the related columns}
 \label{quotaGATab}
 \end{table}
 
@@ -1204,9 +1204,11 @@ In Fig. \ref{timeSeriesGA} we have the crucial result of this experiment: the no
 \section{A new model and future developments}
 \label{newModel}
 
-Using SLAPP, \href{https://terna.github.io/SLAPP/}{https://terna.github.io/SLAPP/} a second model is under development, with a ratio of 1:100 to the Piedmont population, so 43,500 agents. It will contain the same items as the current one, plus transportation, aggregation places as happy hours, nightlife, sports, stadiums, discotheques, etc. We will also consider networks as family networks, professional networks, high-contact individual networks \cite{manzo2020}. Finally, we will take into consideration the socioeconomic conditions of the individuals.
+Using SLAPP, \href{https://terna.github.io/SLAPP/}{https://terna.github.io/SLAPP/} a second model is under development, with a ratio of 1:100 to the Piedmont population, so 43,500 agents. It will contain the same items as the current one, plus transportation and aggregation places: happy hours, nightlife, sports, stadiums, discotheques, etc. We will also consider networks as family networks, professional networks, high-contact individual networks \cite{manzo2020}. Finally, we will take into consideration the socioeconomic conditions of the individuals.
 
-As seen, the S.I.s.a.R. model is a tool for comparative analyses, not for forecasting, mainly due to the enormous standard deviation values intrinsic to the problem. The model is highly parametric, and more it will be, precisely in the comparative perspective. It also represents a small step in using artificial intelligence tools and the inverse generative perspective in agent-based models.
+As seen, the S.I.s.a.R. model is a tool for comparative analyses, not for forecasting, mainly due to the enormous standard deviation values intrinsic to the problem. 
+
+The model is highly parametric, and more it will be, precisely in the comparative perspective. It also represents a small step in using artificial intelligence tools and the inverse generative perspective \cite{inverseGen} in agent-based models.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
