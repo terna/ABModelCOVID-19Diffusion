@@ -548,7 +548,7 @@ In a lot of cases, epidemics satisfying condition (i) fail to match condition (i
 
 Other critical points in our analysis are the day on which the vaccination campaign starts, 373 of the simulation (Feb. \nth{12}, 2021), and the day of the effectiveness of the initial vaccinations, 40 days later, day 413 (Mar. \nth{22}, 2021). At those dates, within the simulations, we can find either the presence of many infected agents or of few ones, as effectively was the situation in Piedmont.
 
-In Fig. \ref{actualB}, the time series covering the whole period.
+NB, we concluded model calculations in April 2021. In Fig. \ref{actualB}, the time series covering the whole period.
 
 
 
@@ -744,8 +744,16 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 83.9 & 232.6 & 104.1 & 276.9 & 119.1 & 300.6 &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Here a Stefano's section on calculating the infection indicator without delays}
+\subsection{Here a Stefano's section on calculating the reproduction number without delays}
 \label{indicator}
+The reproduction number $R_t$ \cite{BettencourtRibeiro2008, CorietAl2013} \begin{quote}is the average number of secondary cases of disease caused by a single infected individual over his or her infectious period\end{quote}
+and is defined as follows:
+\begin{equation}
+\large{R_t = \frac{I_t}{\sum_{s=1}^t w_s I_{t-s}}}
+\end{equation}
+Where:
+
+
 
 See Fig. \ref{Rt} about \ldots
 
@@ -1018,7 +1026,7 @@ Considering the adoption of the government non-pharmaceutical measures, we searc
 \label{specificCaseGA}
 \end{figure}
 
-In Fig. \ref{symptomaticSeries}, without vaccinations, we have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, currently in the future, a fourth wave. Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA}, when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
+In Fig. \ref{symptomaticSeries}, without vaccinations, we have the first wave in Spring 2020, a larger one in Fall 2020, a limited one between the end of 2020 and the beginning of 2021; then, a relatively quiet interval and successively, just while we write these notes, some restarting signals; finally, a fourth wave. Currently, it is in the future, relative to both the time of writing and the time when the calculations were completed (see NB at the end of Section \ref{actual}). Very realistic with Piedmont's actual situation, the limited thickness of the \emph{snake} of Fig. \ref{specificCaseGA}, when vaccinations start and when their effectiveness develops. The hole in the series identifies a period of quasi-extinct epidemics. Then it restarts with the arrival of infected persons from outside.
 
 Here and in the following sections, we analyze the count of symptomatic persons, being the goal of our simulated vaccination campaign exactly that of decreasing the number of symptomatic people, as deceased persons come from there.
 
