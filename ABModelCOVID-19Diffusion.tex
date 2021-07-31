@@ -53,7 +53,7 @@
 % Use \titlerunning{Short Title} for an abbreviated version of
 % your contribution title if the original one is too long
 \author{Gianpiero Pescarmona, Pietro Terna, Alberto Acquadro, Paolo Pescarmona, Giuseppe Russo, Emilio Sulis, and Stefano Terna}
-\authorrunning{G. Pescarmona, P. Terna\textit{et al.}}
+\authorrunning{G. Pescarmona, P. Terna \textit{et al.}}
 % Use \authorrunning{Short Title} for an abbreviated version of
 % your contribution title if the original one is too long
 \institute{G. Pescarmona \at University of Torino, Italy, \email{gianpiero.pescarmona@unito.it}
@@ -105,7 +105,7 @@ The infection transmission is related to three factors: the infected person's ch
 \end{itemize}
 
 
-Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we work arguing that <<the study of collective behavior must rise to a ``crisis disciplin'' just as medicine, conservation, and climate science have, with a focus on providing actionable insight to policymakers and regulators for the stewardship of social systems>>, as in \cite{Bak-Colemane2025764118}. 
+Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we work arguing that <<the study of collective behavior must rise to a ``crisis discipline'' just as medicine, conservation, and climate science have, with a focus on providing actionable insight to policymakers and regulators for the stewardship of social systems>>, as in \cite{Bak-Colemane2025764118}. 
 
 A look at the structure of the whole presentation.
 In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with: conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
@@ -128,7 +128,7 @@ The choice (\ldots) is not whether to build models; it's whether to build explic
 
 With even more strength:
 \begin{quote} 
-I am always amused when these same people challenge me with the question,``Can you validate your model'' The appropriate retort, of course, is,``Can you validate yours?'' At least I can write mine down so that it can, in principle, be calibrated to data, if that is what you mean by ``validate'' a term I assiduously avoid.
+I am always amused when these same people challenge me with the question,``Can you validate your model?'' The appropriate retort, of course, is,``Can you validate yours?'' At least I can write mine down so that it can, in principle, be calibrated to data, if that is what you mean by ``validate'' a term I assiduously avoid (good Popperian that I am).
 \end{quote}
 
 To reply to ``why agents?'', with \cite{axtell2000agents} we define in short what an agent-based model is:
@@ -168,7 +168,6 @@ With our model, we move from a macro compartmental vision to a meso and micro-an
 
 \item
 scalability: we take into account the interactions between virus and molecules inside the host, determining individual susceptibility; the interactions between individuals in more or less restricted contexts; the movement between different environments (home, school, workplace, open spaces, shops); the movements occur in different parts of the daily life, as in \cite{ghorbani2020assocc};
-
 in detail, the scales are: 
 
 \begin{itemize}
@@ -186,7 +185,7 @@ granularity: at any level, the interactions are partially random and therefore t
 
 \end{itemize}
 
-Summing up, S.I.s.a.R. (\href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}) is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R. The model works on the structural data of Piedmont, an Italian region, but we can quite easily calibrate it for other areas. It reproduces the events following a realistic calendar (national or local government decisions, as in Section \ref{par}), via its script interpreter. At the above address, it is also possible to run the code without installation. Into the \emph{Info} sheet of the model, we have more than 20 pages of Supporting Information about both the structure and the calibration of the model.
+Summing up, S.I.s.a.R. (\href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}) is an agent-based model designed to reproduce the diffusion of the COVID-19 using agent-based modeling in NetLogo \cite{NetLogo}. We have Susceptible, Infected, symptomatic, asymptomatic, and Recovered people: hence the name S.I.s.a.R. The model works on the structural data of Piedmont, an Italian region, but we can quite easily calibrate it for other areas. It reproduces the events following a realistic calendar (national or local government decisions, as in Section \ref{par}), via its script interpreter. At the above address, it is also possible to run the code online without installation. Into the \emph{Info} sheet of the model, we have more than 20 pages of Supporting Information about both the structure and the calibration of the model.
 
 
 The micro-based structure of the model allows factual, counterfactual, and conditional simulations. Examples of counterfactual situations are those considering:
@@ -316,7 +315,7 @@ We define the parameters of Fig. \ref{outline}, also with their short names used
 intrinsicSusceptibility = intrinsicSusceptibilityFactor^{groupFragility}
 \label{intrinsic}
 \end{equation}
-with \emph{intrinsicSusceptibilityFactor} set to 5 , and $groupFragility$ exponent set to:
+with \emph{intrinsicSusceptibilityFactor} set to 5, and $groupFragility$ exponent set to:
 
 \begin{description}
 \item [1] for extra-fragile persons,
@@ -434,7 +433,7 @@ In Fig. \ref{workplacesNursingHomesFull} we see the example of an epidemic with 
 \label{workplacesNursingHomesFull}
 \end{figure}
 
-In Appendix~2~-~A gallery of contagion sequences (Section \ref{app2}) we have several examples of contagion sequences.
+In Appendix~2~-~A gallery of contagion sequences (Section \ref{app2}), we have several examples of contagion sequences.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exploring scenarios with simulation batches}
