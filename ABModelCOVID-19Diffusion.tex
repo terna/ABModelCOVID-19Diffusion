@@ -34,6 +34,8 @@
 \usepackage{verbatim} % \begin and \end {comment}
 \usepackage{hyperref} % to use \href
 \usepackage{subcaption}
+\usepackage{eurosym}
+
 
 
 % see the list of further useful packages
@@ -116,10 +118,10 @@ The final application of the model is dedicated to a planning exercise on vaccin
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Why model? Why agents? Why another model?}
+\subsection{Why models? Why agents? Why another model?}
 \label{why}
 
-Why another model, and most of all, why model? With \cite{epstein2008model}:
+Why another model, and most of all, why models? With \cite{epstein2008model}:
 \begin{quote}
 The choice (\ldots) is not whether to build models; it's whether to build explicit ones. In explicit models, assumptions are laid out in detail, so we can study exactly what they entail. On these assumptions, this sort of thing happens. When you alter the assumptions that is what happens. By writing explicit models, you let others replicate your results.
 \end{quote}
@@ -138,6 +140,12 @@ More in detail:
 \begin{quote} 
 There are, ostensibly, several advantages of agent-based computational modeling over conventional mathematical theorizing. First, [\ldots] it is easy to limit agent rationality in agent-based computational models. Second, even if one wishes to use completely rational agents, it is a trivial matter to make agents heterogeneous in agent-based models. One simply instantiates a population having some distribution of initial states, e.g., preferences. That is, there is no need to appeal to representative agents. [\ldots] Finally, in most social processes either physical space or social networks matter. These are difficult to account for mathematically except in highly stylized ways. However, in agent-based models it is usually quite easy to have the agent interactions mediated by space or networks or both.
 \end{quote}
+
+In \cite{inverseGen} we have a relevant step ahead, considering \emph{inverse generative social science}:
+\begin{quote} 
+The agent-based model (ABM) is the principal scientific instrument for understanding how individual behaviors and interactions, the micro-world, generates change and stasis in macroscopic social regularities. So far, agents have been iterated forward to generate such explananda as settlement patterns, scaling laws, epidemic dynamics, and many other phenomena [6]. But these are all examples of the forward problem: we design agents and grow the target phenomenon. The motto of generative social science is: ``If you didn't grow it, you didn't explain it.'' \cite{epstein1999agent} 
+But there may be many ways to grow it! How do we find `all' the non-trivial generators? This is inverse generative social science---agent architectures as model outputs not model inputs---and machine learning can enable it.
+\end{quote} 
 
 And now, "why another?" As a commitment to our creativity, using our knowledge to understand what is happening. Indeed, with arbitrariness: it is up to others and time to judge.
 
@@ -344,7 +352,10 @@ alternatively, we also have the \verb|fragileWorkersAtHome| parameter; if \emph{
 
 \item \label{p7} when \emph{activateSchools} (\verb|aSch|) is \emph{on} (set to 1), teachers and students go to school avoiding restrictions (but uniquely in the first step of activity of each day); \emph{\%Students} (\verb|%St|) sets the quota of the students moving to school; the residual part is following the lessons from home; values at (\ref{app1}, \ref{pp7});
 
-\item \label{p8} following \emph{radiusOfInfection} (\verb|radius|), the effect of the contagion---outside enclosed spaces, or there, but for temporary presences---is possible within that distance; values at (\ref{app1}, \ref{pp8}).
+\item \label{p8} following \emph{radiusOfInfection} (\verb|radius|), the effect of the contagion---outside enclosed spaces, or there, but for temporary presences---is possible within that distance; values at (\ref{app1}, \ref{pp8});
+
+\item \label{p9} \emph{asymptomaticRegularInfected\%} and \emph{asymptomaticFragileInfected\%}, are the parameters determining the percentage of asymptomatic persons after a contagion for non fragile (all cases) or fragile people;
+they are without short names, as they come directly from the model interface; we can see the interface online, activating the model at \href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html}; values at (\ref{app1}, \ref{pp9}).
 
 \end{enumerate}
 
@@ -744,31 +755,136 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 83.9 & 232.6 & 104.1 & 276.9 & 119.1 & 300.6 &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Here a Stefano's section on calculating the reproduction number without delays}
+\subsection{Calculating the reproduction number without delays}
 \label{indicator}
 The reproduction number $R_t$ \cite{BettencourtRibeiro2008, CorietAl2013} \begin{quote}is the average number of secondary cases of disease caused by a single infected individual over his or her infectious period\end{quote}
 and is defined as follows:
 \begin{equation}
 \large{R_t = \frac{I_t}{\sum_{s=1}^t w_s I_{t-s}}}
+\label{RtDef}
 \end{equation}
-Where:
-
-
-
-See Fig. \ref{Rt} about \ldots
+where:
+\begin{itemize}
+\item
+$I_t$ is the number of new infected individuals at time $t$
+\item 
+$w_s=\Gamma(s; \alpha,\beta)$ is the infectivity profile, usually approximated with the serial interval distribution \cite{CorietAl2013}; it shapes the infectious period of each individual by weighting the infected individuals so that when their period is over, they do not count any more in the sum; it is usually assumed to be a the Gamma distribution \cite{CorietAl2013}
+\begin{itemize}
+\item 
+there is great uncertainty on the parameters of the Gamma distribution, which have been fitted to different values on different national data-sets (\cite{RoyalSocSAGESPI-M}, table 1 page 25)
+\item following the Istituto Superiore di Sanit\`{a} (ISS), italian $R_t$ estimates are based on the parameters fitted in \cite{CeredaetAl2020}, namely $\alpha = 1.87$ and $\beta = 0.28$
+\end{itemize}
+\end{itemize}
 
 \begin{figure}[t]
 \center
-\includegraphics[width=0.7\textwidth]{RtEstimation.jpg}
-\caption{In blue, the $R_t$ values as reported by the Istituto Superiore di Sanit\`{a} and in red the anticipated calculation published regularly, from the end of November 2020, at \href{https://mondoeconomico.eu}{https://mondoeconomico.eu} by Stefano Terna}
-\label{Rt}
+\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset.jpg}
+\caption{Naive $R_t$ calculated on raw infected cases by symptoms onset date, official ISS data-set}
+\label{naive_Rt_symptoms_onset}
 \end{figure}
 
-Methodology: 
+While Eq. \ref{RtDef} could in principle be applied naively to any time series of the new infected cases, it usually leads to noisy results caused by the noise contained in the original raw series, as can be seen in Fig. \ref{naive_Rt_symptoms_onset}. Moreover, despite the noisy content of the original signal, the naive approach does not give any clue on the confidence interval of the result, which is fundamental if the reproduction number has to be used to take decisions about the restrictions.
 
-{\scriptsize
-\href{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian\_national\_data.ipynb}{https://github.com/tomorrowdata/COVID-19/blob/main/notebooks/Rt\_on\_italian\_national\_data.ipynb}
-}
+The most widely adopted approach to extract statistics about the $R_t$ estimate, and hence its confidence interval, is to apply Bayesian statistical inference, assuming a prior distribution for the serial interval and a posterior for the reproduction number \cite{CorietAl2013}. 
+
+While Bayesian inference allows us to compute any kind of statistics on the estimate, it still fails  dealing with the noise in the original signal, leading again to spiky estimates of $R_t$.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_window_14.jpg}
+\caption{In black $R_t$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; both series are by symptoms onset date, official ISS data-set}
+\label{naive_Rt_symptoms_onset_window_14}
+\end{figure}
+
+The standard solution to smooth out the noise is to assume that the transmissibility is constant over a time window (e.g. a week): we can then estimate the average $R_t$ over the time window \cite{CorietAl2013}, by computing the total number of new infected cases over a window $\tau$ instead of those of each single day: $\hat{I}_{t,\tau}=\sum_{s=t-\tau}^{t} I_s$ and replacing it to $I_t$ in Eq. \ref{RtDef}; note that this is equivalent to compute $R_t$ on the average of $I_t$ over the window, as Eq. \ref{RtDef} is invariant under constant scaling of $I_t$. 
+
+The result is smoothed, but it turns out that it is delayed by the size of the windows. Fig. \ref{naive_Rt_symptoms_onset_window_14} shows $R_t$ calculated over a 14 days rolling windows (14 days is the window size officially adopted in Italy); it is clearly visible that the average $R_t$ is systematically delayed: maximizing the cross correlation of the signals confirms a measure of the delay of 14 days.
+
+\subsubsection{Tikhonov regularization to smooth the original signal}
+
+As an alternative solution to averages, we adopt Tikhonov regularization to the original signal, which does not introduce delays.
+
+$I_t$ is smoothed by fitting a series to represent the derivative of $I_t$ and then integrating it back to the original signal, which then results in a smoothed one.
+
+We search for the differential signal $\vec{\omega}$ such that:
+$$\vec{I} = \vec{X}\cdot \vec{\omega}$$
+where $\vec{I}$ denotes the array of elements $I_t$ and $\vec{X}$ is the matrix representing the integration operator:
+$$\vec{X} = \begin{bmatrix} 
+1 & 0 & ... & 0 \\
+1 & 1 & ... & 0 \\
+... & ... & ...  & ... \\
+1 & 1 & ... & 1 \\
+\end{bmatrix}
+$$
+
+$\vec{\omega}$ is obtained by minimizing the following cost function:
+\begin{equation}
+F(\vec{\omega}) = \left\|\vec{I} - \vec{X}\cdot\vec{\omega}\right\|^2 +\alpha^2 \left\|\vec{\Gamma}\cdot\vec{\omega}\right\|^2
+\label{TickCostFunction}
+\end{equation}
+
+Hence the derivative $\vec{\omega}$ is fitted using a Ridge regression with a generalized Tikhonov regularization factor:
+\begin{itemize}
+    \item 
+    $\vec{\Gamma}$: the Tikhonov regularization matrix, chosen to be the second derivative operator;
+    \item
+    $\alpha$: the regularization factor.
+\end{itemize}
+
+The regularization factor penalizes the spikes in the second derivative, forcing the derivative to be a smoothed signal. Once the derivative is fitted, the original signal is reconstructed by applying again the integral matrix to the differentiated smoothed signal; denoting the soothed signal by $\Bar{\vec{I}}$:
+$$\Bar{\vec{I}} = \vec{X}\cdot\vec{\omega}$$
+
+The parameter $\alpha$ can be obtained by searching the maximal smoothness constrained to the desired degree of information still available in the signal. It can be shown empirically that $\alpha = 100$ represents a reasonable trade-off.
+
+Once we have $\Bar{I}_t$ it can be fed into Eq. \ref{RtDef} to obtain the reproduction number computed on the smoothed signal, which we denote by $\Bar{R}_t$.
+
+Fig. \ref{naive_Rt_symptoms_onset_smoothed} shows in green the result of calculating $\Bar{R}_t$ on the signal smoothed by minimizing Eq. \ref{TickCostFunction}. It is clearly visible that the green line anticipates the red one: maximizing the cross correlation of the original noisy $R_t$ wrt $\Bar{R}_t$ confirms a measure of the delay of 0 days.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_smoothed.jpg}
+\caption{In black $R_{t}$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; in green $\Bar{R}_{t}$ calculated on the signal smoothed with Tikhonov regularization; each series is by symptoms onset date, official ISS data-set}
+\label{naive_Rt_symptoms_onset_smoothed}
+\end{figure}
+
+\subsubsection{Don't wait for the symptoms onset date}
+
+Delays are not as important in literature, where we usually look at historical data, as they are in policy making, where we do need near real-time data.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_smoothed_zoom.jpg}
+\caption{Zoom of Fig. \ref{naive_Rt_symptoms_onset_smoothed} to the most recent data available and consolidated}
+\label{naive_Rt_symptoms_onset_smoothed_zoom}
+\end{figure}
+
+Fig. \ref{naive_Rt_symptoms_onset_smoothed_zoom} shows the zoom of the series in Fig. \ref{naive_Rt_symptoms_onset_smoothed} to the "present" days (which is Jul 30 at the time of writing). The last available "consolidated" count of new infected cases dates back to Jul 15, as the full process of data collection must be completed if we want to know the symptoms onset date. This problem, known as right censoring, is true for every country, with delays which vary depending on the particular data collection process. Moreover, it is well known in Italy that the collection process greatly depend on the pressure that the epidemic is producing on the Health System.
+
+Instead of using the distribution of new infected cases by symptoms onset date, we propose to adopt the smoothed distribution by notification date as the input for Eq. \ref{RtDef}, to obtain $\hat{\Bar{R}}_{t}$. The difference is that as soon as a case is detected, it is notified. The advantage that the series is consolidated by definition, without the need of past revisions, comes with the following drawbacks:
+\begin{enumerate}
+    \item there is a certain amount of delay from the symptoms onset date and the notification date;
+    \item the series accounts for more noise, as it makes no distinctions between symptomatic cases and asymptomatic cases.
+\end{enumerate}
+
+\begin{figure}[t]
+\center
+\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_vs_notification.jpg}
+\caption{In red the average $R_t$ calculated over a window of 14 days on the symptoms onset distribution; in green $\Bar{R}_{t}$ calculated on the symptoms onset distribution smoothed with Tikhonov regularization; in blue $\hat{\Bar{R}}_{t}$ calculated on the notification date distribution smoothed}
+\label{naive_Rt_symptoms_onset_vs_notification}
+\end{figure}
+
+Fig. \ref{naive_Rt_symptoms_onset_vs_notification} shows the comparison of three $R_t$ calculations: average $R_t$ calculated on a 14 day windows (in red), $\Bar{R}_t$ calculated on smoothed cases by symptoms onset date (in green) and $\hat{\Bar{R}}_{t}$ calculated on smoothed cases by notification date (in blue). The blue line exhibits a delay wrt the green one, but it is still anticipating the red line. Maximizing the cross correlations provides the following measures of the relative delays:
+\begin{itemize}
+    \item $\Bar{R}_t$ anticipates $\hat{\Bar{R}}_{t}$ by 8 days;
+    \item $\hat{\Bar{R}}_{t}$ anticipates $R_t$ (calculated on a 14 day windows) by 6 days.
+\end{itemize}
+
+Hence, we can conclude that, thanks to the smoothing procedure (via Tikhonov regularization) without delays, we can replace the distribution of new cases by symptoms onset date with the distribution by notification date, obtaining the following advantages:
+\begin{enumerate}
+    \item earn 6 days of anticipation with respect to the averaged $R_t$;
+    \item being able to compute the reproduction number up to the present, without having to wait for varying consolidation times in the data collection processes.
+\end{enumerate}
+
 
 
 
@@ -840,19 +956,91 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 89.6 & 234.2 & 118.1 & 306.7 & 126.4 & 315.9 &
 \end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Cost-benefit analysis of the of interventions [Beppe's contribution]}
+\section{Economic analysis of the of interventions}
 \label{CBanalysis}
 
-draft, draft, draft, draft, draft
+The pandemic has an impact on the general economy. First, we take into account the additional health expenditure, which in Piedmont has risen from \EUR{8,880} million to \EUR{9,200} million, with an increase in pressure on GDP of 2\%. It is an increment that cannot be generalized. In other regions and States, health expenditure has even decreased, due to the lower demand for diagnostic and treatment services, precisely because of the pandemic and the precautionary reduced access to health services. Apart from the additional health expenditure, the main impact to be considered is the loss in production induced by the contagion containment measures, i.e., the so-called ``lockdown'' of the economy and the associated mobility bans. 
 
-Considering the different interventions of Section \ref{secondWith} and \ref{frag}, we can evaluate \ldots
+The impact assessment of production stoppages and mobility bans can be measured by applying an Input-Output model. The main quality of Input-Output models is the possibility of determining the total effect of changes in output in all sectors of the economy due to a unit change in final demand in a given sector. This is achieved by applying a matrix of multipliers, i.e., Leontief's inverse matrix, to a sectoral vector of demand changes. The inverse matrix makes it possible to calculate the sum of the direct impact of the stopped productions, sector by sector, and the indirect impact, due to the infinite feedback on the purchases of the affected sectors from the first drop in demand received. However, the standard representation is not complete. The literature tends to extend these effects to consider the feedback not only by the purchases of the impacted sectors but also by the drop in the final demand of households affected by the unexpected change in income through their marginal propensity to consume. This third effect is the so-called induced impact.
 
-First of all, we can evaluate the costs for the attribution of sick pay to workers who are compulsorily absent from work, if they are not able to carry out remotely their work activities \ldots
+The matrix of direct, indirect and induced impacts of the Piedmont economy in Table \ref{PiedmontMatrix} has been originally estimated by one of the authors.
 
-We have also relevant social benefits, e.g., schooling, and economic benefits, as activities do not stop \ldots
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrr}
+\hline\noalign{\smallskip}
+& & & & total & \\
+& final /total & & & induced & production &  added value \\
+& demand & direct impact & indirect impact & impact & multiplier & multiplier \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+agriculture & 0.53	& 1.40 & 0.50 & 1.30	 & 3.20 & 1.40\\
+manufacturing & 0.33 & 1.80 & 1.20 & 1.60 & 4.50 & 1.60\\
+construction & 0.38 & 1.70 & 0.90 & 1.60 & 3.20 & 1.60\\
+distribution & 0.53 & 1.40 & 0.50 & 1.30 & 3.10 & 1.60\\
+services & 0.50 & 1.50 & 0.50 & 1.40 & 3.40 & 1.50\\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Multipliers of direct, indirect and induced impact, and overall impact as well added value (GDP) multipliers per 1 euro of final demand change, related to each of the five sectors on the rows}
+\label{PiedmontMatrix}
+\end{table}
 
-An interesting reference is \cite{doi:10.1111/ijcp.13674}, where \ldots 
-WORKS IN PROGRESS.
+As we can see, the economic effects of lockdowns can be very different depending on whether they selectively affect one sector (normally the sectors most affected are the last two, distribution and services), or whether all sectors are affected. The manufacturing sector, which is strongly linked with other sectors, has a total, direct, indirect, and induced multiplication coefficient of 4.5 times the initial reduction in final demand. Therefore, to calculate the impacts, we started from three different assumptions, or scenarios, which we have called A, B and C.
+
+[A] The restrictions affected all economic activities that could be stopped, safeguarding only those businesses that were essential. This meant stopping approximately half of the regional production system. Schooling was only permitted with distance learning. This case occurred in the period from 9 March 2020 to the end of April 2020.
+
+[B] Only businesses in sectors whose activities were rated with a high risk of contagion were stopped: these activities included non-food retail trade, the tourism restaurant and hotel sector, the sport, recreation and entertainment sector, the cultural sector, and, of course, the whole education system, that was served by distance learning. The transportation sector was legally active but still impacted by an almost obligatory drop in demand. This case actually occurred at different times during 2020 and 2021 and significantly from October 2020 until spring 2021, with a break of a few weeks during the winter.
+
+[C] Purely theoretical and not put in place, it was considered to stop only the fragile workers, leaving intact the education and all the activities stopped in case B. In this case, fragile workers are estimated to be 14\% of the total, based on a national projection of the total number of 5.6 million fragile people under 65 in Italy. To make the calculation of the impact realistic, we assume that all fragile workers received sickness compensation equal to the lost wage that impacted on the overall tax loss, increasing it; we also assume that half of the production of fragile workers could still be produced with overtime or temporary work by other workers.
+
+The results of the simulations are reported in Table \ref{ABC} and are expressed in points per thousand of Piedmont's GDP.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\hline\noalign{\smallskip}
+& Scenario A & Scenario B & Scenario C \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+\emph{daily impacts} \\
+total production & -4.86 & -1.23 & -0.69  \\
+added value & -4.86 & -1.23 & -0.69 \\
+taxes & -0.91 & -0.24 & -0.35 \\
+\\
+\emph{monthly impacts} \\
+total production &-145.7 & -36.9 & -20.7  \\
+added value & -63.7 & -16.6 & -9.1 \\
+taxes & -27.4 & -7.1 & -10.6 \\
+\hline\noalign{\smallskip}  
+\end{tabular}
+\caption{Economic impacts of the pandemic with three hypotheses of non-pharmaceutical containment measures applied. Values are expressed in thousandths of a point of GDP/1000}
+\label{ABC}
+\end{table}
+
+In Table \ref{ABC}, each day of closure of productive activities (leaving only the essential ones and schools closed, i.e., open for distance learning) to counter the contagion and allow access to hospitals produces a loss of income (added value) equal to 2.1 per thousand of GDP and a worsening of the fiscal budget by 0.9 percent of GDP. One month of total closures, therefore, would cost an income loss of 6.4 percent and a worsening of the fiscal balance of 2.7 percent (Scenario A, actually implemented in Italy from 9 March 2020 to April).
+
+Conversely, limiting closures to only distribution activities (non-food), as well as to school (open as distance learning), sports, culture and leisure, tourism, and restaurant services (as in the light lockdown established in October 2020 and subsequent months, Scenario B) would have produced a daily income loss of 0.55 per thousand of GDP (equivalent to 1.6 percent per month) and a fiscal loss of 0.24 per thousand per day and 0.7 percent of GDP per month. 
+
+The solution of protecting at home (and paying) only fragile workers, leaving all schools and productive activities open, would reduce the loss of income to 0.3 per thousand per day (0.91 percent per month). Although this solution (Scenario C, never actually implemented) is more convenient concerning the overall income loss, even 1/7 of that of scenario A and ½ of that of scenario B, it costs slightly more in fiscal terms than scenario B (-0.35 per thousand per day, instead of -0.24). However, it would seem preferable because it is the only option of the three that would allow the regular operation of the schools. According to the reliable Invalsi tests performed in 2021, the percentage of pupils in Italian schools who have not reached the minimum learning standards has increased by 10 percentage points based on the total number of pupils. If we were to put this loss of human capital on an economic balance sheet, we would have to consider the full cost of an additional year of schooling for 10 percent of the school population, both in terms of the cost of additional education plus the income lost for a 1-year delay in subsequent employment. A raw estimate of this cost would appear to be 1.3\% of GDP, of which 0.58\% for the additional cost of education and 0.75\% for the income lost by postponing entry into employment by 1-year. 
+
+Following Table \ref{ABC2}, in a C scenario, the cost of pandemic restrictions, for 3 months (hypothesis), would be 0.2\% of annual GDP for increased health expenditures + 2.7\% of direct, indirect and induced value added (GDP) losses, plus 3.19\% of GDP of public budget deterioration, while there would be no human capital losses. The total losses in scenario C would be 6.1 percent of annual GDP for three full months of restrictions. In scenarios B and A the total loss would have been much higher and specifically 8.6\% and 28.8\% of the pre-Covid GDP, respectively. It is also worth noting the distribution of losses by row. In scenario C, the losses in value-added, and thus the recession damage to the economy to be recovered, would be minimal, and the losses due to insufficient human capital formation would be zero. Nevertheless, the policies adopted have preferred the adoption of scenarios A and B.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\hline\noalign{\smallskip}
+& Scenario A & Scenario B & Scenario C \\
+& three months & three months & three months \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+more health expenditure & -2.0 & -2.0 & -2.0  \\
+added value or GDP loss & --191.0 & -49.8 & -27.2 \\
+tax loss & -82.1 & -21.4 & -31.9 \\
+human capital loss &--13.4 & -13.4 & 0.0 \\
+total loss (GDP/1000) & -288.6 & -86.6 & -61.1 \\
+\hline\noalign{\smallskip}  
+\end{tabular}
+\caption{Total losses simulating the 3 scenarios A, B, C, from activity and mobility restrictions, in GDP points/1000}
+\label{ABC2}
+\end{table}
+
 
 
 
@@ -963,7 +1151,9 @@ The immune system memory can be compared to a human's memory. Once it encounters
 \subsection{Planning a vaccination campaign using genetic algorithms, with non-pharmaceutical containment measures in action}
 \label{planGA}
 
-We compare the effect of choosing the vaccination quotas via genetic algorithms (GAs) with two predetermined strategies. Our model considers three hypotheses: vaccinated people still spread the contagion; they do not spread the contagion; they do it in the 50\% of the case. We show here only the results of the first case, the worst.
+We compare the effect of choosing the vaccination quotas via genetic algorithms (GAs) with two predetermined strategies. Our model considers three hypotheses: vaccinated people still spread the contagion; they do not spread the contagion; they do it in the 50\% of the case. We show here only the results of the first case, the worst (as we write, the Delta variant is spreading, with vaccinated people transmitting the infection). 
+
+The parameters of the GAs side of the model are contained in a special file, as described in the Info sheet of the model; at  \href{https://terna.to.it/simul/SIsaR.html}{https://terna.to.it/simul/SIsaR.html} start the model and look at the Info paragraph named \emph{Using Genetic Algorithms}.
 
 Important dates: 
 \begin{itemize}
@@ -1258,6 +1448,8 @@ the values of \emph{\%Students} (\verb|%St|) are:
 at (day) 0, 100; at 277, 50; at 339, 50; at 350, 50 (repeated values are not relevant for the model, but for the use of the programmer-author).
 
 \item \label{pp8} The value of \emph{radiusOfInfection} (\verb|radius|) is 0.2; in the model, space is missing of a scale, but forcing the area to be in the scale of a region as Piedmont, 0.2 is equivalent to 20 meters; we have to better calibrate this measure with movements and probabilities; this is a critical step in future developments of the model.
+
+\item \label{pp9} The values of \emph{asymptomaticRegularInfected\%} and \emph{asymptomaticFragileInfected\%} are 95 and 20.
 
 \end{enumerate}
 
