@@ -791,7 +791,7 @@ While Bayesian inference allows us to compute any kind of statistics on the esti
 \begin{figure}[t]
 \center
 \includegraphics[width=0.7\textwidth]{Rt_images/naive_Rt_symptoms_onset_window_14.jpg}
-\caption{In black $R_t$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; both series are by symptoms onset date, official ISS data-set \cite{ISSNewCasesBySyptomsOnsetJul302021}}
+\caption{In black $R_t$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; both series are by symptoms onset date, official ISS data-set at \url{https://github.com/tomorrowdata/COVID-19/blob/main/data/sources/ISS/covid_19-iss_2021-07-30T22:34:44\%2B00:00.inizio_sintomi.csv}}
 \label{naive_Rt_symptoms_onset_window_14}
 \end{figure}
 
@@ -799,7 +799,7 @@ The standard solution to smooth out the noise is to assume that the transmissibi
 
 The result is smoothed, but it turns out that it is delayed by the size of the windows. Fig. \ref{naive_Rt_symptoms_onset_window_14} shows $R_t$ calculated over a 14 days rolling windows (14 days is the window size officially adopted in Italy); it is clearly visible that the average $R_t$ is systematically delayed: maximizing the cross correlation of the signals confirms a measure of the delay of 14 days.
 
-\subsubsection{Tikhonov regularization to smooth the original signal}
+\subparagraph{Tikhonov regularization to smooth the original signal}
 
 As an alternative solution to averages, we adopt Tikhonov regularization to the original signal, which does not introduce delays.
 
@@ -842,11 +842,11 @@ Fig. \ref{naive_Rt_symptoms_onset_smoothed} shows in green the result of calcula
 \begin{figure}[t]
 \center
 \includegraphics[width=0.7\textwidth]{Rt_images/naive_Rt_symptoms_onset_smoothed.jpg}
-\caption{In black $R_{t}$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; in green $\Bar{R}_{t}$ calculated on the signal smoothed with Tikhonov regularization; each series is by symptoms onset date, official ISS data-set, \cite{ISSNewCasesBySyptomsOnsetJul302021}}
+\caption{In black $R_{t}$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; in green $\Bar{R}_{t}$ calculated on the signal smoothed with Tikhonov regularization; each series is by symptoms onset date, official ISS data-set, at \url{https://github.com/tomorrowdata/COVID-19/blob/main/data/sources/ISS/covid_19-iss_2021-07-30T22:34:44\%2B00:00.inizio_sintomi.csv}}
 \label{naive_Rt_symptoms_onset_smoothed}
 \end{figure}
 
-\subsubsection{Do not wait for the symptoms onset date}
+\subparagraph{Do not wait for the symptoms onset date}
 \label{notification_date}
 
 Delays are not as important in literature, where we usually look at historical data, as they are in policy making, where we do need near real-time data.
@@ -885,7 +885,7 @@ Hence, we can conclude that, thanks to the smoothing procedure without delays (v
     \item being able to compute the reproduction number up to the present, without having to wait for varying consolidation times in the data collection processes.
 \end{enumerate}
 
-\subsubsection{Residuals}
+\subparagraph{Residuals}
 
 Dealing with noisy and uncertain series, we want a method to extract the noise and use it to calculate confidence intervals on the estimated $R_t$, in a way such that confidence intervals directly reflect the uncertainty in the effective measuring process. This is much more relevant as we plan to estimate the reproduction number on the series of new infected cases by notification date, which includes both symptomatic and asymptomatic cases, with the latter exhibiting high noise.
 
@@ -902,7 +902,7 @@ Fig. \ref{epsilon_tikhonov_distribution} shows that the distribution of $\epsilo
 
 It turns out that the unbalancing is directly related to the weekly seasonality which affects the series (the seasonality can be seen in Fig. \ref{naive_Rt_symptoms_onset} or \ref{naive_Rt_symptoms_onset_window_14}). The reason is that the smoothing obtained by Eq. \ref{TickCostFunction} is not able to capture the seasonality. 
 
-\subsubsection{Deseasoning via singular value decomposition}
+\subparagraph{Deseasoning via singular value decomposition}
 \label{RSVD}
 
 Standard techniques to deal with seasonality, like SARIMA (Seasonal Autoregressive Integrated Moving Average), rely on moving averages. 
@@ -934,7 +934,7 @@ where $S_t$ is the seasonal component and $\Tilde{E}_t$ is the residual after de
 
 Fig. \ref{new_cases_deseason} shows the result of applying RSVD to the series of new infected cases by notification date. RSVD has been applied to the logarithm of the second difference of the original series, with the ADF test confirming the removal of any non-stationary component. The smoothness of the seasonal components can be noted clearly.
 
-\subsubsection{Residuals of the deseasoned series}
+\subparagraph{Residuals of the deseasoned series}
 
 Now that we have removed the seasonality, we can look at the distribution of the residuals again. Fig. \ref{epsilon_RSVD_distribution} shows the distribution of the relative residuals after removing the seasonal component: removing the seasonality produced a much more balanced, almost gaussian, distribution, if compared to Fig. \ref{epsilon_tikhonov_distribution}.
 
@@ -945,7 +945,7 @@ Now that we have removed the seasonality, we can look at the distribution of the
 \label{epsilon_RSVD_distribution}
 \end{figure}
 
-\subsubsection{Putting it all together with Markov chain Monte Carlo}
+\subparagraph{Putting it all together with Markov chain Monte Carlo}
 
 We start from the series $I_t$ of new infected cases by notification date, as explained in \ref{notification_date}. We then apply RSVD to obtain the deseasoned smoothed trend $\Tilde{I}_t$ of the series and the respective relative residuals $\Tilde{\epsilon}_t = \Tilde{E}_t/\Tilde{I}_t$, as explained in \ref{RSVD}. 
 
