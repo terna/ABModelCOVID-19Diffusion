@@ -777,8 +777,8 @@ there is great uncertainty on the parameters of the Gamma distribution, which ha
 
 \begin{figure}[t]
 \center
-\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset.jpg}
-\caption{Naive $R_t$ calculated on raw infected cases by symptoms onset date, official ISS data-set}
+\includegraphics[width=0.7\textwidth]{Rt_images/naive_Rt_symptoms_onset.jpg}
+\caption{Naive $R_t$ calculated on raw infected cases by symptoms onset date, official ISS data-set at \url{https://github.com/tomorrowdata/COVID-19/blob/main/data/sources/ISS/covid_19-iss_2021-07-30T22:34:44\%2B00:00.inizio_sintomi.csv}}
 \label{naive_Rt_symptoms_onset}
 \end{figure}
 
@@ -790,8 +790,8 @@ While Bayesian inference allows us to compute any kind of statistics on the esti
 
 \begin{figure}[t]
 \center
-\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_window_14.jpg}
-\caption{In black $R_t$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; both series are by symptoms onset date, official ISS data-set}
+\includegraphics[width=0.7\textwidth]{Rt_images/naive_Rt_symptoms_onset_window_14.jpg}
+\caption{In black $R_t$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; both series are by symptoms onset date, official ISS data-set \cite{ISSNewCasesBySyptomsOnsetJul302021}}
 \label{naive_Rt_symptoms_onset_window_14}
 \end{figure}
 
@@ -841,18 +841,19 @@ Fig. \ref{naive_Rt_symptoms_onset_smoothed} shows in green the result of calcula
 
 \begin{figure}[t]
 \center
-\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_smoothed.jpg}
-\caption{In black $R_{t}$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; in green $\Bar{R}_{t}$ calculated on the signal smoothed with Tikhonov regularization; each series is by symptoms onset date, official ISS data-set}
+\includegraphics[width=0.7\textwidth]{Rt_images/naive_Rt_symptoms_onset_smoothed.jpg}
+\caption{In black $R_{t}$ calculated on raw infected cases, in red the average $R_t$ calculated over a window of 14 days; in green $\Bar{R}_{t}$ calculated on the signal smoothed with Tikhonov regularization; each series is by symptoms onset date, official ISS data-set, \cite{ISSNewCasesBySyptomsOnsetJul302021}}
 \label{naive_Rt_symptoms_onset_smoothed}
 \end{figure}
 
-\subsubsection{Don't wait for the symptoms onset date}
+\subsubsection{Do not wait for the symptoms onset date}
+\label{notification_date}
 
 Delays are not as important in literature, where we usually look at historical data, as they are in policy making, where we do need near real-time data.
 
 \begin{figure}[t]
 \center
-\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_smoothed_zoom.jpg}
+\includegraphics[width=0.7\textwidth]{Rt_images/naive_Rt_symptoms_onset_smoothed_zoom.jpg}
 \caption{Zoom of Fig. \ref{naive_Rt_symptoms_onset_smoothed} to the most recent data available and consolidated}
 \label{naive_Rt_symptoms_onset_smoothed_zoom}
 \end{figure}
@@ -867,24 +868,109 @@ Instead of using the distribution of new infected cases by symptoms onset date, 
 
 \begin{figure}[t]
 \center
-\includegraphics[width=1.\textwidth]{Rt_images/naive_Rt_symptoms_onset_vs_notification.jpg}
+\includegraphics[width=0.7\textwidth]{Rt_images/naive_Rt_symptoms_onset_vs_notification.jpg}
 \caption{In red the average $R_t$ calculated over a window of 14 days on the symptoms onset distribution; in green $\Bar{R}_{t}$ calculated on the symptoms onset distribution smoothed with Tikhonov regularization; in blue $\hat{\Bar{R}}_{t}$ calculated on the notification date distribution smoothed}
 \label{naive_Rt_symptoms_onset_vs_notification}
 \end{figure}
 
 Fig. \ref{naive_Rt_symptoms_onset_vs_notification} shows the comparison of three $R_t$ calculations: average $R_t$ calculated on a 14 day windows (in red), $\Bar{R}_t$ calculated on smoothed cases by symptoms onset date (in green) and $\hat{\Bar{R}}_{t}$ calculated on smoothed cases by notification date (in blue). The blue line exhibits a delay wrt the green one, but it is still anticipating the red line. Maximizing the cross correlations provides the following measures of the relative delays:
 \begin{itemize}
-    \item $\Bar{R}_t$ anticipates $\hat{\Bar{R}}_{t}$ by 8 days;
+    \item $\Bar{R}_t$ anticipates $\hat{\Bar{R}}_{t}$ by 8 days, but the last available value of $\Bar{R}_t$ dates back 15 days prior to the present;
     \item $\hat{\Bar{R}}_{t}$ anticipates $R_t$ (calculated on a 14 day windows) by 6 days.
 \end{itemize}
 
-Hence, we can conclude that, thanks to the smoothing procedure (via Tikhonov regularization) without delays, we can replace the distribution of new cases by symptoms onset date with the distribution by notification date, obtaining the following advantages:
+Hence, we can conclude that, thanks to the smoothing procedure without delays (via Tikhonov regularization), we can replace the distribution of new cases by symptoms onset date with the distribution by notification date, obtaining the following advantages:
 \begin{enumerate}
     \item earn 6 days of anticipation with respect to the averaged $R_t$;
     \item being able to compute the reproduction number up to the present, without having to wait for varying consolidation times in the data collection processes.
 \end{enumerate}
 
+\subsubsection{Residuals}
 
+Dealing with noisy and uncertain series, we want a method to extract the noise and use it to calculate confidence intervals on the estimated $R_t$, in a way such that confidence intervals directly reflect the uncertainty in the effective measuring process. This is much more relevant as we plan to estimate the reproduction number on the series of new infected cases by notification date, which includes both symptomatic and asymptomatic cases, with the latter exhibiting high noise.
+
+The noise can be measured by the relative residuals of the signal with respect to its smoothed version, $\epsilon_t = (I_t - \Bar{I}_t)/\Bar{I}_t$.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=0.7\textwidth]{Rt_images/epsilon_tikhonov_distribution.jpg}
+\caption{distribution of $\epsilon_t = (I_t - \Bar{I}_t)/\Bar{I}_t$ calculated on the series of new infected cases by notification date}
+\label{epsilon_tikhonov_distribution}
+\end{figure}
+
+Fig. \ref{epsilon_tikhonov_distribution} shows that the distribution of $\epsilon_t$ calculated on the series of new infected cases by notification date \textbf{is unbalanced}.
+
+It turns out that the unbalancing is directly related to the weekly seasonality which affects the series (the seasonality can be seen in Fig. \ref{naive_Rt_symptoms_onset} or \ref{naive_Rt_symptoms_onset_window_14}). The reason is that the smoothing obtained by Eq. \ref{TickCostFunction} is not able to capture the seasonality. 
+
+\subsubsection{Deseasoning via singular value decomposition}
+\label{RSVD}
+
+Standard techniques to deal with seasonality, like SARIMA (Seasonal Autoregressive Integrated Moving Average), rely on moving averages. 
+
+To avoid the delays introduced by moving averages, we instead adopt 
+Regularized Singular Value Decomposition (RSVD) proposed by Lin, Huang and Mcelroy in \cite{LinHuangMcelroy}. RSVD allows to detect the seasonal component of the signal by casting the signal vector into a matrix whose columns are the seasons and the rows are the repetitive periods of a complete series of seasons. Singular Value Decomposition is then applied to the matrix so that singular values represent the seasonal component of the signal. Each seasonal component is regularized via Tikhonov, following the hypothesis that each season component must change smoothly, period after period. The Tikhonov regularization parameter is fitted via "leave one out cross validation".
+
+The advantage of this method with respect to the SARIMA approach is that \emph{we do not need to take moving averages}, and we don't need to tune any meta-parameter of the model.
+
+The python porting of the original R code is available in the supplementary material at \href{https://github.com/tomorrowdata/COVID-19}{https://github.com/tomorrowdata/COVID-19}, within the library \texttt{covid19\_pytoolbox}. The following features have been added to the original work:
+\begin{itemize}
+    \item take the logarithm of the seasonal series, to remove exponential trends;
+    \item differentiate the signal to a desired degree, to remove non-stationary trends in the original data, with an augmented Dickey–Fuller (ADF) test to check if any non-stationary component is present;
+    \item apply Tikhonov regularization to the deseasoned signal to obtain the trend.
+\end{itemize}
+
+Denoting by $\Tilde{I}_t$ the trend of the raw signal $I_t$ after removing the seasonality, we obtain the following decomposition of the original series:
+\begin{equation}
+    I_t = \Tilde{I}_t + S_t + \Tilde{E}_t
+\end{equation}
+where $S_t$ is the seasonal component and $\Tilde{E}_t$ is the residual after deseasoning.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=0.7\textwidth]{Rt_images/new_cases_deseason.jpg}
+\caption{Raw series $I_t$ of new infected cases by notification date (in black), its trend $\Tilde{I}_t$ after removing the seasonal component (in blue), the seasonal components $S_t$ (in red); data-set \href{https://github.com/pcm-dpc/COVID-19}{https://github.com/pcm-dpc/COVID-19}}
+\label{new_cases_deseason}
+\end{figure}
+
+Fig. \ref{new_cases_deseason} shows the result of applying RSVD to the series of new infected cases by notification date. RSVD has been applied to the logarithm of the second difference of the original series, with the ADF test confirming the removal of any non-stationary component. The smoothness of the seasonal components can be noted clearly.
+
+\subsubsection{Residuals of the deseasoned series}
+
+Now that we have removed the seasonality, we can look at the distribution of the residuals again. Fig. \ref{epsilon_RSVD_distribution} shows the distribution of the relative residuals after removing the seasonal component: removing the seasonality produced a much more balanced, almost gaussian, distribution, if compared to Fig. \ref{epsilon_tikhonov_distribution}.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=0.7\textwidth]{Rt_images/epsilon_RSVD_distribution.jpg}
+\caption{distribution of $\Tilde{\epsilon}_t = \Tilde{E}_t/\Tilde{I}_t$ calculated on the series of new infected cases by notification date}
+\label{epsilon_RSVD_distribution}
+\end{figure}
+
+\subsubsection{Putting it all together with Markov chain Monte Carlo}
+
+We start from the series $I_t$ of new infected cases by notification date, as explained in \ref{notification_date}. We then apply RSVD to obtain the deseasoned smoothed trend $\Tilde{I}_t$ of the series and the respective relative residuals $\Tilde{\epsilon}_t = \Tilde{E}_t/\Tilde{I}_t$, as explained in \ref{RSVD}. 
+
+With those ingredients, we can setup Markov chain Monte Carlo simulations to sample multiple chains of $R_t$ values, as follows, denoting by $C(\cdot)$ the chains obtained via sampling:
+\begin{enumerate}
+    \item $C(R_t)$ chains are sampled from a prior normal distribution, with $\mu=1.3$ and $\sigma=10$; a Gaussian process could be used instead, but it is less computationally efficient; the length of the chains is the same as the length of $I_t$;
+    \item $C(\Tilde{\epsilon}_t)$ chains are sampled from a prior normal distribution, with $\mu=\sum_{s=t-7}^t{\Tilde{\epsilon}_s}/7$ and $\sigma=\sqrt{\sum_{s=t-7}^{t}(\Tilde{\epsilon}_s-\mu)^2/7}$; the length of the chains is the same as the length of $I_t$;
+    \item $C(\Tilde{I}_t)$, the chains of new cases with random noise, are obtained as $\Tilde{I}_t+\Tilde{I}_t \cdot C(\Tilde{\epsilon}_t)$;
+    \begin{itemize}
+        \item \textbf{note}: this is where the original noise of the series is transferred to the simulation, so that the confidence interval will account for uncertainties in the original series;
+    \end{itemize}
+    \item the estimated count $T_t$ of new cases in each day of the chain is calculated from Eq. \ref{RtDef} as $C(T_t) = C(R_t) \cdot \sum_{s=1}^t w_s C(\Tilde{I}_{t-s})$;
+    \item finally, a posterior Poisson distribution is tested via Monte Carlo, between the estimated cases, $T_t$, and the expected ones, $\Tilde{I}_t$.
+\end{enumerate}
+
+We sample 4 chains with 1000 iterations each discarded for tuning, and 500 iterations each kept for sampling. The final data-set contains 2000 samples from which day by day statistics, like the confidence interval, can be calculated.
+
+Fig. \ref{Rt} shows the result, where the confidence interval (in violet) succeeds in representing periods of higher uncertainty in the data.
+
+\begin{figure}[t]
+\center
+\includegraphics[width=0.7\textwidth]{RtEstimation.jpg}
+\caption{In blue, the $R_t$ values as reported by the Istituto Superiore di Sanit\`{a} and in red the anticipated calculation published regularly, from the end of November 2020, at \href{https://mondoeconomico.eu}{https://mondoeconomico.eu} by Stefano Terna}
+\label{Rt}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -893,7 +979,7 @@ Hence, we can conclude that, thanks to the smoothing procedure (via Tikhonov reg
 %selectResults10kStableSeedsCPoints_basicControlB_schoolOpenSeptOctMar-20ControlChangingWorldNewStart_plusHMlog.ipynb
 % using 10kCtrl1NStartCtrl2M-20.csv from SIsaR_0.9.5.4.1trials10kCtrl1NStartCtrl2M-20.nlogo
 
-The counterfactual situation described in this section is related to the start and end dates of the actions of containment, both occurring 20 days in advance, with a natural barrier set on October \nth{5}, 2020. Before that date, no one could plan to start new control measures.
+The counterfactual situation described in this section---inspired by Section \ref{indicator}---is related to the start and end dates of the actions of containment, both occurring 20 days in advance, with a natural barrier set on October \nth{5}, 2020. Before that date, no one could plan to start new control measures.
 
 As in the last two sections, we have 1407 cases of epidemics alive at the critical dates of June \nth{1} and September \nth{20}, after a Summer interval characterized by a quiet phase.
 Considering December \nth{15} and September \nth{20} situations, the second wave epidemics are 769, again decreasing because the anticipated actions have eliminated some other cases. The December mean of the infected agents is 294.2, still higher than the actual value ($\approx$200.0). We always overestimate the mean of the epidemic effects, being the surviving epidemics the larger ones.
@@ -958,7 +1044,7 @@ std & 14.1 & 42.6 & 16.7 & 52.8 & 89.6 & 234.2 & 118.1 & 306.7 & 126.4 & 315.9 &
 \section{Economic analysis of the of interventions}
 \label{CBanalysis}
 
-The pandemic has an impact on the general economy. First, we take into account the additional health expenditure, which in Piedmont has risen from \EUR{8,880} million to \EUR{9,200} million, with an increase in pressure on GDP of 2\%. It is an increment that cannot be generalized. In other regions and States, health expenditure has even decreased, due to the lower demand for diagnostic and treatment services, precisely because of the pandemic and the precautionary reduced access to health services. Apart from the additional health expenditure, the main impact to be considered is the loss in production induced by the contagion containment measures, i.e., the so-called ``lockdown'' of the economy and the associated mobility bans. 
+The pandemic has an impact on the general economy. First, we take into account the additional health expenditure, which in Piedmont has risen from \EUR{8,880} million to \EUR{9,200} million, with an increase in pressure on GDP of 0.2\%. It is an increment that cannot be generalized. In other regions and States, health expenditure has even decreased, due to the lower demand for diagnostic and treatment services, precisely because of the pandemic and the precautionary reduced access to health services. Apart from the additional health expenditure, the main impact to be considered is the loss in production induced by the contagion containment measures, i.e., the so-called ``lockdown'' of the economy and the associated mobility bans. 
 
 The impact assessment of production stoppages and mobility bans can be measured by applying an Input-Output model. The main quality of Input-Output models is the possibility of determining the total effect of changes in output in all sectors of the economy due to a unit change in final demand in a given sector. This is achieved by applying a matrix of multipliers, i.e., Leontief's inverse matrix, to a sectoral vector of demand changes. The inverse matrix makes it possible to calculate the sum of the direct impact of the stopped productions, sector by sector, and the indirect impact, due to the infinite feedback on the purchases of the affected sectors from the first drop in demand received. However, the standard representation is not complete. The literature tends to extend these effects to consider the feedback not only by the purchases of the impacted sectors but also by the drop in the final demand of households affected by the unexpected change in income through their marginal propensity to consume. This third effect is the so-called induced impact.
 
@@ -1001,7 +1087,7 @@ The results of the simulations are reported in Table \ref{ABC} and are expressed
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 \emph{daily impacts} \\
 total production & -4.86 & -1.23 & -0.69  \\
-added value & -4.86 & -1.23 & -0.69 \\
+added value & -2.12 & -0.55 & -0.30 \\
 taxes & -0.91 & -0.24 & -0.35 \\
 \\
 \emph{monthly impacts} \\
@@ -1010,11 +1096,11 @@ added value & -63.7 & -16.6 & -9.1 \\
 taxes & -27.4 & -7.1 & -10.6 \\
 \hline\noalign{\smallskip}  
 \end{tabular}
-\caption{Economic impacts of the pandemic with three hypotheses of non-pharmaceutical containment measures applied. Values are expressed in thousandths of a point of GDP/1000}
+\caption{Economic impacts of the pandemic with three hypotheses of non-pharmaceutical containment measures applied; values are expressed in GDP points/1000}
 \label{ABC}
 \end{table}
 
-In Table \ref{ABC}, each day of closure of productive activities (leaving only the essential ones and schools closed, i.e., open for distance learning) to counter the contagion and allow access to hospitals produces a loss of income (added value) equal to 2.1 per thousand of GDP and a worsening of the fiscal budget by 0.9 percent of GDP. One month of total closures, therefore, would cost an income loss of 6.4 percent and a worsening of the fiscal balance of 2.7 percent (Scenario A, actually implemented in Italy from 9 March 2020 to April).
+In Table \ref{ABC}, each day of closure of productive activities (leaving only the essential ones and schools closed, i.e., open for distance learning) to counter the contagion and allow access to hospitals produces a loss of income (added value) equal to 2.1 per thousand of GDP and a worsening of the fiscal budget by 0.9 per thousand of GDP. One month of total closures, therefore, would cost an income loss of 6.4 percent and a worsening of the fiscal balance of 2.7 percent (Scenario A, actually implemented in Italy from 9 March 2020 to April).
 
 Conversely, limiting closures to only distribution activities (non-food), as well as to school (open as distance learning), sports, culture and leisure, tourism, and restaurant services (as in the light lockdown established in October 2020 and subsequent months, Scenario B) would have produced a daily income loss of 0.55 per thousand of GDP (equivalent to 1.6 percent per month) and a fiscal loss of 0.24 per thousand per day and 0.7 percent of GDP per month. 
 
