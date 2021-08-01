@@ -48,6 +48,18 @@ R.~Axtell, {Why agents? On the varied motivations for agent computing in the
 \newblock Tech. rep., Center on Social and Economic Dynamics Brookings
   Institution (2000)
 
+\bibitem{inverseGen}
+T.M. Vu, C.~Probst, J.M. Epstein, A.~Brennan, M.~Strong, R.C. Purshouse,
+  Genetic and Evolutionary Computation Conference : {$[$}proceedings{$]$}.
+  Genetic and Evolutionary Computation Conference \textbf{2019}, 1356 (2019).
+\newblock \doi{10.1145/3321707.3321840}.
+\newblock \urlprefix\url{https://pubmed.ncbi.nlm.nih.gov/33083795}
+
+\bibitem{epstein1999agent}
+J.M. Epstein, Complexity \textbf{4}(5), 41 (1999).
+\newblock
+  \urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.118.546\&rep=rep1\&type=pdf}
+
 \bibitem{ghorbani2020assocc}
 A.~Ghorbani, F.~Lorig, B.~de~Bruin, P.~Davidsson, F.~Dignum, V.~Dignum,
   M.~van~der Hurk, M.~Jensen, C.~Kammler, K.~Kreulen, L.G. Ludescher,
@@ -72,28 +84,45 @@ U.~Wilensky.
 \newblock Netlogo (1999).
 \newblock \urlprefix\url{http://ccl.northwestern.edu/netlogo/}
 
-\bibitem{inverseGen}
-T.M. Vu, C.~Probst, J.M. Epstein, A.~Brennan, M.~Strong, R.C. Purshouse,
-  Genetic and Evolutionary Computation Conference : {$[$}proceedings{$]$}.
-  Genetic and Evolutionary Computation Conference \textbf{2019}, 1356 (2019).
-\newblock \doi{10.1145/3321707.3321840}.
-\newblock \urlprefix\url{https://pubmed.ncbi.nlm.nih.gov/33083795}
-
 \bibitem{steinmann2020don}
 P.~Steinmann, J.R. Wang, G.A. van Voorn, J.H. Kwakkel, Review of Artificial
   Societies and Social Simulation \textbf{17} (2020).
 \newblock \urlprefix\url{https://rofasss.org/2020/04/17/deep-uncertainty/}
 
+\bibitem{BettencourtRibeiro2008}
+L.M. Bettencourt, R.M. Ribeiro, PloS one \textbf{3}(5), e2185 (2008).
+\newblock
+  \urlprefix\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0002185}
+
+\bibitem{CorietAl2013}
+A.~Cori, N.M. Ferguson, C.~Fraser, S.~Cauchemez, American Journal of
+  Epidemiology \textbf{178}(9), 1505 (2013).
+\newblock \doi{10.1093/aje/kwt133}.
+\newblock \urlprefix\url{https://doi.org/10.1093/aje/kwt133}
+
+\bibitem{RoyalSocSAGESPI-M}
+R.~Anderson, C.~Donnelly, D.~Hollingsworth, M.~Keeling, C.~Vegvari,
+  R.~Baggaley, R.~Maddren, The Royal Society \textbf{2020} (2020).
+\newblock
+  \urlprefix\url{https://royalsociety.org/-/media/policy/projects/set-c/set-covid-19-R-estimates.pdf}
+
+\bibitem{CeredaetAl2020}
+D.~Cereda, M.~Tirani, F.~Rovida, V.~Demicheli, M.~Ajelli, P.~Poletti,
+  F.~Trentini, G.~Guzzetta, V.~Marziano, A.~Barone, M.~Magoni, S.~Deandrea,
+  G.~Diurno, M.~Lombardo, M.~Faccini, A.~Pan, R.~Bruno, E.~Pariani,
+  G.~Grasselli, A.~Piatti, M.~Gramegna, F.~Baldanti, A.~Melegaro, S.~Merler.
+\newblock The early phase of the covid-19 outbreak in lombardy, italy (2020).
+\newblock \urlprefix\url{https://arxiv.org/abs/2003.09320}
+
+\bibitem{LinHuangMcelroy}
+W.~Lin, J.Z. Huang, T.~McElroy, Journal of Business \& Economic Statistics
+  \textbf{38}(3), 487 (2020).
+\newblock \doi{10.1080/07350015.2018.1515081}.
+\newblock \urlprefix\url{https://doi.org/10.1080/07350015.2018.1515081}
+
 \bibitem{phillips2021coronavirus}
 N.~Phillips, Nature \textbf{590}(7846), 382 (2021).
 \newblock \urlprefix\url{https://www.nature.com/articles/d41586-021-00396-2}
-
-\bibitem{doi:10.1111/ijcp.13674}
-D.~Miles, M.~Stedman, A.H. Heald, International Journal of Clinical Practice
-  \textbf{n/a}(n/a), e13674 (2020).
-\newblock \doi{10.1111/ijcp.13674}.
-\newblock
-  \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1111/ijcp.13674}
 
 \bibitem{Boylston2012}
 A.~Boylston, Journal of the Royal Society of Medicine \textbf{105}(7), 309
