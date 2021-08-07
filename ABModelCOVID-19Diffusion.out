@@ -2,7 +2,7 @@
 \BOOKMARK [0][-]{section*.1}{Gianpiero Pescarmona, Pietro Terna, Alberto Acquadro, Paolo Pescarmona, Giuseppe Russo, Emilio Sulis, and Stefano Terna}{}% 2
 \BOOKMARK [1][-]{section.0.1}{A quick introduction to our agent-based epidemic model}{section*.1}% 3
 \BOOKMARK [2][-]{subsection.0.1.1}{Why models? Why agents? Why another model?}{section.0.1}% 4
-\BOOKMARK [2][-]{subsection.0.1.2}{Here a section on the biochemical of the contagion}{section.0.1}% 5
+\BOOKMARK [2][-]{subsection.0.1.2}{The molecular basis of SARS-CoV-2 infection}{section.0.1}% 5
 \BOOKMARK [2][-]{subsection.0.1.3}{Our model}{section.0.1}% 6
 \BOOKMARK [1][-]{section.0.2}{How S.I.s.a.R. works}{section*.1}% 7
 \BOOKMARK [2][-]{subsection.0.2.1}{Conditional actions}{section.0.2}% 8
@@ -31,6 +31,6 @@
 \BOOKMARK [1][-]{section.0.8}{A new model and future developments}{section*.1}% 31
 \BOOKMARK [1][-]{section.0.9}{Appendix 1\204Parameter values}{section*.1}% 32
 \BOOKMARK [1][-]{section.0.10}{Appendix 2\204A gallery of contagion sequences}{section*.1}% 33
-\BOOKMARK [1][-]{section*.42}{Acknowledgements}{section*.1}% 34
-\BOOKMARK [1][-]{section*.43}{References}{section*.1}% 35
-\BOOKMARK [1][-]{section*.43}{References}{section*.1}% 36
+\BOOKMARK [1][-]{section*.43}{Acknowledgements}{section*.1}% 34
+\BOOKMARK [1][-]{section*.44}{References}{section*.1}% 35
+\BOOKMARK [1][-]{section*.44}{References}{section*.1}% 36
