@@ -108,7 +108,7 @@ The infection transmission is related to three factors: the infected person's ch
 Finally, we subscribe the call of \cite{squazzoni2020} to <<cover the full behavioural and social complexity of societies under pandemic crisis>> and we work arguing that <<the study of collective behavior must rise to a ``crisis discipline'' just as medicine, conservation, and climate science have, with a focus on providing actionable insight to policymakers and regulators for the stewardship of social systems>>, as in \cite{Bak-Colemane2025764118}. 
 
 A look at the structure of the whole presentation.
-In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the biochemical support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with: conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
+In Section \ref{why}, we discuss models and specifically agent-based models; in Section \ref{biochem}, the molecular support to agents' intrinsic susceptibility construction; in Section \ref{ourModel}, the structure of the model, with the daily sequence of the agents' actions. Section \ref{howWorks} introduces a detailed description of the internal model mechanisms, with: conditional actions in Section \ref{cond}, parameters in Section \ref{par} and agents' interaction in Section \ref{inter}.
 
 A technique for contagion representation is introduced in Section \ref{contag}. Then we explore simulation cases in Section \ref{exploring}, building several batches of runs and comparing extreme situations in Sections \ref{withoutWith}.
 
@@ -156,6 +156,33 @@ As any model, also this one is based on assumptions: time will tell whether thes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The molecular basis of SARS-CoV-2 infection}
 \label{biochem}
+
+Table \ref{riskFactors}, Fig. \ref{ace}
+
+\begin{table}[t]
+\center
+\begin{tabular}{llllll}
+\hline\noalign{\smallskip}
+Risk factors~~~ & DHEA~~~ &	Cortisol & GSH~~~~ & Vit~D~~ & BMR~~~~ \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+Aging & low & high & low & low & low \\
+Diabetes & low & high & low & low & low \\
+Hypertension & low & high & low & low & ? \\
+Obesity & low & high & low & low & low \\
+Diuretics & - & high & - & - & ? \\
+Drugs & - & - & low & low & ? \\
+Air pollution & - & - & low & - & ? \\
+Paracetamol & - & - & low & - & ? \\
+Cloroquine & - & - & low & - & ? \\
+Glucocorticoids & - & high & - & - & ? \\
+Ibuprofen & - & - & - & - & ? \\
+Aspirin	\\
+\hline\noalign{\smallskip}
+\end{tabular}
+\caption{A synopsis of all the metabolic features associated with the clinical conditions favoring a severe COVID-19 development. DHEA: Dehydroepiandrosterone, GSH: Glutathione, Vit D: 25(OH)-Vitamin D, BMR: Basal Metabolic Rate}
+\label{riskFactors}
+\end{table}
+
 
 \begin{figure}[t]
 \center
