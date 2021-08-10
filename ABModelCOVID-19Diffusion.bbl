@@ -60,6 +60,47 @@ J.M. Epstein, Complexity \textbf{4}(5), 41 (1999).
 \newblock
   \urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.118.546\&rep=rep1\&type=pdf}
 
+\bibitem{pescarmona2002life}
+G.~Pescarmona, in \emph{Recent research developments in biophysical chemistry},
+  ed. by C.A. Condat, A.~Baruzzi (Trivandrum, 2002), pp. 1--22.
+\newblock
+  \urlprefix\url{http://flipper.diff.org/static/files/1517/The\_life\_context\_2002.pdf}
+
+\bibitem{gennero2010iron}
+L.~Gennero, M.A. Roos, P.~D'Amelio, T.~Denysenko, E.~Morra, K.~Sperber,
+  V.~Ceroni, M.~Panzone, F.~Lesca, E.~De~Vivo, A.~Grimaldi, M.L. Gabetti,
+  A.~Ponzetto, G.P. Pescarmona, A.~Pugliese, Cell Biochemistry and Function
+  \textbf{28}(2), 142 (2010)
+
+\bibitem{vernone2013human}
+A.~Vernone, P.~Berchialla, G.~Pescarmona, PloS one \textbf{8}(4), e60220
+  (2013).
+\newblock
+  \urlprefix\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0060220}
+
+\bibitem{vernone2019analysis}
+A.~Vernone, C.~Ricca, D.~Merlo, G.~Pescarmona, F.~Silvagno, Royal Society open
+  science \textbf{6}(4), 181891 (2019).
+\newblock
+  \urlprefix\url{https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.181891}
+
+\bibitem{scialo2020ace2}
+F.~Scialo, A.~Daniele, F.~Amato, L.~Pastore, M.G. Matera, M.~Cazzola,
+  G.~Castaldo, A.~Bianco, Lung pp. 1--11 (2020).
+\newblock
+  \urlprefix\url{https://link.springer.com/article/10.1007/s00408-020-00408-4}
+
+\bibitem{Shenoy2020}
+S.~Shenoy, Inflammation Research \textbf{69}(11), 1077 (2020).
+\newblock \doi{10.1007/s00011-020-01389-z}.
+\newblock \urlprefix\url{https://doi.org/10.1007\%2Fs00011-020-01389-z}
+
+\bibitem{Silvagno_2020}
+F.~Silvagno, A.~Vernone, G.P. Pescarmona, Antioxidants \textbf{9}(7), 624
+  (2020).
+\newblock \doi{10.3390/antiox9070624}.
+\newblock \urlprefix\url{http://dx.doi.org/10.3390/antiox9070624}
+
 \bibitem{ghorbani2020assocc}
 A.~Ghorbani, F.~Lorig, B.~de~Bruin, P.~Davidsson, F.~Dignum, V.~Dignum,
   M.~van~der Hurk, M.~Jensen, C.~Kammler, K.~Kreulen, L.G. Ludescher,
@@ -67,12 +108,6 @@ A.~Ghorbani, F.~Lorig, B.~de~Bruin, P.~Davidsson, F.~Dignum, V.~Dignum,
   Review of Artificial Societies and Social Simulation  (2020).
 \newblock
   \urlprefix\url{https://rofasss.org/2020/04/25/the-assocc-simulation-model/}
-
-\bibitem{Silvagno_2020}
-F.~Silvagno, A.~Vernone, G.P. Pescarmona, Antioxidants \textbf{9}(7), 624
-  (2020).
-\newblock \doi{10.3390/antiox9070624}.
-\newblock \urlprefix\url{http://dx.doi.org/10.3390/antiox9070624}
 
 \bibitem{horton2020offline}
 R.~Horton, Lancet (London, England) \textbf{396}(10255), 874 (2020).
