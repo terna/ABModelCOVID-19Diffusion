@@ -1,0 +1,53 @@
+Chapter 9
+
+Figure 8
+
+10kNoControl.png
+10kBasicC.png
+
+
+Figure 9
+
+andamento900annotato.jpg
+andamento900.jpg
+
+
+Figure 10
+
+10kSpontWave2.png
+10kForceWave2.png
+10kForceWave2Contr2.png
+10kForceWave2Contr2M-20.png
+10kForceWave2NoFragOct5for60d.png
+
+
+Figure 22
+
+Experiment_I_plainVaccinationSequence.png
+Experiment_I_1_plain_symptomatic_series.png
+Experiment_I_wiseVaccinationSequence.png
+Experiment_I_1_wise_symptomatic_series.png
+Experiment_I_GA_1_VaccinationSequence.png
+Experiment_I_1_GAs_symptomatic_series.png
+
+
+Table 18, files in subfolder 'sequences' => to be placed in subfolder 'sequences'
+
+no3a.png
+no3b.png
+no4a.png
+no4b.png
+no5a.png
+no5b.png
+with6a.png
+with6b.png
+with7a.png
+with7b.png
+with8a.png
+with8b.png
+withShort0.png
+withShort1.png
+withShort1A.png
+withShort1A200.png
+withShort1B.png
+withShort2.png
